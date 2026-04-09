@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: insect sludge -->
+  <InsectSludge.label>жижа насекомых</InsectSludge.label>
+  
+  <!-- EN: mechanoid platform -->
+  <MechanoidPlatform.label>платформа механоидов</MechanoidPlatform.label>
+  
+  <!-- EN: orbital platform -->
+  <OrbitalPlatform.label>орбитальная платформа</OrbitalPlatform.label>
+  <!-- EN: ancient heavy bridge -->
+  <AncientHeavyBridge.label>древний тяжёлый мост</AncientHeavyBridge.label>
+  <!-- EN: An ancient bridge which supports heavy structures on top. You can build a whole colony on water with this. -->
+  <AncientHeavyBridge.description>Древний мост, выдерживающий тяжёлые постройки сверху. На нём можно возвести целую колонию над водой.</AncientHeavyBridge.description>
+  
+</LanguageData>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <name>RimWorldRu</name>
+  <author>Elengal</author>
+  <supportedVersions>
+	<li>1.6</li>
+  </supportedVersions>
+  <packageId>Elengal.RimWorldRu</packageId>
+  <description>Полный русификатор RimWorld и всех DLC.
+
+Перевод: Core, Royalty, Ideology, Biotech, Anomaly, Odyssey, DevMode. Нужные DLC подхватываются автоматически.
+
+Загляните в настройки мода — там добавлены дополнительные возможности.
+
+Большая благодарность Dmitry6 за неоценимую помощь.</description>
+  <modDependencies>
+    <li>
+      <packageId>Ludeon.RimWorld</packageId>
+      <displayName>RimWorld</displayName>
+    </li>
+  </modDependencies>
+  <loadBefore>
+    <li>Ludeon.RimWorld</li>
+  </loadBefore>
+</ModMetaData>

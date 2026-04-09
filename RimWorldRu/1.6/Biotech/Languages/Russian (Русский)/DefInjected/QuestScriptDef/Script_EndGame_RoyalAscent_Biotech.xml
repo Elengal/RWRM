@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- Узлы, добавляемые Biotech в Royalty-скрипт EndGame_RoyalAscent -->
+  <!-- EN: Xenogerm absorbed: {SUBJECT_definite} -->
+  <EndGame_RoyalAscent.root.nodes.lodgersXenogermAbsorbed.node.nodes.Letter.label.slateRef>Ксеносемя поглощено: {SUBJECT_definite}</EndGame_RoyalAscent.root.nodes.lodgersXenogermAbsorbed.node.nodes.Letter.label.slateRef>
+  <!-- EN: {SUBJECT_definite}, who you were charged to protect, has had {SUBJECT_possessive} xenogerm forcibly absorbed. [failLetterEndingCommon] -->
+  <EndGame_RoyalAscent.root.nodes.lodgersXenogermAbsorbed.node.nodes.Letter.text.slateRef>{SUBJECT_definite}, которого вы должны были защищать, насильно лишили ксеносемени. [failLetterEndingCommon]</EndGame_RoyalAscent.root.nodes.lodgersXenogermAbsorbed.node.nodes.Letter.text.slateRef>
+  <!-- EN: Guest lost: {SUBJECT_definite} -->
+  <EndGame_RoyalAscent.LetterLabelLodgerRanWild.slateRef>Гость пропал: {SUBJECT_definite}</EndGame_RoyalAscent.LetterLabelLodgerRanWild.slateRef>
+  <!-- EN: {SUBJECT_definite}, who you were charged to protect, has run wild. [failLetterEndingCommon] -->
+  <EndGame_RoyalAscent.LetterTextLodgerRanWild.slateRef>{SUBJECT_definite}, которого вы должны были защищать, одичал. [failLetterEndingCommon]</EndGame_RoyalAscent.LetterTextLodgerRanWild.slateRef>
+  
+</LanguageData>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- Узлы, добавляемые Biotech в Royalty-скрипт Intro_Wimp -->
+  <!-- EN: Xenogerm absorbed: {SUBJECT_definite} -->
+  <Intro_Wimp.root.nodes.askerXenogermAbsorbed.node.nodes.Letter.label.slateRef>Ксеносемя поглощено: {SUBJECT_definite}</Intro_Wimp.root.nodes.askerXenogermAbsorbed.node.nodes.Letter.label.slateRef>
+  <!-- EN: {SUBJECT_definite}, who you were charged to protect, has had {SUBJECT_possessive} xenogerm forcibly absorbed. Because of this violation, {SUBJECT_pronoun} will now attempt to leave. [failLetterEndingCommon] -->
+  <Intro_Wimp.root.nodes.askerXenogermAbsorbed.node.nodes.Letter.text.slateRef>{SUBJECT_definite}, которого вы должны были защищать, насильно лишили ксеносемени. Из-за этого {SUBJECT_pronoun} теперь попытается покинуть поселение. [failLetterEndingCommon]</Intro_Wimp.root.nodes.askerXenogermAbsorbed.node.nodes.Letter.text.slateRef>
+  <!-- EN: Shuttle left behind -->
+  <Intro_Wimp.root.nodes.pickupShipThingLeftBehind.node.nodes.Letter.label.slateRef>Челнок оставлен</Intro_Wimp.root.nodes.pickupShipThingLeftBehind.node.nodes.Letter.label.slateRef>
+  <!-- EN: The shuttle sent to collect [asker_nameDef] has been left behind. [asker_pronoun] will now leave on foot. -->
+  <Intro_Wimp.root.nodes.pickupShipThingLeftBehind.node.nodes.Letter.text.slateRef>Челнок, отправленный забрать [asker_nameDef], был оставлен. [asker_pronoun] теперь покинет поселение пешком.</Intro_Wimp.root.nodes.pickupShipThingLeftBehind.node.nodes.Letter.text.slateRef>
+  
+</LanguageData>

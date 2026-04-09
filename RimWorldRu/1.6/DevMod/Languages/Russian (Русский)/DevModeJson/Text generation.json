@@ -1,0 +1,17 @@
+{
+  "ArtDescsDatabaseTales": "Описания искусства по историям из базы",
+  "ArtDescsRandomTales": "Случайные описания искусства",
+  "ArtDescsSpecificTale": "Описания искусства для конкретных историй",
+  "ArtDescsTaleless": "Описания искусства без историй",
+  "Books": "Книги",
+  "CubeDescriptions": "Описания кубов",
+  "DatabaseTalesInterest": "Интересные истории из базы",
+  "DatabaseTalesList": "Список историй из базы",
+  "FlavorfulCombatTest": "Тест боя с изюминкой",
+  "GrowthMomentFlavor": "Текстовка момента роста",
+  "InteractionLogs": "Логи взаимодействий",
+  "LandmarkNames": "Названия ориентиров",
+  "NamesFromRulepack": "Имена из правил",
+  "VoidSculptureDescriptions": "Описания скульптур пустоты",
+  "WordCount": "Количество слов"
+}

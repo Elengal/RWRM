@@ -1,0 +1,10 @@
+{
+  "ColonistRelativeChance": "Шанс появления родственников колонистов",
+  "KidnappedPawns": "Похищенные пешки",
+  "RunWorldPawnGc": "Запустить GC пешек мира",
+  "RunWorldPawnMothball": "Запустить консервацию пешек мира",
+  "WorldPawnDotgraph": "Граф связей пешек мира (dotgraph)",
+  "WorldPawnGcBreakdown": "Разбор работы GC пешек мира",
+  "WorldPawnList": "Список пешек мира",
+  "WorldPawnMothballInfo": "Информация о консервации пешек мира"
+}

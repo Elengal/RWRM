@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: install vacskin gland -->
+  <InstallVacskinGland.label>установить железу вакуумной кожи</InstallVacskinGland.label>
+  <!-- EN: Install a vacskin gland. -->
+  <InstallVacskinGland.description>Установить железу вакуумной кожи.</InstallVacskinGland.description>
+  <!-- EN: Installing vacskin gland. -->
+  <InstallVacskinGland.jobString>Установка железы вакуумной кожи.</InstallVacskinGland.jobString>
+  <!-- EN: remove vacskin gland -->
+  <RemoveVacskinGland.label>удалить железу вакуумной кожи</RemoveVacskinGland.label>
+  <!-- EN: Remove vacskin gland. -->
+  <RemoveVacskinGland.description>Удалить железу вакуумной кожи.</RemoveVacskinGland.description>
+  <!-- EN: Removing vacskin gland. -->
+  <RemoveVacskinGland.jobString>Удаление железы вакуумной кожи.</RemoveVacskinGland.jobString>
+  
+</LanguageData>

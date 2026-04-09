@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: someone was ripscanned (Biotech) -->
+  <KnowGuestExecuted.stages.someone_was_ripscanned.label>кого-то разобрали на рипсканере</KnowGuestExecuted.stages.someone_was_ripscanned.label>
+  <!-- EN: A prisoner died in our ripscanner. Their brain was burned up to feed the machine. It's horrible. -->
+  <KnowGuestExecuted.stages.someone_was_ripscanned.description>Пленник погиб в нашем рипсканере. Его мозг был сожжён ради работы машины. Это ужасно.</KnowGuestExecuted.stages.someone_was_ripscanned.description>
+  <!-- EN: colonist ripscanned (Biotech) -->
+  <KnowColonistExecuted.stages.colonist_ripscanned.label>поселенца разобрали на рипсканере</KnowColonistExecuted.stages.colonist_ripscanned.label>
+  <!-- EN: A colonist died in our ripscanner. Their brain was burned up to feed the machine. It's horrible. -->
+  <KnowColonistExecuted.stages.colonist_ripscanned.description>Поселенец погиб в нашем рипсканере. Его мозг был сожжён ради работы машины. Это ужасно.</KnowColonistExecuted.stages.colonist_ripscanned.description>
+  <!-- EN: someone was ripscanned (Biotech, abhorrent) -->
+  <ExecutedGuest_Know_Abhorrent_Mood.stages.someone_was_ripscanned.label>кого-то разобрали на рипсканере</ExecutedGuest_Know_Abhorrent_Mood.stages.someone_was_ripscanned.label>
+  <!-- EN: A prisoner died in our ripscanner, their brain burned to ash to feed the machine. It's horrifying. -->
+  <ExecutedGuest_Know_Abhorrent_Mood.stages.someone_was_ripscanned.description>Пленник погиб в нашем рипсканере — его мозг сожгли ради машины. Это отвратительно.</ExecutedGuest_Know_Abhorrent_Mood.stages.someone_was_ripscanned.description>
+  <!-- EN: colonist ripscanned (Biotech, abhorrent) -->
+  <ExecutedColonist_Know_Abhorrent_Mood.stages.colonist_ripscanned.label>поселенца разобрали на рипсканере</ExecutedColonist_Know_Abhorrent_Mood.stages.colonist_ripscanned.label>
+  <!-- EN: A colonist died in our ripscanner, their brain burned to ash to feed the machine. It's horrifying. -->
+  <ExecutedColonist_Know_Abhorrent_Mood.stages.colonist_ripscanned.description>Поселенец погиб в нашем рипсканере — его мозг сожгли ради машины. Это отвратительно.</ExecutedColonist_Know_Abhorrent_Mood.stages.colonist_ripscanned.description>
+  
+  <!-- EN: killed a child -->
+  <KilledChild.stages.killed_a_child.label>{0_gender ? убил : убила} ребёнка</KilledChild.stages.killed_a_child.label>
+  <!-- EN: Killing one so young feels wrong, no matter the situation. -->
+  <KilledChild.stages.killed_a_child.description>Убивать кого-то столь юного — ужасно, вне зависимости от ситуации.</KilledChild.stages.killed_a_child.description>
+  
+  <!-- EN: killed my birth mother -->
+  <KilledMyBirthMother.stages.killed_my_birth_mother.label>{1_gender ? убил : убила} мою родную мать</KilledMyBirthMother.stages.killed_my_birth_mother.label>
+  
+  <!-- EN: my birth mother {0} died -->
+  <MyBirthMotherDied.stages.my_birth_mother_died.label>умерла суррогатная мать, {0}</MyBirthMotherDied.stages.my_birth_mother_died.label>
+  <!-- EN: My birth mother died. She's gone forever. It's like a hole in my life. -->
+  <MyBirthMotherDied.stages.my_birth_mother_died.description>Моя суррогатная мать умерла. Я больше никогда её не увижу. В моём сердце стало пусто.</MyBirthMotherDied.stages.my_birth_mother_died.description>
+  
+  <!-- EN: my birth mother {0} lost -->
+  <MyBirthMotherLost.stages.my_birth_mother_lost.label>пропала суррогатная мать, {0} </MyBirthMotherLost.stages.my_birth_mother_lost.label>
+  <!-- EN: My birth mother has been lost. I hope she will get back to us someday. -->
+  <MyBirthMotherLost.stages.my_birth_mother_lost.description>Моя суррогатная мать пропала без вести. Надеюсь, она однажды вернётся к нам.</MyBirthMotherLost.stages.my_birth_mother_lost.description>
+  
+</LanguageData>

@@ -1,0 +1,18 @@
+d:\Project\RimWorld\Mods\3615283148_rimworld_ru\1.6\Assemblies\RuMod.dll
+d:\Project\RimWorld\Mods\3615283148_rimworld_ru\1.6\Assemblies\RuMod.pdb
+D:\Project\RuMod_Source\obj\Debug\RuMod.csproj.AssemblyReference.cache
+D:\Project\RuMod_Source\obj\Debug\RuMod.GeneratedMSBuildEditorConfig.editorconfig
+D:\Project\RuMod_Source\obj\Debug\RuMod.AssemblyInfoInputs.cache
+D:\Project\RuMod_Source\obj\Debug\RuMod.AssemblyInfo.cs
+D:\Project\RuMod_Source\obj\Debug\RuMod.csproj.CoreCompileInputs.cache
+D:\Project\RuMod_Source\obj\Debug\RuMod.dll
+D:\Project\RuMod_Source\obj\Debug\RuMod.pdb
+d:\Rimworld MOD\RimWorldRu\1.6\Assemblies\RuMod.dll
+d:\Rimworld MOD\RimWorldRu\1.6\Assemblies\RuMod.pdb
+D:\Rimworld MOD\RuMod_Source\obj\Debug\RuMod.csproj.AssemblyReference.cache
+D:\Rimworld MOD\RuMod_Source\obj\Debug\RuMod.GeneratedMSBuildEditorConfig.editorconfig
+D:\Rimworld MOD\RuMod_Source\obj\Debug\RuMod.AssemblyInfoInputs.cache
+D:\Rimworld MOD\RuMod_Source\obj\Debug\RuMod.AssemblyInfo.cs
+D:\Rimworld MOD\RuMod_Source\obj\Debug\RuMod.csproj.CoreCompileInputs.cache
+D:\Rimworld MOD\RuMod_Source\obj\Debug\RuMod.dll
+D:\Rimworld MOD\RuMod_Source\obj\Debug\RuMod.pdb

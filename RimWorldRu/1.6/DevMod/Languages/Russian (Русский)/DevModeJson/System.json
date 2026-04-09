@@ -1,0 +1,13 @@
+{
+  "AllGraphicsLoaded": "Вся графика загружена",
+  "DynamicDrawThingsList": "Список динамических отрисовок",
+  "LoadedAssets": "Загруженные ресурсы",
+  "MaterialDelta": "Разница материалов",
+  "MaterialReport": "Отчет по материалам",
+  "MaterialSnapshot": "Снимок материалов",
+  "MeshPoolStats": "Статистика пула мешей",
+  "RandByCurveTests": "Тесты случайности по кривой",
+  "RandTests": "Тесты случайности",
+  "SteamWorkshopStatus": "Статус Steam Workshop",
+  "TestMathPerf": "Тест производительности математики"
+}

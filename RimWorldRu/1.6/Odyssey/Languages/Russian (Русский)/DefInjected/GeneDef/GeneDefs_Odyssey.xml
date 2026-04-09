@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: low gravity adapted -->
+  <MoveSpeed_Space.label>адаптация к низкой гравитации</MoveSpeed_Space.label>
+  <!-- EN: Carriers of this gene move and work more easily in low-gravity environments. However, they're slower and less efficient when planetside. -->
+  <MoveSpeed_Space.description>Носители этого гена легче передвигаются и работают в условиях низкой гравитации. На планете они медленнее и менее эффективны.</MoveSpeed_Space.description>
+  <!-- EN: low-gravity -->
+  <MoveSpeed_Space.labelShortAdj>низкая гравитация</MoveSpeed_Space.labelShortAdj>
+  
+</LanguageData>

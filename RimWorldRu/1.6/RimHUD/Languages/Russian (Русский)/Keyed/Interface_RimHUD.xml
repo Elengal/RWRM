@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <RimHUD.Interface.Button.OK>ОК</RimHUD.Interface.Button.OK>
+  <RimHUD.Interface.Button.Yes>Да</RimHUD.Interface.Button.Yes>
+  <RimHUD.Interface.Button.No>Нет</RimHUD.Interface.Button.No>
+  <RimHUD.Interface.Button.Cancel>Отмена</RimHUD.Interface.Button.Cancel>
+  <RimHUD.Interface.Button.Close>Закрыть</RimHUD.Interface.Button.Close>
+  <RimHUD.Interface.Button.Save>Сохранить</RimHUD.Interface.Button.Save>
+
+  <RimHUD.Interface.Dialog_Config.Title>RimHUD</RimHUD.Interface.Dialog_Config.Title>
+  <RimHUD.Interface.Dialog_Config.SetToDefault>По умолчанию</RimHUD.Interface.Dialog_Config.SetToDefault>
+  <RimHUD.Interface.Dialog_Config.OpenFolder>Папка конфига</RimHUD.Interface.Dialog_Config.OpenFolder>
+  <RimHUD.Interface.Dialog_Config.Modified>(Изменено)</RimHUD.Interface.Dialog_Config.Modified>
+
+  <RimHUD.Interface.Dialog_Config.Tab_Design>Оформление</RimHUD.Interface.Dialog_Config.Tab_Design>
+  <RimHUD.Interface.Dialog_Config.Tab_Colors>Цвета</RimHUD.Interface.Dialog_Config.Tab_Colors>
+  <RimHUD.Interface.Dialog_Config.Tab_Colors.Editor>Редактировать цвет: {0}</RimHUD.Interface.Dialog_Config.Tab_Colors.Editor>
+  <RimHUD.Interface.Dialog_Config.Tab_Colors.Hue>Оттенок</RimHUD.Interface.Dialog_Config.Tab_Colors.Hue>
+  <RimHUD.Interface.Dialog_Config.Tab_Colors.Saturation>Насыщенность</RimHUD.Interface.Dialog_Config.Tab_Colors.Saturation>
+  <RimHUD.Interface.Dialog_Config.Tab_Colors.Lightness>Яркость</RimHUD.Interface.Dialog_Config.Tab_Colors.Lightness>
+  <RimHUD.Interface.Dialog_Config.Tab_Colors.Alpha>Прозрачность</RimHUD.Interface.Dialog_Config.Tab_Colors.Alpha>
+  <RimHUD.Interface.Dialog_Config.Tab_Colors.RGBA>RGBA</RimHUD.Interface.Dialog_Config.Tab_Colors.RGBA>
+
+  <RimHUD.Interface.Dialog_Config.Tab_Content>Содержимое</RimHUD.Interface.Dialog_Config.Tab_Content>
+  <RimHUD.Interface.Dialog_Config.Tab_Content.Layers.Docked>Слои в панели</RimHUD.Interface.Dialog_Config.Tab_Content.Layers.Docked>
+  <RimHUD.Interface.Dialog_Config.Tab_Content.Layers.Floating>Плавающие слои</RimHUD.Interface.Dialog_Config.Tab_Content.Layers.Floating>
+
+  <RimHUD.Interface.Dialog_Config.Tab_Content.Presets>Пресеты</RimHUD.Interface.Dialog_Config.Tab_Content.Presets>
+  <RimHUD.Interface.Dialog_Config.Tab_Content.Presets.Select>Выбрать пресет...</RimHUD.Interface.Dialog_Config.Tab_Content.Presets.Select>
+  <RimHUD.Interface.Dialog_Config.Tab_Content.Presets.Save>Сохранить пресет</RimHUD.Interface.Dialog_Config.Tab_Content.Presets.Save>
+  <RimHUD.Interface.Dialog_Config.Tab_Content.Presets.Manage>Управление пресетами</RimHUD.Interface.Dialog_Config.Tab_Content.Presets.Manage>
+  <RimHUD.Interface.Dialog_Config.Tab_Content.Presets.Default>[По умолчанию]</RimHUD.Interface.Dialog_Config.Tab_Content.Presets.Default>
+
+  <RimHUD.Interface.Dialog_Config.Tab_Content.Layer>Слой</RimHUD.Interface.Dialog_Config.Tab_Content.Layer>
+  <RimHUD.Interface.Dialog_Config.Tab_Content.Layer.MoveUp>Вверх</RimHUD.Interface.Dialog_Config.Tab_Content.Layer.MoveUp>
+  <RimHUD.Interface.Dialog_Config.Tab_Content.Layer.MoveDown>Вниз</RimHUD.Interface.Dialog_Config.Tab_Content.Layer.MoveDown>
+  <RimHUD.Interface.Dialog_Config.Tab_Content.Layer.Remove>Удалить</RimHUD.Interface.Dialog_Config.Tab_Content.Layer.Remove>
+  <RimHUD.Interface.Dialog_Config.Tab_Content.Layer.AddStack>Добавить стек</RimHUD.Interface.Dialog_Config.Tab_Content.Layer.AddStack>
+  <RimHUD.Interface.Dialog_Config.Tab_Content.Layer.AddStackDesc>Стек может содержать другие стеки или панели. Элементы распределяются по вертикали или горизонтали.</RimHUD.Interface.Dialog_Config.Tab_Content.Layer.AddStackDesc>
+  <RimHUD.Interface.Dialog_Config.Tab_Content.Layer.AddPanel>Добавить панель</RimHUD.Interface.Dialog_Config.Tab_Content.Layer.AddPanel>
+  <RimHUD.Interface.Dialog_Config.Tab_Content.Layer.AddPanelDesc>Панель равномерно отображает строки элементов по вертикали.</RimHUD.Interface.Dialog_Config.Tab_Content.Layer.AddPanelDesc>
+  <RimHUD.Interface.Dialog_Config.Tab_Content.Layer.AddRow>Добавить строку</RimHUD.Interface.Dialog_Config.Tab_Content.Layer.AddRow>
+  <RimHUD.Interface.Dialog_Config.Tab_Content.Layer.AddRowDesc>Строка содержит элементы, отображаемые по горизонтали.</RimHUD.Interface.Dialog_Config.Tab_Content.Layer.AddRowDesc>
+
+  <RimHUD.Interface.Dialog_Config.Tab_Content.Layer.AddWidget>Добавить общее</RimHUD.Interface.Dialog_Config.Tab_Content.Layer.AddWidget>
+  <RimHUD.Interface.Dialog_Config.Tab_Content.Layer.AddThirdParty>Добавить из модов</RimHUD.Interface.Dialog_Config.Tab_Content.Layer.AddThirdParty>
+  <RimHUD.Interface.Dialog_Config.Tab_Content.Layer.AddStat>Добавить стат</RimHUD.Interface.Dialog_Config.Tab_Content.Layer.AddStat>
+  <RimHUD.Interface.Dialog_Config.Tab_Content.Layer.AddRecord>Добавить запись</RimHUD.Interface.Dialog_Config.Tab_Content.Layer.AddRecord>
+  <RimHUD.Interface.Dialog_Config.Tab_Content.Layer.AddNeed>Добавить полосу</RimHUD.Interface.Dialog_Config.Tab_Content.Layer.AddNeed>
+  <RimHUD.Interface.Dialog_Config.Tab_Content.Layer.AddSkillOrTraining>Добавить навык/дрессировку</RimHUD.Interface.Dialog_Config.Tab_Content.Layer.AddSkillOrTraining>
+
+  <RimHUD.Interface.Dialog_Config.Tab_Content.Selected>Выбрано: </RimHUD.Interface.Dialog_Config.Tab_Content.Selected>
+  <RimHUD.Interface.Dialog_Config.Tab_Content.Selected.Filled>Заполнить высоту</RimHUD.Interface.Dialog_Config.Tab_Content.Selected.Filled>
+  <RimHUD.Interface.Dialog_Config.Tab_Content.Selected.FilledDesc>Если включено, панель или стек растягивается по вертикали.\n\nЕсли выключено — высота по содержимому.</RimHUD.Interface.Dialog_Config.Tab_Content.Selected.FilledDesc>
+
+  <RimHUD.Interface.Dialog_ManagePresets.Title>Пользовательские пресеты</RimHUD.Interface.Dialog_ManagePresets.Title>
+  <RimHUD.Interface.Dialog_ManagePresets.Delete>Удалить выбранное</RimHUD.Interface.Dialog_ManagePresets.Delete>
+
+  <RimHUD.Interface.Dialog_SavePreset.Title>Сохранить пресет</RimHUD.Interface.Dialog_SavePreset.Title>
+  <RimHUD.Interface.Dialog_SavePreset.Name>Имя</RimHUD.Interface.Dialog_SavePreset.Name>
+  <RimHUD.Interface.Dialog_SavePreset.IncludeDocked>Включить в панели</RimHUD.Interface.Dialog_SavePreset.IncludeDocked>
+  <RimHUD.Interface.Dialog_SavePreset.IncludeFloating>Включить плавающие</RimHUD.Interface.Dialog_SavePreset.IncludeFloating>
+  <RimHUD.Interface.Dialog_SavePreset.IncludeHeight>Включить высоту</RimHUD.Interface.Dialog_SavePreset.IncludeHeight>
+  <RimHUD.Interface.Dialog_SavePreset.IncludeWidth>Включить ширину</RimHUD.Interface.Dialog_SavePreset.IncludeWidth>
+  <RimHUD.Interface.Dialog_SavePreset.IncludeTabs>Включить минимум вкладок</RimHUD.Interface.Dialog_SavePreset.IncludeTabs>
+  <RimHUD.Interface.Dialog_SavePreset.IncludeTextSizes>Включить размеры текста</RimHUD.Interface.Dialog_SavePreset.IncludeTextSizes>
+
+  <RimHUD.Interface.Alert.ConfigReset>RimHUD обновлён до версии {0}, конфигурация сброшена.</RimHUD.Interface.Alert.ConfigReset>
+  <RimHUD.Interface.Alert.SetToDefault>Сбросить все настройки по умолчанию?</RimHUD.Interface.Alert.SetToDefault>
+  <RimHUD.Interface.Alert.InvalidPreset>Пресет содержал недействительные элементы или элементы из отключённых модов.\n\nРаскладка сброшена.</RimHUD.Interface.Alert.InvalidPreset>
+  <RimHUD.Interface.Alert.PresetDefaultLoaded>Пресет сброшен.</RimHUD.Interface.Alert.PresetDefaultLoaded>
+  <RimHUD.Interface.Alert.PresetLoaded>Пресет «{0}» загружен.</RimHUD.Interface.Alert.PresetLoaded>
+  <RimHUD.Interface.Alert.PresetSaved>Пресет «{0}» сохранён.</RimHUD.Interface.Alert.PresetSaved>
+  <RimHUD.Interface.Alert.ConfirmDelete>Удалить пресет «{0}»?</RimHUD.Interface.Alert.ConfirmDelete>
+  <RimHUD.Interface.Alert.NotImplemented>Функция пока не реализована</RimHUD.Interface.Alert.NotImplemented>
+  <RimHUD.Interface.Alert.MoreComingSoon>Скоро будет больше функций™</RimHUD.Interface.Alert.MoreComingSoon>
+
+  <RimHUD.Interface.Settings.Tutorial>Для настройки RimHUD наведите на панель осмотра при выбранном персонаже и нажмите на шестерёнку.</RimHUD.Interface.Settings.Tutorial>
+  <RimHUD.Interface.Settings.TutorialStart>Краткое руководство появится при первом отображении панели осмотра.</RimHUD.Interface.Settings.TutorialStart>
+  <RimHUD.Interface.Settings.TutorialComplete>Нажмите кнопку ниже для напоминания.</RimHUD.Interface.Settings.TutorialComplete>
+  <RimHUD.Interface.Settings.ResetTutorial>Сбросить обучение</RimHUD.Interface.Settings.ResetTutorial>
+
+  <RimHUD.Interface.Tutorial.InspectPane>нажмите на шестерёнку для настройки мода</RimHUD.Interface.Tutorial.InspectPane>
+  <RimHUD.Interface.Tutorial.InspectPaneHover>наведите на панель, чтобы увидеть кнопку настроек</RimHUD.Interface.Tutorial.InspectPaneHover>
+  <RimHUD.Interface.Tutorial.DialogConfig1>Здесь все настройки RimHUD: стиль и содержимое.</RimHUD.Interface.Tutorial.DialogConfig1>
+  <RimHUD.Interface.Tutorial.DialogConfig2>Во вкладке «Содержимое» можно сохранять и загружать пресеты раскладки.</RimHUD.Interface.Tutorial.DialogConfig2>
+  <RimHUD.Interface.Tutorial.DialogConfig3>По завершении нажмите здесь, чтобы закрыть окно.</RimHUD.Interface.Tutorial.DialogConfig3>
+  <RimHUD.Interface.Tutorial.DialogConfigContinue>Нажмите, чтобы продолжить...</RimHUD.Interface.Tutorial.DialogConfigContinue>
+  <RimHUD.Interface.Tutorial.DialogConfigEnd>Такие уведомления больше не появятся. Приятной игры!</RimHUD.Interface.Tutorial.DialogConfigEnd>
+</LanguageData>

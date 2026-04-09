@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- Узел Humanlike.root.children.2.children.6 появляется только при включённой Ideology (оверлей статуса/роли). -->
+  <!-- EN: Status overlay -->
+  <Humanlike.root.children.2.children.6.debugLabel>Наложение статуса</Humanlike.root.children.2.children.6.debugLabel>
+  
+</LanguageData>

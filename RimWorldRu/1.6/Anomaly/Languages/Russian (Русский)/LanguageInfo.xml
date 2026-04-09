@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageInfo>
+	<totalNumCaseCount>3</totalNumCaseCount>
+	<friendlyNameNative>Русский</friendlyNameNative>
+	<friendlyNameEnglish>Russian / Русский</friendlyNameEnglish>
+	<canBeTiny>true</canBeTiny>
+	<languageWorkerClass>LanguageWorker_Russian</languageWorkerClass>
+	<credits>
+		<li Class="CreditRecord_Role">
+			<roleKey>Credit_Translator</roleKey>
+			<creditee></creditee>
+		</li>
+		<li Class="CreditRecord_Role">
+			<roleKey>Credit_Translator</roleKey>
+			<creditee>Elengal</creditee>
+		</li>
+		<li Class="CreditRecord_Role">
+			<roleKey>Credit_Translator</roleKey>
+			<creditee></creditee>
+		</li>
+	</credits>
+</LanguageInfo>

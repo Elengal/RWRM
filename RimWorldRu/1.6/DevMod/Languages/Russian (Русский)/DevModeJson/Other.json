@@ -1,0 +1,7 @@
+{
+  "AddTestPlanetLayer": "Добавить тестовый слой планеты",
+  "Clear cached materials": "Очистить кэш материалов",
+  "GarbageCollectWorldPawn": "Сборка мусора мировых персонажей",
+  "LogPlanetLayerConnections": "Логировать соединения слоёв планеты",
+  "RemoveTestPlanetLayer": "Удалить тестовый слой планеты"
+}

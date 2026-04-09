@@ -1,0 +1,10 @@
+{
+  "Open debug actions menu.\n\nThis lets you spawn items and force various events": "Открыть меню отладочных действий.\n\nПозволяет создавать предметы и форсировать разные события",
+  "Open debug logging menu": "Открыть меню отладочного логирования",
+  "Open the debug log": "Открыть отладочный лог",
+  "Open the inspector.\n\nThis lets you inspect what's happening in the game, down to individual variables": "Открыть инспектор.\n\nПозволяет просматривать, что происходит в игре, вплоть до отдельных переменных",
+  "Open the view settings.\n\nThis lets you see special debug visuals": "Открыть настройки отображения.\n\nПозволяет включать специальные отладочные визуальные режимы",
+  "Open tweakvalues menu.\n\nThis lets you change internal values": "Открыть меню тонких настроек.\n\nПозволяет менять внутренние значения",
+  "Toggle god mode.\n\nWhen god mode is on, you can build stuff instantly, for free, and sell things that aren't yours": "Включить/выключить режим Бога.\n\nВ режиме Бога можно мгновенно и бесплатно строить объекты и продавать чужие вещи",
+  "Toggle the dev palette.\n\nAllows you to setup a palette of debug actions for ease of use": "Включить/выключить dev‑палитру.\n\nПозволяет настроить палитру отладочных действий для удобного доступа"
+}

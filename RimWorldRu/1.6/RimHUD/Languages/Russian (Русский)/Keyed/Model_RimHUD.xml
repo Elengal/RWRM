@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <RimHUD.Model.Bio.Lifestage>Жизненный этап</RimHUD.Model.Bio.Lifestage>
+  <RimHUD.Model.Bio.Trainability>Обучаемость</RimHUD.Model.Bio.Trainability>
+  <RimHUD.Model.Bio.Petness>Питомец</RimHUD.Model.Bio.Petness>
+
+  <RimHUD.Model.RelationKindAndFaction>{0} {1}</RimHUD.Model.RelationKindAndFaction>
+  <RimHUD.Model.OfFaction>из {0}</RimHUD.Model.OfFaction>
+  <RimHUD.Model.Former>бывший {0}</RimHUD.Model.Former>
+
+  <RimHUD.Model.Faction.Wild>дикий</RimHUD.Model.Faction.Wild>
+  <RimHUD.Model.Faction.Allied>союзник</RimHUD.Model.Faction.Allied>
+  <RimHUD.Model.Faction.Enemy>враг</RimHUD.Model.Faction.Enemy>
+  <RimHUD.Model.Faction.Hostile>враждебный</RimHUD.Model.Faction.Hostile>
+  <RimHUD.Model.Faction.Independent>независимый</RimHUD.Model.Faction.Independent>
+  <RimHUD.Model.Faction.Prisoner>пленник</RimHUD.Model.Faction.Prisoner>
+  <RimHUD.Model.Faction.Slave>раб</RimHUD.Model.Faction.Slave>
+
+  <RimHUD.Model.Creature.Wild>существо</RimHUD.Model.Creature.Wild>
+  <RimHUD.Model.Creature.Tame>животное</RimHUD.Model.Creature.Tame>
+  <RimHUD.Model.Creature.Stray>бродячее</RimHUD.Model.Creature.Stray>
+  <RimHUD.Model.Creature.Pet>питомец</RimHUD.Model.Creature.Pet>
+  <RimHUD.Model.Creature.ExoticPet>экзотический питомец</RimHUD.Model.Creature.ExoticPet>
+  <RimHUD.Model.Creature.Predator>хищник</RimHUD.Model.Creature.Predator>
+  <RimHUD.Model.Creature.Hunt>охотничье животное</RimHUD.Model.Creature.Hunt>
+  <RimHUD.Model.Creature.Pack>вьючное животное</RimHUD.Model.Creature.Pack>
+  <RimHUD.Model.Creature.Farm>домашнее животное</RimHUD.Model.Creature.Farm>
+  <RimHUD.Model.Creature.Herd>стадное животное</RimHUD.Model.Creature.Herd>
+  <RimHUD.Model.Creature.Insect>насекомое</RimHUD.Model.Creature.Insect>
+  <RimHUD.Model.Creature.Mechanoid>механоид</RimHUD.Model.Creature.Mechanoid>
+  <RimHUD.Model.Creature.Unit>юнит</RimHUD.Model.Creature.Unit>
+  <RimHUD.Model.Creature.Entity>сущность</RimHUD.Model.Creature.Entity>
+
+  <RimHUD.Model.GenderRaceAndAge>{0}, {1}</RimHUD.Model.GenderRaceAndAge>
+  <RimHUD.Model.Age.Birthday>сегодня</RimHUD.Model.Age.Birthday>
+  <RimHUD.Model.Age.Day>года, 1 день</RimHUD.Model.Age.Day>
+  <RimHUD.Model.Age.Days>года, {0} дней</RimHUD.Model.Age.Days>
+
+  <RimHUD.Model.Health.Bleed>Истечёт кровью через {0}</RimHUD.Model.Health.Bleed>
+  <RimHUD.Model.Health.Tend>Требуется лечение: {0}</RimHUD.Model.Health.Tend>
+  <RimHUD.Model.Health.TendPlural>Требуется лечение: {0} состояний</RimHUD.Model.Health.TendPlural>
+  <RimHUD.Model.Health.Threat>Угрожающее жизни: {0}</RimHUD.Model.Health.Threat>
+  <RimHUD.Model.Health.ThreatPlural>Угрожающих жизни состояний: {0}</RimHUD.Model.Health.ThreatPlural>
+  <RimHUD.Model.Health.Affected>Под воздействием: {0}</RimHUD.Model.Health.Affected>
+  <RimHUD.Model.Health.AffectedTwo>Под воздействием: {0} и ещё 1</RimHUD.Model.Health.AffectedTwo>
+  <RimHUD.Model.Health.AffectedPlural>Под воздействием: {0} и ещё {1}</RimHUD.Model.Health.AffectedPlural>
+
+  <RimHUD.Model.Health.Good>В хорошем состоянии</RimHUD.Model.Health.Good>
+  <RimHUD.Model.Health.Stable>В стабильном состоянии</RimHUD.Model.Health.Stable>
+  <RimHUD.Model.Health.Poor>В плохом состоянии</RimHUD.Model.Health.Poor>
+  <RimHUD.Model.Health.Critical>В критическом состоянии</RimHUD.Model.Health.Critical>
+
+  <RimHUD.Model.Health.MedicalCare>Изменить уровень медицинской помощи для этого {0}.\n\nТекущий уровень: {1}</RimHUD.Model.Health.MedicalCare>
+
+  <RimHUD.Model.Mood.ExtremeBreakImminent>Подавлен</RimHUD.Model.Mood.ExtremeBreakImminent>
+  <RimHUD.Model.Mood.MajorBreakImminent>В стрессе</RimHUD.Model.Mood.MajorBreakImminent>
+  <RimHUD.Model.Mood.MinorBreakImminent>Тревожен</RimHUD.Model.Mood.MinorBreakImminent>
+  <RimHUD.Model.Mood.Excellent>Уверен</RimHUD.Model.Mood.Excellent>
+  <RimHUD.Model.Mood.Good>Спокоен</RimHUD.Model.Mood.Good>
+  <RimHUD.Model.Mood.Neutral>Стабилен</RimHUD.Model.Mood.Neutral>
+
+  <RimHUD.Model.Mood.Inspired>{0} на {1}</RimHUD.Model.Mood.Inspired>
+  <RimHUD.Model.Mood.Stunned>Оглушён на {0}</RimHUD.Model.Mood.Stunned>
+  <RimHUD.Model.Mood.Staggered>Пошатывается {0}</RimHUD.Model.Mood.Staggered>
+
+  <RimHUD.Model.Info.Activity>Занятие</RimHUD.Model.Info.Activity>
+  <RimHUD.Model.Info.Activity.Tooltip>{0}\n\n{1}\n\n{2}</RimHUD.Model.Info.Activity.Tooltip>
+  <RimHUD.Model.Info.Activity.WorkType>Тип работы</RimHUD.Model.Info.Activity.WorkType>
+  <RimHUD.Model.Info.Activity.RelevantSkills>Релевантные навыки</RimHUD.Model.Info.Activity.RelevantSkills>
+  <RimHUD.Model.Info.Attacking>Атакует {0}</RimHUD.Model.Info.Attacking>
+
+  <RimHUD.Model.Selector.FoodFormat>Еда</RimHUD.Model.Selector.FoodFormat>
+  <RimHUD.Model.Selector.OutfitFormat>Одежда</RimHUD.Model.Selector.OutfitFormat>
+  <RimHUD.Model.Selector.AreaFormat>Зона</RimHUD.Model.Selector.AreaFormat>
+  <RimHUD.Model.Selector.TimetableFormat>Расписание</RimHUD.Model.Selector.TimetableFormat>
+  <RimHUD.Model.Selector.SetTimeAssignment>Установить час {0} на {1}</RimHUD.Model.Selector.SetTimeAssignment>
+  <RimHUD.Model.Selector.Manage>Управление...</RimHUD.Model.Selector.Manage>
+
+  <RimHUD.Model.Skill.PassionIndicator>★</RimHUD.Model.Skill.PassionIndicator>
+</LanguageData>

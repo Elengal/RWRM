@@ -1,0 +1,20 @@
+{
+  "Add all genes (endogene)": "Добавить все гены (эндогены)",
+  "Add all genes (xenogene)": "Добавить все гены (ксеногены)",
+  "Add endogene": "Добавить эндоген",
+  "Add hediff": "Добавить состояние",
+  "Add to inventory": "Добавить в инвентарь",
+  "Add xenogene": "Добавить ксеноген",
+  "Apply xenotype": "Применить ксенотип",
+  "Damage random apparel": "Повредить случайную одежду",
+  "Hediff debug tooltips": "Подсказки отладки состояний",
+  "Ideo names (replace)": "Названия идеологий (заменить)",
+  "Remove gene": "Удалить ген",
+  "Reset genes to base xenotype": "Сбросить гены до базового ксенотипа",
+  "Set primary": "Установить основное",
+  "Show hidden Hediffs": "Показать скрытые состояния",
+  "Table: BodyPartGroupDef info": "Таблица: информация о группе частей тела",
+  "Table: BodyPartRecord info": "Таблица: информация о записи части тела",
+  "Table: HediffGiver_Birthday": "Таблица: даватель состояний по дням рождения",
+  "Wear": "Надеть"
+}

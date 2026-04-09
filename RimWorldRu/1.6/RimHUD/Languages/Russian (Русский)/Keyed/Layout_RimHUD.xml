@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <RimHUD.Layout.UserPreset>Пользовательский</RimHUD.Layout.UserPreset>
+  <RimHUD.Layout.IntegratedPreset>Интегрированный</RimHUD.Layout.IntegratedPreset>
+
+  <RimHUD.Layout.Root>Корень</RimHUD.Layout.Root>
+  <RimHUD.Layout.VStack>Вертикальный стек</RimHUD.Layout.VStack>
+  <RimHUD.Layout.VStackFilled>Вертикальный стек (заполненный)</RimHUD.Layout.VStackFilled>
+  <RimHUD.Layout.HStack>Горизонтальный стек</RimHUD.Layout.HStack>
+  <RimHUD.Layout.HStackFilled>Горизонтальный стек (заполненный)</RimHUD.Layout.HStackFilled>
+  <RimHUD.Layout.Panel>Панель</RimHUD.Layout.Panel>
+  <RimHUD.Layout.PanelFilled>Панель (заполненная)</RimHUD.Layout.PanelFilled>
+  <RimHUD.Layout.Row>Строка</RimHUD.Layout.Row>
+  <RimHUD.Layout.ContainerFilled>Заполнено</RimHUD.Layout.ContainerFilled>
+
+  <RimHUD.Layout.Blank>Пусто</RimHUD.Layout.Blank>
+  <RimHUD.Layout.Separator>Разделитель</RimHUD.Layout.Separator>
+  <RimHUD.Layout.NameHeader>Имя как заголовок</RimHUD.Layout.NameHeader>
+  <RimHUD.Layout.Food>Выбор еды</RimHUD.Layout.Food>
+  <RimHUD.Layout.Outfit>Выбор одежды</RimHUD.Layout.Outfit>
+  <RimHUD.Layout.Rules>Выбор правил</RimHUD.Layout.Rules>
+  <RimHUD.Layout.Area>Выбор зоны</RimHUD.Layout.Area>
+  <RimHUD.Layout.Timetable>Выбор расписания</RimHUD.Layout.Timetable>
+  <RimHUD.Layout.RelationKindAndFaction>Связь, тип и фракция</RimHUD.Layout.RelationKindAndFaction>
+  <RimHUD.Layout.GenderRaceAndAge>Пол, раса и возраст</RimHUD.Layout.GenderRaceAndAge>
+  <RimHUD.Layout.Health>Полоса здоровья</RimHUD.Layout.Health>
+  <RimHUD.Layout.HealthCondition>Состояние здоровья</RimHUD.Layout.HealthCondition>
+  <RimHUD.Layout.MentalCondition>Психическое состояние</RimHUD.Layout.MentalCondition>
+
+  <RimHUD.Layout.Need>Полоса {0}</RimHUD.Layout.Need>
+  <RimHUD.Layout.NeedMood>Полоса настроения</RimHUD.Layout.NeedMood>
+  <RimHUD.Layout.NeedFood>Полоса голода</RimHUD.Layout.NeedFood>
+  <RimHUD.Layout.NeedSleep>Полоса сна</RimHUD.Layout.NeedSleep>
+  <RimHUD.Layout.NeedEnergy>Полоса энергии [DLC Biotech]</RimHUD.Layout.NeedEnergy>
+  <RimHUD.Layout.NeedRecreation>Полоса отдыха</RimHUD.Layout.NeedRecreation>
+  <RimHUD.Layout.NeedSuppression>Полоса подавления [DLC Ideology]</RimHUD.Layout.NeedSuppression>
+
+  <RimHUD.Layout.Skill>Навык {0}</RimHUD.Layout.Skill>
+  <RimHUD.Layout.SkillShooting>Навык стрельбы</RimHUD.Layout.SkillShooting>
+  <RimHUD.Layout.SkillMelee>Навык ближнего боя</RimHUD.Layout.SkillMelee>
+  <RimHUD.Layout.SkillConstruction>Навык строительства</RimHUD.Layout.SkillConstruction>
+  <RimHUD.Layout.SkillMining>Навык добычи</RimHUD.Layout.SkillMining>
+  <RimHUD.Layout.SkillCooking>Навык готовки</RimHUD.Layout.SkillCooking>
+  <RimHUD.Layout.SkillPlants>Навык растениеводства</RimHUD.Layout.SkillPlants>
+  <RimHUD.Layout.SkillAnimals>Навык обращения с животными</RimHUD.Layout.SkillAnimals>
+  <RimHUD.Layout.SkillCrafting>Навык ремёсел</RimHUD.Layout.SkillCrafting>
+  <RimHUD.Layout.SkillArtistic>Навык искусства</RimHUD.Layout.SkillArtistic>
+  <RimHUD.Layout.SkillMedicine>Навык медицины</RimHUD.Layout.SkillMedicine>
+  <RimHUD.Layout.SkillSocial>Навык общения</RimHUD.Layout.SkillSocial>
+  <RimHUD.Layout.SkillIntellectual>Навык интеллекта</RimHUD.Layout.SkillIntellectual>
+
+  <RimHUD.Layout.Training>Дрессировка {0}</RimHUD.Layout.Training>
+  <RimHUD.Layout.TrainingTameness>Дрессировка приручения</RimHUD.Layout.TrainingTameness>
+  <RimHUD.Layout.TrainingObedience>Дрессировка послушания</RimHUD.Layout.TrainingObedience>
+  <RimHUD.Layout.TrainingRelease>Дрессировка отпускания</RimHUD.Layout.TrainingRelease>
+  <RimHUD.Layout.TrainingRescue>Дрессировка спасения</RimHUD.Layout.TrainingRescue>
+  <RimHUD.Layout.TrainingHaul>Дрессировка переноски</RimHUD.Layout.TrainingHaul>
+  <RimHUD.Layout.TrainingAttackTarget>Дрессировка атаки цели [DLC Odyssey]</RimHUD.Layout.TrainingAttackTarget>
+  <RimHUD.Layout.TrainingComfort>Дрессировка комфорта [DLC Odyssey]</RimHUD.Layout.TrainingComfort>
+  <RimHUD.Layout.TrainingDig>Дрессировка копания [DLC Odyssey]</RimHUD.Layout.TrainingDig>
+  <RimHUD.Layout.TrainingEggSpew>Дрессировка откладывания яиц [DLC Odyssey]</RimHUD.Layout.TrainingEggSpew>
+  <RimHUD.Layout.TrainingForage>Дрессировка собирательства [DLC Odyssey]</RimHUD.Layout.TrainingForage>
+  <RimHUD.Layout.TrainingSludgeSpew>Дрессировка выброса слизи [DLC Odyssey]</RimHUD.Layout.TrainingSludgeSpew>
+  <RimHUD.Layout.TrainingTerrorRoar>Дрессировка ужасного рёва [DLC Odyssey]</RimHUD.Layout.TrainingTerrorRoar>
+  <RimHUD.Layout.TrainingThrumboRoar>Дрессировка рёва тромбо [DLC Odyssey]</RimHUD.Layout.TrainingThrumboRoar>
+  <RimHUD.Layout.TrainingWarTrumpet>Дрессировка боевой трубы [DLC Odyssey]</RimHUD.Layout.TrainingWarTrumpet>
+
+  <RimHUD.Layout.Stat>Стат {0}</RimHUD.Layout.Stat>
+  <RimHUD.Layout.Record>Запись {0}</RimHUD.Layout.Record>
+
+  <RimHUD.Layout.Master>Хозяин</RimHUD.Layout.Master>
+  <RimHUD.Layout.Activity>Занятие</RimHUD.Layout.Activity>
+  <RimHUD.Layout.Queued>В очереди</RimHUD.Layout.Queued>
+  <RimHUD.Layout.Equipped>Экипировано</RimHUD.Layout.Equipped>
+  <RimHUD.Layout.Carrying>Несёт</RimHUD.Layout.Carrying>
+  <RimHUD.Layout.Traits>Черты</RimHUD.Layout.Traits>
+  <RimHUD.Layout.CompInfo>Информация о компонентах</RimHUD.Layout.CompInfo>
+  <RimHUD.Layout.PrisonerInfo>Информация о пленнике</RimHUD.Layout.PrisonerInfo>
+
+  <RimHUD.Layout.Target.PlayerHumanlike>Человек игрока</RimHUD.Layout.Target.PlayerHumanlike>
+  <RimHUD.Layout.Target.OtherHumanlike>Другой человек</RimHUD.Layout.Target.OtherHumanlike>
+  <RimHUD.Layout.Target.PlayerCreature>Существо игрока</RimHUD.Layout.Target.PlayerCreature>
+  <RimHUD.Layout.Target.OtherCreature>Другое существо</RimHUD.Layout.Target.OtherCreature>
+
+  <RimHUD.Layout.BarColorStyle.LowToMain>От низкого к основному (по умолчанию)</RimHUD.Layout.BarColorStyle.LowToMain>
+  <RimHUD.Layout.BarColorStyle.LowOnly>Только низкий цвет</RimHUD.Layout.BarColorStyle.LowOnly>
+  <RimHUD.Layout.BarColorStyle.MainToLow>От основного к низкому</RimHUD.Layout.BarColorStyle.MainToLow>
+  <RimHUD.Layout.BarColorStyle.MainOnly>Только основной цвет</RimHUD.Layout.BarColorStyle.MainOnly>
+</LanguageData>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- Узлы, добавляемые Biotech в Royalty-скрипт Hospitality_Util_Worker -->
+  <!-- EN: Xenogerm absorbed: {SUBJECT_definite} -->
+  <Hospitality_Util_Worker.root.nodes.lodgersXenogermAbsorbed.node.nodes.Letter.label.slateRef>Ксеносемя поглощено: {SUBJECT_definite}</Hospitality_Util_Worker.root.nodes.lodgersXenogermAbsorbed.node.nodes.Letter.label.slateRef>
+  <!-- EN: {SUBJECT_definite}, who you were charged to protect, has had {SUBJECT_possessive} xenogerm forcibly absorbed. [remainingWillNowLeave][failLetterEndingCommon] -->
+  <Hospitality_Util_Worker.root.nodes.lodgersXenogermAbsorbed.node.nodes.Letter.text.slateRef>{SUBJECT_definite}, которого вы должны были защищать, насильно лишили ксеносемени. [remainingWillNowLeave][failLetterEndingCommon]</Hospitality_Util_Worker.root.nodes.lodgersXenogermAbsorbed.node.nodes.Letter.text.slateRef>
+  <!-- EN: Guest lost: {SUBJECT_definite} -->
+  <Hospitality_Util_Worker.root.nodes.lodgersLeftBehind.node.nodes.Letter.label.slateRef>Гость пропал: {SUBJECT_definite}</Hospitality_Util_Worker.root.nodes.lodgersLeftBehind.node.nodes.Letter.label.slateRef>
+  <!-- EN: [letterSubject], who you were charged to protect, is gone. [remainingWillNowLeave][failLetterEndingCommon] -->
+  <Hospitality_Util_Worker.root.nodes.lodgersLeftBehind.node.nodes.Letter.text.slateRef>[letterSubject], которого вы должны были защищать, больше нет. [remainingWillNowLeave][failLetterEndingCommon]</Hospitality_Util_Worker.root.nodes.lodgersLeftBehind.node.nodes.Letter.text.slateRef>
+  <!-- EN: Shuttle left behind -->
+  <Hospitality_Util_Worker.LetterLabelShuttleLeftBehind.slateRef>Челнок оставлен</Hospitality_Util_Worker.LetterLabelShuttleLeftBehind.slateRef>
+  <!-- EN: The shuttle sent to collect [lodgersLabelSingOrPluralDef] has been left behind. [lodgersLabelSingOrPluralDef] will now leave on foot. -->
+  <Hospitality_Util_Worker.LetterTextShuttleLeftBehind.slateRef>Челнок, отправленный забрать [lodgersLabelSingOrPluralDef], был оставлен. [lodgersLabelSingOrPluralDef] теперь покинет поселение пешком.</Hospitality_Util_Worker.LetterTextShuttleLeftBehind.slateRef>
+  
+</LanguageData>

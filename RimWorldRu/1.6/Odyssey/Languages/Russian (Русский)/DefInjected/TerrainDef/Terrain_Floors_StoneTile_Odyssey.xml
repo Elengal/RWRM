@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: vacstone flagstone -->
+  <FlagstoneVacstone.label>грубая плитка из вакуумита</FlagstoneVacstone.label>
+  <!-- EN: Roughly-cut stone tiles. These are not beautiful, but they make good surfaces for roads and outdoor walkways. Deconstructing flagstone yields no resources. -->
+  <FlagstoneVacstone.description>Грубо вырезанные каменные плиты. Не очень красивые, но отлично подходят для покрытия дорог и пешеходных дорожек. Разборка плиты не даёт ресурсов.</FlagstoneVacstone.description>
+  
+  <!-- EN: vacstone tile -->
+  <TileVacstone.label>плитка из вакуумита</TileVacstone.label>
+  <!-- EN: Carefully-cut and fit stone tiles for a castle feeling. They are pretty to look at, but they take a long time to lay. -->
+  <TileVacstone.description>Аккуратно вырезанные и подогнанные друг к другу каменные плитки, как в средневековом замке. Приятны на вид, но укладка требует времени.</TileVacstone.description>
+  
+  <!-- EN: fine vacstone tile -->
+  <FineTileVacstone.label>тонкая плитка из вакуумита</FineTileVacstone.label>
+  <!-- EN: Exquisite stone tiles, made with no compromises, for expressing economic status. Slow to construct. -->
+  <FineTileVacstone.description>Изысканные каменные плиты без компромиссов в качестве, подчёркивающие статус. Медленно укладываются.</FineTileVacstone.description>
+  <!-- EN: morbid vacstone tile -->
+  <Tile_MorbidVacstone.label>мрачная плитка из вакуумита</Tile_MorbidVacstone.label>
+  <!-- EN: Fine stone tiles in a morbid style. -->
+  <Tile_MorbidVacstone.description>Качественные каменные плиты в мрачном стиле.</Tile_MorbidVacstone.description>
+  <!-- EN: vacstone spikecore tile -->
+  <Tile_SpikecoreVacstone.label>шипованная плитка из вакуумита</Tile_SpikecoreVacstone.label>
+  <!-- EN: Fine stone tiles in a spikecore style. -->
+  <Tile_SpikecoreVacstone.description>Качественные каменные плиты в стиле спайккор.</Tile_SpikecoreVacstone.description>
+  <!-- EN: totemic vacstone tile -->
+  <Tile_TotemicVacstone.label>тотемная плитка из вакуумита</Tile_TotemicVacstone.label>
+  <!-- EN: Fine stone tiles in a totemic style. -->
+  <Tile_TotemicVacstone.description>Качественные каменные плиты в тотемном стиле.</Tile_TotemicVacstone.description>
+  
+</LanguageData>

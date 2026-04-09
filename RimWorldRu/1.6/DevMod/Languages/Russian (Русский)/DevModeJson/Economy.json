@@ -1,0 +1,23 @@
+{
+  "AnimalBreeding": "Разведение животных",
+  "AnimalEconomy": "Экономика животных",
+  "ApparelArmor": "Броня одежды",
+  "ApparelByStuff": "Одежда по материалу",
+  "ApparelCountsForNudity": "Учет одежды для наготы",
+  "ApparelInsulation": "Теплоизоляция одежды",
+  "ArchonexusAllowedItems": "Разрешенные предметы Архонексуса",
+  "Buildings": "Постройки",
+  "Crops": "Культуры",
+  "Drugs": "Наркотики",
+  "Floors": "Полы",
+  "HediffsPriceImpact": "Влияние состояний на цену",
+  "ItemAccessibility": "Доступность предметов",
+  "ItemAndBuildingAcquisition": "Получение предметов и построек",
+  "Recipes": "Рецепты",
+  "RecipeSkills": "Навыки рецептов",
+  "RewardTags": "Теги наград",
+  "RoamingVsEconomy": "Бродяжничество против экономики",
+  "ThingSetMakerTags": "Теги набора вещей",
+  "ThingSmeltProducts": "Продукты плавки",
+  "Wool": "Шерсть"
+}
