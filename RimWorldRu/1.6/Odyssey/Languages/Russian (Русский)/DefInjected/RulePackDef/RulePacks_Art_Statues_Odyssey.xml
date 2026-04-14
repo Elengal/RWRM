@@ -167,6 +167,7 @@
     <li>prop->human heart</li>
   -->
   <ArtDescription_Statue.rulePack.rulesStrings>
+    <li>prop->[prop_mas]</li>
     <li>r_statue_description->Эта статуя [statueDepicts] [SUBJECT_nameFull] [statueSubjectDesc]. [statueFaceDesc] [style_group_statue]</li>
     <li>r_statue_description->[statueAdj] статуя, изображающая [SUBJECT_nameFull] [statueSubjectDesc]. [statueFaceDesc] [style_group_statue]</li>
     <li>r_statue_description->[carvedAdverb] [carvedVerb] Статуя [SUBJECT_nameFull]. Она [statueDepicts] [SUBJECT_indefinite] [statueSubjectDesc]. [statueFaceDesc] [style_group_statue]</li>

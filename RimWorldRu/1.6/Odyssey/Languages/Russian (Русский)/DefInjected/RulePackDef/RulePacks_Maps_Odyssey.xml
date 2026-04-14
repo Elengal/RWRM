@@ -217,6 +217,8 @@
     <li>noteLocation->along the edge of the map</li>
   -->
   <Description_Map.rulePack.rulesStrings>
+    <li>emotionalState->[emotionalState_mas]</li>
+    <li>mapType->[mapType_mas]</li>
     <li>desc->карта [physicalDescription] и показывает интересующее место. [maybe_specialFact] [maybe_authorInfo] [maybe_condition]\n\n[maybe_questInfo]</li>
     <li>desc->[physicalDescription], эта [mapType] [has] [mapContents]. [maybe_specialFact] [maybe_authorInfo] [maybe_condition]\n\n[maybe_questInfo]</li>
     <li>desc->эта [mapType] [physicalDescription] и [has] [mapContents]. [maybe_specialFact] [maybe_authorInfo] [maybe_condition]\n\n[maybe_questInfo]</li>
@@ -649,6 +651,8 @@
     <li>CapSylE->You</li>
   -->
   <MapUtility.rulePack.rulesStrings>
+    <li>direction->[direction_mas]</li>
+    <li>mapSubjectAdj->[mapSubjectAdj_mas]</li>
     <li>place->[PlaceOutlander]</li>
     <li>place->[direction_mas] [PlaceOutlander]</li>
     <li>PlaceOutlander->[CapSylE][place_end]</li>
@@ -1009,6 +1013,10 @@
     <li>mapType->holographic</li>
   -->
   <Namer_Map.rulePack.rulesStrings>
+    <li>adjective->[adjective_mas]</li>
+    <li>map->[map_mas]</li>
+    <li>mapNoun->[mapNoun_mas]</li>
+    <li>mapType->[mapType_mas]</li>
     <li>title(p=2)->[mapType] [mapNoun_fem]: [subject]</li>
     <li>title(p=2)-> [mapType] [map_fem]</li>
     <li>title(p=2)->[maybeAdjective_fem] [maybeAdjective_fem] [map_fem] [ANYPAWN_nameIndef_gen]</li>

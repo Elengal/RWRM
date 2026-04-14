@@ -38,6 +38,7 @@
     <li>spaceCollectiveNoun->Reapers</li>
   -->
   <NamerFactionSalvagers.rulePack.rulesStrings>
+    <li>spaceAdj->[spaceAdj_mas]</li>
     <li>r_name->[spaceAdj_plural] cпасатели</li>
     <li>r_name->[spaceAdj_plural] падальщики</li>
     <li>r_name->[spaceAdj_plural] [AnimalBadass_plural]</li>
@@ -96,15 +97,18 @@
     <li>spaceNoun_neu->Затмение</li>
     <li>spaceNoun_plural->Затмения</li>
     <li>spaceNoun_gen->Затмения</li>
-    <li>SpaceCollectiveNoun_fem->Армада</li>
-    <li>SpaceCollectiveNoun_mas->Флот</li>
-    <li>SpaceCollectiveNoun_fem->Флотилия</li>
-    <li>SpaceCollectiveNoun_mas->Флот</li>
-    <li>SpaceCollectiveNoun_plural->Корсары</li>
-    <li>SpaceCollectiveNoun_plural->Пираты</li>
-    <li>SpaceCollectiveNoun_plural->Мародеры</li>
-    <li>SpaceCollectiveNoun_plural->Жнецы</li>
-  </NamerFactionSalvagers.rulePack.rulesStrings>
+    <li>spaceCollectiveNoun_fem->Армада</li>
+    <li>spaceCollectiveNoun_mas->Флот</li>
+    <li>spaceCollectiveNoun_fem->Флотилия</li>
+    <li>spaceCollectiveNoun_mas->Флот</li>
+    <li>spaceCollectiveNoun_plural->Корсары</li>
+    <li>spaceCollectiveNoun_plural->Пираты</li>
+    <li>spaceCollectiveNoun_plural->Мародеры</li>
+    <li>spaceCollectiveNoun_plural->Жнецы</li>
+  <li>spaceCollectiveNoun->[spaceCollectiveNoun_mas]</li>
+<li>spaceNoun->[spaceNoun_mas]</li>
+<li>groupname->[spaceNoun_mas] [ConceptBadass]</li>
+</NamerFactionSalvagers.rulePack.rulesStrings>
   
   <!-- EN:
     <li>r_name->[tradeAdj] [tradeNoun]</li>
@@ -134,6 +138,8 @@
     <li>tradeNoun->nexus</li>
   -->
   <NamerFactionTradersGuild.rulePack.rulesStrings>
+    <li>tradeAdj->[tradeAdj_mas]</li>
+    <li>tradeNoun->[tradeNoun_mas]</li>
     <li>r_name->[tradeAdj_mas] [tradeNoun_mas]</li>
     <li>r_name->[tradeAdj_fem] [tradeNoun_fem]</li>
     <li>tradeAdj_mas->купеческий</li>

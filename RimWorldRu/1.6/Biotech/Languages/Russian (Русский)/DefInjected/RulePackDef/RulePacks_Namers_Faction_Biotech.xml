@@ -329,6 +329,7 @@
     <li>town->tank</li>
   -->
   <NamerSettlementPirateWaster.rulePack.rulesStrings>
+    <li>town->[town_masc]</li>
     <li>r_name->[townNameWordgen]</li>
     <li>r_name->[townNameCombo]</li>
     <li>townNameWordgen->[SylE][SylE]</li>

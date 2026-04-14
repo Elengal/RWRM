@@ -98,6 +98,10 @@
     <li>ship_word->zephyr</li>
   -->
   <NamerGravship.rulePack.rulesStrings>
+    <li>bird->[bird_mas]</li>
+    <li>flying_adjective->[flying_adjective_mas]</li>
+    <li>greekmyth_noun->[greekmyth_noun_mas]</li>
+    <li>thing_badass->[thing_badass_mas]</li>
     <li>r_name(p=2)->[narrative_name]</li>
     <li>r_name(p=1)->[ship_word_mas] [narrative_name_gen]</li>
     <li>r_name(p=1)->[ship_word_fem] [narrative_name_gen]</li>

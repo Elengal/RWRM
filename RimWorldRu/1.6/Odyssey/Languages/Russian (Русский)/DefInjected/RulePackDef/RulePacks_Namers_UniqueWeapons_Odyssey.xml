@@ -61,6 +61,11 @@
     <li>badass_concept->laughter</li>
   -->
   <NamerUniqueWeapon.rulePack.rulesStrings>
+    <li>badass_adjective->[badass_adjective_mas]</li>
+    <li>badass_concept->[badass_concept_mas]</li>
+    <li>badass_noun->[badass_noun_mas]</li>
+    <li>weapon_adjective->[weapon_adjective_mas]</li>
+    <li>weapon_noun->[weapon_noun_mas]</li>
     <li>r_weapon_name(p=2)->[weapon_adjective_mas] [weapon_noun_mas]</li>
     <li>r_weapon_name(p=2)->[weapon_adjective_fem] [weapon_noun_fem]</li>
     <li>r_weapon_name(p=2)->[weapon_adjective_neu] [weapon_noun_neu]</li>

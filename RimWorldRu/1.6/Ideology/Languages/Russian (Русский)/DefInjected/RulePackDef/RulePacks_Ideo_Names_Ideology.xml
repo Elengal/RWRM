@@ -56,6 +56,7 @@
     <li>globalHyphenPrefix->hyper</li>
   -->
   <NamerIdeoGlobal.rulePack.rulesStrings>
+    <li>genericCreed->[genericCreed_masc]</li>
     <li>r_ideoName->[keyDeity]изм</li>
     <li>r_ideoName->[hyphenPrefix]-[keyDeity]изм</li>
     <li>r_ideoName->[creed] [keyDeity]</li>

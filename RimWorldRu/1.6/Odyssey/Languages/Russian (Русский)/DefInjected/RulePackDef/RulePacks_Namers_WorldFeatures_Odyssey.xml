@@ -17,6 +17,9 @@
     <li>terrain_word(p=0.3)->tract</li>
   -->
   <NamerGlacialPlain.rulePack.rulesStrings>
+    <li>glacialPlain_adjective->[glacialPlain_adjective_mas]</li>
+    <li>terrain_word->[terrain_word_mas]</li>
+    <li>terrain_word(p=2)->[terrain_word_fem]</li>
     <li>r_name(p=0.2)->[glacialPlain_adjective_mas] [narrative_name_mas]</li>
     <li>r_name(p=0.2)->[glacialPlain_adjective_fem] [narrative_name_fem]</li>
     <li>r_name(p=0.2)->[glacialPlain_adjective_neu] [narrative_name_fem]</li>
@@ -64,6 +67,9 @@
     <li>terrain_word->dark forest</li>
   -->
   <NamerGlowforest.rulePack.rulesStrings>
+    <li>glowForest_adjective->[glowForest_adjective_mas]</li>
+    <li>terrain_word->[terrain_word_mas]</li>
+    <li>terrain_word(p=2)->[terrain_word_fem]</li>
     <li>r_name(p=0.3)->[glowForest_adjective_mas] [narrative_name_mas]</li>
     <li>r_name(p=0.3)->[glowForest_adjective_fem] [narrative_name_fem]</li>
     <li>r_name(p=0.3)->[glowForest_adjective_neu] [narrative_name_fem]</li>
@@ -110,6 +116,9 @@
     <li>terrain_word->flats</li>
   -->
   <NamerGrasslands.rulePack.rulesStrings>
+    <li>grasslands_adjective->[grasslands_adjective_mas]</li>
+    <li>terrain_word->[terrain_word_mas]</li>
+    <li>terrain_word(p=2)->[terrain_word_fem]</li>
     <li>r_name(p=0.3)->[grasslands_adjective_mas] [narrative_name_mas]</li>
     <li>r_name(p=0.3)->[grasslands_adjective_fem] [narrative_name_fem]</li>
     <li>r_name(p=0.3)->[grasslands_adjective_neu] [narrative_name_fem]</li>
@@ -159,6 +168,9 @@
     <li>terrain_word->range</li>
   -->
   <NamerLavaField.rulePack.rulesStrings>
+    <li>lavaField_adjective->[lavaField_adjective_mas]</li>
+    <li>terrain_word->[terrain_word_mas]</li>
+    <li>terrain_word(p=2)->[terrain_word_fem]</li>
     <li>r_name(p=0.3)->[lavaField_adjective_mas] [narrative_name_mas]</li>
     <li>r_name(p=0.3)->[lavaField_adjective_fem] [narrative_name_fem]</li>
     <li>r_name(p=0.3)->[lavaField_adjective_neu] [narrative_name_fem]</li>
@@ -214,6 +226,9 @@
     <li>terrain_word->bastion</li>
   -->
   <NamerScarlands.rulePack.rulesStrings>
+    <li>ruin_adjective->[ruin_adjective_mas]</li>
+    <li>terrain_word->[terrain_word_mas]</li>
+    <li>terrain_word(p=2)->[terrain_word_fem]</li>
     <li>r_name(p=0.3)->[ruin_adjective_mas] [narrative_name_mas]</li>
     <li>r_name(p=0.3)->[ruin_adjective_fem] [narrative_name_fem]</li>
     <li>r_name(p=0.3)->[ruin_adjective_neu] [narrative_name_fem]</li>

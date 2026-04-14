@@ -209,6 +209,8 @@
     <li>bookType->epic poem</li>
   -->
   <Description_Novel.rulePack.rulesStrings>
+    <li>bookType->[bookType_masc]</li>
+    <li>writingQualityAdjective->[writingQualityAdjective_masc]</li>
     <li>desc->[thisWritingQualityBook] [followsAPersonJob] о том, как тот [storyStruggles]. [writingQualitySentence]. [maybe_date]</li>
     <li>desc->[inThisWritingQualityBook] [novelAuthor] [tellsAStoryOf] [storySource]. [writingQualitySentence]. [maybe_date]</li>
     <li>thisWritingQualityBook->Этот [writingQualityAdjective_masc] [bookType_masc]</li>
@@ -1077,6 +1079,8 @@
     <li>date_form->in [date_season]</li>
   -->
   <Description_Schematic.rulePack.rulesStrings>
+    <li>subject->[subject_gen]</li>
+    <li>worldname->[worldname_gen]</li>
     <li>desc(p=3)->[maybe_intro][schematicDesc].</li>
     <li>desc->[maybe_intro][schematicDesc].\n\n[maybe_medium][authorStory]. [subjectConsequence]</li>
     <li>desc(p=2)->[maybe_medium][authorStory]. [subjectConsequence_straight]. [maybe_outro]</li>
@@ -2475,6 +2479,35 @@
     <li>warworld->Barkitos</li>
   -->
   <Description_SkillBook.rulePack.rulesStrings>
+    <li>animalworld->[animalworld_gen]</li>
+    <li>asteroid->[asteroid_gen]</li>
+    <li>coreworld->[coreworld_gen]</li>
+    <li>deadworld->[deadworld_gen]</li>
+    <li>deathworld->[deathworld_gen]</li>
+    <li>dinoworld->[dinoworld_gen]</li>
+    <li>feudalworld->[feudalworld_gen]</li>
+    <li>glassworld->[glassworld_gen]</li>
+    <li>glitterworld->[glitterworld_gen]</li>
+    <li>iceworld->[iceworld_gen]</li>
+    <li>indworld->[indworld_gen]</li>
+    <li>medievalworld->[medievalworld_gen]</li>
+    <li>midworld->[midworld_gen]</li>
+    <li>mineworld->[mineworld_gen]</li>
+    <li>notable_adjective->[notable_adjective_masc]</li>
+    <li>oceanicworld->[oceanicworld_gen]</li>
+    <li>prisonworld->[prisonworld_gen]</li>
+    <li>rimworld->[rimworld_gen]</li>
+    <li>ruinworld->[ruinworld_gen]</li>
+    <li>shellworld->[shellworld_gen]</li>
+    <li>steamworld->[steamworld_gen]</li>
+    <li>subject->[subject_gen]</li>
+    <li>textbook->[textbook_masc]</li>
+    <li>toxicworld->[toxicworld_gen]</li>
+    <li>transcendentworld->[transcendentworld_gen]</li>
+    <li>trashworld->[trashworld_gen]</li>
+    <li>urbworld->[urbworld_gen]</li>
+    <li>warworld->[warworld_gen]</li>
+    <li>worldname->[worldname_gen]</li>
     <li>desc->[discussion][detail].\n\n[anecdote]. [production].\n\n[quality_statement].</li>
     <li>discussion->[thisTextbook] содержит [useful_information] по вопросам [subject_gen]</li>
     <li>discussion->[thisTextbook] подтверждает компетенцию автора [in_the_field] [subject_gen]</li>

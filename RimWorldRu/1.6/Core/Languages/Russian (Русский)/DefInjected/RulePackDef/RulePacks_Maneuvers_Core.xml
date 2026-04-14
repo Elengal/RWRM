@@ -173,6 +173,7 @@
     <li>destroyed_suffix(RECIPIENT_flesh!=Mechanoid)->[to] a pile of gore</li>
   -->
   <Maneuver_Scratch.rulePack.rulesStrings>
+    <li>woundname->[woundname_gen]</li>
     <!-- Includes: Maneuver_Scratch_Damage -->
     <li>woundname_acc->рану</li>
     <li>woundname_acc(p=0.3)->открытую рану</li>
@@ -274,6 +275,7 @@
     <li>destroyed_suffix(target_part_destroyed_count==1)->slicing it in twain</li>
   -->
   <Maneuver_Slash.rulePack.rulesStrings>
+    <li>woundname->[woundname_gen]</li>
     <li>damaged_inf(p=4)->нанести рубящий удар</li>
     <li>damaged_inf->порезать</li>
     <li>damaged_inf->рубануть</li>
@@ -415,6 +417,7 @@
     <li>destroyed_suffix(target_part_destroyed_count==1)->leaving it leaking unrecognizable fluids</li>
   -->
   <Maneuver_Stab.rulePack.rulesStrings>
+    <li>woundname->[woundname_gen]</li>
     <li>damaged_inf(p=4)->нанести колющий удар</li>
     <li>damaged_inf->нанести проникающий удар</li>
     <li>damaged_inf->нанести укол</li>
