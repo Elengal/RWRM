@@ -5,7 +5,7 @@
   <AttackedBuilding.label>атакована постройка</AttackedBuilding.label>
   
   <!-- EN: debug event -->
-  <DebugGoodwill.label>debug event</DebugGoodwill.label>
+  <DebugGoodwill.label>отладочное событие</DebugGoodwill.label>
   
   <!-- EN: laborers missed shuttle -->
   <LaborersMissedShuttle.label>рабочие не попали на челнок</LaborersMissedShuttle.label>

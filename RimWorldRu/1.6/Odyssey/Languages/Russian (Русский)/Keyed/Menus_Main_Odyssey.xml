@@ -25,5 +25,5 @@
   <Difficulty_FishingYieldFactor_Info>Настройте, сколько рыбы можно поймать во время рыбалки.</Difficulty_FishingYieldFactor_Info>
 
   <!-- EN: Disabling {0} will prevent major Odyssey quests from being completable. -->
-  <OdysseyFactionDisabledContentWarning>Отключение {0} не позволит завершить основные задания Одиссеи.</OdysseyFactionDisabledContentWarning> <!-- text_todo -->
+  <OdysseyFactionDisabledContentWarning>Отключение {0} не позволит завершить основные задания Одиссеи.</OdysseyFactionDisabledContentWarning>
 </LanguageData>

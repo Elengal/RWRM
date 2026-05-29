@@ -126,7 +126,7 @@
     <li>questName(animalCount==1)->[joiner_nameDef] и [animalKind_label]</li>
     <li>questName(animalCount==1)->[animalKind_label] и [joiner_nameDef]</li>
     <li>questName(animalCount>=2)->[joiner_nameDef] и [animalKind_labelPlural]</li>
-    <li>questName(animalCount>=2)->[animalKind_labelPlural] and [joiner_nameDef]</li>
+    <li>questName(animalCount>=2)->[animalKind_labelPlural] и [joiner_nameDef]</li>
   </ThreatReward_Manhunters_Joiner.questNameRules.rulesStrings>
   <!-- EN: {BASELABEL}: Chasing [joiner_nameDef] -->
   <ThreatReward_Manhunters_Joiner.LetterLabelChasing.slateRef>{BASELABEL} в погоне за [joiner_nameDef]</ThreatReward_Manhunters_Joiner.LetterLabelChasing.slateRef>
