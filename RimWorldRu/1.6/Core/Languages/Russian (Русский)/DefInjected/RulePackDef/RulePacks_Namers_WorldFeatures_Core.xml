@@ -425,7 +425,7 @@
     <li>terrain_word->[terrain_word_mas]</li>
     <li>terrain_word(p=2)->[terrain_word_fem]</li>
     <li>terrain_word(p=2)->[terrain_word_plural]</li>
-    <li>terrain_word_mas->мшар</li>
+    <li>terrain_word_mas->омут</li>
     <li>terrain_word_fem->топь</li>
     <li>terrain_word_neu->болото</li>
     <li>terrain_word_plural->болота</li>
