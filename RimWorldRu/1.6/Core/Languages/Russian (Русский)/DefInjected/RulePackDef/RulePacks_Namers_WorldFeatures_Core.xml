@@ -19,7 +19,6 @@
     <li>terrain_word(p=2)->[terrain_word_plural]</li>
     <li>terrain_word_mas->архипелаг</li>
     <li>terrain_word_fem->Земля</li>
-    <li>terrain_word_neu->созвездие</li>
     <li>terrain_word_plural->о-ва</li>
     <li>r_name->[archipelago_masc] [suffix_proper]</li>
     <li>r_name->[prefix_proper_masc] [archipelago_masc]</li>
@@ -47,7 +46,6 @@
   <NamerAridShrubland.rulePack.rulesStrings>
     <li>terrain_word->[terrain_word_mas]</li>
     <li>terrain_word(p=2)->[terrain_word_fem]</li>
-    <li>terrain_word(p=2)->[terrain_word_neu]</li>
     <li>terrain_word(p=2)->[terrain_word_plural]</li>
     <li>r_name->[wasteland_name]</li>
     <li>wasteland_neu->Поле</li>
@@ -58,7 +56,6 @@
     <li>wasteland_fem->саванна</li>
     <li>terrain_word_mas->кустарник</li>
     <li>terrain_word_fem->степь</li>
-    <li>terrain_word_neu->побоище</li>
     <li>terrain_word_plural->Земли</li>
   </NamerAridShrubland.rulePack.rulesStrings>
   
@@ -203,7 +200,6 @@
     <li>terrain_word_mas->Бор</li>
     <li>terrain_word_fem->Пуща</li>
     <li>terrain_word_neu->урочище</li>
-    <li>terrain_word_neu->редколесье</li>
     <li>terrain_word_plural->леса</li>
   </NamerForest.rulePack.rulesStrings>
   
@@ -257,7 +253,6 @@
     <li>terrain_word(p=2)->[terrain_word_plural]</li>
     <li>terrain_word_mas->о.</li>
     <li>terrain_word_fem->Земля</li>
-    <li>terrain_word_neu->ущелье</li>
     <li>terrain_word_plural->о-ва</li>
     <li>r_name->[island_masc] [suffix_proper]</li>
     <li>r_name->[island_masc] [prefix_proper_masc]</li>
@@ -287,7 +282,6 @@
     <li>r_name->[lake_neu] [suffix_proper]</li>
     <li>r_name->[prefix_proper_neu] [lake_neu]</li>
     <li>lake_neu(p=8)->оз.</li>
-    <li>lake_neu->море</li>
     <li>lake_neu->вдхр.</li>
   </NamerLake.rulePack.rulesStrings>
   
@@ -482,7 +476,6 @@
     <li>terrain_word(p=2)->[terrain_word_plural]</li>
     <li>terrain_word_mas->лес</li>
     <li>terrain_word_fem->Сельва</li>
-    <li>terrain_word_neu->редколесье</li>
     <li>terrain_word_plural->джунгли</li>
     <li>r_name->[forest_name]</li>
     <li>prefix_proper_masc->влажный</li>
@@ -493,10 +486,6 @@
     <li>prefix_proper_fem->жаркая</li>
     <li>prefix_proper_fem->душная</li>
     <li>prefix_proper_fem->заросшая</li>
-    <li>prefix_proper_neu->влажное</li>
-    <li>prefix_proper_neu->жаркое</li>
-    <li>prefix_proper_neu->душное</li>
-    <li>prefix_proper_neu->заросшее</li>
     <li>prefix_proper_plural->влажные</li>
     <li>prefix_proper_plural->жаркие</li>
     <li>prefix_proper_plural->душные</li>
