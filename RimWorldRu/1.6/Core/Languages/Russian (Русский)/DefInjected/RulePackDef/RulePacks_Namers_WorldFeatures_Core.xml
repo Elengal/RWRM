@@ -619,86 +619,148 @@
     <li>prefix_proper_plural->[Color_plural]</li>
     <li>prefix_proper_plural->[AdjectiveAny_plural]</li>
 
-    <!-- narrative_name_gen - родительный падеж -->
+    <!-- narrative_name_gen - родительный падеж (с согласованием по роду) -->
     <li>narrative_name_gen(p=12)->[WordTribal]</li>
     <li>narrative_name_gen(p=12)->[PlaceOutlander]</li>
-    <li>narrative_name_gen->[Color_gen] [NaturalObject_gen]</li>
-    <li>narrative_name_gen->[AdjectiveNatural_gen] [BodyPart_gen]</li>
-    <li>narrative_name_gen->[Animal_gen]</li>
-    <li>narrative_name_gen->[Color_gen] [Animal_gen]</li>
-    <li>narrative_name_gen->[AdjectiveNatural_gen] [Animal_gen]</li>
-    <li>narrative_name_gen->[Animal_gen] [BodyPart_gen]</li>
+    <li>narrative_name_gen->[Animal_gen_mas]</li>
+    <li>narrative_name_gen->[Animal_gen_fem]</li>
+    <!-- Мужской/средний род: прилагательное + существительное -->
+    <li>narrative_name_gen->[Color_gen_mas] [NaturalObject_gen_mas]</li>
+    <li>narrative_name_gen->[AdjectiveNatural_gen_mas] [BodyPart_gen_mas]</li>
+    <li>narrative_name_gen->[Color_gen_mas] [Animal_gen_mas]</li>
+    <li>narrative_name_gen->[AdjectiveNatural_gen_mas] [Animal_gen_mas]</li>
+    <li>narrative_name_gen->[Animal_gen_mas] [BodyPart_gen_mas]</li>
+    <!-- Женский род: прилагательное + существительное -->
+    <li>narrative_name_gen->[Color_gen_fem] [NaturalObject_gen_fem]</li>
+    <li>narrative_name_gen->[AdjectiveNatural_gen_fem] [BodyPart_gen_fem]</li>
+    <li>narrative_name_gen->[Color_gen_fem] [Animal_gen_fem]</li>
+    <li>narrative_name_gen->[AdjectiveNatural_gen_fem] [Animal_gen_fem]</li>
+    <li>narrative_name_gen->[Animal_gen_fem] [BodyPart_gen_fem]</li>
   
     <!-- NamePerson_gen - имя человека в родительном падеже -->
     <li>NamePerson_gen->[NamePerson]</li>
   
-    <!-- Цвета в родительном падеже -->
-    <li>Color_gen->красного</li>
-    <li>Color_gen->синего</li>
-    <li>Color_gen->зелёного</li>
-    <li>Color_gen->чёрного</li>
-    <li>Color_gen->белого</li>
-    <li>Color_gen->серого</li>
-    <li>Color_gen->золотого</li>
-    <li>Color_gen->серебряного</li>
-    <li>Color_gen->тёмного</li>
-    <li>Color_gen->светлого</li>
-    <li>Color_gen->багрового</li>
-    <li>Color_gen->алого</li>
-    <li>Color_gen->лазурного</li>
-    <li>Color_gen->изумрудного</li>
+    <!-- Цвета в родительном падеже: мужской/средний род -->
+    <li>Color_gen_mas->красного</li>
+    <li>Color_gen_mas->синего</li>
+    <li>Color_gen_mas->зелёного</li>
+    <li>Color_gen_mas->чёрного</li>
+    <li>Color_gen_mas->белого</li>
+    <li>Color_gen_mas->серого</li>
+    <li>Color_gen_mas->золотого</li>
+    <li>Color_gen_mas->серебряного</li>
+    <li>Color_gen_mas->тёмного</li>
+    <li>Color_gen_mas->светлого</li>
+    <li>Color_gen_mas->багрового</li>
+    <li>Color_gen_mas->алого</li>
+    <li>Color_gen_mas->лазурного</li>
+    <li>Color_gen_mas->изумрудного</li>
   
-    <!-- Прилагательные природы в родительном падеже -->
-    <li>AdjectiveNatural_gen->древнего</li>
-    <li>AdjectiveNatural_gen->старого</li>
-    <li>AdjectiveNatural_gen->дикого</li>
-    <li>AdjectiveNatural_gen->великого</li>
-    <li>AdjectiveNatural_gen->могучего</li>
-    <li>AdjectiveNatural_gen->тихого</li>
-    <li>AdjectiveNatural_gen->холодного</li>
-    <li>AdjectiveNatural_gen->жаркого</li>
-    <li>AdjectiveNatural_gen->вечного</li>
-    <li>AdjectiveNatural_gen->забытого</li>
-    <li>AdjectiveNatural_gen->проклятого</li>
-    <li>AdjectiveNatural_gen->священного</li>
+    <!-- Цвета в родительном падеже: женский род -->
+    <li>Color_gen_fem->красной</li>
+    <li>Color_gen_fem->синей</li>
+    <li>Color_gen_fem->зелёной</li>
+    <li>Color_gen_fem->чёрной</li>
+    <li>Color_gen_fem->белой</li>
+    <li>Color_gen_fem->серой</li>
+    <li>Color_gen_fem->золотой</li>
+    <li>Color_gen_fem->серебряной</li>
+    <li>Color_gen_fem->тёмной</li>
+    <li>Color_gen_fem->светлой</li>
+    <li>Color_gen_fem->багровой</li>
+    <li>Color_gen_fem->алой</li>
+    <li>Color_gen_fem->лазурной</li>
+    <li>Color_gen_fem->изумрудной</li>
   
-    <!-- Животные в родительном падеже -->
-    <li>Animal_gen->волка</li>
-    <li>Animal_gen->медведя</li>
-    <li>Animal_gen->орла</li>
-    <li>Animal_gen->ворона</li>
-    <li>Animal_gen->змеи</li>
-    <li>Animal_gen->льва</li>
-    <li>Animal_gen->оленя</li>
-    <li>Animal_gen->кабана</li>
-    <li>Animal_gen->ящера</li>
-    <li>Animal_gen->дракона</li>
-    <li>Animal_gen->рыси</li>
-    <li>Animal_gen->пумы</li>
+    <!-- Прилагательные природы в родительном падеже: мужской/средний род -->
+    <li>AdjectiveNatural_gen_mas->древнего</li>
+    <li>AdjectiveNatural_gen_mas->старого</li>
+    <li>AdjectiveNatural_gen_mas->дикого</li>
+    <li>AdjectiveNatural_gen_mas->великого</li>
+    <li>AdjectiveNatural_gen_mas->могучего</li>
+    <li>AdjectiveNatural_gen_mas->тихого</li>
+    <li>AdjectiveNatural_gen_mas->холодного</li>
+    <li>AdjectiveNatural_gen_mas->жаркого</li>
+    <li>AdjectiveNatural_gen_mas->вечного</li>
+    <li>AdjectiveNatural_gen_mas->забытого</li>
+    <li>AdjectiveNatural_gen_mas->проклятого</li>
+    <li>AdjectiveNatural_gen_mas->священного</li>
   
-    <!-- Природные объекты в родительном падеже -->
-    <li>NaturalObject_gen->солнца</li>
-    <li>NaturalObject_gen->луны</li>
-    <li>NaturalObject_gen->звезды</li>
-    <li>NaturalObject_gen->камня</li>
-    <li>NaturalObject_gen->воды</li>
-    <li>NaturalObject_gen->огня</li>
-    <li>NaturalObject_gen->ветра</li>
-    <li>NaturalObject_gen->грома</li>
-    <li>NaturalObject_gen->льда</li>
-    <li>NaturalObject_gen->пепла</li>
-    <li>NaturalObject_gen->тьмы</li>
-    <li>NaturalObject_gen->света</li>
+    <!-- Прилагательные природы в родительном падеже: женский род -->
+    <li>AdjectiveNatural_gen_fem->древней</li>
+    <li>AdjectiveNatural_gen_fem->старой</li>
+    <li>AdjectiveNatural_gen_fem->дикой</li>
+    <li>AdjectiveNatural_gen_fem->великой</li>
+    <li>AdjectiveNatural_gen_fem->могучей</li>
+    <li>AdjectiveNatural_gen_fem->тихой</li>
+    <li>AdjectiveNatural_gen_fem->холодной</li>
+    <li>AdjectiveNatural_gen_fem->жаркой</li>
+    <li>AdjectiveNatural_gen_fem->вечной</li>
+    <li>AdjectiveNatural_gen_fem->забытой</li>
+    <li>AdjectiveNatural_gen_fem->проклятой</li>
+    <li>AdjectiveNatural_gen_fem->священной</li>
   
-    <!-- Части тела в родительном падеже -->
-    <li>BodyPart_gen->клыка</li>
-    <li>BodyPart_gen->когтя</li>
-    <li>BodyPart_gen->рога</li>
-    <li>BodyPart_gen->глаза</li>
-    <li>BodyPart_gen->кости</li>
-    <li>BodyPart_gen->черепа</li>
-    <li>BodyPart_gen->хвоста</li>
-    <li>BodyPart_gen->крыла</li>
+    <!-- Животные в родительном падеже: мужской род -->
+    <li>Animal_gen_mas->волка</li>
+    <li>Animal_gen_mas->медведя</li>
+    <li>Animal_gen_mas->орла</li>
+    <li>Animal_gen_mas->ворона</li>
+    <li>Animal_gen_mas->льва</li>
+    <li>Animal_gen_mas->оленя</li>
+    <li>Animal_gen_mas->кабана</li>
+    <li>Animal_gen_mas->ящера</li>
+    <li>Animal_gen_mas->дракона</li>
+  
+    <!-- Животные в родительном падеже: женский род -->
+    <li>Animal_gen_fem->змеи</li>
+    <li>Animal_gen_fem->рыси</li>
+    <li>Animal_gen_fem->пумы</li>
+    <li>Animal_gen_fem->лисицы</li>
+    <li>Animal_gen_fem->пантеры</li>
+  
+    <!-- Природные объекты в родительном падеже: мужской/средний род -->
+    <li>NaturalObject_gen_mas->солнца</li>
+    <li>NaturalObject_gen_mas->камня</li>
+    <li>NaturalObject_gen_mas->огня</li>
+    <li>NaturalObject_gen_mas->ветра</li>
+    <li>NaturalObject_gen_mas->грома</li>
+    <li>NaturalObject_gen_mas->льда</li>
+    <li>NaturalObject_gen_mas->пепла</li>
+    <li>NaturalObject_gen_mas->света</li>
+  
+    <!-- Природные объекты в родительном падеже: женский род -->
+    <li>NaturalObject_gen_fem->луны</li>
+    <li>NaturalObject_gen_fem->звезды</li>
+    <li>NaturalObject_gen_fem->воды</li>
+    <li>NaturalObject_gen_fem->тьмы</li>
+    <li>NaturalObject_gen_fem->зари</li>
+    <li>NaturalObject_gen_fem->бури</li>
+  
+    <!-- Части тела в родительном падеже: мужской/средний род -->
+    <li>BodyPart_gen_mas->клыка</li>
+    <li>BodyPart_gen_mas->когтя</li>
+    <li>BodyPart_gen_mas->рога</li>
+    <li>BodyPart_gen_mas->глаза</li>
+    <li>BodyPart_gen_mas->черепа</li>
+    <li>BodyPart_gen_mas->хвоста</li>
+    <li>BodyPart_gen_mas->крыла</li>
+  
+    <!-- Части тела в родительном падеже: женский род -->
+    <li>BodyPart_gen_fem->кости</li>
+    <li>BodyPart_gen_fem->чешуи</li>
+    <li>BodyPart_gen_fem->лапы</li>
+
+    <!-- Обобщённые алиасы для совместимости (storyname и др.) -->
+    <li>Animal_gen->[Animal_gen_mas]</li>
+    <li>Animal_gen->[Animal_gen_fem]</li>
+    <li>BodyPart_gen->[BodyPart_gen_mas]</li>
+    <li>BodyPart_gen->[BodyPart_gen_fem]</li>
+    <li>NaturalObject_gen->[NaturalObject_gen_mas]</li>
+    <li>NaturalObject_gen->[NaturalObject_gen_fem]</li>
+    <li>Color_gen->[Color_gen_mas]</li>
+    <li>Color_gen->[Color_gen_fem]</li>
+    <li>AdjectiveNatural_gen->[AdjectiveNatural_gen_mas]</li>
+    <li>AdjectiveNatural_gen->[AdjectiveNatural_gen_fem]</li>
 
     <!-- NaturalObject - базовое (для [narrative_name]) -->
     <li>NaturalObject->солнце</li>
