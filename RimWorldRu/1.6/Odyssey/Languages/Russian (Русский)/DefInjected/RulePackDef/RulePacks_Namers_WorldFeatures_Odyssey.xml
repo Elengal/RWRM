@@ -124,13 +124,21 @@
     <li>glowForest_adjective_neu->корявое</li>
     <li>terrain_word_mas(p=3)->светолес</li>
     <li>terrain_word_fem->мицелиевая подстилка</li>
+    <li>terrain_word_fem->грибница</li>
+    <li>terrain_word_fem->грибная роща</li>
     <li>terrain_word_fem->чаща</li>
     <li>terrain_word_mas->лес</li>
+    <li>terrain_word_mas->грибной лес</li>
+    <li>terrain_word_mas->мицелий</li>
     <li>terrain_word_neu->темноземье</li>
+    <li>terrain_word_neu->гриболесье</li>
+    <li>terrain_word_neu->светолесье</li>
     <li>terrain_word_neu->урочище</li>
     <li>terrain_word_mas->бор</li>
     <li>terrain_word_plural->дебри</li>
     <li>terrain_word_plural->леса</li>
+    <li>terrain_word_plural->грибные леса</li>
+    <li>terrain_word_plural->мицелии</li>
   </NamerGlowforest.rulePack.rulesStrings>
   
   <!-- EN:
@@ -241,6 +249,10 @@
     <li>lavaField_adjective_fem->вулканическая</li>
     <li>lavaField_adjective_plural->вулканические</li>
     <li>lavaField_adjective_neu->вулканическое</li>
+    <li>lavaField_adjective_mas(p=4)->лавовый</li>
+    <li>lavaField_adjective_fem(p=4)->лавовая</li>
+    <li>lavaField_adjective_plural(p=4)->лавовые</li>
+    <li>lavaField_adjective_neu(p=4)->лавовое</li>
     <li>lavaField_adjective_mas->огненный</li>
     <li>lavaField_adjective_fem->огненная</li>
     <li>lavaField_adjective_plural->огненные</li>
@@ -259,6 +271,7 @@
     <li>lavaField_adjective_neu->жгучее</li>
     <li>terrain_word_plural(p=3)->лавовые поля</li>
     <li>terrain_word_plural->потоки лавы</li>
+    <li>terrain_word_plural->провалы</li>
     <li>terrain_word_mas->разлом</li>
     <li>terrain_word_neu->плато</li>
     <li>terrain_word_neu->магмовое плато</li>
@@ -268,6 +281,7 @@
     <li>terrain_word_mas->хребет</li>
     <li>terrain_word_fem->расщелина</li>
     <li>terrain_word_fem->жила</li>
+    <li>terrain_word_fem->трещина</li>
   </NamerLavaField.rulePack.rulesStrings>
   
   <!-- EN:
@@ -335,19 +349,19 @@
     <li>ruin_adjective_fem->пепельная</li>
     <li>ruin_adjective_plural->пепельные</li>
     <li>ruin_adjective_neu->пепельное</li>
-    <li>terrain_word_plural(p=6)->руины</li>
-    <li>terrain_word_plural(p=3)->шрамы</li>
+    <li>terrain_word_mas->пустырь</li>
+    <li>terrain_word_mas->реликт</li>
+    <li>terrain_word_mas->бастион</li>
     <li>terrain_word_fem->мегапостройка</li>
     <li>terrain_word_fem->трещина</li>
     <li>terrain_word_fem->пустошь</li>
-    <li>terrain_word_plural->пустоши</li>
-    <li>terrain_word_plural->отбросы</li>
-    <li>terrain_word_mas->пустырь</li>
-    <li>terrain_word_mas->реликт</li>
     <li>terrain_word_neu->токсоземье</li>
     <li>terrain_word_neu->пепелище</li>
+    <li>terrain_word_plural(p=6)->руины</li>
+    <li>terrain_word_plural(p=3)->шрамы</li>
+    <li>terrain_word_plural->пустоши</li>
+    <li>terrain_word_plural->отбросы</li>
     <li>terrain_word_plural->земли</li>
-    <li>terrain_word_mas->бастион</li>
   </NamerScarlands.rulePack.rulesStrings>
   
 </LanguageData>
