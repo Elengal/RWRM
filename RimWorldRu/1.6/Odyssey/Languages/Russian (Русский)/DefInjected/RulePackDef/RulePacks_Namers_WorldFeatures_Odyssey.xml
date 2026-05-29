@@ -20,10 +20,23 @@
     <li>glacialPlain_adjective->[glacialPlain_adjective_mas]</li>
     <li>terrain_word->[terrain_word_mas]</li>
     <li>terrain_word(p=2)->[terrain_word_fem]</li>
-    <li>r_name(p=0.2)->[glacialPlain_adjective_mas] [narrative_name_mas]</li>
-    <li>r_name(p=0.2)->[glacialPlain_adjective_fem] [narrative_name_fem]</li>
-    <li>r_name(p=0.2)->[glacialPlain_adjective_neu] [narrative_name_fem]</li>
-    <li>r_name(p=0.2)->[glacialPlain_adjective_plural] [narrative_name_plural]</li>
+    <li>terrain_word(p=2)->[terrain_word_neu]</li>
+    <li>terrain_word(p=2)->[terrain_word_plural]</li>
+    <!-- Прилагательное + существительное (одного рода) -->
+    <li>r_name(p=0.2)->[glacialPlain_adjective_mas] [terrain_word_mas]</li>
+    <li>r_name(p=0.2)->[glacialPlain_adjective_fem] [terrain_word_fem]</li>
+    <li>r_name(p=0.2)->[glacialPlain_adjective_neu] [terrain_word_neu]</li>
+    <li>r_name(p=0.2)->[glacialPlain_adjective_plural] [terrain_word_plural]</li>
+    <!-- Существительное + имя собственное -->
+    <li>r_name(p=0.2)->[terrain_word_mas] [suffix_proper]</li>
+    <li>r_name(p=0.2)->[terrain_word_fem] [suffix_proper]</li>
+    <li>r_name(p=0.2)->[terrain_word_neu] [suffix_proper]</li>
+    <li>r_name(p=0.2)->[terrain_word_plural] [suffix_proper]</li>
+    <!-- Существительное + родительный падеж -->
+    <li>r_name(p=0.1)->[terrain_word_mas] [narrative_name_gen]</li>
+    <li>r_name(p=0.1)->[terrain_word_fem] [narrative_name_gen]</li>
+    <li>r_name(p=0.1)->[terrain_word_neu] [narrative_name_gen]</li>
+    <li>r_name(p=0.1)->[terrain_word_plural] [narrative_name_gen]</li>
     <li>glacialPlain_adjective_mas(p=2)->ледниковый</li>
     <li>glacialPlain_adjective_fem(p=2)->ледниковая</li>
     <li>glacialPlain_adjective_plural(p=2)->ледниковые</li>
@@ -51,6 +64,8 @@
     <li>terrain_word_fem(p=0.3)->ледниковая равнина</li>
     <li>terrain_word_mas(p=0.3)->простор</li>
     <li>terrain_word_mas(p=0.3)->тракт</li>
+    <li>terrain_word_plural->льды</li>
+    <li>terrain_word_plural->просторы</li>
   </NamerGlacialPlain.rulePack.rulesStrings>
   
   <!-- EN:
@@ -70,10 +85,21 @@
     <li>glowForest_adjective->[glowForest_adjective_mas]</li>
     <li>terrain_word->[terrain_word_mas]</li>
     <li>terrain_word(p=2)->[terrain_word_fem]</li>
-    <li>r_name(p=0.3)->[glowForest_adjective_mas] [narrative_name_mas]</li>
-    <li>r_name(p=0.3)->[glowForest_adjective_fem] [narrative_name_fem]</li>
-    <li>r_name(p=0.3)->[glowForest_adjective_neu] [narrative_name_fem]</li>
-    <li>r_name(p=0.3)->[glowForest_adjective_plural] [narrative_name_plural]</li>
+    <li>terrain_word(p=2)->[terrain_word_neu]</li>
+    <li>terrain_word(p=2)->[terrain_word_plural]</li>
+    <!-- Прилагательное + существительное (одного рода) -->
+    <li>r_name(p=0.3)->[glowForest_adjective_mas] [terrain_word_mas]</li>
+    <li>r_name(p=0.3)->[glowForest_adjective_fem] [terrain_word_fem]</li>
+    <li>r_name(p=0.3)->[glowForest_adjective_neu] [terrain_word_neu]</li>
+    <li>r_name(p=0.3)->[glowForest_adjective_plural] [terrain_word_plural]</li>
+    <!-- Существительное + имя собственное -->
+    <li>r_name(p=0.3)->[terrain_word_mas] [suffix_proper]</li>
+    <li>r_name(p=0.3)->[terrain_word_fem] [suffix_proper]</li>
+    <li>r_name(p=0.3)->[terrain_word_neu] [suffix_proper]</li>
+    <!-- Существительное + родительный падеж -->
+    <li>r_name(p=0.3)->[terrain_word_mas] [narrative_name_gen]</li>
+    <li>r_name(p=0.3)->[terrain_word_fem] [narrative_name_gen]</li>
+    <li>r_name(p=0.3)->[terrain_word_neu] [narrative_name_gen]</li>
     <li>glowForest_adjective_mas(p=2)->грибной</li>
     <li>glowForest_adjective_fem(p=2)->грибная</li>
     <li>glowForest_adjective_plural(p=2)->грибные</li>
@@ -97,8 +123,10 @@
     <li>terrain_word_mas(p=3)->светолес</li>
     <li>terrain_word_fem->мицелиевая подстилка</li>
     <li>terrain_word_mas->грибной лес</li>
-    <li>terrain_word_mas->темноземье</li>
+    <li>terrain_word_neu->темноземье</li>
     <li>terrain_word_mas->темный лес</li>
+    <li>terrain_word_plural->дебри</li>
+    <li>terrain_word_plural->леса</li>
   </NamerGlowforest.rulePack.rulesStrings>
   
   <!-- EN:
@@ -119,10 +147,23 @@
     <li>grasslands_adjective->[grasslands_adjective_mas]</li>
     <li>terrain_word->[terrain_word_mas]</li>
     <li>terrain_word(p=2)->[terrain_word_fem]</li>
-    <li>r_name(p=0.3)->[grasslands_adjective_mas] [narrative_name_mas]</li>
-    <li>r_name(p=0.3)->[grasslands_adjective_fem] [narrative_name_fem]</li>
-    <li>r_name(p=0.3)->[grasslands_adjective_neu] [narrative_name_fem]</li>
-    <li>r_name(p=0.3)->[grasslands_adjective_plural] [narrative_name_plural]</li>
+    <li>terrain_word(p=2)->[terrain_word_neu]</li>
+    <li>terrain_word(p=2)->[terrain_word_plural]</li>
+    <!-- Прилагательное + существительное (одного рода) -->
+    <li>r_name(p=0.3)->[grasslands_adjective_mas] [terrain_word_mas]</li>
+    <li>r_name(p=0.3)->[grasslands_adjective_fem] [terrain_word_fem]</li>
+    <li>r_name(p=0.3)->[grasslands_adjective_neu] [terrain_word_neu]</li>
+    <li>r_name(p=0.3)->[grasslands_adjective_plural] [terrain_word_plural]</li>
+    <!-- Существительное + имя собственное -->
+    <li>r_name(p=0.3)->[terrain_word_mas] [suffix_proper]</li>
+    <li>r_name(p=0.3)->[terrain_word_fem] [suffix_proper]</li>
+    <li>r_name(p=0.3)->[terrain_word_neu] [suffix_proper]</li>
+    <li>r_name(p=0.3)->[terrain_word_plural] [suffix_proper]</li>
+    <!-- Существительное + родительный падеж -->
+    <li>r_name(p=0.1)->[terrain_word_mas] [narrative_name_gen]</li>
+    <li>r_name(p=0.1)->[terrain_word_fem] [narrative_name_gen]</li>
+    <li>r_name(p=0.1)->[terrain_word_neu] [narrative_name_gen]</li>
+    <li>r_name(p=0.1)->[terrain_word_plural] [narrative_name_gen]</li>
     <li>grasslands_adjective_mas(p=2)->ровный</li>
     <li>grasslands_adjective_fem(p=2)->ровная</li>
     <li>grasslands_adjective_plural(p=2)->ровные</li>
@@ -149,6 +190,10 @@
     <li>terrain_word_fem->саванна</li>
     <li>terrain_word_fem->степь</li>
     <li>terrain_word_fem->низменность</li>
+    <li>terrain_word_mas->луг</li>
+    <li>terrain_word_mas->выгон</li>
+    <li>terrain_word_neu->поле</li>
+    <li>terrain_word_neu->пастбище</li>
   </NamerGrasslands.rulePack.rulesStrings>
   
   <!-- EN:
@@ -171,10 +216,23 @@
     <li>lavaField_adjective->[lavaField_adjective_mas]</li>
     <li>terrain_word->[terrain_word_mas]</li>
     <li>terrain_word(p=2)->[terrain_word_fem]</li>
-    <li>r_name(p=0.3)->[lavaField_adjective_mas] [narrative_name_mas]</li>
-    <li>r_name(p=0.3)->[lavaField_adjective_fem] [narrative_name_fem]</li>
-    <li>r_name(p=0.3)->[lavaField_adjective_neu] [narrative_name_fem]</li>
-    <li>r_name(p=0.3)->[lavaField_adjective_plural] [narrative_name_plural]</li>
+    <li>terrain_word(p=2)->[terrain_word_neu]</li>
+    <li>terrain_word(p=2)->[terrain_word_plural]</li>
+    <!-- Прилагательное + существительное (одного рода) -->
+    <li>r_name(p=0.3)->[lavaField_adjective_mas] [terrain_word_mas]</li>
+    <li>r_name(p=0.3)->[lavaField_adjective_fem] [terrain_word_fem]</li>
+    <li>r_name(p=0.3)->[lavaField_adjective_neu] [terrain_word_neu]</li>
+    <li>r_name(p=0.3)->[lavaField_adjective_plural] [terrain_word_plural]</li>
+    <!-- Существительное + имя собственное -->
+    <li>r_name(p=0.3)->[terrain_word_mas] [suffix_proper]</li>
+    <li>r_name(p=0.3)->[terrain_word_fem] [suffix_proper]</li>
+    <li>r_name(p=0.3)->[terrain_word_neu] [suffix_proper]</li>
+    <li>r_name(p=0.3)->[terrain_word_plural] [suffix_proper]</li>
+    <!-- Существительное + родительный падеж -->
+    <li>r_name(p=0.1)->[terrain_word_mas] [narrative_name_gen]</li>
+    <li>r_name(p=0.1)->[terrain_word_fem] [narrative_name_gen]</li>
+    <li>r_name(p=0.1)->[terrain_word_neu] [narrative_name_gen]</li>
+    <li>r_name(p=0.1)->[terrain_word_plural] [narrative_name_gen]</li>
     <li>lavaField_adjective_mas->вулканический</li>
     <li>lavaField_adjective_fem->вулканическая</li>
     <li>lavaField_adjective_plural->вулканические</li>
@@ -203,6 +261,8 @@
     <li>terrain_word_mas->горн</li>
     <li>terrain_word_neu->инферно</li>
     <li>terrain_word_mas->хребет</li>
+    <li>terrain_word_fem->расщелина</li>
+    <li>terrain_word_fem->жила</li>
   </NamerLavaField.rulePack.rulesStrings>
   
   <!-- EN:
@@ -229,10 +289,19 @@
     <li>ruin_adjective->[ruin_adjective_mas]</li>
     <li>terrain_word->[terrain_word_mas]</li>
     <li>terrain_word(p=2)->[terrain_word_fem]</li>
-    <li>r_name(p=0.3)->[ruin_adjective_mas] [narrative_name_mas]</li>
-    <li>r_name(p=0.3)->[ruin_adjective_fem] [narrative_name_fem]</li>
-    <li>r_name(p=0.3)->[ruin_adjective_neu] [narrative_name_fem]</li>
-    <li>r_name(p=0.3)->[ruin_adjective_plural] [narrative_name_plural]</li>
+    <li>terrain_word(p=2)->[terrain_word_neu]</li>
+    <li>terrain_word(p=2)->[terrain_word_plural]</li>
+    <!-- Прилагательное + существительное (одного рода) -->
+    <li>r_name(p=0.3)->[ruin_adjective_mas] [terrain_word_mas]</li>
+    <li>r_name(p=0.3)->[ruin_adjective_fem] [terrain_word_fem]</li>
+    <li>r_name(p=0.3)->[ruin_adjective_neu] [terrain_word_neu]</li>
+    <li>r_name(p=0.3)->[ruin_adjective_plural] [terrain_word_plural]</li>
+    <!-- Существительное + имя собственное -->
+    <li>r_name(p=0.2)->[terrain_word_mas] [suffix_proper]</li>
+    <li>r_name(p=0.2)->[terrain_word_fem] [suffix_proper]</li>
+    <li>r_name(p=0.2)->[terrain_word_neu] [suffix_proper]</li>
+    <li>r_name(p=0.2)->[terrain_word_plural] [suffix_proper]</li>
+    <!-- Существительное + родительный падеж -->
     <li>r_name(p=0.2)->[terrain_word_mas] [narrative_name_gen]</li>
     <li>r_name(p=0.2)->[terrain_word_fem] [narrative_name_gen]</li>
     <li>r_name(p=0.2)->[terrain_word_neu] [narrative_name_gen]</li>
