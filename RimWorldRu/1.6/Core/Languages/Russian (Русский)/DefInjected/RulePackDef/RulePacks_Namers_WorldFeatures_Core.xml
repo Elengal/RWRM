@@ -344,14 +344,18 @@
     <li>terrain_word(p=2)->[terrain_word_fem]</li>
     <li>terrain_word(p=2)->[terrain_word_plural]</li>
     <li>terrain_word_mas->океан</li>
-    <li>terrain_word_fem->лагуна</li>
-    <li>terrain_word_neu->море</li>
+    <li>terrain_word_fem->пучина</li>
     <li>terrain_word_plural->воды</li>
     <li>r_name->[ocean_masc] [suffix_proper]</li>
     <li>r_name->[prefix_proper_masc] [ocean_masc]</li>
+    <li>r_name->[prefix_proper_fem] [terrain_word_fem]</li>
+    <li>r_name->[terrain_word_plural] [suffix_proper]</li>
     <li>prefix_proper_masc->чистый</li>
     <li>prefix_proper_masc->бурный</li>
     <li>prefix_proper_masc->тихий</li>
+    <li>prefix_proper_fem->глубокая</li>
+    <li>prefix_proper_fem->тёмная</li>
+    <li>prefix_proper_fem->холодная</li>
     <li>ocean_masc(p=8)->океан</li>
     <li>ocean_masc->простор</li>
     <li>ocean_masc->предел</li>
@@ -393,7 +397,7 @@
     <li>terrain_word(p=2)->[terrain_word_fem]</li>
     <li>terrain_word(p=2)->[terrain_word_neu]</li>
     <li>terrain_word(p=2)->[terrain_word_plural]</li>
-    <li>terrain_word_mas->океан</li>
+    <li>terrain_word_mas->залив</li>
     <li>terrain_word_fem->лагуна</li>
     <li>terrain_word_neu->море</li>
     <li>terrain_word_plural->воды</li>
