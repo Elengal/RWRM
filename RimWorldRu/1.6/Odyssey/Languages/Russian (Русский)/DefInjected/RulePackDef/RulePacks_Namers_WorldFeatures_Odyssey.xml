@@ -53,19 +53,28 @@
     <li>glacialPlain_adjective_fem->величественная</li>
     <li>glacialPlain_adjective_plural->величественные</li>
     <li>glacialPlain_adjective_neu->величественное</li>
-    <li>glacialPlain_adjective_mas->замерзший</li>
-    <li>glacialPlain_adjective_fem->замерзшая</li>
-    <li>glacialPlain_adjective_plural->замерзшие</li>
-    <li>glacialPlain_adjective_neu->замерзшее</li>
+    <li>glacialPlain_adjective_mas->замёрзший</li>
+    <li>glacialPlain_adjective_fem->замёрзшая</li>
+    <li>glacialPlain_adjective_plural->замёрзшие</li>
+    <li>glacialPlain_adjective_neu->замёрзшее</li>
+    <li>glacialPlain_adjective_mas->обледенелый</li>
+    <li>glacialPlain_adjective_fem->обледенелая</li>
+    <li>glacialPlain_adjective_plural->обледенелые</li>
+    <li>glacialPlain_adjective_neu->обледенелое</li>
     <li>terrain_word_mas->ледник</li>
     <li>terrain_word_neu(p=0.5)->ледовое поле</li>
     <li>terrain_word_fem(p=0.5)->шапка</li>
     <li>terrain_word_neu(p=0.3)->поле</li>
     <li>terrain_word_fem(p=0.3)->равнина</li>
+    <li>terrain_word_fem(p=0.3)->долина</li>
     <li>terrain_word_mas(p=0.3)->простор</li>
+    <li>terrain_word_mas(p=0.3)->предел</li>
     <li>terrain_word_mas(p=0.3)->тракт</li>
     <li>terrain_word_plural->льды</li>
     <li>terrain_word_plural->просторы</li>
+    <li>terrain_word_plural->пределы</li>
+    <li>terrain_word_plural->равнины</li>
+    <li>terrain_word_plural->долины</li>
   </NamerGlacialPlain.rulePack.rulesStrings>
   
   <!-- EN:
@@ -110,14 +119,18 @@
     <li>glowForest_adjective_fem->цветущая</li>
     <li>glowForest_adjective_plural->цветущие</li>
     <li>glowForest_adjective_neu->цветущее</li>
-    <li>glowForest_adjective_mas->темный</li>
-    <li>glowForest_adjective_fem->темная</li>
-    <li>glowForest_adjective_plural->темные</li>
-    <li>glowForest_adjective_neu->темное</li>
+    <li>glowForest_adjective_mas->тёмный</li>
+    <li>glowForest_adjective_fem->тёмная</li>
+    <li>glowForest_adjective_plural->тёмные</li>
+    <li>glowForest_adjective_neu->тёмное</li>
     <li>glowForest_adjective_mas->зарастающий</li>
     <li>glowForest_adjective_fem->зарастающая</li>
     <li>glowForest_adjective_plural->зарастающие</li>
     <li>glowForest_adjective_neu->зарастающее</li>
+    <li>glowForest_adjective_mas->заросший</li>
+    <li>glowForest_adjective_fem->заросшая</li>
+    <li>glowForest_adjective_plural->заросшие</li>
+    <li>glowForest_adjective_neu->заросшее</li>
     <li>glowForest_adjective_mas->корявый</li>
     <li>glowForest_adjective_fem->корявая</li>
     <li>glowForest_adjective_plural->корявые</li>
@@ -130,11 +143,11 @@
     <li>terrain_word_mas->лес</li>
     <li>terrain_word_mas->грибной лес</li>
     <li>terrain_word_mas->мицелий</li>
+    <li>terrain_word_mas->бор</li>
     <li>terrain_word_neu->темноземье</li>
     <li>terrain_word_neu->гриболесье</li>
     <li>terrain_word_neu->светолесье</li>
     <li>terrain_word_neu->урочище</li>
-    <li>terrain_word_mas->бор</li>
     <li>terrain_word_plural->дебри</li>
     <li>terrain_word_plural->леса</li>
     <li>terrain_word_plural->грибные леса</li>
@@ -188,6 +201,10 @@
     <li>grasslands_adjective_fem->продуваемая ветрами</li>
     <li>grasslands_adjective_plural->продуваемые ветрами</li>
     <li>grasslands_adjective_neu->продуваемое ветрами</li>
+    <li>grasslands_adjective_mas->ветреный</li>
+    <li>grasslands_adjective_fem->ветреная</li>
+    <li>grasslands_adjective_plural->ветреные</li>
+    <li>grasslands_adjective_neu->ветреное</li>
     <li>grasslands_adjective_mas->волнистый</li>
     <li>grasslands_adjective_fem->волнистая</li>
     <li>grasslands_adjective_plural->волнистые</li>

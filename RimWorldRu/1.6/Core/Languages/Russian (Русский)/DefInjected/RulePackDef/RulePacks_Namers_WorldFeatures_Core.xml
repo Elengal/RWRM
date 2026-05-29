@@ -21,6 +21,7 @@
     <li>terrain_word_fem->цепь</li>
     <li>terrain_word_fem->Земля</li>
     <li>terrain_word_plural->о-ва</li>
+    <li>terrain_word_neu->скопление</li>
     <li>r_name->[archipelago_masc] [suffix_proper]</li>
     <li>r_name->[prefix_proper_masc] [archipelago_masc]</li>
     <li>r_name->[archipelago_fem] [suffix_proper]</li>
@@ -35,6 +36,7 @@
     <li>archipelago_plural(p=1.5)->Земли</li>
     <li>archipelago_plural->Скалы</li>
     <li>archipelago_plural->рифы</li>
+    <li>archipelago_fem->гряда</li>
   </NamerArchipelago.rulePack.rulesStrings>
   
   <!-- EN:
@@ -61,6 +63,7 @@
     <li>terrain_word_mas->кустарник</li>
     <li>terrain_word_mas->поросль</li>
     <li>terrain_word_fem->степь</li>
+    <li>terrain_word_fem->низина</li>
     <li>terrain_word_neu->побоище</li>
     <li>terrain_word_plural->Земли</li>
   </NamerAridShrubland.rulePack.rulesStrings>
@@ -120,6 +123,7 @@
     <li>terrain_word_mas->перелесок</li>
     <li>terrain_word_fem->тайга</li>
     <li>terrain_word_fem->чаща</li>
+    <li>terrain_word_fem->роща</li>
     <li>terrain_word_neu->урочище</li>
     <li>terrain_word_neu->заболотье</li>
     <li>terrain_word_plural->Дебри</li>
@@ -224,6 +228,7 @@
     <li>terrain_word_mas->перелесок</li>
     <li>terrain_word_fem->Пуща</li>
     <li>terrain_word_fem->чаща</li>
+    <li>terrain_word_fem->роща</li>
     <li>terrain_word_neu->урочище</li>
     <li>terrain_word_plural->леса</li>
   </NamerForest.rulePack.rulesStrings>
@@ -248,6 +253,7 @@
     <li>terrain_word_fem->шапка</li>
     <li>terrain_word_neu->поле</li>
     <li>terrain_word_neu->ледовье</li>
+    <li>terrain_word_neu->царство</li>
     <li>terrain_word_plural->льды</li>
     <li>r_name->[ice_sheet_masc] [suffix_proper]</li>
     <li>r_name->[ice_sheet_neu] [suffix_proper]</li>
@@ -587,6 +593,7 @@
     <li>terrain_word_fem->Сельва</li>
     <li>terrain_word_neu->урочище</li>
     <li>terrain_word_plural->джунгли</li>
+    <li>terrain_word_plural->дебри</li>
     <li>r_name->[forest_name]</li>
     <li>prefix_proper_masc->влажный</li>
     <li>prefix_proper_masc->жаркий</li>
@@ -933,6 +940,8 @@
     <li>Animal_gen_fem->пантеры</li>
     <li>Animal_gen_fem->совы</li>
     <li>Animal_gen_fem->гадюки</li>
+    <li>Animal_gen_fem->вороны</li>
+    <li>Animal_gen_fem->сороки</li>
   
     <!-- Природные объекты в родительном падеже: мужской/средний род -->
     <li>NaturalObject_gen_mas->солнца</li>
