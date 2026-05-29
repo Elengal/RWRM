@@ -179,7 +179,7 @@
   <!-- EN: hi-power -->
   <HighPowerRounds.traitAdjectives.1>мощный</HighPowerRounds.traitAdjectives.1>
   <!-- EN: heavy-shot -->
-  <HighPowerRounds.traitAdjectives.2>тяжелый</HighPowerRounds.traitAdjectives.2>
+  <HighPowerRounds.traitAdjectives.2>тяжёлый</HighPowerRounds.traitAdjectives.2>
   <!-- EN: hardpunch -->
   <HighPowerRounds.traitAdjectives.3>пробивной</HighPowerRounds.traitAdjectives.3>
   <!-- EN: heavy-hit -->
@@ -303,7 +303,7 @@
   <Ornamental.traitAdjectives.2>декоративное</Ornamental.traitAdjectives.2>
   
   <!-- EN: heavy rounds -->
-  <OversizedRounds.label>тяжелые патроны</OversizedRounds.label>
+  <OversizedRounds.label>тяжёлые патроны</OversizedRounds.label>
   <!-- EN: This weapon deals more damage and has a much higher stopping power than normal. -->
   <OversizedRounds.description>Это оружие наносит больше урона и обладает значительно большей останавливающей силой, чем обычное.</OversizedRounds.description>
   <!-- EN: hammering -->
@@ -467,7 +467,7 @@
   <!-- EN: This weapon fires chemical pellets which cause toxic buildup. -->
   <ToxPellets.description>Это оружие стреляет химическими пулями, вызывающими отравление токсинами.</ToxPellets.description>
   <!-- EN: green -->
-  <ToxPellets.traitAdjectives.0>зеленый</ToxPellets.traitAdjectives.0>
+  <ToxPellets.traitAdjectives.0>зелёный</ToxPellets.traitAdjectives.0>
   <!-- EN: toxic -->
   <ToxPellets.traitAdjectives.1>токсичный</ToxPellets.traitAdjectives.1>
   <!-- EN: poisonous -->
@@ -480,7 +480,7 @@
   <!-- EN: This weapon fires rounds coated with toxic chemicals, which sicken wounded targets. -->
   <ToxRounds.description>Это оружие стреляет патронами с токсичным покрытием, вызывающими отравление у раненых целей.</ToxRounds.description>
   <!-- EN: green -->
-  <ToxRounds.traitAdjectives.0>зеленый</ToxRounds.traitAdjectives.0>
+  <ToxRounds.traitAdjectives.0>зелёный</ToxRounds.traitAdjectives.0>
   <!-- EN: poison -->
   <ToxRounds.traitAdjectives.1>отравляющий</ToxRounds.traitAdjectives.1>
   <!-- EN: venom -->

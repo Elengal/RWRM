@@ -575,7 +575,7 @@
     <li>memeAdjective_neutral->кромешное</li>
     <li>memeAdjective_plural->тёмные</li>
     <li>memeAdjective_plural->кромешные</li>
-    <li>memeHyphenPrefix->темно</li>
+    <li>memeHyphenPrefix->тёмно</li>
     <li>memeHyphenPrefix->тускло</li>
     <li>memeConcept->тьмы</li>
     <li>memeConcept->мрака</li>
@@ -584,7 +584,7 @@
     <li>memeLeaderNoun->светоборец</li>
     <li>memeLeaderAdjective->тёмный</li>
     <li>memeMoralist->затмитель</li>
-    <li>memeMoralist->темновед</li>
+    <li>memeMoralist->тёмновед</li>
     <li>memeMoralist->темнитель</li>
   </Darkness.generalRules.rulesStrings>
   

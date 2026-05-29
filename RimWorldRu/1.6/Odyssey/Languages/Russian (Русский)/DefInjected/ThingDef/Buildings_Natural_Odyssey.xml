@@ -9,7 +9,7 @@
   <!-- EN: mechanoid light -->
   <AncientEmergencyLight_Green.label>светильник механоидов</AncientEmergencyLight_Green.label>
   <!-- EN: A light used in mechanoid facilities. The green hue is optimal for mechanoid optical arrays. -->
-  <AncientEmergencyLight_Green.description>Светильник, используемый в помещениях механоидов. Зеленый свет оптимален для оптических сенсоров механоидов.</AncientEmergencyLight_Green.description>
+  <AncientEmergencyLight_Green.description>Светильник, используемый в помещениях механоидов. Зелёный свет оптимален для оптических сенсоров механоидов.</AncientEmergencyLight_Green.description>
   
   <!-- EN: ancient emergency light -->
   <AncientEmergencyLight_Red.label>древний аварийный светильник</AncientEmergencyLight_Red.label>

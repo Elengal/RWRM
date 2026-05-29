@@ -25,7 +25,7 @@
   <!-- EN: ancient grav engine -->
   <AncientGravEngine.label>древний гравидвигатель</AncientGravEngine.label>
   <!-- EN: An ultratech engine used to bring large structures and ships into orbit. While it has been nonfunctional for many years, it contains a functional gravcore. -->
-  <AncientGravEngine.description>Ультратехнологичный двигатель, используемый для вывода больших конструкций и кораблей на орбиту. Хотя он не работает уже много лет, внутри всё еще находится рабочее гравиядро.</AncientGravEngine.description>
+  <AncientGravEngine.description>Ультратехнологичный двигатель, используемый для вывода больших конструкций и кораблей на орбиту. Хотя он не работает уже много лет, внутри всё ещё находится рабочее гравиядро.</AncientGravEngine.description>
   <!-- EN: Contains: Gravcore -->
   <AncientGravEngine.comps.CompInspectString.inspectString>Содержит: гравиядро</AncientGravEngine.comps.CompInspectString.inspectString>
   
@@ -114,7 +114,7 @@
   <!-- EN: ancient transport pod -->
   <AncientTransportPod.label>древняя транспортная капсула</AncientTransportPod.label>
   <!-- EN: An ancient cargo pod capable of carrying people, animals, and items. It's still in working condition. -->
-  <AncientTransportPod.description>Древняя транспортная капсула, способная перевозить людей, животных и предметы. Всё еще работает.</AncientTransportPod.description>
+  <AncientTransportPod.description>Древняя транспортная капсула, способная перевозить людей, животных и предметы. Всё ещё работает.</AncientTransportPod.description>
   <!-- EN: drop pod -->
   <ActiveDropPodAncient.label>транспортная капсула</ActiveDropPodAncient.label>
   <!-- EN: grav anchor -->

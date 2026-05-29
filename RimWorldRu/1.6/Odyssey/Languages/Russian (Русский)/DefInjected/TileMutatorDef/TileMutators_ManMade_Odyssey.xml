@@ -27,7 +27,7 @@
   <AncientRuins.description>Остатки древнего поселения. Эти развалины могут таить в себе самые разные опасности.</AncientRuins.description>
   
   <!-- EN: frozen ruins -->
-  <AncientRuins_Frozen.label>замерзшие развалины</AncientRuins_Frozen.label>
+  <AncientRuins_Frozen.label>замёрзшие развалины</AncientRuins_Frozen.label>
   <!-- EN: The ruins of an ancient settlement, now encased in solid ice. These ruins may contain untold dangers. -->
   <AncientRuins_Frozen.description>Развалины древнего поселения, ныне окутанные льдом. Эти руины могут скрывать неизведанные опасности.</AncientRuins_Frozen.description>
   
@@ -54,6 +54,6 @@
   <!-- EN: stockpile -->
   <Stockpile.label>склад</Stockpile.label>
   <!-- EN: This area contains an underground stockpile of resources. Be careful, some of the ancient defense systems may still be active. -->
-  <Stockpile.description>Здесь находится подземный склад ресурсов. Будьте осторожны: некоторые из древних систем защиты могут все еще действовать.</Stockpile.description>
+  <Stockpile.description>Здесь находится подземный склад ресурсов. Будьте осторожны: некоторые из древних систем защиты могут всё ещё действовать.</Stockpile.description>
   
 </LanguageData>

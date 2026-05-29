@@ -34,7 +34,7 @@
   <!-- EN: Marlin attack -->
   <MarlinAttack.letterLabel>атака марлина</MarlinAttack.letterLabel>
   <!-- EN: While fishing, {PAWN_nameDef} was attacked by a giant marlin and was skewered by its spear-like snout. The fish escaped. -->
-  <MarlinAttack.letterText>Пока {PAWN_nameDef} рыбачил, на него напал гигантский марлин и пронзил своим копьеобразным рылом. Рыба сбежала.</MarlinAttack.letterText>
+  <MarlinAttack.letterText>Пока {PAWN_nameDef} рыбачил, на него напал гигантский марлин и пронзил своим копьёобразным рылом. Рыба сбежала.</MarlinAttack.letterText>
   
   <!-- EN: Giant fish -->
   <MarlinEscape.letterLabel>гигантская рыба</MarlinEscape.letterLabel>

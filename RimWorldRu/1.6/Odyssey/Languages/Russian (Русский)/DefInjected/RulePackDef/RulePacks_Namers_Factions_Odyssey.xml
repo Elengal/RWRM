@@ -39,7 +39,7 @@
   -->
   <NamerFactionSalvagers.rulePack.rulesStrings>
     <li>spaceAdj->[spaceAdj_mas]</li>
-    <li>r_name->[spaceAdj_plural] cпасатели</li>
+    <li>r_name->[spaceAdj_plural] спасатели</li>
     <li>r_name->[spaceAdj_plural] падальщики</li>
     <li>r_name->[spaceAdj_plural] [AnimalBadass_plural]</li>
     <li>r_name->[spaceAdj_plural] [AnimalBadass_plural]</li>

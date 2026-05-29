@@ -1264,7 +1264,7 @@
   <!-- EN: After repairing a fleet admiral's holoscreen with nothing but a pair of rusty pliers and scrap wire, [PAWN_nameDef] was invited to the Federation Naval Academy.\n\n[PAWN_pronoun] received an excellent technical education and extensive firearms training, but had no interest in studying more menial skills. -->
   <NavyTechOfficer0.description>Имея на руках лишь старые плоскогубцы и ржавую проволоку, невозможно починить голографический экран. По крайне мере, так считали высшие офицеры флота до того как {PAWN_nameDef} и {PAWN_possessive} работа доказали обратное. За такие умения Федеральная Академия ВКС пригласила {PAWN_possessive} к себе.\n\n{PAWN_pronoun} обладает исключительным техническим образованием, а также замечательно владеет огнестрельным оружием, хотя всё это было приобретено в ущерб более лакейским умениям.</NavyTechOfficer0.description>
   <!-- EN: navy tech officer -->
-  <NavyTechOfficer0.title>флотcкий инженер</NavyTechOfficer0.title>
+  <NavyTechOfficer0.title>флотский инженер</NavyTechOfficer0.title>
   <!-- EN: navy tech -->
   <NavyTechOfficer0.titleShort>инженер</NavyTechOfficer0.titleShort>
   

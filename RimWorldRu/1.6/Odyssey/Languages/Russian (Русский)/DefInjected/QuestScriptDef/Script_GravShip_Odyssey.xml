@@ -47,7 +47,7 @@
   </Gravcore_CrashedMechanoidPlatform.questNameRules.rulesStrings>
   
   <!-- EN: Gravcore detected: Frozen terraformer -->
-  <Gravcore_FrozenTerraformer.questAvailableLetterLabel>Обнаружено гравиядро: замерзший терраформер</Gravcore_FrozenTerraformer.questAvailableLetterLabel>
+  <Gravcore_FrozenTerraformer.questAvailableLetterLabel>Обнаружено гравиядро: замёрзший терраформер</Gravcore_FrozenTerraformer.questAvailableLetterLabel>
   <!-- EN:
     <li>questDescription->You have detected the energy signature of a gravcore. The gravcore is powering a malfunctioning ancient terraformer. Its location is marked on the world map.\n\nThe terraformer is cooling the local region to dangerously low temperatures. Be prepared for cold weather and a long stay.\n\nObtain gravcores and gravlite panels to increase the size of your gravship.</li>
   -->
@@ -58,7 +58,7 @@
     <li>questName->frozen terraformer</li>
   -->
   <Gravcore_FrozenTerraformer.questNameRules.rulesStrings>
-    <li>questName->замерзший терраформер</li>
+    <li>questName->замёрзший терраформер</li>
   </Gravcore_FrozenTerraformer.questNameRules.rulesStrings>
   
   <!-- EN: Gravcore detected: Cave entrance -->
@@ -90,7 +90,7 @@
     <li>questDescription->You have detected the energy signature of a gravcore. It is powering a relay that is part of a huge mechanoid communication net.\n\nYou can disassemble the relay, but the process will take days to complete. The relay itself will be heavily defended by mechanoids.\n\nObtain gravcores and gravlite panels to increase the size of your gravship.</li>
   -->
   <Gravcore_MechanoidRelay.questDescriptionRules.rulesStrings>
-    <li>questDescription->Вы обнаружили энергетический след гравиядра. Оно питает ретранслятор, являющийся частью огромной сети коммуникации механоидов.\n\nВы можете разобрать ретранслятор, но этот процесс займет несколько дней. Сам ретранслятор будет сильно охраняться механоидaми.\n\nДобывайте гравиядра и гравлитовые панели, чтобы увеличить размер вашего гравикорабля.</li>
+    <li>questDescription->Вы обнаружили энергетический след гравиядра. Оно питает ретранслятор, являющийся частью огромной сети коммуникации механоидов.\n\nВы можете разобрать ретранслятор, но этот процесс займет несколько дней. Сам ретранслятор будет сильно охраняться механоидами.\n\nДобывайте гравиядра и гравлитовые панели, чтобы увеличить размер вашего гравикорабля.</li>
   </Gravcore_MechanoidRelay.questDescriptionRules.rulesStrings>
   <!-- EN:
     <li>questName->mechanoid relay</li>

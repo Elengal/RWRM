@@ -202,7 +202,7 @@
     <li>statueSubjectDesc->вырывается из цепей</li>
     <li>statueSubjectDesc->шепчет безмолвную тайну</li>
     <li>statueSubjectDesc->смотрит на звезды, глаза полны удивления</li>
-    <li>statueSubjectDesc->бросает невидимое копье</li>
+    <li>statueSubjectDesc->бросает невидимое копьё</li>
     <li>statueSubjectDesc->рвет лист бумаги в знак неповиновения</li>
     <li>statueSubjectDesc->шагает по глубоким водам</li>
     <li>statueSubjectDesc->держит держит в обеих руках [prop]</li>
@@ -327,7 +327,7 @@
     <li>statueBodyPart->глаза</li>
     <li>prop_fem->книга</li>
     <li>prop_mas->меч</li>
-    <li>prop_neu->копье</li>
+    <li>prop_neu->копьё</li>
     <li>prop_mas->пистолет</li>
     <li>prop_mas->псионический реликт</li>
     <li>prop_neu->человеческое сердце</li>

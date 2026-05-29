@@ -298,10 +298,10 @@
     <li>ruin_adjective_mas->разрушенный</li>
     <li>ruin_adjective_fem->разрушенная</li>
     <li>ruin_adjective_plural->разрушенные</li>
-    <li>ruin_adjective_mas->замерзший</li>
-    <li>ruin_adjective_fem->замерзшая</li>
-    <li>ruin_adjective_plural->замерзшие</li>
-    <li>terrain_word_plural(p=2)->замерзшие развалины</li>
+    <li>ruin_adjective_mas->замёрзший</li>
+    <li>ruin_adjective_fem->замёрзшая</li>
+    <li>ruin_adjective_plural->замёрзшие</li>
+    <li>terrain_word_plural(p=2)->замёрзшие развалины</li>
     <li>terrain_word_mas->ледяной город</li>
     <li>terrain_word_mas->город</li>
   </NamerLandmark_FrozenRuins.rulePack.rulesStrings>
@@ -389,7 +389,7 @@
     <li>r_name->[terrain_word_plural]</li>
     <li>terrain_word_plural->ледяные дюны</li>
     <li>terrain_word_plural->ледяные холмы</li>
-    <li>terrain_word_plural->замерзшие холмы</li>
+    <li>terrain_word_plural->замёрзшие холмы</li>
   </NamerLandmark_IceDunes.rulePack.rulesStrings>
   
   <!-- EN:
@@ -619,9 +619,9 @@
     <li>dread_mas->зловещий</li>
     <li>dread_fem->зловещая</li>
     <li>dread_plural->зловещие</li>
-    <li>dread_mas->темный</li>
-    <li>dread_fem->темная</li>
-    <li>dread_plural->темные</li>
+    <li>dread_mas->тёмный</li>
+    <li>dread_fem->тёмная</li>
+    <li>dread_plural->тёмные</li>
   </NamerLandmark_TerraformingScar.rulePack.rulesStrings>
   
   <!-- EN:
