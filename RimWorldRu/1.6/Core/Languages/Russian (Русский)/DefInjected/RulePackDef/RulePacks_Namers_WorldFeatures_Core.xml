@@ -622,13 +622,9 @@
     <!-- narrative_name_gen - родительный падеж -->
     <li>narrative_name_gen(p=12)->[WordTribal]</li>
     <li>narrative_name_gen(p=12)->[PlaceOutlander]</li>
-    <li>narrative_name_gen->[Color_gen][NaturalObject_gen]</li>
-    <li>narrative_name_gen->[AdjectiveNatural_gen][BodyPart_gen]</li>
+    <li>narrative_name_gen->[Color_gen] [NaturalObject_gen]</li>
+    <li>narrative_name_gen->[AdjectiveNatural_gen] [BodyPart_gen]</li>
     <li>narrative_name_gen->[Animal_gen]</li>
-
-    <li>narrative_name_gen->[Color_gen][Animal_gen]</li>
-    <li>narrative_name_gen->[AdjectiveNatural_gen][Animal_gen]</li>
-    <li>narrative_name_gen->[Animal_gen][BodyPart_gen]</li>
     <li>narrative_name_gen->[Color_gen] [Animal_gen]</li>
     <li>narrative_name_gen->[AdjectiveNatural_gen] [Animal_gen]</li>
     <li>narrative_name_gen->[Animal_gen] [BodyPart_gen]</li>

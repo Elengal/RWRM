@@ -122,9 +122,9 @@
     <li>glowForest_adjective_neu->корявое</li>
     <li>terrain_word_mas(p=3)->светолес</li>
     <li>terrain_word_fem->мицелиевая подстилка</li>
-    <li>terrain_word_mas->грибной лес</li>
+    <li>terrain_word_mas->лес</li>
     <li>terrain_word_neu->темноземье</li>
-    <li>terrain_word_mas->темный лес</li>
+    <li>terrain_word_mas->бор</li>
     <li>terrain_word_plural->дебри</li>
     <li>terrain_word_plural->леса</li>
   </NamerGlowforest.rulePack.rulesStrings>
