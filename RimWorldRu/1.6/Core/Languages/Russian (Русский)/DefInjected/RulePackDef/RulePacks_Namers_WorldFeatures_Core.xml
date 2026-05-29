@@ -43,6 +43,7 @@
   <NamerAridShrubland.rulePack.rulesStrings>
     <li>terrain_word->[terrain_word_mas]</li>
     <li>terrain_word(p=2)->[terrain_word_fem]</li>
+    <li>terrain_word(p=2)->[terrain_word_neu]</li>
     <li>terrain_word(p=2)->[terrain_word_plural]</li>
     <li>r_name->[wasteland_name]</li>
     <li>wasteland_neutral->Поле</li>
@@ -51,6 +52,8 @@
     <li>wasteland_fem->Пампа</li>
     <li>wasteland_fem->Прерия</li>
     <li>wasteland_fem->саванна</li>
+    <li>terrain_word_mas->кустарник</li>
+    <li>terrain_word_neu->побоище</li>
   </NamerAridShrubland.rulePack.rulesStrings>
   
   <!-- EN:
@@ -88,10 +91,12 @@
   <NamerBorealForest.rulePack.rulesStrings>
     <li>terrain_word->[terrain_word_mas]</li>
     <li>terrain_word(p=2)->[terrain_word_fem]</li>
+    <li>terrain_word(p=2)->[terrain_word_neu]</li>
     <li>terrain_word(p=2)->[terrain_word_plural]</li>
     <li>r_name->[forest_name]</li>
     <li>forest_fem(p=6)->тайга</li>
     <li>forest_plural->Дебри</li>
+    <li>terrain_word_neu->урочище</li>
   </NamerBorealForest.rulePack.rulesStrings>
   
   <!-- EN:
@@ -121,8 +126,11 @@
   <NamerDesert.rulePack.rulesStrings>
     <li>terrain_word->[terrain_word_mas]</li>
     <li>terrain_word(p=2)->[terrain_word_fem]</li>
+    <li>terrain_word(p=2)->[terrain_word_neu]</li>
     <li>terrain_word(p=2)->[terrain_word_plural]</li>
     <li>r_name->[wasteland_name]</li>
+    <li>terrain_word_neu->плато</li>
+    <li>terrain_word_neu->пустынное плато</li>
     <li>prefix_proper_masc->плоский</li>
     <li>prefix_proper_masc->сухой</li>
     <li>prefix_proper_masc->выжженный</li>
@@ -169,10 +177,13 @@
   <NamerForest.rulePack.rulesStrings>
     <li>terrain_word->[terrain_word_mas]</li>
     <li>terrain_word(p=2)->[terrain_word_fem]</li>
+    <li>terrain_word(p=2)->[terrain_word_neu]</li>
     <li>terrain_word(p=2)->[terrain_word_plural]</li>
     <li>r_name->[forest_name]</li>
     <li>forest_fem->Пуща</li>
     <li>forest_masc->Бор</li>
+    <li>terrain_word_neu->урочище</li>
+    <li>terrain_word_neu->редколесье</li>
   </NamerForest.rulePack.rulesStrings>
   
   <!-- EN:
@@ -258,7 +269,9 @@
   <NamerMountainRange.rulePack.rulesStrings>
     <li>terrain_word->[terrain_word_mas]</li>
     <li>terrain_word(p=2)->[terrain_word_fem]</li>
+    <li>terrain_word(p=2)->[terrain_word_neu]</li>
     <li>terrain_word(p=2)->[terrain_word_plural]</li>
+    <li>terrain_word_neu->нагорье</li>
     <li>r_name->[mountain_range_masc] [suffix_proper]</li>
     <li>r_name->[prefix_proper_masc] [mountain_range_masc]</li>
     <li>r_name->[mountain_range_plural] [suffix_proper]</li>
@@ -334,9 +347,11 @@
   <NamerSea.rulePack.rulesStrings>
     <li>terrain_word->[terrain_word_mas]</li>
     <li>terrain_word(p=2)->[terrain_word_fem]</li>
+    <li>terrain_word(p=2)->[terrain_word_neu]</li>
     <li>terrain_word(p=2)->[terrain_word_plural]</li>
     <li>r_name->море [suffix_proper]</li>
     <li>r_name->[prefix_proper_neutral] море</li>
+    <li>terrain_word_neu->море</li>
   </NamerSea.rulePack.rulesStrings>
   
   <!-- EN:
@@ -448,10 +463,14 @@
   <NamerTundra.rulePack.rulesStrings>
     <li>terrain_word->[terrain_word_mas]</li>
     <li>terrain_word(p=2)->[terrain_word_fem]</li>
+    <li>terrain_word(p=2)->[terrain_word_neu]</li>
     <li>terrain_word(p=2)->[terrain_word_plural]</li>
     <li>r_name->[wasteland_name]</li>
     <li>wasteland_fem(p=8)->тундра</li>
     <li>wasteland_fem->Целина</li>
+    <li>terrain_word_neu->беломорье</li>
+    <li>terrain_word_neu->побережье</li>
+    <li>terrain_word_mas->предел</li>
   </NamerTundra.rulePack.rulesStrings>
   
   <!-- EN:
@@ -792,19 +811,19 @@
     <li>terrain_word->[terrain_word_neu]</li>
     <li>terrain_word->[terrain_word_plural]</li>
 
-    <!-- narrative_name по родам -->
+    <!-- narrative_name по родам (всегда прилагательное + существительное) -->
     <li>narrative_name_mas->[Color_mas] [NaturalObject_mas]</li>
-    <li>narrative_name_mas->[AdjectiveNatural_mas]</li>
-    <li>narrative_name_mas->[Color_mas]</li>
+    <li>narrative_name_mas->[AdjectiveNatural_mas] [NaturalObject_mas]</li>
+    <li>narrative_name_mas->[Color_mas] [Animal_mas]</li>
     <li>narrative_name_fem->[Color_fem] [NaturalObject_fem]</li>
-    <li>narrative_name_fem->[AdjectiveNatural_fem]</li>
-    <li>narrative_name_fem->[Color_fem]</li>
+    <li>narrative_name_fem->[AdjectiveNatural_fem] [NaturalObject_fem]</li>
+    <li>narrative_name_fem->[Color_fem] [Animal_fem]</li>
     <li>narrative_name_neu->[Color_neu] [NaturalObject_neu]</li>
-    <li>narrative_name_neu->[AdjectiveNatural_neu]</li>
-    <li>narrative_name_neu->[Color_neu]</li>
+    <li>narrative_name_neu->[AdjectiveNatural_neu] [NaturalObject_neu]</li>
+    <li>narrative_name_neu->[Color_neu] [Animal_neu]</li>
     <li>narrative_name_plural->[Color_plural] [NaturalObject_plural]</li>
-    <li>narrative_name_plural->[AdjectiveNatural_plural]</li>
-    <li>narrative_name_plural->[Color_plural]</li>
+    <li>narrative_name_plural->[AdjectiveNatural_plural] [NaturalObject_plural]</li>
+    <li>narrative_name_plural->[Color_plural] [Animal_plural]</li>
 
     <!-- Цвета по родам -->
     <li>Color_mas->красный</li>
@@ -919,6 +938,27 @@
     <li>NaturalObject_plural->воды</li>
     <li>NaturalObject_plural->ветра</li>
     <li>NaturalObject_plural->огни</li>
+
+    <!-- Животные по родам (для narrative_name_X) -->
+    <li>Animal_mas->волк</li>
+    <li>Animal_mas->медведь</li>
+    <li>Animal_mas->орёл</li>
+    <li>Animal_mas->ворон</li>
+    <li>Animal_mas->лев</li>
+    <li>Animal_mas->олень</li>
+    <li>Animal_mas->кабан</li>
+    <li>Animal_mas->ящер</li>
+    <li>Animal_mas->дракон</li>
+    <li>Animal_fem->змея</li>
+    <li>Animal_fem->рысь</li>
+    <li>Animal_fem->пума</li>
+    <li>Animal_fem->лисица</li>
+    <li>Animal_fem->пантера</li>
+    <li>Animal_neu->чудовище</li>
+    <li>Animal_neu->чудище</li>
+    <li>Animal_plural->волки</li>
+    <li>Animal_plural->медведи</li>
+    <li>Animal_plural->драконы</li>
   </WorldFeatureNamerCommon.rulePack.rulesStrings>
 
 </LanguageData>
