@@ -19,6 +19,7 @@
     <li>terrain_word(p=2)->[terrain_word_plural]</li>
     <li>terrain_word_mas->архипелаг</li>
     <li>terrain_word_fem->Земля</li>
+    <li>terrain_word_neu->созвездие</li>
     <li>terrain_word_plural->о-ва</li>
     <li>r_name->[archipelago_masc] [suffix_proper]</li>
     <li>r_name->[prefix_proper_masc] [archipelago_masc]</li>
@@ -85,7 +86,6 @@
     <li>r_name->[prefix_proper_fem] [bay_fem]</li>
     <li>bay_masc(p=4)->залив</li>
     <li>bay_masc->губа</li>
-    <li>terrain_word_neu->ущелье</li>
     <li>bay_fem(p=2)->бухта</li>
     <li>bay_fem(p=0.5)->губа</li>
     <li>bay_fem->гавань</li>
@@ -181,6 +181,7 @@
     <li>prefix_proper_plural->песчаные</li>
     <li>prefix_proper_plural->скалистые</li>
     <li>wasteland_masc->солончак</li>
+    <li>wasteland_neu->плато</li>
     <li>wasteland_fem(p=6)->пустыня</li>
     <li>wasteland_plural(p=4)->пески</li>
   </NamerDesert.rulePack.rulesStrings>
@@ -222,6 +223,7 @@
     <li>terrain_word(p=2)->[terrain_word_plural]</li>
     <li>terrain_word_mas->лёд</li>
     <li>terrain_word_fem->глыба</li>
+    <li>terrain_word_neu->поле</li>
     <li>terrain_word_plural->льды</li>
     <li>r_name->[ice_sheet_masc] [suffix_proper]</li>
     <li>r_name->[ice_sheet_neu] [suffix_proper]</li>
@@ -255,6 +257,7 @@
     <li>terrain_word(p=2)->[terrain_word_plural]</li>
     <li>terrain_word_mas->о.</li>
     <li>terrain_word_fem->Земля</li>
+    <li>terrain_word_neu->ущелье</li>
     <li>terrain_word_plural->о-ва</li>
     <li>r_name->[island_masc] [suffix_proper]</li>
     <li>r_name->[island_masc] [prefix_proper_masc]</li>
@@ -279,6 +282,7 @@
     <li>terrain_word(p=2)->[terrain_word_plural]</li>
     <li>terrain_word_mas->оз.</li>
     <li>terrain_word_fem->губа</li>
+    <li>terrain_word_neu->озеро</li>
     <li>terrain_word_plural->озёра</li>
     <li>r_name->[lake_neu] [suffix_proper]</li>
     <li>r_name->[prefix_proper_neu] [lake_neu]</li>
@@ -341,6 +345,7 @@
     <li>terrain_word(p=2)->[terrain_word_plural]</li>
     <li>terrain_word_mas->океан</li>
     <li>terrain_word_fem->лагуна</li>
+    <li>terrain_word_neu->море</li>
     <li>terrain_word_plural->воды</li>
     <li>r_name->[ocean_masc] [suffix_proper]</li>
     <li>r_name->[prefix_proper_masc] [ocean_masc]</li>
@@ -367,6 +372,7 @@
     <li>terrain_word(p=2)->[terrain_word_plural]</li>
     <li>terrain_word_mas->Мыс</li>
     <li>terrain_word_fem->Земля</li>
+    <li>terrain_word_neu->побережье</li>
     <li>terrain_word_plural->берега</li>
     <li>r_name(p=2)->[peninsula_masc] [suffix_proper]</li>
     <li>r_name(p=2)->[prefix_proper_masc] [peninsula_masc]</li>
@@ -393,7 +399,6 @@
     <li>terrain_word_plural->воды</li>
     <li>r_name->море [suffix_proper]</li>
     <li>r_name->[prefix_proper_neu] море</li>
-    <li>terrain_word_neu->море</li>
   </NamerSea.rulePack.rulesStrings>
   
   <!-- EN:
@@ -420,8 +425,9 @@
     <li>terrain_word->[terrain_word_mas]</li>
     <li>terrain_word(p=2)->[terrain_word_fem]</li>
     <li>terrain_word(p=2)->[terrain_word_plural]</li>
-    <li>terrain_word_mas->залив</li>
+    <li>terrain_word_mas->мшар</li>
     <li>terrain_word_fem->топь</li>
+    <li>terrain_word_neu->болото</li>
     <li>terrain_word_plural->болота</li>
     <li>r_name->[swamp_fem] [suffix_proper]</li>
     <li>r_name->[prefix_proper_fem] [swamp_fem]</li>
@@ -472,6 +478,7 @@
     <li>terrain_word(p=2)->[terrain_word_plural]</li>
     <li>terrain_word_mas->лес</li>
     <li>terrain_word_fem->Сельва</li>
+    <li>terrain_word_neu->редколесье</li>
     <li>terrain_word_plural->джунгли</li>
     <li>r_name->[forest_name]</li>
     <li>prefix_proper_masc->влажный</li>

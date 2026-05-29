@@ -58,10 +58,10 @@
     <li>glacialPlain_adjective_plural->замерзшие</li>
     <li>glacialPlain_adjective_neu->замерзшее</li>
     <li>terrain_word_mas->ледник</li>
-    <li>terrain_word_neu(p=0.5)->ледяное поле</li>
-    <li>terrain_word_fem(p=0.5)->полярная шапка</li>
+    <li>terrain_word_neu(p=0.5)->ледовое поле</li>
+    <li>terrain_word_fem(p=0.5)->шапка</li>
     <li>terrain_word_neu(p=0.3)->поле</li>
-    <li>terrain_word_fem(p=0.3)->ледниковая равнина</li>
+    <li>terrain_word_fem(p=0.3)->равнина</li>
     <li>terrain_word_mas(p=0.3)->простор</li>
     <li>terrain_word_mas(p=0.3)->тракт</li>
     <li>terrain_word_plural->льды</li>
@@ -258,7 +258,7 @@
     <li>lavaField_adjective_plural->жгучие</li>
     <li>lavaField_adjective_neu->жгучее</li>
     <li>terrain_word_plural(p=3)->лавовые поля</li>
-    <li>terrain_word_plural->огненные реки</li>
+    <li>terrain_word_plural->потоки лавы</li>
     <li>terrain_word_mas->разлом</li>
     <li>terrain_word_neu->плато</li>
     <li>terrain_word_neu->магмовое плато</li>
