@@ -96,10 +96,12 @@
     <li>r_name(p=0.3)->[terrain_word_mas] [suffix_proper]</li>
     <li>r_name(p=0.3)->[terrain_word_fem] [suffix_proper]</li>
     <li>r_name(p=0.3)->[terrain_word_neu] [suffix_proper]</li>
+    <li>r_name(p=0.3)->[terrain_word_plural] [suffix_proper]</li>
     <!-- Существительное + родительный падеж -->
     <li>r_name(p=0.3)->[terrain_word_mas] [narrative_name_gen]</li>
     <li>r_name(p=0.3)->[terrain_word_fem] [narrative_name_gen]</li>
     <li>r_name(p=0.3)->[terrain_word_neu] [narrative_name_gen]</li>
+    <li>r_name(p=0.3)->[terrain_word_plural] [narrative_name_gen]</li>
     <li>glowForest_adjective_mas(p=2)->грибной</li>
     <li>glowForest_adjective_fem(p=2)->грибная</li>
     <li>glowForest_adjective_plural(p=2)->грибные</li>
@@ -122,8 +124,10 @@
     <li>glowForest_adjective_neu->корявое</li>
     <li>terrain_word_mas(p=3)->светолес</li>
     <li>terrain_word_fem->мицелиевая подстилка</li>
+    <li>terrain_word_fem->чаща</li>
     <li>terrain_word_mas->лес</li>
     <li>terrain_word_neu->темноземье</li>
+    <li>terrain_word_neu->урочище</li>
     <li>terrain_word_mas->бор</li>
     <li>terrain_word_plural->дебри</li>
     <li>terrain_word_plural->леса</li>
@@ -254,6 +258,7 @@
     <li>lavaField_adjective_plural->жгучие</li>
     <li>lavaField_adjective_neu->жгучее</li>
     <li>terrain_word_plural(p=3)->лавовые поля</li>
+    <li>terrain_word_plural->огненные реки</li>
     <li>terrain_word_mas->разлом</li>
     <li>terrain_word_neu->плато</li>
     <li>terrain_word_neu->магмовое плато</li>
@@ -333,11 +338,14 @@
     <li>terrain_word_plural(p=6)->руины</li>
     <li>terrain_word_plural(p=3)->шрамы</li>
     <li>terrain_word_fem->мегапостройка</li>
+    <li>terrain_word_fem->трещина</li>
+    <li>terrain_word_fem->пустошь</li>
     <li>terrain_word_plural->пустоши</li>
     <li>terrain_word_plural->отбросы</li>
     <li>terrain_word_mas->пустырь</li>
     <li>terrain_word_mas->реликт</li>
     <li>terrain_word_neu->токсоземье</li>
+    <li>terrain_word_neu->пепелище</li>
     <li>terrain_word_plural->земли</li>
     <li>terrain_word_mas->бастион</li>
   </NamerScarlands.rulePack.rulesStrings>
