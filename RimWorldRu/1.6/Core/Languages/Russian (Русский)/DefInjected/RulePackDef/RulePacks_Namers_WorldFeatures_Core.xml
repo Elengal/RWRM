@@ -708,21 +708,12 @@
     <li>story_result->fraud</li>
   -->
   <WorldFeatureNamerCommon.rulePack.rulesStrings>
-    <!-- Прилагательное + существительное (одного рода) -->
-    <li>r_name->[prefix_proper_masc] [terrain_word_mas]</li>
-    <li>r_name(p=2)->[prefix_proper_fem] [terrain_word_fem]</li>
-    <li>r_name(p=2)->[prefix_proper_neu] [terrain_word_neu]</li>
-    <li>r_name(p=2)->[prefix_proper_plural] [terrain_word_plural]</li>
-    <!-- Существительное + имя собственное -->
-    <li>r_name->[terrain_word_mas] [suffix_proper]</li>
-    <li>r_name(p=2)->[terrain_word_fem] [suffix_proper]</li>
-    <li>r_name(p=2)->[terrain_word_neu] [suffix_proper]</li>
-    <li>r_name(p=2)->[terrain_word_plural] [suffix_proper]</li>
+    <!-- Существительное + имя собственное (универсально для всех модов) -->
+    <li>r_name->[terrain_word] [suffix_proper]</li>
     <!-- Существительное + родительный падеж -->
-    <li>r_name(p=0.5)->[terrain_word_mas] [narrative_name_gen]</li>
-    <li>r_name(p=0.5)->[terrain_word_fem] [narrative_name_gen]</li>
-    <li>r_name(p=0.5)->[terrain_word_neu] [narrative_name_gen]</li>
-    <li>r_name(p=0.5)->[terrain_word_plural] [narrative_name_gen]</li>
+    <li>r_name(p=0.5)->[terrain_word] [narrative_name_gen]</li>
+    <!-- Историческое название -->
+    <li>r_name(p=0.05)->[storyname] [terrain_word]</li>
     <li>narrative_name->[narrative_name_mas]</li>
     <li>narrative_name(p=2)->[narrative_name_fem]</li>
     <li>narrative_name(p=2)->[narrative_name_neu]</li>
