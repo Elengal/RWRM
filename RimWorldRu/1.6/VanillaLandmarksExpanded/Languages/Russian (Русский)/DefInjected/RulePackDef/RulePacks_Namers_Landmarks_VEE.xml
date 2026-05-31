@@ -1,0 +1,820 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+  <!-- VEE_NamerLandmark_ImpactCrater -->
+  <!-- EN: terrain_word->impact crater / meteor crater / impact basin -->
+  <VEE_NamerLandmark_ImpactCrater.rulePack.rulesStrings>
+    <li>terrain_word_mas->[terrain_word]</li>
+    <li>terrain_word_fem->[terrain_word]</li>
+    <li>terrain_word_neu->[terrain_word]</li>
+    <li>terrain_word_plural->[terrain_word]</li>
+    <li>terrain_word_mas(p=3)->кратер</li>
+    <li>terrain_word_mas->метеоритный кратер</li>
+    <li>terrain_word_mas->импактный кратер</li>
+    <li>terrain_word_mas->ударная впадина</li>
+  </VEE_NamerLandmark_ImpactCrater.rulePack.rulesStrings>
+
+  <!-- VEE_NamerLandmark_ResurgentCaldera -->
+  <!-- EN: terrain_word->resurgent caldera / uplifted caldera / central dome caldera -->
+  <VEE_NamerLandmark_ResurgentCaldera.rulePack.rulesStrings>
+    <li>terrain_word_mas->[terrain_word]</li>
+    <li>terrain_word_fem->[terrain_word]</li>
+    <li>terrain_word_neu->[terrain_word]</li>
+    <li>terrain_word_plural->[terrain_word]</li>
+    <li>terrain_word_fem(p=3)->кальдера</li>
+    <li>terrain_word_fem->поднятая кальдера</li>
+    <li>terrain_word_fem->центральная кальдера</li>
+    <li>terrain_word_mas->купол кальдеры</li>
+  </VEE_NamerLandmark_ResurgentCaldera.rulePack.rulesStrings>
+
+  <!-- VEE_NamerLandmark_CraterLake -->
+  <!-- EN: terrain_word->crater lake / caldera lake / impact lake -->
+  <VEE_NamerLandmark_CraterLake.rulePack.rulesStrings>
+    <li>terrain_word_mas->[terrain_word]</li>
+    <li>terrain_word_fem->[terrain_word]</li>
+    <li>terrain_word_neu->[terrain_word]</li>
+    <li>terrain_word_plural->[terrain_word]</li>
+    <li>terrain_word_neu(p=3)->кратерное озеро</li>
+    <li>terrain_word_neu->кальдерное озеро</li>
+    <li>terrain_word_neu->импактное озеро</li>
+  </VEE_NamerLandmark_CraterLake.rulePack.rulesStrings>
+
+  <!-- VEE_NamerLandmark_ToxicCraterLake -->
+  <!-- EN: terrain_word->toxic crater lake / poisoned caldera / toxic basin -->
+  <VEE_NamerLandmark_ToxicCraterLake.rulePack.rulesStrings>
+    <li>terrain_word_mas->[terrain_word]</li>
+    <li>terrain_word_fem->[terrain_word]</li>
+    <li>terrain_word_neu->[terrain_word]</li>
+    <li>terrain_word_plural->[terrain_word]</li>
+    <li>terrain_word_neu(p=3)->токсичное кратерное озеро</li>
+    <li>terrain_word_fem->отравленная кальдера</li>
+    <li>terrain_word_neu->ядовитое озеро</li>
+    <li>terrain_word_fem->токсичная впадина</li>
+  </VEE_NamerLandmark_ToxicCraterLake.rulePack.rulesStrings>
+
+  <!-- VEE_NamerLandmark_Volcano -->
+  <!-- EN: terrain_word->volcano / lava caldera / molten crater -->
+  <VEE_NamerLandmark_Volcano.rulePack.rulesStrings>
+    <li>terrain_word_mas->[terrain_word]</li>
+    <li>terrain_word_fem->[terrain_word]</li>
+    <li>terrain_word_neu->[terrain_word]</li>
+    <li>terrain_word_plural->[terrain_word]</li>
+    <li>terrain_word_mas(p=3)->вулкан</li>
+    <li>terrain_word_fem->лавовая кальдера</li>
+    <li>terrain_word_mas->расплавленный кратер</li>
+  </VEE_NamerLandmark_Volcano.rulePack.rulesStrings>
+
+  <!-- VEE_NamerLandmark_CalmBasin -->
+  <!-- EN: terrain_word->calm basin / silent basin / windless hollow -->
+  <VEE_NamerLandmark_CalmBasin.rulePack.rulesStrings>
+    <li>terrain_word_mas->[terrain_word]</li>
+    <li>terrain_word_fem->[terrain_word]</li>
+    <li>terrain_word_neu->[terrain_word]</li>
+    <li>terrain_word_plural->[terrain_word]</li>
+    <li>terrain_word_fem(p=3)->тихая впадина</li>
+    <li>terrain_word_fem->безмолвная котловина</li>
+    <li>terrain_word_neu->безветренное углубление</li>
+  </VEE_NamerLandmark_CalmBasin.rulePack.rulesStrings>
+
+  <!-- VEE_NamerLandmark_LoneIsland -->
+  <!-- EN: terrain_word->lone island / isolated isle / detached island / solitary isle -->
+  <VEE_NamerLandmark_LoneIsland.rulePack.rulesStrings>
+    <li>terrain_word_mas->[terrain_word]</li>
+    <li>terrain_word_fem->[terrain_word]</li>
+    <li>terrain_word_neu->[terrain_word]</li>
+    <li>terrain_word_plural->[terrain_word]</li>
+    <li>terrain_word_mas(p=3)->одинокий остров</li>
+    <li>terrain_word_mas->изолированный островок</li>
+    <li>terrain_word_mas->обособленный остров</li>
+    <li>terrain_word_mas->уединённый островок</li>
+  </VEE_NamerLandmark_LoneIsland.rulePack.rulesStrings>
+
+  <!-- VEE_NamerLandmark_DetachedIceberg -->
+  <!-- EN: terrain_word->drift iceberg / pack ice mass / floating ice -->
+  <VEE_NamerLandmark_DetachedIceberg.rulePack.rulesStrings>
+    <li>terrain_word_mas->[terrain_word]</li>
+    <li>terrain_word_fem->[terrain_word]</li>
+    <li>terrain_word_neu->[terrain_word]</li>
+    <li>terrain_word_plural->[terrain_word]</li>
+    <li>terrain_word_mas->дрейфующий айсберг</li>
+    <li>terrain_word_mas->паковый лёд</li>
+    <li>terrain_word_neu->плавучее льдина</li>
+  </VEE_NamerLandmark_DetachedIceberg.rulePack.rulesStrings>
+
+  <!-- VEE_NamerLandmark_IceAndFireIsland -->
+  <!-- EN: terrain_word->ice and fire island / frozen caldera / glacial fire isle / polar volcano isle -->
+  <VEE_NamerLandmark_IceAndFireIsland.rulePack.rulesStrings>
+    <li>terrain_word_mas->[terrain_word]</li>
+    <li>terrain_word_fem->[terrain_word]</li>
+    <li>terrain_word_neu->[terrain_word]</li>
+    <li>terrain_word_plural->[terrain_word]</li>
+    <li>terrain_word_mas(p=3)->остров льда и огня</li>
+    <li>terrain_word_fem->замёрзшая кальдера</li>
+    <li>terrain_word_mas->ледяной огненный остров</li>
+    <li>terrain_word_mas->полярный вулканический остров</li>
+  </VEE_NamerLandmark_IceAndFireIsland.rulePack.rulesStrings>
+
+  <!-- VEE_NamerLandmark_CentralLakeIsland -->
+  <!-- EN: terrain_word->lake island / isle of waters / ringed lake isle / inland lake island -->
+  <VEE_NamerLandmark_CentralLakeIsland.rulePack.rulesStrings>
+    <li>terrain_word_mas->[terrain_word]</li>
+    <li>terrain_word_fem->[terrain_word]</li>
+    <li>terrain_word_neu->[terrain_word]</li>
+    <li>terrain_word_plural->[terrain_word]</li>
+    <li>terrain_word_mas(p=3)->остров на озере</li>
+    <li>terrain_word_mas->остров вод</li>
+    <li>terrain_word_mas->остров в кольце озёр</li>
+    <li>terrain_word_mas->внутренний озёрный остров</li>
+  </VEE_NamerLandmark_CentralLakeIsland.rulePack.rulesStrings>
+
+  <!-- VEE_NamerLandmark_ResurgentIsland -->
+  <!-- EN: terrain_word->resurgent island / uplifted island / central peak isle / emergent island -->
+  <VEE_NamerLandmark_ResurgentIsland.rulePack.rulesStrings>
+    <li>terrain_word_mas->[terrain_word]</li>
+    <li>terrain_word_fem->[terrain_word]</li>
+    <li>terrain_word_neu->[terrain_word]</li>
+    <li>terrain_word_plural->[terrain_word]</li>
+    <li>terrain_word_mas(p=3)->поднятый остров</li>
+    <li>terrain_word_mas->восставший остров</li>
+    <li>terrain_word_mas->остров центрального пика</li>
+    <li>terrain_word_mas->появившийся остров</li>
+  </VEE_NamerLandmark_ResurgentIsland.rulePack.rulesStrings>
+
+  <!-- VEE_NamerLandmark_SaltPlains -->
+  <!-- EN: terrain_word->salt plain / desiccated ocean / evaporation plain / saline flats / white barrens -->
+  <VEE_NamerLandmark_SaltPlains.rulePack.rulesStrings>
+    <li>terrain_word_mas->[terrain_word]</li>
+    <li>terrain_word_fem->[terrain_word]</li>
+    <li>terrain_word_neu->[terrain_word]</li>
+    <li>terrain_word_plural->[terrain_word]</li>
+    <li>terrain_word_fem->солёная равнина</li>
+    <li>terrain_word_mas->высохший океан</li>
+    <li>terrain_word_fem->равнина испарения</li>
+    <li>terrain_word_plural->солончаки</li>
+    <li>terrain_word_plural->белые пустоши</li>
+  </VEE_NamerLandmark_SaltPlains.rulePack.rulesStrings>
+
+  <!-- VEE_NamerLandmark_Ridges -->
+  <!-- EN: terrain_word->ridge / crest / spine -->
+  <VEE_NamerLandmark_Ridges.rulePack.rulesStrings>
+    <li>terrain_word_mas->[terrain_word]</li>
+    <li>terrain_word_fem->[terrain_word]</li>
+    <li>terrain_word_neu->[terrain_word]</li>
+    <li>terrain_word_plural->[terrain_word]</li>
+    <li>terrain_word_mas(p=4)->хребет</li>
+    <li>terrain_word_mas->гребень</li>
+    <li>terrain_word_mas->спина</li>
+  </VEE_NamerLandmark_Ridges.rulePack.rulesStrings>
+
+  <!-- VEE_NamerLandmark_DryRiver -->
+  <!-- EN: terrain_word->dry river / sand river / barren river -->
+  <VEE_NamerLandmark_DryRiver.rulePack.rulesStrings>
+    <li>terrain_word_mas->[terrain_word]</li>
+    <li>terrain_word_fem->[terrain_word]</li>
+    <li>terrain_word_neu->[terrain_word]</li>
+    <li>terrain_word_plural->[terrain_word]</li>
+    <li>terrain_word_fem->сухая река</li>
+    <li>terrain_word_fem->песчаная река</li>
+    <li>terrain_word_fem->безжизненная река</li>
+  </VEE_NamerLandmark_DryRiver.rulePack.rulesStrings>
+
+  <!-- VEE_NamerLandmark_Mangrove -->
+  <!-- EN: r_name(p=0.2)->[NamePerson]'s [terrain_word]; terrain_word->mangrove / tidal forest / mangal / brackish swamp / saltmire thicket / saltwater forest -->
+  <VEE_NamerLandmark_Mangrove.rulePack.rulesStrings>
+    <li>terrain_word_mas->[terrain_word]</li>
+    <li>terrain_word_fem->[terrain_word]</li>
+    <li>terrain_word_neu->[terrain_word]</li>
+    <li>terrain_word_plural->[terrain_word]</li>
+    <li>r_name(p=0.2)->[terrain_word_mas] [NamePerson_gen]</li>
+    <li>terrain_word_mas(p=2)->мангр</li>
+    <li>terrain_word_fem->приливный лес</li>
+    <li>terrain_word_mas->мангал</li>
+    <li>terrain_word_fem->солоноватое болото</li>
+    <li>terrain_word_fem->солёные заросли</li>
+    <li>terrain_word_mas->солёный лес</li>
+  </VEE_NamerLandmark_Mangrove.rulePack.rulesStrings>
+
+  <!-- VEE_NamerLandmark_Canyons -->
+  <!-- EN: r_name(p=0.2)->[NamePerson]'s [terrain_word]; terrain_word->canyons -->
+  <VEE_NamerLandmark_Canyons.rulePack.rulesStrings>
+    <li>terrain_word_mas->[terrain_word]</li>
+    <li>terrain_word_fem->[terrain_word]</li>
+    <li>terrain_word_neu->[terrain_word]</li>
+    <li>terrain_word_plural->[terrain_word]</li>
+    <li>r_name(p=0.2)->[terrain_word_mas] [NamePerson_gen]</li>
+    <li>terrain_word_plural(p=2)->каньоны</li>
+  </VEE_NamerLandmark_Canyons.rulePack.rulesStrings>
+
+  <!-- VEE_NamerLandmark_JaggedRocks -->
+  <!-- EN: r_name(p=0.2)->[NamePerson]'s [terrain_word]; terrain_word->jagged rocks / jagged ridges -->
+  <VEE_NamerLandmark_JaggedRocks.rulePack.rulesStrings>
+    <li>terrain_word_mas->[terrain_word]</li>
+    <li>terrain_word_fem->[terrain_word]</li>
+    <li>terrain_word_neu->[terrain_word]</li>
+    <li>terrain_word_plural->[terrain_word]</li>
+    <li>r_name(p=0.2)->[terrain_word_plural] [NamePerson_gen]</li>
+    <li>terrain_word_plural(p=2)->зубчатые скалы</li>
+    <li>terrain_word_plural->зубчатые хребты</li>
+  </VEE_NamerLandmark_JaggedRocks.rulePack.rulesStrings>
+
+  <!-- VEE_NamerLandmark_CoralReef -->
+  <!-- EN: r_name(p=0.2)->[NamePerson]'s [terrain_word]; terrain_word->coral reef / coral shoal / reef formation / barrier reef / fringing reef -->
+  <VEE_NamerLandmark_CoralReef.rulePack.rulesStrings>
+    <li>terrain_word_mas->[terrain_word]</li>
+    <li>terrain_word_fem->[terrain_word]</li>
+    <li>terrain_word_neu->[terrain_word]</li>
+    <li>terrain_word_plural->[terrain_word]</li>
+    <li>r_name(p=0.2)->[terrain_word_mas] [NamePerson_gen]</li>
+    <li>terrain_word_mas(p=2)->коралловый риф</li>
+    <li>terrain_word_mas->коралловая мель</li>
+    <li>terrain_word_mas->рифовая формация</li>
+    <li>terrain_word_mas->барьерный риф</li>
+    <li>terrain_word_mas->окаймляющий риф</li>
+  </VEE_NamerLandmark_CoralReef.rulePack.rulesStrings>
+
+  <!-- VEE_NamerLandmark_DustBowl -->
+  <!-- EN: r_name(p=0.2)->[NamePerson]'s [terrain_word]; terrain_word->dust bowl / depression / blasted expanse / parched barrens / scorched dustplain -->
+  <VEE_NamerLandmark_DustBowl.rulePack.rulesStrings>
+    <li>terrain_word_mas->[terrain_word]</li>
+    <li>terrain_word_fem->[terrain_word]</li>
+    <li>terrain_word_neu->[terrain_word]</li>
+    <li>terrain_word_plural->[terrain_word]</li>
+    <li>r_name(p=0.2)->[terrain_word_mas] [NamePerson_gen]</li>
+    <li>terrain_word_mas(p=2)->пыльная чаша</li>
+    <li>terrain_word_fem->впадина</li>
+    <li>terrain_word_neu->выжженное пространство</li>
+    <li>terrain_word_plural->иссушённые пустоши</li>
+    <li>terrain_word_fem->обожжённая пыльная равнина</li>
+  </VEE_NamerLandmark_DustBowl.rulePack.rulesStrings>
+
+  <!-- VEE_NamerLandmark_SulfuricLake -->
+  <!-- EN: r_name(p=0.2)->[NamePerson]'s [terrain_word]; terrain_word->sulfuric lake / acidic basin / sulfur spring / stinging waters / stinkpool / yellowmire -->
+  <VEE_NamerLandmark_SulfuricLake.rulePack.rulesStrings>
+    <li>terrain_word_mas->[terrain_word]</li>
+    <li>terrain_word_fem->[terrain_word]</li>
+    <li>terrain_word_neu->[terrain_word]</li>
+    <li>terrain_word_plural->[terrain_word]</li>
+    <li>r_name(p=0.2)->[terrain_word_neu] [NamePerson_gen]</li>
+    <li>terrain_word_neu(p=2)->сернистое озеро</li>
+    <li>terrain_word_fem->кислая впадина</li>
+    <li>terrain_word_mas->серный источник</li>
+    <li>terrain_word_plural->жгучие воды</li>
+    <li>terrain_word_neu->вонючее озеро</li>
+    <li>terrain_word_fem->жёлтая трясина</li>
+  </VEE_NamerLandmark_SulfuricLake.rulePack.rulesStrings>
+
+  <!-- VEE_NamerLandmark_SulfuricRiver -->
+  <!-- EN: r_name(p=0.2)->[NamePerson]'s [terrain_word]; terrain_word->sulfuric river / acidic stream / sulfur flow / stinging waters / reeking river / yellow run -->
+  <VEE_NamerLandmark_SulfuricRiver.rulePack.rulesStrings>
+    <li>terrain_word_mas->[terrain_word]</li>
+    <li>terrain_word_fem->[terrain_word]</li>
+    <li>terrain_word_neu->[terrain_word]</li>
+    <li>terrain_word_plural->[terrain_word]</li>
+    <li>r_name(p=0.2)->[terrain_word_fem] [NamePerson_gen]</li>
+    <li>terrain_word_fem(p=2)->сернистая река</li>
+    <li>terrain_word_mas->кислый ручей</li>
+    <li>terrain_word_mas->серный поток</li>
+    <li>terrain_word_plural->жгучие воды</li>
+    <li>terrain_word_fem->вонючая река</li>
+    <li>terrain_word_mas->жёлтый сток</li>
+  </VEE_NamerLandmark_SulfuricRiver.rulePack.rulesStrings>
+
+  <!-- VEE_NamerLandmark_BurnedForest -->
+  <!-- EN: r_name(p=0.2)->[NamePerson]'s [terrain_word]; terrain_word->burned forest / charred forest / burnt woodland / scorched grove -->
+  <VEE_NamerLandmark_BurnedForest.rulePack.rulesStrings>
+    <li>terrain_word_mas->[terrain_word]</li>
+    <li>terrain_word_fem->[terrain_word]</li>
+    <li>terrain_word_neu->[terrain_word]</li>
+    <li>terrain_word_plural->[terrain_word]</li>
+    <li>r_name(p=0.2)->[terrain_word_mas] [NamePerson_gen]</li>
+    <li>terrain_word_mas(p=2)->сгоревший лес</li>
+    <li>terrain_word_mas->обугленный лес</li>
+    <li>terrain_word_mas->выжженная роща</li>
+    <li>terrain_word_fem->обожжённая роща</li>
+  </VEE_NamerLandmark_BurnedForest.rulePack.rulesStrings>
+
+  <!-- VEE_NamerLandmark_BloomingFields -->
+  <!-- EN: r_name(p=0.2)->[NamePerson]'s [terrain_word]; terrain_word->wildflower meadow / blooming field / floral plain / petal-covered grasslands -->
+  <VEE_NamerLandmark_BloomingFields.rulePack.rulesStrings>
+    <li>terrain_word_mas->[terrain_word]</li>
+    <li>terrain_word_fem->[terrain_word]</li>
+    <li>terrain_word_neu->[terrain_word]</li>
+    <li>terrain_word_plural->[terrain_word]</li>
+    <li>r_name(p=0.2)->[terrain_word_fem] [NamePerson_gen]</li>
+    <li>terrain_word_fem(p=2)->цветущий луг</li>
+    <li>terrain_word_neu->цветущее поле</li>
+    <li>terrain_word_fem->цветочная равнина</li>
+    <li>terrain_word_plural->лепестковые луга</li>
+  </VEE_NamerLandmark_BloomingFields.rulePack.rulesStrings>
+
+  <!-- VEE_NamerLandmark_CactusFields -->
+  <!-- EN: r_name(p=0.2)->[NamePerson]'s [terrain_word]; terrain_word->cactus field / xerophile garden / cactus plain / spinebrush flats / thorned lowlands / prickled desert -->
+  <VEE_NamerLandmark_CactusFields.rulePack.rulesStrings>
+    <li>terrain_word_mas->[terrain_word]</li>
+    <li>terrain_word_fem->[terrain_word]</li>
+    <li>terrain_word_neu->[terrain_word]</li>
+    <li>terrain_word_plural->[terrain_word]</li>
+    <li>r_name(p=0.2)->[terrain_word_mas] [NamePerson_gen]</li>
+    <li>terrain_word_mas(p=2)->кактусовое поле</li>
+    <li>terrain_word_mas->ксерофитный сад</li>
+    <li>terrain_word_fem->кактусовая равнина</li>
+    <li>terrain_word_plural->колючие равнины</li>
+    <li>terrain_word_plural->колючие низины</li>
+    <li>terrain_word_fem->колючая пустыня</li>
+  </VEE_NamerLandmark_CactusFields.rulePack.rulesStrings>
+
+  <!-- VEE_NamerLandmark_FloodPlains -->
+  <!-- EN: r_name(p=0.2)->[NamePerson]'s [terrain_word]; terrain_word->flood plain / river floodlands / alluvial plain / seasonal floodplain / silt-rich lowlands -->
+  <VEE_NamerLandmark_FloodPlains.rulePack.rulesStrings>
+    <li>terrain_word_mas->[terrain_word]</li>
+    <li>terrain_word_fem->[terrain_word]</li>
+    <li>terrain_word_neu->[terrain_word]</li>
+    <li>terrain_word_plural->[terrain_word]</li>
+    <li>r_name(p=0.2)->[terrain_word_fem] [NamePerson_gen]</li>
+    <li>terrain_word_fem(p=2)->пойма</li>
+    <li>terrain_word_plural->речные поймы</li>
+    <li>terrain_word_fem->аллювиальная равнина</li>
+    <li>terrain_word_fem->сезонная пойма</li>
+    <li>terrain_word_plural->илистые низины</li>
+  </VEE_NamerLandmark_FloodPlains.rulePack.rulesStrings>
+
+  <!-- VEE_NamerLandmark_ContaminatedReservoir -->
+  <!-- EN: r_name(p=0.2)->[NamePerson]'s [terrain_word]; terrain_word->contaminated reservoir / irradiated lake / radioactive waters / glowwater basin / radioactive lakebed -->
+  <VEE_NamerLandmark_ContaminatedReservoir.rulePack.rulesStrings>
+    <li>terrain_word_mas->[terrain_word]</li>
+    <li>terrain_word_fem->[terrain_word]</li>
+    <li>terrain_word_neu->[terrain_word]</li>
+    <li>terrain_word_plural->[terrain_word]</li>
+    <li>r_name(p=0.2)->[terrain_word_neu] [NamePerson_gen]</li>
+    <li>terrain_word_neu(p=2)->заражённое водохранилище</li>
+    <li>terrain_word_neu->облучённое озеро</li>
+    <li>terrain_word_plural->радиоактивные воды</li>
+    <li>terrain_word_fem->светящаяся впадина</li>
+    <li>terrain_word_neu->радиоактивное ложе</li>
+  </VEE_NamerLandmark_ContaminatedReservoir.rulePack.rulesStrings>
+
+  <!-- VEE_NamerLandmark_ContaminatedRiver -->
+  <!-- EN: r_name(p=0.2)->[NamePerson]'s [terrain_word]; terrain_word->contaminated river / irradiated river / radioactive waters / glowwater stream / radioactive riverbed -->
+  <VEE_NamerLandmark_ContaminatedRiver.rulePack.rulesStrings>
+    <li>terrain_word_mas->[terrain_word]</li>
+    <li>terrain_word_fem->[terrain_word]</li>
+    <li>terrain_word_neu->[terrain_word]</li>
+    <li>terrain_word_plural->[terrain_word]</li>
+    <li>r_name(p=0.2)->[terrain_word_fem] [NamePerson_gen]</li>
+    <li>terrain_word_fem(p=2)->заражённая река</li>
+    <li>terrain_word_fem->облучённая река</li>
+    <li>terrain_word_plural->радиоактивные воды</li>
+    <li>terrain_word_mas->светящийся ручей</li>
+    <li>terrain_word_neu->радиоактивное русло</li>
+  </VEE_NamerLandmark_ContaminatedRiver.rulePack.rulesStrings>
+
+  <!-- VEE_NamerLandmark_ContaminatedCoast -->
+  <!-- EN: r_name(p=0.2)->[NamePerson]'s [terrain_word]; terrain_word->contaminated coast / irradiated shoreline / radioactive shallows / glowwater coast / radioactive beachfront -->
+  <VEE_NamerLandmark_ContaminatedCoast.rulePack.rulesStrings>
+    <li>terrain_word_mas->[terrain_word]</li>
+    <li>terrain_word_fem->[terrain_word]</li>
+    <li>terrain_word_neu->[terrain_word]</li>
+    <li>terrain_word_plural->[terrain_word]</li>
+    <li>r_name(p=0.2)->[terrain_word_mas] [NamePerson_gen]</li>
+    <li>terrain_word_mas(p=2)->заражённый берег</li>
+    <li>terrain_word_fem->облучённая береговая линия</li>
+    <li>terrain_word_plural->радиоактивные мели</li>
+    <li>terrain_word_mas->светящийся берег</li>
+    <li>terrain_word_mas->радиоактивный пляж</li>
+  </VEE_NamerLandmark_ContaminatedCoast.rulePack.rulesStrings>
+
+  <!-- VEE_NamerLandmark_QuicksandPits -->
+  <!-- EN: terrain_word->quicksand pits / sinking sands / loose earth pockets / unstable ground -->
+  <VEE_NamerLandmark_QuicksandPits.rulePack.rulesStrings>
+    <li>terrain_word_mas->[terrain_word]</li>
+    <li>terrain_word_fem->[terrain_word]</li>
+    <li>terrain_word_neu->[terrain_word]</li>
+    <li>terrain_word_plural->[terrain_word]</li>
+    <li>terrain_word_plural(p=4)->зыбучие ямы</li>
+    <li>terrain_word_plural->проваливающиеся пески</li>
+    <li>terrain_word_plural->карманы рыхлой земли</li>
+    <li>terrain_word_neu->нестабильная почва</li>
+  </VEE_NamerLandmark_QuicksandPits.rulePack.rulesStrings>
+
+  <!-- VEE_NamerLandmark_AbandonedFarmlands -->
+  <!-- EN: r_name(p=0.2)->[NamePerson]'s [terrain_word]; terrain_word->abandoned farmlands / forgotten fields / derelict croplands / overgrown farms / fallow plains -->
+  <VEE_NamerLandmark_AbandonedFarmlands.rulePack.rulesStrings>
+    <li>terrain_word_mas->[terrain_word]</li>
+    <li>terrain_word_fem->[terrain_word]</li>
+    <li>terrain_word_neu->[terrain_word]</li>
+    <li>terrain_word_plural->[terrain_word]</li>
+    <li>r_name(p=0.2)->[terrain_word_plural] [NamePerson_gen]</li>
+    <li>terrain_word_plural(p=2)->заброшенные угодья</li>
+    <li>terrain_word_plural->забытые поля</li>
+    <li>terrain_word_plural->запущенные пашни</li>
+    <li>terrain_word_plural->заросшие фермы</li>
+    <li>terrain_word_fem->паровая равнина</li>
+  </VEE_NamerLandmark_AbandonedFarmlands.rulePack.rulesStrings>
+
+  <!-- VEE_NamerLandmark_DriftwoodShore -->
+  <!-- EN: r_name(p=0.2)->[NamePerson]'s [terrain_word]; terrain_word->driftwood shore / driftwood coast / wreckwood beach / tidal woodline / bleached timber shore -->
+  <VEE_NamerLandmark_DriftwoodShore.rulePack.rulesStrings>
+    <li>terrain_word_mas->[terrain_word]</li>
+    <li>terrain_word_fem->[terrain_word]</li>
+    <li>terrain_word_neu->[terrain_word]</li>
+    <li>terrain_word_plural->[terrain_word]</li>
+    <li>r_name(p=0.2)->[terrain_word_mas] [NamePerson_gen]</li>
+    <li>terrain_word_mas(p=2)->плавниковый берег</li>
+    <li>terrain_word_mas->плавниковое побережье</li>
+    <li>terrain_word_fem->пляж с обломками</li>
+    <li>terrain_word_mas->приливная древесная полоса</li>
+    <li>terrain_word_mas->выбеленый берег</li>
+  </VEE_NamerLandmark_DriftwoodShore.rulePack.rulesStrings>
+
+  <!-- VEE_NamerLandmark_AlluvialFan -->
+  <!-- EN: r_name(p=0.2)->[NamePerson]'s [terrain_word]; terrain_word->alluvial fan / sediment fan / river spillplain / depositional flats -->
+  <VEE_NamerLandmark_AlluvialFan.rulePack.rulesStrings>
+    <li>terrain_word_mas->[terrain_word]</li>
+    <li>terrain_word_fem->[terrain_word]</li>
+    <li>terrain_word_neu->[terrain_word]</li>
+    <li>terrain_word_plural->[terrain_word]</li>
+    <li>r_name(p=0.2)->[terrain_word_mas] [NamePerson_gen]</li>
+    <li>terrain_word_mas(p=2)->аллювиальный конус</li>
+    <li>terrain_word_mas->осадочный конус</li>
+    <li>terrain_word_fem->речная намывная равнина</li>
+    <li>terrain_word_plural->осадочные террасы</li>
+  </VEE_NamerLandmark_AlluvialFan.rulePack.rulesStrings>
+
+  <!-- VEE_NamerLandmark_RelictDelta -->
+  <!-- EN: terrain_word->relict delta / abandoned delta / desiccated delta / silt delta / braided flats -->
+  <VEE_NamerLandmark_RelictDelta.rulePack.rulesStrings>
+    <li>terrain_word_mas->[terrain_word]</li>
+    <li>terrain_word_fem->[terrain_word]</li>
+    <li>terrain_word_neu->[terrain_word]</li>
+    <li>terrain_word_plural->[terrain_word]</li>
+    <li>terrain_word_fem(p=2)->реликтовая дельта</li>
+    <li>terrain_word_fem->заброшенная дельта</li>
+    <li>terrain_word_fem->высохшая дельта</li>
+    <li>terrain_word_fem->илистая дельта</li>
+    <li>terrain_word_plural->переплетённые мели</li>
+  </VEE_NamerLandmark_RelictDelta.rulePack.rulesStrings>
+
+  <!-- VEE_NamerLandmark_StagnantRivulet -->
+  <!-- EN: terrain_word->stagnant rivulet / stilled stream / sluggish rivulet / standing channel / silted creek -->
+  <VEE_NamerLandmark_StagnantRivulet.rulePack.rulesStrings>
+    <li>terrain_word_mas->[terrain_word]</li>
+    <li>terrain_word_fem->[terrain_word]</li>
+    <li>terrain_word_neu->[terrain_word]</li>
+    <li>terrain_word_plural->[terrain_word]</li>
+    <li>terrain_word_mas(p=2)->стоячий ручей</li>
+    <li>terrain_word_mas->замерший ручеёк</li>
+    <li>terrain_word_mas->вялый ручей</li>
+    <li>terrain_word_mas->неподвижный канал</li>
+    <li>terrain_word_mas->заиленный ручей</li>
+  </VEE_NamerLandmark_StagnantRivulet.rulePack.rulesStrings>
+
+  <!-- VEE_NamerLandmark_AnimaForest -->
+  <!-- EN: r_name(p=0.2)->[NamePerson]'s [terrain_word]; terrain_word->anima forest / anima woods / psychoactive forest / glowleaf grove / whispering anima trees / lucent woodland -->
+  <VEE_NamerLandmark_AnimaForest.rulePack.rulesStrings>
+    <li>terrain_word_mas->[terrain_word]</li>
+    <li>terrain_word_fem->[terrain_word]</li>
+    <li>terrain_word_neu->[terrain_word]</li>
+    <li>terrain_word_plural->[terrain_word]</li>
+    <li>r_name(p=0.2)->[terrain_word_mas] [NamePerson_gen]</li>
+    <li>terrain_word_mas(p=3)->лес анимы</li>
+    <li>terrain_word_mas(p=2)->роща анимы</li>
+    <li>terrain_word_mas->психоактивный лес</li>
+    <li>terrain_word_fem->светящаяся роща</li>
+    <li>terrain_word_mas->шепчущий лес анимы</li>
+    <li>terrain_word_mas->светлый лес</li>
+  </VEE_NamerLandmark_AnimaForest.rulePack.rulesStrings>
+
+  <!-- VEE_NamerLandmark_AnimaCoast -->
+  <!-- EN: r_name(p=0.2)->[NamePerson]'s [terrain_word]; terrain_word->anima coast / anima shoreline / spirit-touched coast / anima forest shore / glowing coastal grove -->
+  <VEE_NamerLandmark_AnimaCoast.rulePack.rulesStrings>
+    <li>terrain_word_mas->[terrain_word]</li>
+    <li>terrain_word_fem->[terrain_word]</li>
+    <li>terrain_word_neu->[terrain_word]</li>
+    <li>terrain_word_plural->[terrain_word]</li>
+    <li>r_name(p=0.2)->[terrain_word_mas] [NamePerson_gen]</li>
+    <li>terrain_word_mas(p=3)->берег анимы</li>
+    <li>terrain_word_fem->береговая линия анимы</li>
+    <li>terrain_word_mas->берег духов</li>
+    <li>terrain_word_fem->роща анимы на берегу</li>
+    <li>terrain_word_mas->светящийся берег</li>
+  </VEE_NamerLandmark_AnimaCoast.rulePack.rulesStrings>
+
+  <!-- VEE_NamerLandmark_CradleOfLife -->
+  <!-- EN: r_name(p=0.2)->[NamePerson]'s [terrain_word]; terrain_word->cradle of life / life basin / verdant cradle / genesis hollow / primeval basin -->
+  <VEE_NamerLandmark_CradleOfLife.rulePack.rulesStrings>
+    <li>terrain_word_mas->[terrain_word]</li>
+    <li>terrain_word_fem->[terrain_word]</li>
+    <li>terrain_word_neu->[terrain_word]</li>
+    <li>terrain_word_plural->[terrain_word]</li>
+    <li>r_name(p=0.2)->[terrain_word_mas] [NamePerson_gen]</li>
+    <li>terrain_word_neu(p=3)->колыбель жизни</li>
+    <li>terrain_word_fem(p=2)->колыбель жизни</li>
+    <li>terrain_word_fem->бассейн жизни</li>
+    <li>terrain_word_fem->зелёная колыбель</li>
+    <li>terrain_word_neu->углубление генезиса</li>
+    <li>terrain_word_fem->первозданная котловина</li>
+  </VEE_NamerLandmark_CradleOfLife.rulePack.rulesStrings>
+
+  <!-- VEE_NamerLandmark_WindBlownPlateau -->
+  <!-- EN: terrain_word->wind-blown plateau / windswept mesa / exposed rise / gusted tableland / barren butte -->
+  <VEE_NamerLandmark_WindBlownPlateau.rulePack.rulesStrings>
+    <li>terrain_word_mas->[terrain_word]</li>
+    <li>terrain_word_fem->[terrain_word]</li>
+    <li>terrain_word_neu->[terrain_word]</li>
+    <li>terrain_word_plural->[terrain_word]</li>
+    <li>terrain_word_neu->продуваемое плато</li>
+    <li>terrain_word_fem->обдутая меса</li>
+    <li>terrain_word_mas->открытый уступ</li>
+    <li>terrain_word_neu->ветреное плоскогорье</li>
+    <li>terrain_word_fem->пустынная бьют</li>
+  </VEE_NamerLandmark_WindBlownPlateau.rulePack.rulesStrings>
+
+  <!-- VEE_NamerLandmark_StoneForest -->
+  <!-- EN: terrain_word->jagged stone grove / pillar-strewn expanse / rocky spire field / shattered monoliths / craggy stone thicket -->
+  <VEE_NamerLandmark_StoneForest.rulePack.rulesStrings>
+    <li>terrain_word_mas->[terrain_word]</li>
+    <li>terrain_word_fem->[terrain_word]</li>
+    <li>terrain_word_neu->[terrain_word]</li>
+    <li>terrain_word_plural->[terrain_word]</li>
+    <li>terrain_word_mas->зубчатый каменный лес</li>
+    <li>terrain_word_neu->столбчатое пространство</li>
+    <li>terrain_word_neu->поле каменных шпилей</li>
+    <li>terrain_word_plural->разбитые монолиты</li>
+    <li>terrain_word_mas->скалистая каменная чаща</li>
+  </VEE_NamerLandmark_StoneForest.rulePack.rulesStrings>
+
+  <!-- VEE_NamerLandmark_GravelBeach -->
+  <!-- EN: terrain_word->gravel shore / shingle coast / stone-littered beach / pebble strand / rocky shoreline -->
+  <VEE_NamerLandmark_GravelBeach.rulePack.rulesStrings>
+    <li>terrain_word_mas->[terrain_word]</li>
+    <li>terrain_word_fem->[terrain_word]</li>
+    <li>terrain_word_neu->[terrain_word]</li>
+    <li>terrain_word_plural->[terrain_word]</li>
+    <li>terrain_word_mas->галечный берег</li>
+    <li>terrain_word_mas->галечное побережье</li>
+    <li>terrain_word_mas->каменистый пляж</li>
+    <li>terrain_word_fem->галечная коса</li>
+    <li>terrain_word_mas->скалистая береговая линия</li>
+  </VEE_NamerLandmark_GravelBeach.rulePack.rulesStrings>
+
+  <!-- VEE_NamerLandmark_AuburnForest -->
+  <!-- EN: terrain_word->auburn woods / auburn forest / auburn grove / auburn woodland / auburn thicket -->
+  <VEE_NamerLandmark_AuburnForest.rulePack.rulesStrings>
+    <li>terrain_word_mas->[terrain_word]</li>
+    <li>terrain_word_fem->[terrain_word]</li>
+    <li>terrain_word_neu->[terrain_word]</li>
+    <li>terrain_word_plural->[terrain_word]</li>
+    <li>terrain_word_mas->рыжий лес</li>
+    <li>terrain_word_mas->медвяный бор</li>
+    <li>terrain_word_fem->рыжая роща</li>
+    <li>terrain_word_mas->рыжая чаща</li>
+    <li>terrain_word_fem->рыжие заросли</li>
+  </VEE_NamerLandmark_AuburnForest.rulePack.rulesStrings>
+
+  <!-- VEE_NamerLandmark_Cenotes -->
+  <!-- EN: terrain_word->cenote field / cenote lakes / collapsed limestone pools / water-filled cenotes / karst hollows -->
+  <VEE_NamerLandmark_Cenotes.rulePack.rulesStrings>
+    <li>terrain_word_mas->[terrain_word]</li>
+    <li>terrain_word_fem->[terrain_word]</li>
+    <li>terrain_word_neu->[terrain_word]</li>
+    <li>terrain_word_plural->[terrain_word]</li>
+    <li>terrain_word_plural->сеноты</li>
+    <li>terrain_word_plural->сенотовые озёра</li>
+    <li>terrain_word_plural->обрушившиеся известняковые бассейны</li>
+    <li>terrain_word_plural->заполненные водой сеноты</li>
+    <li>terrain_word_plural->карстовые впадины</li>
+  </VEE_NamerLandmark_Cenotes.rulePack.rulesStrings>
+
+  <!-- VEE_NamerLandmark_BasaltCape -->
+  <!-- EN: terrain_word->basalt cape / basalt headland / black stone promontory / volcanic headland / basalt cliffs -->
+  <VEE_NamerLandmark_BasaltCape.rulePack.rulesStrings>
+    <li>terrain_word_mas->[terrain_word]</li>
+    <li>terrain_word_fem->[terrain_word]</li>
+    <li>terrain_word_neu->[terrain_word]</li>
+    <li>terrain_word_plural->[terrain_word]</li>
+    <li>terrain_word_mas->базальтовый мыс</li>
+    <li>terrain_word_mas->базальтовый выступ</li>
+    <li>terrain_word_mas->чёрный каменный мыс</li>
+    <li>terrain_word_mas->вулканический мыс</li>
+    <li>terrain_word_plural->базальтовые утёсы</li>
+  </VEE_NamerLandmark_BasaltCape.rulePack.rulesStrings>
+
+  <!-- VEE_NamerLandmark_RedSandDesert -->
+  <!-- EN: terrain_word->red sand desert / crimson desert / rust-colored desert / iron-rich desert -->
+  <VEE_NamerLandmark_RedSandDesert.rulePack.rulesStrings>
+    <li>terrain_word_mas->[terrain_word]</li>
+    <li>terrain_word_fem->[terrain_word]</li>
+    <li>terrain_word_neu->[terrain_word]</li>
+    <li>terrain_word_plural->[terrain_word]</li>
+    <li>terrain_word_fem->краснопесчаная пустыня</li>
+    <li>terrain_word_fem->багровая пустыня</li>
+    <li>terrain_word_fem->ржавая пустыня</li>
+    <li>terrain_word_fem->железистая пустыня</li>
+  </VEE_NamerLandmark_RedSandDesert.rulePack.rulesStrings>
+
+  <!-- VEE_NamerLandmark_VolcanicSandDesert -->
+  <!-- EN: terrain_word->volcanic sand desert / black sand wastes / black desert / obsidian sands -->
+  <VEE_NamerLandmark_VolcanicSandDesert.rulePack.rulesStrings>
+    <li>terrain_word_mas->[terrain_word]</li>
+    <li>terrain_word_fem->[terrain_word]</li>
+    <li>terrain_word_neu->[terrain_word]</li>
+    <li>terrain_word_plural->[terrain_word]</li>
+    <li>terrain_word_fem->вулканическая песчаная пустыня</li>
+    <li>terrain_word_plural->чёрные песчаные пустоши</li>
+    <li>terrain_word_fem->чёрная пустыня</li>
+    <li>terrain_word_plural->обсидиановые пески</li>
+  </VEE_NamerLandmark_VolcanicSandDesert.rulePack.rulesStrings>
+
+  <!-- VEE_NamerLandmark_PermafrostBasin -->
+  <!-- EN: terrain_word->permafrost basin / frozen lowland / ice-locked tundra / frostbound basin / perennial frost tundra -->
+  <VEE_NamerLandmark_PermafrostBasin.rulePack.rulesStrings>
+    <li>terrain_word_mas->[terrain_word]</li>
+    <li>terrain_word_fem->[terrain_word]</li>
+    <li>terrain_word_neu->[terrain_word]</li>
+    <li>terrain_word_plural->[terrain_word]</li>
+    <li>terrain_word_fem->мерзлотная котловина</li>
+    <li>terrain_word_fem->замёрзшая низина</li>
+    <li>terrain_word_fem->скованная льдом тундра</li>
+    <li>terrain_word_fem->обмёрзшая впадина</li>
+    <li>terrain_word_fem->вечномёрзлая тундра</li>
+  </VEE_NamerLandmark_PermafrostBasin.rulePack.rulesStrings>
+
+  <!-- VEE_NamerLandmark_QuicksandDunes -->
+  <!-- EN: terrain_word->quicksand dunes / sinking dunes / loose earth dunes / unstable dunes -->
+  <VEE_NamerLandmark_QuicksandDunes.rulePack.rulesStrings>
+    <li>terrain_word_mas->[terrain_word]</li>
+    <li>terrain_word_fem->[terrain_word]</li>
+    <li>terrain_word_neu->[terrain_word]</li>
+    <li>terrain_word_plural->[terrain_word]</li>
+    <li>terrain_word_plural(p=4)->зыбучие дюны</li>
+    <li>terrain_word_plural->проваливающиеся дюны</li>
+    <li>terrain_word_plural->рыхлые дюны</li>
+    <li>terrain_word_plural->нестабильные дюны</li>
+  </VEE_NamerLandmark_QuicksandDunes.rulePack.rulesStrings>
+
+  <!-- VEE_NamerLandmark_PebbleDunes -->
+  <!-- EN: terrain_word->pebble dunes / shingle dunes / gravel drifts / stone-swept ridges / rolling pebble fields -->
+  <VEE_NamerLandmark_PebbleDunes.rulePack.rulesStrings>
+    <li>terrain_word_mas->[terrain_word]</li>
+    <li>terrain_word_fem->[terrain_word]</li>
+    <li>terrain_word_neu->[terrain_word]</li>
+    <li>terrain_word_plural->[terrain_word]</li>
+    <li>terrain_word_plural->галечные дюны</li>
+    <li>terrain_word_plural->щебневые дюны</li>
+    <li>terrain_word_plural->гравийные наносы</li>
+    <li>terrain_word_plural->каменные гряды</li>
+    <li>terrain_word_plural->покатые галечные поля</li>
+  </VEE_NamerLandmark_PebbleDunes.rulePack.rulesStrings>
+
+  <!-- VEE_NamerLandmark_LittoralDunes -->
+  <!-- EN: terrain_word->littoral dunes / coastal sand dunes / shoreline dune fields / wind-sculpted coast / beach dune ridges -->
+  <VEE_NamerLandmark_LittoralDunes.rulePack.rulesStrings>
+    <li>terrain_word_mas->[terrain_word]</li>
+    <li>terrain_word_fem->[terrain_word]</li>
+    <li>terrain_word_neu->[terrain_word]</li>
+    <li>terrain_word_plural->[terrain_word]</li>
+    <li>terrain_word_plural->прибрежные дюны</li>
+    <li>terrain_word_plural->береговые песчаные дюны</li>
+    <li>terrain_word_plural->прибрежное дюнное поле</li>
+    <li>terrain_word_fem->выдутая ветром бухта</li>
+    <li>terrain_word_plural->пляжные дюнные гряды</li>
+  </VEE_NamerLandmark_LittoralDunes.rulePack.rulesStrings>
+
+  <!-- VEE_NamerLandmark_RisingWaters -->
+  <!-- EN: terrain_word->rising waters / tidal flats / flooded lowlands / tidal floodplain / inundated coast -->
+  <VEE_NamerLandmark_RisingWaters.rulePack.rulesStrings>
+    <li>terrain_word_mas->[terrain_word]</li>
+    <li>terrain_word_fem->[terrain_word]</li>
+    <li>terrain_word_neu->[terrain_word]</li>
+    <li>terrain_word_plural->[terrain_word]</li>
+    <li>terrain_word_plural->поднимающиеся воды</li>
+    <li>terrain_word_plural->приливные мели</li>
+    <li>terrain_word_plural->затопленные низины</li>
+    <li>terrain_word_fem->приливная пойма</li>
+    <li>terrain_word_mas->затопленный берег</li>
+  </VEE_NamerLandmark_RisingWaters.rulePack.rulesStrings>
+
+  <!-- VEE_NamerLandmark_FleshPits -->
+  <!-- EN: terrain_word->flesh pits / anomalous caverns / flesh pit expanse -->
+  <VEE_NamerLandmark_FleshPits.rulePack.rulesStrings>
+    <li>terrain_word_mas->[terrain_word]</li>
+    <li>terrain_word_fem->[terrain_word]</li>
+    <li>terrain_word_neu->[terrain_word]</li>
+    <li>terrain_word_plural->[terrain_word]</li>
+    <li>terrain_word_plural->плоть-ямы</li>
+    <li>terrain_word_plural->аномальные пещеры</li>
+    <li>terrain_word_neu->пространство плоти-ям</li>
+  </VEE_NamerLandmark_FleshPits.rulePack.rulesStrings>
+
+  <!-- VEE_NamerLandmark_TemperateGrasslands -->
+  <!-- EN: terrain_word->temperate grasslands / open plains / rolling grasslands / wind-swept prairie / broad meadowlands -->
+  <VEE_NamerLandmark_TemperateGrasslands.rulePack.rulesStrings>
+    <li>terrain_word_mas->[terrain_word]</li>
+    <li>terrain_word_fem->[terrain_word]</li>
+    <li>terrain_word_neu->[terrain_word]</li>
+    <li>terrain_word_plural->[terrain_word]</li>
+    <li>terrain_word_plural->умеренные луга</li>
+    <li>terrain_word_plural->открытые равнины</li>
+    <li>terrain_word_plural->холмистые луга</li>
+    <li>terrain_word_fem->продуваемая прерия</li>
+    <li>terrain_word_plural->широкие луговины</li>
+  </VEE_NamerLandmark_TemperateGrasslands.rulePack.rulesStrings>
+
+  <!-- VEE_NamerLandmark_IceSpires -->
+  <!-- EN: terrain_word->ice spires / frozen spire field / glacial pinnacles / ice needle plains / frosted towers -->
+  <VEE_NamerLandmark_IceSpires.rulePack.rulesStrings>
+    <li>terrain_word_mas->[terrain_word]</li>
+    <li>terrain_word_fem->[terrain_word]</li>
+    <li>terrain_word_neu->[terrain_word]</li>
+    <li>terrain_word_plural->[terrain_word]</li>
+    <li>terrain_word_plural->ледяные шпили</li>
+    <li>terrain_word_neu->замёрзшее поле шпилей</li>
+    <li>terrain_word_plural->ледниковые пики</li>
+    <li>terrain_word_fem->равнина ледяных игл</li>
+    <li>terrain_word_plural->изморозевые башни</li>
+  </VEE_NamerLandmark_IceSpires.rulePack.rulesStrings>
+
+  <!-- VEE_NamerLandmark_GlacialMoraine -->
+  <!-- EN: terrain_word->glacial moraine / ice-pushed ridge / stone-strewn moraine / frozen debris fields / glacial rubble ridges -->
+  <VEE_NamerLandmark_GlacialMoraine.rulePack.rulesStrings>
+    <li>terrain_word_mas->[terrain_word]</li>
+    <li>terrain_word_fem->[terrain_word]</li>
+    <li>terrain_word_neu->[terrain_word]</li>
+    <li>terrain_word_plural->[terrain_word]</li>
+    <li>terrain_word_fem->ледниковая морена</li>
+    <li>terrain_word_mas->ледниковый вал</li>
+    <li>terrain_word_fem->каменистая морена</li>
+    <li>terrain_word_plural->замёрзшие обломочные поля</li>
+    <li>terrain_word_plural->ледниковые гряды щебня</li>
+  </VEE_NamerLandmark_GlacialMoraine.rulePack.rulesStrings>
+
+  <!-- VEE_NamerLandmark_Sinkholes -->
+  <!-- EN: terrain_word->sinkholes / collapsed ground / subsurface hollows / broken lowlands -->
+  <VEE_NamerLandmark_Sinkholes.rulePack.rulesStrings>
+    <li>terrain_word_mas->[terrain_word]</li>
+    <li>terrain_word_fem->[terrain_word]</li>
+    <li>terrain_word_neu->[terrain_word]</li>
+    <li>terrain_word_plural->[terrain_word]</li>
+    <li>terrain_word_plural->карстовые воронки</li>
+    <li>terrain_word_neu->обрушившаяся земля</li>
+    <li>terrain_word_plural->подземные пустоты</li>
+    <li>terrain_word_plural->разломанные низины</li>
+  </VEE_NamerLandmark_Sinkholes.rulePack.rulesStrings>
+
+  <!-- VEE_NamerLandmark_TropicalBeach -->
+  <!-- EN: terrain_word->tropical beach / palm-lined shore / warm coastal strand / sunlit shoreline / tropical seaboard -->
+  <VEE_NamerLandmark_TropicalBeach.rulePack.rulesStrings>
+    <li>terrain_word_mas->[terrain_word]</li>
+    <li>terrain_word_fem->[terrain_word]</li>
+    <li>terrain_word_neu->[terrain_word]</li>
+    <li>terrain_word_plural->[terrain_word]</li>
+    <li>terrain_word_mas->тропический пляж</li>
+    <li>terrain_word_mas->пальмовый берег</li>
+    <li>terrain_word_mas->тёплая прибрежная полоса</li>
+    <li>terrain_word_fem->солнечная береговая линия</li>
+    <li>terrain_word_mas->тропическое побережье</li>
+  </VEE_NamerLandmark_TropicalBeach.rulePack.rulesStrings>
+
+  <!-- VEE_NamerLandmark_LaurelForest -->
+  <!-- EN: terrain_word->laurel forest / evergreen cloud forest / mist-laden woodland / humid evergreen forest / broadleaf evergreen woods -->
+  <VEE_NamerLandmark_LaurelForest.rulePack.rulesStrings>
+    <li>terrain_word_mas->[terrain_word]</li>
+    <li>terrain_word_fem->[terrain_word]</li>
+    <li>terrain_word_neu->[terrain_word]</li>
+    <li>terrain_word_plural->[terrain_word]</li>
+    <li>terrain_word_mas->лавровый лес</li>
+    <li>terrain_word_mas->вечнозелёный туманный лес</li>
+    <li>terrain_word_mas->туманная чаща</li>
+    <li>terrain_word_mas->влажный вечнозелёный лес</li>
+    <li>terrain_word_plural->широколиственные вечнозелёные леса</li>
+  </VEE_NamerLandmark_LaurelForest.rulePack.rulesStrings>
+
+  <!-- VEE_NamerLandmark_Moor -->
+  <!-- EN: terrain_word->moor / open heath / windswept moorland / heather plain / peaty uplands -->
+  <VEE_NamerLandmark_Moor.rulePack.rulesStrings>
+    <li>terrain_word_mas->[terrain_word]</li>
+    <li>terrain_word_fem->[terrain_word]</li>
+    <li>terrain_word_neu->[terrain_word]</li>
+    <li>terrain_word_plural->[terrain_word]</li>
+    <li>terrain_word_neu->вересковое пустошь</li>
+    <li>terrain_word_fem->открытая пустошь</li>
+    <li>terrain_word_fem->продуваемая моховая равнина</li>
+    <li>terrain_word_fem->вересковая равнина</li>
+    <li>terrain_word_plural->торфяные возвышенности</li>
+  </VEE_NamerLandmark_Moor.rulePack.rulesStrings>
+
+  <!-- VEE_NamerLandmark_LushLavaFields -->
+  <!-- EN: terrain_word->lush lava fields / vegetated lava plain / green volcanic flats / overgrown basalt fields / life-bound lava flows -->
+  <VEE_NamerLandmark_LushLavaFields.rulePack.rulesStrings>
+    <li>terrain_word_mas->[terrain_word]</li>
+    <li>terrain_word_fem->[terrain_word]</li>
+    <li>terrain_word_neu->[terrain_word]</li>
+    <li>terrain_word_plural->[terrain_word]</li>
+    <li>terrain_word_plural->пышные лавовые поля</li>
+    <li>terrain_word_fem->заросшая лавовая равнина</li>
+    <li>terrain_word_plural->зелёные вулканические террасы</li>
+    <li>terrain_word_plural->заросшие базальтовые поля</li>
+    <li>terrain_word_plural->оживлённые лавовые потоки</li>
+  </VEE_NamerLandmark_LushLavaFields.rulePack.rulesStrings>
+
+</LanguageData>

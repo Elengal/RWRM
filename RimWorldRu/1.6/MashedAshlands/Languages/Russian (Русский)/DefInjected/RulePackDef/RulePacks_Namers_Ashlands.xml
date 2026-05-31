@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+  <!-- ===== World Feature Namers (биомы на карте мира) ===== -->
+
+  <!-- Mashed_Ashlands_NamerAshlands -->
+  <Mashed_Ashlands_NamerAshlands.rulePack.rulesStrings>
+    <li>terrain_word_mas->[terrain_word]</li>
+    <li>terrain_word_fem->[terrain_word]</li>
+    <li>terrain_word_neu->[terrain_word]</li>
+    <li>terrain_word_plural->[terrain_word]</li>
+    <li>terrain_word_plural(p=10)->пепелища</li>
+  </Mashed_Ashlands_NamerAshlands.rulePack.rulesStrings>
+
+  <!-- Mashed_Ashlands_NamerCoralCoastAshlands -->
+  <Mashed_Ashlands_NamerCoralCoastAshlands.rulePack.rulesStrings>
+    <li>terrain_word_mas->[terrain_word]</li>
+    <li>terrain_word_fem->[terrain_word]</li>
+    <li>terrain_word_neu->[terrain_word]</li>
+    <li>terrain_word_plural->[terrain_word]</li>
+    <li>terrain_word_mas(p=10)->побережье</li>
+  </Mashed_Ashlands_NamerCoralCoastAshlands.rulePack.rulesStrings>
+
+  <!-- Mashed_Ashlands_NamerDustplainAshlands -->
+  <Mashed_Ashlands_NamerDustplainAshlands.rulePack.rulesStrings>
+    <li>terrain_word_mas->[terrain_word]</li>
+    <li>terrain_word_fem->[terrain_word]</li>
+    <li>terrain_word_neu->[terrain_word]</li>
+    <li>terrain_word_plural->[terrain_word]</li>
+    <li>terrain_word_plural(p=10)->пыльные равнины</li>
+  </Mashed_Ashlands_NamerDustplainAshlands.rulePack.rulesStrings>
+
+  <!-- Mashed_Ashlands_NamerGrazelandAshlands -->
+  <Mashed_Ashlands_NamerGrazelandAshlands.rulePack.rulesStrings>
+    <li>terrain_word_mas->[terrain_word]</li>
+    <li>terrain_word_fem->[terrain_word]</li>
+    <li>terrain_word_neu->[terrain_word]</li>
+    <li>terrain_word_plural->[terrain_word]</li>
+    <li>terrain_word_plural(p=10)->пастбища</li>
+  </Mashed_Ashlands_NamerGrazelandAshlands.rulePack.rulesStrings>
+
+  <!-- Mashed_Ashlands_NamerHighlandAshlands -->
+  <Mashed_Ashlands_NamerHighlandAshlands.rulePack.rulesStrings>
+    <li>terrain_word_mas->[terrain_word]</li>
+    <li>terrain_word_fem->[terrain_word]</li>
+    <li>terrain_word_neu->[terrain_word]</li>
+    <li>terrain_word_plural->[terrain_word]</li>
+    <li>terrain_word_plural(p=10)->нагорья</li>
+  </Mashed_Ashlands_NamerHighlandAshlands.rulePack.rulesStrings>
+
+  <!-- Mashed_Ashlands_NamerSwampAshlands -->
+  <Mashed_Ashlands_NamerSwampAshlands.rulePack.rulesStrings>
+    <li>terrain_word_mas->[terrain_word]</li>
+    <li>terrain_word_fem->[terrain_word]</li>
+    <li>terrain_word_neu->[terrain_word]</li>
+    <li>terrain_word_plural->[terrain_word]</li>
+    <li>terrain_word_neu(p=10)->болото</li>
+  </Mashed_Ashlands_NamerSwampAshlands.rulePack.rulesStrings>
+
+  <!-- Mashed_Ashlands_NamerBlightedAshlands -->
+  <Mashed_Ashlands_NamerBlightedAshlands.rulePack.rulesStrings>
+    <li>terrain_word_mas->[terrain_word]</li>
+    <li>terrain_word_fem->[terrain_word]</li>
+    <li>terrain_word_neu->[terrain_word]</li>
+    <li>terrain_word_plural->[terrain_word]</li>
+    <li>terrain_word_mas(p=10)->мор</li>
+  </Mashed_Ashlands_NamerBlightedAshlands.rulePack.rulesStrings>
+
+  <!-- Mashed_Ashlands_NamerBlightedBogAshlands -->
+  <Mashed_Ashlands_NamerBlightedBogAshlands.rulePack.rulesStrings>
+    <li>terrain_word_mas->[terrain_word]</li>
+    <li>terrain_word_fem->[terrain_word]</li>
+    <li>terrain_word_neu->[terrain_word]</li>
+    <li>terrain_word_plural->[terrain_word]</li>
+    <li>terrain_word_neu(p=10)->боло́то</li>
+  </Mashed_Ashlands_NamerBlightedBogAshlands.rulePack.rulesStrings>
+
+  <!-- Mashed_Ashlands_NamerBlightedPetrifiedForestAshlands -->
+  <Mashed_Ashlands_NamerBlightedPetrifiedForestAshlands.rulePack.rulesStrings>
+    <li>terrain_word_mas->[terrain_word]</li>
+    <li>terrain_word_fem->[terrain_word]</li>
+    <li>terrain_word_neu->[terrain_word]</li>
+    <li>terrain_word_plural->[terrain_word]</li>
+    <li>terrain_word_plural(p=10)->окаменелые пустоши</li>
+  </Mashed_Ashlands_NamerBlightedPetrifiedForestAshlands.rulePack.rulesStrings>
+
+  <!-- Mashed_Ashlands_NamerForestAshlands -->
+  <Mashed_Ashlands_NamerForestAshlands.rulePack.rulesStrings>
+    <li>terrain_word_mas->[terrain_word]</li>
+    <li>terrain_word_fem->[terrain_word]</li>
+    <li>terrain_word_neu->[terrain_word]</li>
+    <li>terrain_word_plural->[terrain_word]</li>
+    <li>terrain_word_plural(p=10)->леса</li>
+  </Mashed_Ashlands_NamerForestAshlands.rulePack.rulesStrings>
+
+  <!-- Mashed_Ashlands_NamerMeadowAshlands -->
+  <Mashed_Ashlands_NamerMeadowAshlands.rulePack.rulesStrings>
+    <li>terrain_word_mas->[terrain_word]</li>
+    <li>terrain_word_fem->[terrain_word]</li>
+    <li>terrain_word_neu->[terrain_word]</li>
+    <li>terrain_word_plural->[terrain_word]</li>
+    <li>terrain_word_plural(p=10)->луга</li>
+  </Mashed_Ashlands_NamerMeadowAshlands.rulePack.rulesStrings>
+
+  <!-- Mashed_Ashlands_NamerMarshAshlands -->
+  <Mashed_Ashlands_NamerMarshAshlands.rulePack.rulesStrings>
+    <li>terrain_word_mas->[terrain_word]</li>
+    <li>terrain_word_fem->[terrain_word]</li>
+    <li>terrain_word_neu->[terrain_word]</li>
+    <li>terrain_word_plural->[terrain_word]</li>
+    <li>terrain_word_fem(p=10)->топь</li>
+  </Mashed_Ashlands_NamerMarshAshlands.rulePack.rulesStrings>
+
+  <!-- Mashed_Ashlands_NamerVolcanicAshlands -->
+  <Mashed_Ashlands_NamerVolcanicAshlands.rulePack.rulesStrings>
+    <li>terrain_word_mas->[terrain_word]</li>
+    <li>terrain_word_fem->[terrain_word]</li>
+    <li>terrain_word_neu->[terrain_word]</li>
+    <li>terrain_word_plural->[terrain_word]</li>
+    <li>terrain_word_mas(p=10)->шрам</li>
+  </Mashed_Ashlands_NamerVolcanicAshlands.rulePack.rulesStrings>
+
+  <!-- Mashed_Ashlands_NamerVolcanicBadlandAshlands -->
+  <Mashed_Ashlands_NamerVolcanicBadlandAshlands.rulePack.rulesStrings>
+    <li>terrain_word_mas->[terrain_word]</li>
+    <li>terrain_word_fem->[terrain_word]</li>
+    <li>terrain_word_neu->[terrain_word]</li>
+    <li>terrain_word_plural->[terrain_word]</li>
+    <li>terrain_word_plural(p=10)->бедленды</li>
+  </Mashed_Ashlands_NamerVolcanicBadlandAshlands.rulePack.rulesStrings>
+
+  <!-- Mashed_Ashlands_NamerVolcanicBasaltHillsAshlands -->
+  <Mashed_Ashlands_NamerVolcanicBasaltHillsAshlands.rulePack.rulesStrings>
+    <li>terrain_word_mas->[terrain_word]</li>
+    <li>terrain_word_fem->[terrain_word]</li>
+    <li>terrain_word_neu->[terrain_word]</li>
+    <li>terrain_word_plural->[terrain_word]</li>
+    <li>terrain_word_plural(p=10)->базальтовые шпили</li>
+  </Mashed_Ashlands_NamerVolcanicBasaltHillsAshlands.rulePack.rulesStrings>
+
+  <!-- Mashed_Ashlands_NamerVolcanicGroveAshlands -->
+  <Mashed_Ashlands_NamerVolcanicGroveAshlands.rulePack.rulesStrings>
+    <li>terrain_word_mas->[terrain_word]</li>
+    <li>terrain_word_fem->[terrain_word]</li>
+    <li>terrain_word_neu->[terrain_word]</li>
+    <li>terrain_word_plural->[terrain_word]</li>
+    <li>terrain_word_fem(p=10)->роща</li>
+  </Mashed_Ashlands_NamerVolcanicGroveAshlands.rulePack.rulesStrings>
+
+  <!-- Mashed_Ashlands_NamerVolcanicSulphurPitsAshlands -->
+  <Mashed_Ashlands_NamerVolcanicSulphurPitsAshlands.rulePack.rulesStrings>
+    <li>terrain_word_mas->[terrain_word]</li>
+    <li>terrain_word_fem->[terrain_word]</li>
+    <li>terrain_word_neu->[terrain_word]</li>
+    <li>terrain_word_plural->[terrain_word]</li>
+    <li>terrain_word_plural(p=10)->серные ямы</li>
+  </Mashed_Ashlands_NamerVolcanicSulphurPitsAshlands.rulePack.rulesStrings>
+
+  <!-- ===== Volcano Namers ===== -->
+
+  <!-- Mashed_Ashlands_NamerVolcanoCommon -->
+  <Mashed_Ashlands_NamerVolcanoCommon.rulePack.rulesStrings>
+    <li>terrain_word_mas->[terrain_word]</li>
+    <li>terrain_word_fem->[terrain_word]</li>
+    <li>terrain_word_neu->[terrain_word]</li>
+    <li>terrain_word_plural->[terrain_word]</li>
+    <li>terrain_word_mas(p=10)->вулкан</li>
+  </Mashed_Ashlands_NamerVolcanoCommon.rulePack.rulesStrings>
+
+  <!-- Mashed_Ashlands_NamerVolcanoActive -->
+  <Mashed_Ashlands_NamerVolcanoActive.rulePack.rulesStrings>
+    <li>terrain_word_mas->[terrain_word]</li>
+    <li>terrain_word_fem->[terrain_word]</li>
+    <li>terrain_word_neu->[terrain_word]</li>
+    <li>terrain_word_plural->[terrain_word]</li>
+    <li>terrain_word_mas(p=10)->вулкан</li>
+  </Mashed_Ashlands_NamerVolcanoActive.rulePack.rulesStrings>
+
+  <!-- Mashed_Ashlands_NamerVolcanoBlighted -->
+  <Mashed_Ashlands_NamerVolcanoBlighted.rulePack.rulesStrings>
+    <li>terrain_word_mas->[terrain_word]</li>
+    <li>terrain_word_fem->[terrain_word]</li>
+    <li>terrain_word_neu->[terrain_word]</li>
+    <li>terrain_word_plural->[terrain_word]</li>
+    <li>terrain_word_mas(p=10)->вулкан</li>
+  </Mashed_Ashlands_NamerVolcanoBlighted.rulePack.rulesStrings>
+
+  <!-- Mashed_Ashlands_NamerVolcanoDormant -->
+  <Mashed_Ashlands_NamerVolcanoDormant.rulePack.rulesStrings>
+    <li>terrain_word_mas->[terrain_word]</li>
+    <li>terrain_word_fem->[terrain_word]</li>
+    <li>terrain_word_neu->[terrain_word]</li>
+    <li>terrain_word_plural->[terrain_word]</li>
+    <li>terrain_word_mas(p=10)->вулкан</li>
+  </Mashed_Ashlands_NamerVolcanoDormant.rulePack.rulesStrings>
+
+  <!-- Mashed_Ashlands_NamerVolcanoExtinct -->
+  <Mashed_Ashlands_NamerVolcanoExtinct.rulePack.rulesStrings>
+    <li>terrain_word_mas->[terrain_word]</li>
+    <li>terrain_word_fem->[terrain_word]</li>
+    <li>terrain_word_neu->[terrain_word]</li>
+    <li>terrain_word_plural->[terrain_word]</li>
+    <li>terrain_word_mas(p=10)->вулкан</li>
+  </Mashed_Ashlands_NamerVolcanoExtinct.rulePack.rulesStrings>
+
+  <!-- ===== Odyssey Landmark Namers ===== -->
+
+  <!-- Mashed_Ashlands_NamerLandmark_AncientLavaFlow -->
+  <Mashed_Ashlands_NamerLandmark_AncientLavaFlow.rulePack.rulesStrings>
+    <li>terrain_word_mas->[terrain_word]</li>
+    <li>terrain_word_fem->[terrain_word]</li>
+    <li>terrain_word_neu->[terrain_word]</li>
+    <li>terrain_word_plural->[terrain_word]</li>
+    <li>r_name(p=0.2)->каменная река [NamePerson_gen]</li>
+    <li>r_name(p=0.2)->фойяма [NamePerson_gen]</li>
+    <li>terrain_word_mas->древний вулканический поток</li>
+    <li>terrain_word_mas->древний лавовый поток</li>
+  </Mashed_Ashlands_NamerLandmark_AncientLavaFlow.rulePack.rulesStrings>
+
+  <!-- Mashed_Ashlands_NamerLandmark_DryLake -->
+  <Mashed_Ashlands_NamerLandmark_DryLake.rulePack.rulesStrings>
+    <li>terrain_word_mas->[terrain_word]</li>
+    <li>terrain_word_fem->[terrain_word]</li>
+    <li>terrain_word_neu->[terrain_word]</li>
+    <li>terrain_word_plural->[terrain_word]</li>
+    <li>r_name(p=0.2)->высохшее озеро [NamePerson_gen]</li>
+    <li>terrain_word_neu(p=2)->иссохшее озеро</li>
+    <li>terrain_word_neu(p=2)->бесплодное озеро</li>
+  </Mashed_Ashlands_NamerLandmark_DryLake.rulePack.rulesStrings>
+
+  <!-- Mashed_Ashlands_NamerLandmark_Dusttide -->
+  <Mashed_Ashlands_NamerLandmark_Dusttide.rulePack.rulesStrings>
+    <li>terrain_word_mas->[terrain_word]</li>
+    <li>terrain_word_fem->[terrain_word]</li>
+    <li>terrain_word_neu->[terrain_word]</li>
+    <li>terrain_word_plural->[terrain_word]</li>
+    <li>r_name(p=0.2)->пылевой прилив [NamePerson_gen]</li>
+    <li>terrain_word_mas(p=2)->пылевой прилив</li>
+    <li>terrain_word_plural(p=2)->пылевые пустоши</li>
+  </Mashed_Ashlands_NamerLandmark_Dusttide.rulePack.rulesStrings>
+
+  <!-- Mashed_Ashlands_NamerLandmark_LandCoralPools -->
+  <Mashed_Ashlands_NamerLandmark_LandCoralPools.rulePack.rulesStrings>
+    <li>terrain_word_mas->[terrain_word]</li>
+    <li>terrain_word_fem->[terrain_word]</li>
+    <li>terrain_word_neu->[terrain_word]</li>
+    <li>terrain_word_plural->[terrain_word]</li>
+    <li>r_name(p=0.2)->коралловые бассейны [NamePerson_gen]</li>
+    <li>terrain_word_plural(p=2)->коралловые бассейны</li>
+    <li>terrain_word_fem(p=2)->коралловая роща</li>
+  </Mashed_Ashlands_NamerLandmark_LandCoralPools.rulePack.rulesStrings>
+
+  <!-- Mashed_Ashlands_NamerLandmark_LavaPools -->
+  <Mashed_Ashlands_NamerLandmark_LavaPools.rulePack.rulesStrings>
+    <li>terrain_word_mas->[terrain_word]</li>
+    <li>terrain_word_fem->[terrain_word]</li>
+    <li>terrain_word_neu->[terrain_word]</li>
+    <li>terrain_word_plural->[terrain_word]</li>
+    <li>r_name(p=0.2)->лавовые бассейны [NamePerson_gen]</li>
+    <li>terrain_word_plural(p=2)->лавовые бассейны</li>
+  </Mashed_Ashlands_NamerLandmark_LavaPools.rulePack.rulesStrings>
+
+  <!-- Mashed_Ashlands_NamerLandmark_MiasmicPools -->
+  <Mashed_Ashlands_NamerLandmark_MiasmicPools.rulePack.rulesStrings>
+    <li>terrain_word_mas->[terrain_word]</li>
+    <li>terrain_word_fem->[terrain_word]</li>
+    <li>terrain_word_neu->[terrain_word]</li>
+    <li>terrain_word_plural->[terrain_word]</li>
+    <li>r_name(p=0.2)->гибель [NamePerson_gen]</li>
+    <li>r_name(p=0.2)->погибель [NamePerson_gen]</li>
+    <li>r_name(p=0.2)->безумие [NamePerson_gen]</li>
+    <li>terrain_word_plural(p=2)->миазменные бассейны</li>
+  </Mashed_Ashlands_NamerLandmark_MiasmicPools.rulePack.rulesStrings>
+
+  <!-- Mashed_Ashlands_NamerLandmark_StriderGraveyard -->
+  <Mashed_Ashlands_NamerLandmark_StriderGraveyard.rulePack.rulesStrings>
+    <li>terrain_word_mas->[terrain_word]</li>
+    <li>terrain_word_fem->[terrain_word]</li>
+    <li>terrain_word_neu->[terrain_word]</li>
+    <li>terrain_word_plural->[terrain_word]</li>
+    <li>r_name(p=0.2)->кладбище шагунов [NamePerson_gen]</li>
+    <li>terrain_word_neu(p=2)->кладбище шагунов</li>
+    <li>terrain_word_neu->кладбище</li>
+  </Mashed_Ashlands_NamerLandmark_StriderGraveyard.rulePack.rulesStrings>
+
+  <!-- Mashed_Ashlands_NamerLandmark_SludgePond -->
+  <Mashed_Ashlands_NamerLandmark_SludgePond.rulePack.rulesStrings>
+    <li>terrain_word_mas->[terrain_word]</li>
+    <li>terrain_word_fem->[terrain_word]</li>
+    <li>terrain_word_neu->[terrain_word]</li>
+    <li>terrain_word_plural->[terrain_word]</li>
+    <li>r_name(p=0.2)->иловый пруд [NamePerson_gen]</li>
+    <li>terrain_word_mas(p=2)->иловый пруд</li>
+    <li>terrain_word_mas->порченный пруд</li>
+  </Mashed_Ashlands_NamerLandmark_SludgePond.rulePack.rulesStrings>
+
+  <!-- Mashed_Ashlands_NamerLandmark_SulphuricLake -->
+  <Mashed_Ashlands_NamerLandmark_SulphuricLake.rulePack.rulesStrings>
+    <li>terrain_word_mas->[terrain_word]</li>
+    <li>terrain_word_fem->[terrain_word]</li>
+    <li>terrain_word_neu->[terrain_word]</li>
+    <li>terrain_word_plural->[terrain_word]</li>
+    <li>r_name(p=0.2)->серное озеро [NamePerson_gen]</li>
+    <li>terrain_word_neu(p=2)->серное озеро</li>
+    <li>terrain_word_neu->кипящее озеро</li>
+  </Mashed_Ashlands_NamerLandmark_SulphuricLake.rulePack.rulesStrings>
+
+  <!-- Mashed_Ashlands_NamerLandmark_SulphuricPond -->
+  <Mashed_Ashlands_NamerLandmark_SulphuricPond.rulePack.rulesStrings>
+    <li>terrain_word_mas->[terrain_word]</li>
+    <li>terrain_word_fem->[terrain_word]</li>
+    <li>terrain_word_neu->[terrain_word]</li>
+    <li>terrain_word_plural->[terrain_word]</li>
+    <li>r_name(p=0.2)->серный пруд [NamePerson_gen]</li>
+    <li>terrain_word_mas(p=2)->серный пруд</li>
+    <li>terrain_word_mas->зелёный пруд</li>
+  </Mashed_Ashlands_NamerLandmark_SulphuricPond.rulePack.rulesStrings>
+
+  <!-- Mashed_Ashlands_NamerLandmark_SulphuricSprings -->
+  <Mashed_Ashlands_NamerLandmark_SulphuricSprings.rulePack.rulesStrings>
+    <li>terrain_word_mas->[terrain_word]</li>
+    <li>terrain_word_fem->[terrain_word]</li>
+    <li>terrain_word_neu->[terrain_word]</li>
+    <li>terrain_word_plural->[terrain_word]</li>
+    <li>r_name(p=0.2)->серные ожоги [NamePerson_gen]</li>
+    <li>terrain_word_mas(p=2)->серный источник</li>
+    <li>terrain_word_plural(p=2)->серные источники</li>
+    <li>terrain_word_plural->ожоги</li>
+  </Mashed_Ashlands_NamerLandmark_SulphuricSprings.rulePack.rulesStrings>
+
+  <!-- Mashed_Ashlands_NamerLandmark_TaintedLake -->
+  <Mashed_Ashlands_NamerLandmark_TaintedLake.rulePack.rulesStrings>
+    <li>terrain_word_mas->[terrain_word]</li>
+    <li>terrain_word_fem->[terrain_word]</li>
+    <li>terrain_word_neu->[terrain_word]</li>
+    <li>terrain_word_plural->[terrain_word]</li>
+    <li>r_name(p=0.2)->отравленное озеро [NamePerson_gen]</li>
+    <li>terrain_word_neu(p=2)->отравленное озеро</li>
+    <li>terrain_word_neu->кипячёное озеро</li>
+  </Mashed_Ashlands_NamerLandmark_TaintedLake.rulePack.rulesStrings>
+
+  <!-- Mashed_Ashlands_NamerLandmark_ThermalMudPools -->
+  <Mashed_Ashlands_NamerLandmark_ThermalMudPools.rulePack.rulesStrings>
+    <li>terrain_word_mas->[terrain_word]</li>
+    <li>terrain_word_fem->[terrain_word]</li>
+    <li>terrain_word_neu->[terrain_word]</li>
+    <li>terrain_word_plural->[terrain_word]</li>
+    <li>r_name(p=0.2)->грязевые ванны [NamePerson_gen]</li>
+    <li>terrain_word_plural(p=2)->термальные грязевые котлы</li>
+    <li>terrain_word_plural->термальные грязевые бассейны</li>
+    <li>terrain_word_plural->грязевые ванны</li>
+  </Mashed_Ashlands_NamerLandmark_ThermalMudPools.rulePack.rulesStrings>
+
+  <!-- Mashed_Ashlands_NamerLandmark_ThermalPond -->
+  <Mashed_Ashlands_NamerLandmark_ThermalPond.rulePack.rulesStrings>
+    <li>terrain_word_mas->[terrain_word]</li>
+    <li>terrain_word_fem->[terrain_word]</li>
+    <li>terrain_word_neu->[terrain_word]</li>
+    <li>terrain_word_plural->[terrain_word]</li>
+    <li>r_name(p=0.2)->термальный пруд [NamePerson_gen]</li>
+    <li>terrain_word_mas(p=2)->термальный пруд</li>
+    <li>terrain_word_mas->голубой пруд</li>
+  </Mashed_Ashlands_NamerLandmark_ThermalPond.rulePack.rulesStrings>
+
+</LanguageData>

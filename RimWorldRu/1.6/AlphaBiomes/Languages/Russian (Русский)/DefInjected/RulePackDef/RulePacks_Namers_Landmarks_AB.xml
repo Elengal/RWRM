@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+  <!-- AB_NamerLandmark_TarLakes -->
+  <!-- EN: terrain_word->tar lakes / asphalt pits / bitumen pools / pitch ponds -->
+  <AB_NamerLandmark_TarLakes.rulePack.rulesStrings>
+    <li>terrain_word_mas->[terrain_word]</li>
+    <li>terrain_word_fem->[terrain_word]</li>
+    <li>terrain_word_neu->[terrain_word]</li>
+    <li>terrain_word_plural->[terrain_word]</li>
+    <li>terrain_word_neu(p=4)->смоляное озеро</li>
+    <li>terrain_word_plural->асфальтовые ямы</li>
+    <li>terrain_word_plural->битумные pools</li>
+    <li>terrain_word_neu->пековый пруд</li>
+  </AB_NamerLandmark_TarLakes.rulePack.rulesStrings>
+
+  <!-- AB_NamerLandmark_PropaneLakes -->
+  <!-- EN: terrain_word->propane lakes / propane ponds / propane pools / propane basins -->
+  <AB_NamerLandmark_PropaneLakes.rulePack.rulesStrings>
+    <li>terrain_word_mas->[terrain_word]</li>
+    <li>terrain_word_fem->[terrain_word]</li>
+    <li>terrain_word_neu->[terrain_word]</li>
+    <li>terrain_word_plural->[terrain_word]</li>
+    <li>terrain_word_neu(p=4)->пропановое озеро</li>
+    <li>terrain_word_neu->пропановый пруд</li>
+    <li>terrain_word_neu->пропановый бассейн</li>
+    <li>terrain_word_fem->пропановая впадина</li>
+  </AB_NamerLandmark_PropaneLakes.rulePack.rulesStrings>
+
+  <!-- AB_NamerLandmark_MagmaticQuagmire -->
+  <!-- EN: terrain_word->magmatic quagmire / magma sinks / pyromarsh / lavamire -->
+  <AB_NamerLandmark_MagmaticQuagmire.rulePack.rulesStrings>
+    <li>terrain_word_mas->[terrain_word]</li>
+    <li>terrain_word_fem->[terrain_word]</li>
+    <li>terrain_word_neu->[terrain_word]</li>
+    <li>terrain_word_plural->[terrain_word]</li>
+    <li>terrain_word_fem(p=4)->магматическое болото</li>
+    <li>terrain_word_plural->магматические топи</li>
+    <li>terrain_word_mas->пироболото</li>
+    <li>terrain_word_neu->лавовое болото</li>
+  </AB_NamerLandmark_MagmaticQuagmire.rulePack.rulesStrings>
+
+  <!-- AB_NamerLandmark_QuicksandPits -->
+  <!-- EN: terrain_word->quicksand pits / sinking sands / loose earth pockets / unstable ground -->
+  <AB_NamerLandmark_QuicksandPits.rulePack.rulesStrings>
+    <li>terrain_word_mas->[terrain_word]</li>
+    <li>terrain_word_fem->[terrain_word]</li>
+    <li>terrain_word_neu->[terrain_word]</li>
+    <li>terrain_word_plural->[terrain_word]</li>
+    <li>terrain_word_plural(p=4)->зыбучие ямы</li>
+    <li>terrain_word_plural->проваливающиеся пески</li>
+    <li>terrain_word_plural->карманы рыхлой земли</li>
+    <li>terrain_word_neu->нестабильная почва</li>
+  </AB_NamerLandmark_QuicksandPits.rulePack.rulesStrings>
+
+  <!-- AB_NamerLandmark_MutagenicSprings -->
+  <!-- EN: r_name(p=0.2)->[NamePerson]'s noxious springs; terrain_word->mutagenic spring / ocular springs / ocular spring -->
+  <AB_NamerLandmark_MutagenicSprings.rulePack.rulesStrings>
+    <li>terrain_word_mas->[terrain_word]</li>
+    <li>terrain_word_fem->[terrain_word]</li>
+    <li>terrain_word_neu->[terrain_word]</li>
+    <li>terrain_word_plural->[terrain_word]</li>
+    <li>r_name(p=0.2)->Ядовитые источники [NamePerson_gen]</li>
+    <li>terrain_word_mas(p=2)->мутагенный источник</li>
+    <li>terrain_word_plural(p=2)->глазные источники</li>
+    <li>terrain_word_mas->глазной источник</li>
+  </AB_NamerLandmark_MutagenicSprings.rulePack.rulesStrings>
+
+  <!-- AB_NamerLandmark_HealingSprings -->
+  <!-- EN: r_name(p=0.2)->[NamePerson]'s healing fonts; terrain_word->healing spring / healing springs -->
+  <AB_NamerLandmark_HealingSprings.rulePack.rulesStrings>
+    <li>terrain_word_mas->[terrain_word]</li>
+    <li>terrain_word_fem->[terrain_word]</li>
+    <li>terrain_word_neu->[terrain_word]</li>
+    <li>terrain_word_plural->[terrain_word]</li>
+    <li>r_name(p=0.2)->Целебные источники [NamePerson_gen]</li>
+    <li>terrain_word_mas(p=2)->целебный источник</li>
+    <li>terrain_word_plural(p=2)->целебные источники</li>
+  </AB_NamerLandmark_HealingSprings.rulePack.rulesStrings>
+
+</LanguageData>

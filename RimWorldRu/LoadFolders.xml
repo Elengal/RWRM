@@ -10,5 +10,8 @@
     <li IfModActive="Ludeon.RimWorld.Odyssey">1.6/Odyssey</li>
     <li>1.6/DevMod</li>
     <li IfModActive="Jaxe.RimHUD">1.6/RimHUD</li>
+    <li IfModActive="VanillaExpanded.VExplorationE">1.6/VanillaLandmarksExpanded</li>
+    <li IfModActive="sarg.alphabiomes">1.6/AlphaBiomes</li>
+    <li IfModActive="SirMashedPotato.Ashlands">1.6/MashedAshlands</li>
   </v1.6>
 </loadFolders>
