@@ -613,10 +613,10 @@
     <li>terrain_word_mas->вой</li>
     <li>terrain_word_plural->шрамы</li>
     <li>terrain_word_plural->разломы</li>
-    <li>mistake->Ошибка</li>
+    <li>mistake->Промах</li>
     <li>mistake->Глупость</li>
     <li>mistake->Заблуждение</li>
-    <li>mistake->Проблема</li>
+    <li>mistake->Изъян</li>
     <li>large_mas->великий</li>
     <li>large_fem->великая</li>
     <li>large_plural->великие</li>
