@@ -734,7 +734,7 @@
     <li>story_result_gen->заблуждения</li>
     <li>story_result_gen->порока</li>
     <li>story_result_gen->безумия</li>
-    <li>story_result_gen->промаха</li>
+    <li>story_result_gen->забвенья</li>
     <li>story_result_gen->радости</li>
     <li>story_result_gen->гордости</li>
     <li>story_result_gen->трофея</li>
@@ -749,7 +749,7 @@
     <li>story_result->заблуждение</li>
     <li>story_result->порок</li>
     <li>story_result->безумие</li>
-    <li>story_result->провал</li>
+    <li>story_result->забвенье</li>
     <li>story_result->вина</li>
     <li>story_result->промах</li>
     <li>story_result->иллюзия</li>
