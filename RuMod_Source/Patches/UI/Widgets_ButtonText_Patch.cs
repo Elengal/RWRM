@@ -16,10 +16,18 @@ namespace RuMod.Patches
         /// <summary>Перегрузка с Color (Rect, string, bool, bool, Color, bool, TextAnchor?). Через неё проходят все вызовы ButtonText.</summary>
         public static MethodBase TargetMethod()
         {
-            return typeof(Widgets)
-                .GetMethods(AccessTools.allDeclared)
-                .First(m => m.Name == "ButtonText" && m.GetParameters().Length == 7
-                    && m.GetParameters()[4].ParameterType == typeof(Color));
+            try
+            {
+                return typeof(Widgets)
+                    .GetMethods(AccessTools.allDeclared)
+                    .FirstOrDefault(m => m.Name == "ButtonText" && m.GetParameters().Length == 7
+                        && m.GetParameters()[4].ParameterType == typeof(Color));
+            }
+            catch (Exception ex)
+            {
+                RuMod.Utils.RuModLog.TargetMethodLookupFailed(nameof(Widgets_ButtonText_Patch), ex);
+                return null;
+            }
         }
 
         public static void Prefix(ref string label)

@@ -14,6 +14,11 @@ namespace RuMod.Utils
     {
         // ==== DebugLog / конфликты ====
 
+        public static void TargetMethodLookupFailed(string patchName, Exception ex)
+        {
+            Log.Warning($"[RuMod] Не нашёл нужную перегрузку метода для патча '{patchName}' (похоже, RimWorld её изменил) — этот патч пропущен: {ex.Message}");
+        }
+
         public static void DebugLogConflictsDirCreateFailed(string dir, Exception ex)
         {
             Log.Warning($"[RuMod] Не смог завести папку конфликтов DebugLog ('{dir}'). Похоже, мир против порядка: {ex.Message}");
@@ -236,4 +241,3 @@ namespace RuMod.Utils
         }
     }
 }
-

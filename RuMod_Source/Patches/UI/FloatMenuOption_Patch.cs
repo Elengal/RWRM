@@ -16,13 +16,21 @@ namespace RuMod.Patches
         /// <summary>Базовый конструктор (string label, Action action, ... 10 параметров). Остальные перегрузки вызывают его через : this().</summary>
         public static MethodBase TargetMethod()
         {
-            return typeof(FloatMenuOption)
-                .GetConstructors(AccessTools.allDeclared)
-                .First(c =>
-                {
-                    var p = c.GetParameters();
-                    return p.Length == 10 && p[0].ParameterType == typeof(string) && p[1].ParameterType == typeof(Action);
-                });
+            try
+            {
+                return typeof(FloatMenuOption)
+                    .GetConstructors(AccessTools.allDeclared)
+                    .FirstOrDefault(c =>
+                    {
+                        var p = c.GetParameters();
+                        return p.Length == 10 && p[0].ParameterType == typeof(string) && p[1].ParameterType == typeof(Action);
+                    });
+            }
+            catch (Exception ex)
+            {
+                RuMod.Utils.RuModLog.TargetMethodLookupFailed(nameof(FloatMenuOption_Patch), ex);
+                return null;
+            }
         }
 
         public static void Postfix(FloatMenuOption __instance)

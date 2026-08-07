@@ -23,11 +23,11 @@ namespace RuMod.Patches
             List<string> allNames = new List<string>();
             HashSet<string> seenPaths = new HashSet<string>();
 
-            // Проверяем кэш
+            // Проверяем кэш (в т.ч. кэш "ничего не нашли" — чтобы не пересканировать моды с диска каждый раз)
             string cacheKey = fileName;
-            if (cachedNames.ContainsKey(cacheKey))
+            if (cachedNames.TryGetValue(cacheKey, out var cachedResult))
             {
-                return cachedNames[cacheKey];
+                return cachedResult.Count > 0 ? cachedResult : null;
             }
 
             // Проверяем, инициализирован ли LoadedModManager
@@ -107,14 +107,9 @@ namespace RuMod.Patches
                 }
             }
 
-            // Кэшируем результат
-            if (allNames.Count > 0)
-            {
-                cachedNames[cacheKey] = allNames;
-            }
-
+            // Кэшируем результат — всегда, включая пустой (иначе повторные промахи будут снова сканировать диск)
+            cachedNames[cacheKey] = allNames;
             return allNames.Count > 0 ? allNames : null;
         }
     }
 }
-

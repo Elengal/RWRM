@@ -94,7 +94,10 @@ namespace RuMod.Utils
         {
             try
             {
-                var method = AccessTools.Method(typeof(EditWindow_Log), "DoWindowContents", new[] { typeof(Rect) });
+                // Важно: проверяем именно тот метод, который реально патчит наш собственный твик
+                // (DevWindowDrawing_DoWindowBackground_Patch), а не DoWindowContents — иначе
+                // конфликт с чужим патчем фона не заметим, а на несвязанный патч контента среагируем зря.
+                var method = AccessTools.Method(typeof(DevWindowDrawing), nameof(DevWindowDrawing.DoWindowBackground));
                 if (method == null)
                     return new List<string>();
 
@@ -102,7 +105,8 @@ namespace RuMod.Utils
                 if (info == null)
                     return new List<string>();
 
-                IEnumerable<string> owners = info.Prefixes.Concat(info.Postfixes).Concat(info.Transpilers)
+                IEnumerable<string> owners = info.Prefixes.Concat(info.Postfixes)
+                    .Concat(info.Transpilers).Concat(info.Finalizers)
                     .Select(p => p.owner)
                     .Where(o => !string.IsNullOrEmpty(o));
 
@@ -175,4 +179,3 @@ namespace RuMod.Utils
         }
     }
 }
-

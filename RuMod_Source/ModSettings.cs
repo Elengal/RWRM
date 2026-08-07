@@ -28,14 +28,33 @@ namespace RuMod
         public float TranslationPanelDragOffsetX;
         /// <summary>Смещение окна переводчика по Y (после перетаскивания), сохраняется.</summary>
         public float TranslationPanelDragOffsetY;
-        /// <summary>Прозрачность фона панели переводчика в главном меню (0.1–0.5). По умолчанию 0.25.</summary>
+        /// <summary>Непрозрачность фона панели переводчика в главном меню (0.1–0.5). По умолчанию 0.25.</summary>
         public float TranslationPanelAlpha = 0.25f;
-        /// <summary>Прозрачность фона панели DLC в главном меню (0.1–0.5). По умолчанию 0.25.</summary>
+        /// <summary>Непрозрачность фона панели DLC в главном меню (0.1–0.5). По умолчанию 0.25.</summary>
         public float DlcPanelAlpha = 0.25f;
-        /// <summary>Прозрачность фона окна Debug log (0.1–0.5). По умолчанию 0.25.</summary>
+        /// <summary>Непрозрачность фона окна Debug log (0.1–0.5). По умолчанию 0.25.</summary>
         public float DebugLogAlpha = 0.25f;
         /// <summary>Включены ли визуальные правки окна Debug log (фон, ширина и т.п.).</summary>
         public bool DebugLogTweaksEnabled = true;
+
+        /// <summary>Сбрасывает все настройки мода к значениям по умолчанию. Не забудь вызвать WriteSettings() после.</summary>
+        public void ResetToDefaults()
+        {
+            LoggingEnabled = false;
+            NameBankPatchesEnabled = true;
+            LogNameSources = false;
+            NoFactionLimitEnabled = true;
+            DevTooltipsEnabled = true;
+            DevModeTranslationLogging = false;
+            MenuBackgroundRimWorldRu = "Default";
+            TranslationPanelDraggable = false;
+            TranslationPanelDragOffsetX = 0f;
+            TranslationPanelDragOffsetY = 0f;
+            TranslationPanelAlpha = 0.25f;
+            DlcPanelAlpha = 0.25f;
+            DebugLogAlpha = 0.25f;
+            DebugLogTweaksEnabled = true;
+        }
 
         public override void ExposeData()
         {

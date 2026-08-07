@@ -16,14 +16,15 @@ namespace RuMod
     public class RuModClass : Mod
     {
         public static RuModClass Instance { get; private set; }
-        private enum TransparencyTarget
-        {
-            TranslationPanel,
-            DlcPanel,
-            DebugLog
-        }
 
+        private enum SettingsTab { General, Visual, Dev }
+        private enum TransparencyTarget { TranslationPanel, DlcPanel, DebugLog }
+
+        private static SettingsTab _currentSettingsTab = SettingsTab.General;
         private static TransparencyTarget _currentTransparencyTarget = TransparencyTarget.TranslationPanel;
+        private static Vector2 _settingsScrollPosition = Vector2.zero;
+        private static float _settingsScrollHeight = 1000f; // с запасом на первый кадр, дальше считается сама
+
         public RuModClass(ModContentPack content) : base(content)
         {
             Instance = this;
@@ -141,9 +142,82 @@ namespace RuMod
         public override void DoSettingsWindowContents(Rect inRect)
         {
             var settings = GetSettings<RuModSettings>();
-            var listing = new Listing_Standard();
-            listing.Begin(inRect);
 
+            // --- Шапка: табы слева, «Сбросить» справа ---
+            Rect headerRect = new Rect(inRect.x, inRect.y, inRect.width, 32f);
+            DrawTabBar(headerRect, settings);
+
+            // --- Прокручиваемое тело: только выбранный таб ---
+            Rect bodyOuter = new Rect(inRect.x, inRect.y + 38f, inRect.width, inRect.height - 38f);
+            Rect viewRect = new Rect(0f, 0f, bodyOuter.width - 16f, _settingsScrollHeight);
+            Widgets.BeginScrollView(bodyOuter, ref _settingsScrollPosition, viewRect);
+
+            var listing = new Listing_Standard();
+            listing.Begin(viewRect);
+
+            switch (_currentSettingsTab)
+            {
+                case SettingsTab.General:
+                    DrawGeneralTab(listing, settings);
+                    break;
+                case SettingsTab.Visual:
+                    DrawVisualTab(listing, settings);
+                    break;
+                case SettingsTab.Dev:
+                    DrawDevTab(listing, settings);
+                    break;
+            }
+
+            _settingsScrollHeight = listing.CurHeight;
+            listing.End();
+            Widgets.EndScrollView();
+        }
+
+        private void DrawTabBar(Rect rect, RuModSettings settings)
+        {
+            const float resetWidth = 170f;
+            Rect tabsRect = new Rect(rect.x, rect.y, rect.width - resetWidth - 8f, rect.height);
+            Rect resetRect = new Rect(rect.xMax - resetWidth, rect.y, resetWidth, rect.height);
+
+            var tabs = new (SettingsTab tab, string label)[]
+            {
+                (SettingsTab.General, "Общее"),
+                (SettingsTab.Visual, "Визуал"),
+                (SettingsTab.Dev, "Для разработчиков"),
+            };
+
+            float tabW = tabsRect.width / tabs.Length;
+            for (int i = 0; i < tabs.Length; i++)
+            {
+                Rect tabRect = new Rect(tabsRect.x + tabW * i, tabsRect.y, tabW - 4f, tabsRect.height);
+                bool selected = _currentSettingsTab == tabs[i].tab;
+                GUI.color = selected ? Color.white : new Color(1f, 1f, 1f, 0.6f);
+                if (Widgets.ButtonText(tabRect, tabs[i].label))
+                {
+                    _currentSettingsTab = tabs[i].tab;
+                }
+                GUI.color = Color.white;
+                if (selected)
+                {
+                    Widgets.DrawLineHorizontal(tabRect.x, tabRect.yMax - 2f, tabRect.width);
+                }
+            }
+
+            if (Widgets.ButtonText(resetRect, "Сбросить настройки"))
+            {
+                Find.WindowStack.Add(Dialog_MessageBox.CreateConfirmation(
+                    "Сбросить все настройки RimWorld RU к значениям по умолчанию? Позиция панели переводчика и все ползунки прозрачности тоже вернутся к исходным.",
+                    () =>
+                    {
+                        settings.ResetToDefaults();
+                        WriteSettings();
+                    },
+                    true));
+            }
+        }
+
+        private void DrawGeneralTab(Listing_Standard listing, RuModSettings settings)
+        {
             string menuBgLabel = GetMenuBackgroundLabel(settings.MenuBackgroundRimWorldRu);
             if (listing.ButtonTextLabeledPct("Фон главного меню", menuBgLabel, 0.6f, TextAnchor.MiddleLeft, null, null, null))
             {
@@ -157,36 +231,21 @@ namespace RuMod
                 opts.Add(new FloatMenuOption("Случайно", () => { settings.MenuBackgroundRimWorldRu = "Random"; MainMenuDrawer_Init_Patch.ApplyRimWorldRuBackground(); }));
                 Find.WindowStack.Add(new FloatMenu(opts));
             }
-            listing.Gap(4f);
+            listing.Gap(8f);
 
             listing.CheckboxLabeled("Патчи NameBank (русские имена)", ref settings.NameBankPatchesEnabled,
                 "Включает или отключает все подмены имён: загрузка из файлов мода, выбор только русских имён, фамилии по полу, родственники, замена английских кличек. Одна галочка — всё под контролем. Отключите при конфликтах с другими модами.");
 
             listing.CheckboxLabeled("Снять лимит фракций при создании мира", ref settings.NoFactionLimitEnabled,
                 "Убирает ограничение игры на максимум 12 видимых/добавляемых фракций в окне новой игры. Влияет только на экран выбора фракций, не зависит от DevMode.");
+        }
 
-            listing.GapLine();
-            listing.Label("Для разработчиков");
-            listing.Gap(4f);
+        private void DrawVisualTab(Listing_Standard listing, RuModSettings settings)
+        {
             listing.CheckboxLabeled("Перетаскиваемое окно переводчика на главном экране", ref settings.TranslationPanelDraggable,
                 "Включено: окно «RimWorld переводчика» можно перетаскивать за верхнюю полоску. Позиция сохраняется между запусками игры. Выключите, если окно должно оставаться на месте.");
-
-            string vacuumLabel = settings.DevModeTranslationLogging
-                ? "<color=#ff5555>Пылесос</color>"
-                : "<color=#55ff55>Пылесос</color>";
-            listing.CheckboxLabeled(vacuumLabel, ref settings.DevModeTranslationLogging,
-                "Пылесос всего, что видишь в DevMode, и сохраняет английские строки в JSON. Лучше не трогать, если не собираешься заниматься переводом разработчика.");
-            listing.CheckboxLabeled("Показывать всплывающие подсказки в Dev-меню", ref settings.DevTooltipsEnabled,
-                "При наведении курсора на пункт Dev-меню показывает полный текст команды во всплывающем окне. По умолчанию включено.");
-            listing.CheckboxLabeled("Логировать источники имён (имя, фамилия, кличка)", ref settings.LogNameSources,
-                "При создании/спавне пешки записывает в файл, откуда взято каждое имя (слот, пол, файл-источник, банк). Файл на рабочем столе: RuMod_NameSources.txt");
-            if (settings.LogNameSources)
-            {
-                listing.Label($"Путь к файлу: {NameSourceLogger.GetFilePath()}");
-            }
-
+            listing.Gap(8f);
             listing.GapLine();
-            listing.Label("Визуальные настройки");
             listing.Gap(4f);
 
             // Выбор окна для настройки прозрачности
@@ -203,7 +262,7 @@ namespace RuMod
                 _ => "Панель переводчика"
             };
 
-            if (listing.ButtonTextLabeledPct("Окно для настройки прозрачности", targetLabel, 0.6f, TextAnchor.MiddleLeft, null, null, null))
+            if (listing.ButtonTextLabeledPct("Окно для настройки непрозрачности", targetLabel, 0.6f, TextAnchor.MiddleLeft, null, null, null))
             {
                 var opts = new List<FloatMenuOption>
                 {
@@ -217,7 +276,9 @@ namespace RuMod
                 Find.WindowStack.Add(new FloatMenu(opts));
             }
 
-            // Ползунок прозрачности для выбранного окна
+            // Ползунок непрозрачности для выбранного окна.
+            // Специально "непрозрачность", а не "прозрачность": значение растёт слева направо
+            // и напрямую совпадает с alpha (0.1 = почти прозрачно, 0.5 = плотнее), без путаницы сторон.
             float currentAlpha = 0.25f;
             switch (_currentTransparencyTarget)
             {
@@ -233,9 +294,9 @@ namespace RuMod
             }
 
             currentAlpha = Mathf.Clamp(currentAlpha, 0.1f, 0.5f);
-            listing.Label($"Прозрачность: {(int)(currentAlpha * 100f)}%");
+            listing.Label($"Непрозрачность фона: {(int)(currentAlpha * 100f)}%");
             Rect sliderRect = listing.GetRect(22f);
-            currentAlpha = Widgets.HorizontalSlider(sliderRect, currentAlpha, 0.1f, 0.5f, true, "", "10%", "50%");
+            currentAlpha = Widgets.HorizontalSlider(sliderRect, currentAlpha, 0.1f, 0.5f, true, "", "прозрачнее", "плотнее");
 
             switch (_currentTransparencyTarget)
             {
@@ -250,7 +311,9 @@ namespace RuMod
                     break;
             }
 
-            listing.Gap(6f);
+            listing.Gap(10f);
+            listing.GapLine();
+            listing.Gap(4f);
 
             bool debugTweaks = settings.DebugLogTweaksEnabled;
             listing.CheckboxLabeled("Визуальные правки окна Debug log (фон, ширина)",
@@ -264,8 +327,29 @@ namespace RuMod
                     RuMod.Utils.DebugLogTweakManager.AcceptCurrentConflicts();
                 }
             }
+        }
 
-            listing.End();
+        private void DrawDevTab(Listing_Standard listing, RuModSettings settings)
+        {
+            listing.CheckboxLabeled("Показывать всплывающие подсказки в Dev-меню", ref settings.DevTooltipsEnabled,
+                "При наведении курсора на пункт Dev-меню показывает полный текст команды во всплывающем окне. По умолчанию включено.");
+
+            listing.CheckboxLabeled("Логировать источники имён (имя, фамилия, кличка)", ref settings.LogNameSources,
+                "При создании/спавне пешки записывает в файл, откуда взято каждое имя (слот, пол, файл-источник, банк). Файл на рабочем столе: RuMod_NameSources.txt");
+            if (settings.LogNameSources)
+            {
+                listing.Label($"Путь к файлу: {NameSourceLogger.GetFilePath()}");
+            }
+
+            listing.Gap(8f);
+            listing.GapLine();
+            listing.Gap(4f);
+
+            string vacuumLabel = settings.DevModeTranslationLogging
+                ? "<color=#ff5555>Пылесос английских строк (DevMode)</color>"
+                : "<color=#55ff55>Пылесос английских строк (DevMode)</color>";
+            listing.CheckboxLabeled(vacuumLabel, ref settings.DevModeTranslationLogging,
+                "Собирает всё, что видишь в DevMode, и сохраняет английские строки в JSON. Лучше не трогать, если не занимаешься переводом мода.");
         }
 
         private static string GetMenuBackgroundLabel(string choice)

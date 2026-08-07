@@ -226,8 +226,10 @@ namespace RuMod.Patches
             {
                 if (gender == Gender.Female) return lastPrefix + "_Female";
                 if (gender == Gender.Male) return lastPrefix + "_Male";
-                // Игра часто запрашивает фамилию с Gender.None — берём пол из контекста генерации имени
-                Gender contextGender = GenderContextHelper.lastKnownGender ?? Gender.Male;
+                // Игра часто запрашивает фамилию с Gender.None — берём пол из контекста генерации имени.
+                // lastFirstGenderInGetName надёжнее GenderContextHelper.lastKnownGender при пачковой
+                // генерации (см. комментарий у поля выше), поэтому проверяем его первым.
+                Gender contextGender = lastFirstGenderInGetName ?? GenderContextHelper.lastKnownGender ?? Gender.Male;
                 return contextGender == Gender.Female ? lastPrefix + "_Female" : lastPrefix + "_Male";
             }
             return null;

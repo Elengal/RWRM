@@ -165,7 +165,13 @@ namespace RuMod.Patches
         private static void SetGameDefaultBackground(UI_BackgroundMain bg)
         {
             if (Prefs.RandomBackgroundImage)
-                bg.overrideBGImage = (from exp in ModLister.AllExpansions where exp.Status == ExpansionStatus.Active select exp).RandomElement<ExpansionDef>().BackgroundImage;
+            {
+                // RandomElement() падает на пустой последовательности — у игрока без активных DLC список пуст
+                var activeExpansions = (from exp in ModLister.AllExpansions where exp.Status == ExpansionStatus.Active select exp).ToList();
+                bg.overrideBGImage = activeExpansions.Count > 0
+                    ? activeExpansions.RandomElement().BackgroundImage
+                    : Prefs.BackgroundImageExpansion.BackgroundImage;
+            }
             else
                 bg.overrideBGImage = Prefs.BackgroundImageExpansion.BackgroundImage;
         }

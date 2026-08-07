@@ -27,6 +27,8 @@ namespace RuMod.Patches
         private const float Padding = 8f;
         /// <summary>Зазор между кнопкой «Мод в Steam» и тремя кнопками ниже (пикселей).</summary>
         private const float GapAfterModBtn = 30f;
+        /// <summary>Сколько пикселей панели обязательно должно оставаться видно у любого края экрана — не даёт утащить панель полностью за пределы видимости.</summary>
+        private const float MinVisibleMargin = 40f;
 
         private static LanguageInfo _savedLanguageInfo;
         private static bool _weDrawPanelOurselves;
@@ -93,6 +95,16 @@ namespace RuMod.Patches
                 + BtnH + TextGap + GapAfterModBtn
                 + step * 3f;
 
+            // Кламп смещения так, чтобы панель нельзя было утащить за пределы экрана.
+            // Считается каждый кадр (а не только на MouseUp), поэтому если у кого-то уже
+            // сохранено "убежавшее" смещение из старой версии — оно само вернётся в границы.
+            float minOffsetX = -outRect.x - PanelOffsetX - outRect.width + MinVisibleMargin;
+            float maxOffsetX = UI.screenWidth - outRect.x - PanelOffsetX - MinVisibleMargin;
+            float minOffsetY = -outRect.y - PanelOffsetY - totalHeight + MinVisibleMargin;
+            float maxOffsetY = UI.screenHeight - outRect.y - PanelOffsetY - MinVisibleMargin;
+            _dragOffsetX = Mathf.Clamp(_dragOffsetX, minOffsetX, maxOffsetX);
+            _dragOffsetY = Mathf.Clamp(_dragOffsetY, minOffsetY, maxOffsetY);
+
             Rect shifted = new Rect(outRect.x + PanelOffsetX + _dragOffsetX, outRect.y + PanelOffsetY + _dragOffsetY, outRect.width, totalHeight);
             Rect dragHandle = new Rect(shifted.x, shifted.y, shifted.width, DragHandleHeight);
 
@@ -111,6 +123,9 @@ namespace RuMod.Patches
                 {
                     _dragOffsetX = _dragStartOffset.x + (e.mousePosition.x - _dragStartPos.x);
                     _dragOffsetY = _dragStartOffset.y + (e.mousePosition.y - _dragStartPos.y);
+                    // Клампим и во время самого перетаскивания, чтобы курсор не "убегал" от панели у края экрана
+                    _dragOffsetX = Mathf.Clamp(_dragOffsetX, minOffsetX, maxOffsetX);
+                    _dragOffsetY = Mathf.Clamp(_dragOffsetY, minOffsetY, maxOffsetY);
                     e.Use();
                 }
                 else if (e.type == EventType.MouseUp || e.type == EventType.MouseLeaveWindow)
