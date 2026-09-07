@@ -17,7 +17,7 @@
   <!-- EN: traders guild -->
   <TradersGuild.label>гильдия торговцев</TradersGuild.label>
   <!-- EN: A loose coalition of orbital traders. Together they form an orbital marketplace that buys and sells goods from around the planet. Orbital traders will also buy goods from the occasional interplanetary trading vessel, giving them access to rare technologies.\n\nThese merchants are rarely found on the planet itself, preferring to live in the safety of their orbital platforms. -->
-  <TradersGuild.description>Свободная коалиция орбитальных торговцев. Вместе они образуют орбитальный рынок, который покупает и продает товары со всей планеты. Орбитальные торговцы также приобретают товары у межпланетных торговых судов, что дает им доступ к редким технологиям.\n\nЭти торговцы редко спускаются на саму планету, предпочитая жить в безопасности своих орбитальных платформ.</TradersGuild.description>
+  <TradersGuild.description>Свободная коалиция орбитальных торговцев. Вместе они образуют орбитальный рынок, который покупает и продает товары со всей планеты. Орбитальные торговцы также приобретают товары у межпланетных торговых судов, что даёт им доступ к редким технологиям.\n\nЭти торговцы редко спускаются на саму планету, предпочитая жить в безопасности своих орбитальных платформ.</TradersGuild.description>
   <!-- EN: magister of trade -->
   <TradersGuild.leaderTitle>магистр торговли</TradersGuild.leaderTitle>
   <!-- EN: {0} from {1} are attacking your {2}. -->

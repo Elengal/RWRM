@@ -34,12 +34,12 @@
   <!-- EN: sealed container -->
   <AncientSealedContainer.label>герметичный контейнер</AncientSealedContainer.label>
   <!-- EN: A large sealed container. It may contain valuable supplies. -->
-  <AncientSealedContainer.description>Большой герметичный контейнер. Возможно, в нем хранятся ценные припасы.</AncientSealedContainer.description>
+  <AncientSealedContainer.description>Большой герметичный контейнер. Возможно, в нём хранятся ценные припасы.</AncientSealedContainer.description>
   
   <!-- EN: sealed container -->
   <AncientSealedContainer_GravshipUpgrade.label>герметичный контейнер</AncientSealedContainer_GravshipUpgrade.label>
   <!-- EN: A large sealed container. It may contain valuable supplies. -->
-  <AncientSealedContainer_GravshipUpgrade.description>Большой герметичный контейнер. Возможно, в нем хранятся ценные припасы.</AncientSealedContainer_GravshipUpgrade.description>
+  <AncientSealedContainer_GravshipUpgrade.description>Большой герметичный контейнер. Возможно, в нём хранятся ценные припасы.</AncientSealedContainer_GravshipUpgrade.description>
   
   <!-- EN: sealed crate -->
   <AncientSealedCrate.label>герметичный ящик</AncientSealedCrate.label>

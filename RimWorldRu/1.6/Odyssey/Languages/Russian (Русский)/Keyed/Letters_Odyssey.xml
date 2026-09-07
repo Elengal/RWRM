@@ -20,7 +20,7 @@
   <!-- EN: {RESOURCE} asteroid -->
   <AsteroidLetter>Астероид {RESOURCE}</AsteroidLetter> 
   <!-- EN: You've discovered the location of an asteroid orbiting the planet. It contains significant amounts of {RESOURCE}, and potentially other resources.\n\nOrbital miners steer valuable asteroids into planetary orbit so that they can be easily mined and sold to orbital traders. You do not detect any signs of life from this asteroid.\n\nYou can reach the asteroid with transport pods, shuttles, or a gravship. -->
-  <AsteroidLetterText>Вы обнаружили местоположение астероида, вращающегося вокруг планеты. В нем в больших количествах содержится {RESOURCE} и, возможно, другие ресурсы.\n\nОрбитальные шахтеры направляют ценные астероиды на орбиту планеты, чтобы их было легче добывать и продавать орбитальным торговцам. Признаков жизни на астероиде не обнаружено.\n\nДобраться до астероида можно на транспортных капсулах, челноках или гравикорабле.</AsteroidLetterText>
+  <AsteroidLetterText>Вы обнаружили местоположение астероида, вращающегося вокруг планеты. В нём в больших количествах содержится {RESOURCE} и, возможно, другие ресурсы.\n\nОрбитальные шахтеры направляют ценные астероиды на орбиту планеты, чтобы их было легче добывать и продавать орбитальным торговцам. Признаков жизни на астероиде не обнаружено.\n\nДобраться до астероида можно на транспортных капсулах, челноках или гравикорабле.</AsteroidLetterText>
 
   <!-- EN: {RESOURCE} asteroid -->
   <AsteroidName>Астероид {RESOURCE}</AsteroidName>
@@ -65,7 +65,7 @@
   <!-- EN: Lava emergence -->
   <LetterLabelLavaEmergence>Извержение лавы</LetterLabelLavaEmergence>
   <!-- EN: Lava is emerging from cracks in the ground! It'll continue to pool until it creates a small lake. It will then take several days to cool, after which it can be removed. -->
-  <LetterLavaEmergence>Лава вытекает через трещины в земле! Она будет скапливаться, пока не образует небольшое озеро. Остывание займет несколько дней, после чего ее можно будет убрать.</LetterLavaEmergence>
+  <LetterLavaEmergence>Лава вытекает через трещины в земле! Она будет скапливаться, пока не образует небольшое озеро. Остывание займет несколько дней, после чего её можно будет убрать.</LetterLavaEmergence>
   <!-- EN: Lava flow -->
   <LetterLabelLavaFlow>Поток лавы</LetterLabelLavaFlow>
   <!-- EN: Lava has begun to pour into the region, flooding the low-lying volcanic rock. Keep your colonists out of harm's way! -->
@@ -102,7 +102,7 @@
   <!-- EN: Cerebrex core -->
   <OrbitalMechhiveLetterArrived>Ядро церебрекса</OrbitalMechhiveLetterArrived>
   <!-- EN: At the center of the orbital platform sits a massive mechanoid structure made of hair-fine ultratech filaments supporting an AI persona core. This is the intelligence core of the mechhive that directs mechanoids all over the planet.\n\nThe structure is protected by nearby stabilizers, making it nearly invulnerable. Find and destroy the cerebrex stabilizers to lower the core's defenses. -->
-  <OrbitalMechhiveLetterArrivedText>В центре орбитальной платформы возвышается массивная структура механоидов, собранная из тончайших ультратех-нитей, в которых спрятано персональное ИИ-ядро. Это интеллектуальное ядро мехроя, управляющее всеми механоидами на планете.\n\nСтруктура защищена прилегающими стабилизаторами, которые делают ее практически неуязвимой. Найдите и уничтожьте стабилизаторы церебрекса, чтобы ослабить защиту ядра.</OrbitalMechhiveLetterArrivedText>
+  <OrbitalMechhiveLetterArrivedText>В центре орбитальной платформы возвышается массивная структура механоидов, собранная из тончайших ультратех-нитей, в которых спрятано персональное ИИ-ядро. Это интеллектуальное ядро мехроя, управляющее всеми механоидами на планете.\n\nСтруктура защищена прилегающими стабилизаторами, которые делают её практически неуязвимой. Найдите и уничтожьте стабилизаторы церебрекса, чтобы ослабить защиту ядра.</OrbitalMechhiveLetterArrivedText>
 
   <!-- EN: Mechanoid assault -->
   <MechhiveRaidLetterLabel>Атака механоидов</MechhiveRaidLetterLabel>

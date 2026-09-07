@@ -236,7 +236,7 @@
     <li>physicalDescription->нацарапана углем</li>
     <li>physicalDescription->нацарапана на промокшем холсте</li>
     <li>physicalDescription->нацарапана на гнилой шкуре животного</li>
-    <li>physicalDescription->нацарапана черными чернилами</li>
+    <li>physicalDescription->нацарапана чёрными чернилами</li>
     <li>physicalDescription->вышита на шкуре лося</li>
     <li>physicalDescription->написана на высушенной шкуре [Animal_gen]</li>
     <li>physicalDescription->создана из почерневшего пергамента</li>
@@ -269,7 +269,7 @@
     <li>mapContents->много мелких рисунков, на которых изображены [mapSubjectAdj_plural] [mapSubject] и [mapSubjectAdj_plural] [mapSubject]</li>
     <li>mapContents->подробные рисунки планеты. Несколько близлежащих точек помечены как «[Enemy]» красными чернилами</li>
     <li>mapContents->координаты нескольких [mapSubjectAdj_plural] [mapSubject]</li>
-    <li>mapContents->координаты выделены желтым маркером</li>
+    <li>mapContents->координаты выделены жёлтым маркером</li>
     <li>mapContents->рисунки близлежащих территорий. Грубые символы обозначают безопасные места и тайники</li>
     <li>mapContents->месторасположение [Quantity_adjphrase] убежищ зверя «[Animal]». Красные «Х» также обозначают несколько могил</li>
     <li>mapContents->ничего важного. Или так кажется</li>
@@ -307,9 +307,9 @@
     <li>specialFact->Автор карты [emotionalState_mas] [PersonBadass_mas].</li>
     <li>specialFact->Автор карты [emotionalState_fem] [PersonBadass_fem].</li>
     <li>specialFact->Автор карты [emotionalState_neu] [PersonBadass_neu].</li>
-    <li>specialFact->Простота карты говорит о спешке при ее создании — [PersonBadass_mas] хотел опередить власти.</li>
-    <li>specialFact->Простота карты говорит о спешке при ее создании — [PersonBadass_fem] хотела опередить власти.</li>
-    <li>specialFact->Простота карты говорит о спешке при ее создании — [PersonBadass_neu] хотело опередить власти.</li>
+    <li>specialFact->Простота карты говорит о спешке при её создании — [PersonBadass_mas] хотел опередить власти.</li>
+    <li>specialFact->Простота карты говорит о спешке при её создании — [PersonBadass_fem] хотела опередить власти.</li>
+    <li>specialFact->Простота карты говорит о спешке при её создании — [PersonBadass_neu] хотело опередить власти.</li>
     <li>specialFact->Некоторые области обведены с пояснениями вроде «[Enemy] — не попадаться» и «[Animal] — опасность».</li>
     <li>specialFact->На карте обведено «[mapSymbol]» и подписано: «пахнет [smell] и [stain]».</li>
     <li>specialFact->На полях написана тысячелетняя поэма «Diabolus».</li>
@@ -870,100 +870,100 @@
     <li>mapSubject->истории</li>
     <li>mapSubject->территории</li>
     <li>mapSubject->массивы суши</li>
-    <li>CapSylE->Al</li>
-    <li>CapSylE->All</li>
-    <li>CapSylE->An</li>
-    <li>CapSylE->And</li>
-    <li>CapSylE->Ar</li>
-    <li>CapSylE->Are</li>
-    <li>CapSylE->As</li>
-    <li>CapSylE->At</li>
-    <li>CapSylE->Ban</li>
-    <li>CapSylE->Bin</li>
-    <li>CapSylE->Bon</li>
-    <li>CapSylE->But</li>
-    <li>CapSylE->Ca</li>
-    <li>CapSylE->Co</li>
-    <li>CapSylE->Da</li>
-    <li>CapSylE->Del</li>
-    <li>CapSylE->Din</li>
-    <li>CapSylE->Do</li>
-    <li>CapSylE->Ea</li>
-    <li>CapSylE->Ed</li>
-    <li>CapSylE->En</li>
-    <li>CapSylE->Ent</li>
-    <li>CapSylE->Er</li>
-    <li>CapSylE->Era</li>
-    <li>CapSylE->Ere</li>
-    <li>CapSylE->Es</li>
-    <li>CapSylE->Eve</li>
-    <li>CapSylE->Far</li>
-    <li>CapSylE->Fen</li>
-    <li>CapSylE->Fin</li>
-    <li>CapSylE->For</li>
-    <li>CapSylE->Fun</li>
-    <li>CapSylE->Ga</li>
-    <li>CapSylE->Go</li>
-    <li>CapSylE->Ha</li>
-    <li>CapSylE->Had</li>
-    <li>CapSylE->Hat</li>
-    <li>CapSylE->He</li>
-    <li>CapSylE->Hen</li>
-    <li>CapSylE->Her</li>
-    <li>CapSylE->Hi</li>
-    <li>CapSylE->Hi</li>
-    <li>CapSylE->Hin</li>
-    <li>CapSylE->His</li>
-    <li>CapSylE->In</li>
-    <li>CapSylE->Is</li>
-    <li>CapSylE->It</li>
-    <li>CapSylE->Ith</li>
-    <li>CapSylE->Ja</li>
-    <li>CapSylE->Ka</li>
-    <li>CapSylE->Ko</li>
-    <li>CapSylE->La</li>
-    <li>CapSylE->Lan</li>
-    <li>CapSylE->Le</li>
-    <li>CapSylE->Len</li>
-    <li>CapSylE->Lon</li>
-    <li>CapSylE->Ma</li>
-    <li>CapSylE->Me</li>
-    <li>CapSylE->Men</li>
-    <li>CapSylE->Min</li>
-    <li>CapSylE->Mon</li>
-    <li>CapSylE->Na</li>
-    <li>CapSylE->Ne</li>
-    <li>CapSylE->Not</li>
-    <li>CapSylE->Ome</li>
-    <li>CapSylE->On</li>
-    <li>CapSylE->Or</li>
-    <li>CapSylE->Ou</li>
-    <li>CapSylE->Oul</li>
-    <li>CapSylE->Our</li>
-    <li>CapSylE->Pa</li>
-    <li>CapSylE->Qua</li>
-    <li>CapSylE->Ra</li>
-    <li>CapSylE->Re</li>
-    <li>CapSylE->Ro</li>
-    <li>CapSylE->Se</li>
-    <li>CapSylE->Sho</li>
-    <li>CapSylE->St</li>
-    <li>CapSylE->Te</li>
-    <li>CapSylE->Ted</li>
-    <li>CapSylE->Ter</li>
-    <li>CapSylE->Tha</li>
-    <li>CapSylE->The</li>
-    <li>CapSylE->Thi</li>
-    <li>CapSylE->Thi</li>
-    <li>CapSylE->Ti</li>
-    <li>CapSylE->To</li>
-    <li>CapSylE->Un</li>
-    <li>CapSylE->Ve</li>
-    <li>CapSylE->Ver</li>
-    <li>CapSylE->Wa</li>
-    <li>CapSylE->Was</li>
-    <li>CapSylE->Wit</li>
-    <li>CapSylE->You</li>
+    <li>CapSylE->Ал</li>
+    <li>CapSylE->Алл</li>
+    <li>CapSylE->Ан</li>
+    <li>CapSylE->Анд</li>
+    <li>CapSylE->Ар</li>
+    <li>CapSylE->Аре</li>
+    <li>CapSylE->Ас</li>
+    <li>CapSylE->Ат</li>
+    <li>CapSylE->Бан</li>
+    <li>CapSylE->Бин</li>
+    <li>CapSylE->Бон</li>
+    <li>CapSylE->Бут</li>
+    <li>CapSylE->Ка</li>
+    <li>CapSylE->Ко</li>
+    <li>CapSylE->Да</li>
+    <li>CapSylE->Дел</li>
+    <li>CapSylE->Дин</li>
+    <li>CapSylE->До</li>
+    <li>CapSylE->Эа</li>
+    <li>CapSylE->Эд</li>
+    <li>CapSylE->Эн</li>
+    <li>CapSylE->Энт</li>
+    <li>CapSylE->Эр</li>
+    <li>CapSylE->Эра</li>
+    <li>CapSylE->Эре</li>
+    <li>CapSylE->Эс</li>
+    <li>CapSylE->Эве</li>
+    <li>CapSylE->Фар</li>
+    <li>CapSylE->Фен</li>
+    <li>CapSylE->Фин</li>
+    <li>CapSylE->Фор</li>
+    <li>CapSylE->Фун</li>
+    <li>CapSylE->Га</li>
+    <li>CapSylE->Го</li>
+    <li>CapSylE->Ха</li>
+    <li>CapSylE->Хад</li>
+    <li>CapSylE->Хат</li>
+    <li>CapSylE->Хе</li>
+    <li>CapSylE->Хен</li>
+    <li>CapSylE->Гер</li>
+    <li>CapSylE->Хи</li>
+    <li>CapSylE->Хи</li>
+    <li>CapSylE->Хин</li>
+    <li>CapSylE->Хис</li>
+    <li>CapSylE->Ин</li>
+    <li>CapSylE->Ис</li>
+    <li>CapSylE->Ит</li>
+    <li>CapSylE->Иф</li>
+    <li>CapSylE->Джа</li>
+    <li>CapSylE->Ка</li>
+    <li>CapSylE->Ко</li>
+    <li>CapSylE->Ла</li>
+    <li>CapSylE->Лан</li>
+    <li>CapSylE->Ле</li>
+    <li>CapSylE->Лен</li>
+    <li>CapSylE->Лон</li>
+    <li>CapSylE->Ма</li>
+    <li>CapSylE->Ме</li>
+    <li>CapSylE->Мен</li>
+    <li>CapSylE->Мин</li>
+    <li>CapSylE->Мон</li>
+    <li>CapSylE->На</li>
+    <li>CapSylE->Не</li>
+    <li>CapSylE->Нот</li>
+    <li>CapSylE->Оме</li>
+    <li>CapSylE->Он</li>
+    <li>CapSylE->Ор</li>
+    <li>CapSylE->Оу</li>
+    <li>CapSylE->Оул</li>
+    <li>CapSylE->Оур</li>
+    <li>CapSylE->Па</li>
+    <li>CapSylE->Ква</li>
+    <li>CapSylE->Ра</li>
+    <li>CapSylE->Ре</li>
+    <li>CapSylE->Ро</li>
+    <li>CapSylE->Се</li>
+    <li>CapSylE->Шо</li>
+    <li>CapSylE->Ст</li>
+    <li>CapSylE->Те</li>
+    <li>CapSylE->Тед</li>
+    <li>CapSylE->Тер</li>
+    <li>CapSylE->Фа</li>
+    <li>CapSylE->Фе</li>
+    <li>CapSylE->Фи</li>
+    <li>CapSylE->Фи</li>
+    <li>CapSylE->Ти</li>
+    <li>CapSylE->То</li>
+    <li>CapSylE->Ун</li>
+    <li>CapSylE->Ве</li>
+    <li>CapSylE->Вер</li>
+    <li>CapSylE->Ва</li>
+    <li>CapSylE->Вас</li>
+    <li>CapSylE->Вит</li>
+    <li>CapSylE->Ю</li>
   </MapUtility.rulePack.rulesStrings>
   
   <!-- EN:

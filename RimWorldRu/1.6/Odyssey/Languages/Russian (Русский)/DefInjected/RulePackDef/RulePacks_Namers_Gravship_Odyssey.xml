@@ -109,15 +109,15 @@
     <li>r_name(p=0.5)->[Color_mas] [ship_word_mas]</li>
     <li>r_name(p=0.5)->[Color_fem] [ship_word_fem]</li>
     <li>r_name(p=0.5)->[Color_neu] [ship_word_neu]</li>
-    <li>r_name(p=0.5)->[AdjectiveBadass_mas] [ship_word_mas]</li>
+    <li>r_name(p=0.5)->[AdjectiveBadass] [ship_word_mas]</li>
     <li>r_name(p=0.5)->[AdjectiveBadass_fem] [ship_word_fem]</li>
-    <li>r_name(p=0.5)->[AdjectiveBadass_neu] [ship_word_beu]</li>
-    <li>r_name(p=0.5)->[AdjectiveBadass_mas] [bird_mas]</li>
-    <li>r_name(p=0.5)->[AdjectiveBadass_mas] [bird_fem]</li>
-    <li>r_name(p=0.5)->[AdjectiveFriendly_mas] [ship_word_mas]</li>
+    <li>r_name(p=0.5)->[AdjectiveBadass_neutral] [ship_word_beu]</li>
+    <li>r_name(p=0.5)->[AdjectiveBadass] [bird_mas]</li>
+    <li>r_name(p=0.5)->[AdjectiveBadass] [bird_fem]</li>
+    <li>r_name(p=0.5)->[AdjectiveFriendly] [ship_word_mas]</li>
     <li>r_name(p=0.5)->[AdjectiveFriendly_fem] [ship_word_fem]</li>
-    <li>r_name(p=0.5)->[AdjectiveFriendly_neu] [ship_word_neu]</li>
-    <li>r_name(p=0.5)->[flying_adjective_mas] [AnimalBadass_mas]</li>
+    <li>r_name(p=0.5)->[AdjectiveFriendly_neutral] [ship_word_neu]</li>
+    <li>r_name(p=0.5)->[flying_adjective_mas] [AnimalBadass_masc]</li>
     <li>r_name(p=0.5)->[flying_adjective_fem] [AnimalBadass_fem]</li>
     <li>r_name(p=0.5)->[storyname]</li>
     <li>r_name(p=0.2)->[Color_mas] [greekmyth_noun_mas]</li>
@@ -132,7 +132,7 @@
     <li>narrative_name_gen->[AdjectiveNatural_mas_gen] [thing_badass_mas_gen]</li>
     <li>narrative_name_gen->[AdjectiveNatural_fem_gen] [thing_badass_fem_gen]</li>
     <li>narrative_name_gen->[AdjectiveNatural_neu_gen] [thing_badass_neu_gen]</li>
-    <li>narrative_name->[AdjectiveLarge_mas] [thing_badass_mas]</li>
+    <li>narrative_name->[AdjectiveLarge] [thing_badass_mas]</li>
     <li>narrative_name->[AdjectiveLarge_fem] [thing_badass_fem]</li>
     <li>narrative_name->[Direction] [thing_badass_mas]</li>
     <li>narrative_name->[Direction] [thing_badass_fem]</li>
@@ -143,7 +143,7 @@
     <li>narrative_name_gen->[thing_badass_mas_gen]</li>
     <li>narrative_name_gen->[thing_badass_fem_gen]</li>
     <li>narrative_name_gen->[thing_badass_neu_gen]</li>
-    <li>thing_badass_mas->[AnimalBadass_mas]</li>
+    <li>thing_badass_mas->[AnimalBadass_masc]</li>
     <li>thing_badass_fem->[AnimalBadass_fem]</li>
     <li>thing_badass_mas->охотник на [AnimalBadass_plural_gen]</li>
     <li>thing_badass_mas_gen->охотника на [AnimalBadass_plural_gen]</li>

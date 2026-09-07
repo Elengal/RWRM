@@ -387,6 +387,14 @@
     <li>story->фантазии</li>
     <li>story->фантазия</li>
     <li>story->чаяния</li>
+  
+    <!-- 07.09.2026: своя развилка прилагательных для заголовков книг — раньше ссылка висела в пустоте -->
+    <li>adjective_masc->[AdjectiveAny]</li>
+    <li>adjective_masc->[Color]</li>
+    <li>adjective_masc->[AdjectiveLarge]</li>
+    <li>adjective_fem->[AdjectiveAny_fem]</li>
+    <li>adjective_fem->[Color_fem]</li>
+    <li>adjective_fem->[AdjectiveLarge_fem]</li>
   </Namer_Novel.rulePack.rulesStrings>
   
   <!-- EN:

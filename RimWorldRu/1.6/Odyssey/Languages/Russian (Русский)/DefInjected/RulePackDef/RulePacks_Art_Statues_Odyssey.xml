@@ -212,7 +212,7 @@
     <li>maybeOtherHand->. [otherHand]</li>
     <li>maybeOtherHand-></li>
     <li>otherHand->В другой руке у статуи находится [prop]</li>
-    <li>otherHand->Другая рука статуи лежит на ее бедре</li>
+    <li>otherHand->Другая рука статуи лежит на её бедре</li>
     <li>otherHand->Другая рука статуи показывает неприличный жест</li>
     <li>otherHand->У статуи отсутствует другая рука[maybeInsult]</li>
     <li>maybeNoNose->. У статуи нет носа[maybeInsult]</li>

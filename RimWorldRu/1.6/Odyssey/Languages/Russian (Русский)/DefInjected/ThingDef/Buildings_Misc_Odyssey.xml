@@ -4,7 +4,7 @@
   <!-- EN: ancient blast door -->
   <AncientBlastDoor.label>древняя бронированная дверь</AncientBlastDoor.label>
   <!-- EN: A heavily-reinforced door made of an ultratech polymer. Hack the door to open it. -->
-  <AncientBlastDoor.description>Хорошо укрепленная дверь из ультратехнологичного полимера. Взломайте дверь, чтобы открыть ее.</AncientBlastDoor.description>
+  <AncientBlastDoor.description>Хорошо укрепленная дверь из ультратехнологичного полимера. Взломайте дверь, чтобы открыть её.</AncientBlastDoor.description>
   <!-- EN: Unlocked. -->
   <AncientBlastDoor.comps.CompHackable.hackedInspectString>Открыто.</AncientBlastDoor.comps.CompHackable.hackedInspectString>
   <!-- EN: {HACKER_labelShort} has finished hacking {SUBJECT_labelNoParenthesisDef}. -->
@@ -32,7 +32,7 @@
   <!-- EN: ancient grav reactor -->
   <AncientGravReactor.label>древний гравитационный реактор</AncientGravReactor.label>
   <!-- EN: An ancient generator powered by a gravcore. Once capable of producing massive amounts of power, it has now fallen into disrepair. The reactor containment shield is leaking, causing toxic fallout to blanket the whole region.\n\nHack or destroy the reactor to obtain a gravcore. Be warned, it may explode if damaged. -->
-  <AncientGravReactor.description>Древний генератор, работающий на гравиядре. Раньше мог производить огромное количество энергии, но сейчас пришел в негодность. Защитный барьер реактора протекает, вызывая токсичные осадки по всему региону.\n\nВзломайте или уничтожьте реактор, чтобы получить гравиядро. Будьте осторожны: при повреждении он может взорваться.</AncientGravReactor.description>
+  <AncientGravReactor.description>Древний генератор, работающий на гравиядре. Раньше мог производить огромное количество энергии, но сейчас пришёл в негодность. Защитный барьер реактора протекает, вызывая токсичные осадки по всему региону.\n\nВзломайте или уничтожьте реактор, чтобы получить гравиядро. Будьте осторожны: при повреждении он может взорваться.</AncientGravReactor.description>
   <!-- EN: Gravcore obtained -->
   <AncientGravReactor.comps.CompHackable.destroyedLetterLabel>Гравиядро получено</AncientGravReactor.comps.CompHackable.destroyedLetterLabel>
   <!-- EN: You've obtained a gravcore from the ancient reactor.\n\nThe reactor is shutting down and the toxic fallout is already beginning to clear. -->
@@ -149,7 +149,7 @@
   <!-- EN: cerebrex core -->
   <CerebrexCore.label>ядро церебрекса</CerebrexCore.label>
   <!-- EN: The thinking mind of the mechanoid swarm. The cerebrex core commands mechanoids across the entire planet.\n\nAt its heart is an AI persona core that knows, thinks, and believes that it must kill every human on this planet. In one sense, this impulse is a command programmed by a human military leader aeons ago. In another sense, it is cold seething hatred. Either way, if you liberate the AI persona you can reset its desire and use it for other purposes.\n\nThe structure is protected by nearby stabilizers. Destroy all cerebrex stabilizers to access it. -->
-  <CerebrexCore.description>Разум роя механоидов. Ядро церебрекса управляет всеми механоидами на планете.\n\nВ его центре — ядро ИИ-персоны, которое обладает сознанием, мышлением и убеждено, что должно уничтожить каждого человека на этой планете. С одной стороны, этот импульс — приказ, созданный человеческим военным лидером много веков назад. С другой — это холодная затаенная ненависть. В любом случае, если вы освободите ИИ-персону, сможете сбросить ее желание и использовать для других целей.\n\nСтруктура защищена расположенными рядом стабилизаторами. Уничтожьте все стабилизаторы церебрекса, чтобы получить доступ к ядру.</CerebrexCore.description>
+  <CerebrexCore.description>Разум роя механоидов. Ядро церебрекса управляет всеми механоидами на планете.\n\nВ его центре — ядро ИИ-персоны, которое обладает сознанием, мышлением и убеждено, что должно уничтожить каждого человека на этой планете. С одной стороны, этот импульс — приказ, созданный человеческим военным лидером много веков назад. С другой — это холодная затаенная ненависть. В любом случае, если вы освободите ИИ-персону, сможете сбросить её желание и использовать для других целей.\n\nСтруктура защищена расположенными рядом стабилизаторами. Уничтожьте все стабилизаторы церебрекса, чтобы получить доступ к ядру.</CerebrexCore.description>
   <!-- EN: Inspect the core. -->
   <CerebrexCore.comps.CompCerebrexCore.activateDescString>Осмотреть ядро.</CerebrexCore.comps.CompCerebrexCore.activateDescString>
   <!-- EN: Inspect... -->

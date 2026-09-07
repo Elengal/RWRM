@@ -104,7 +104,7 @@
     <li>animal_verb->приручить {lookup: [animal]; Case; 3}</li>
     <li>animal_verb->кормить {lookup: [animal]; Case; 3}</li>
     <li>animal_verb->гладить {lookup: [animal]; Case; 3}</li>
-    <li>animal_verb->общаться c  {lookup: [animal]; Case; 4}</li>
+    <li>animal_verb->общаться с {lookup: [animal]; Case; 4}</li>
     <li>animal_verb->заслужить доверие {lookup: [animal]; Case; 1}</li>
     <!-- объекты animal есть в словарях, поэтому можем использовать lookup -->
     <li>animal->гигантский ленивец</li>

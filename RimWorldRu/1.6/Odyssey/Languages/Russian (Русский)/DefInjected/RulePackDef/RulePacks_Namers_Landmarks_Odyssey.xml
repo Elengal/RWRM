@@ -409,16 +409,16 @@
   -->
   <NamerLandmark_InfestedSettlement.rulePack.rulesStrings>
     <li>fallen->[fallen_mas]</li>
-    <li>r_name(p=18)->[fallen_plural] [townname_wordgen_plural]</li>
-    <li>r_name(p=18)->[fallen_mas] [townname_wordgen_mas]</li>
-    <li>r_name(p=18)->[fallen_fem] [townname_wordgen_fem]</li>
-    <li>r_name(p=18)->Улей [townname_wordgen_gen]</li>
+    <li>r_name(p=18)->[fallen_plural] [narrative_name_plural]</li>
+    <li>r_name(p=18)->[fallen_mas] [narrative_name_mas]</li>
+    <li>r_name(p=18)->[fallen_fem] [narrative_name_fem]</li>
+    <li>r_name(p=18)->Улей [narrative_name_gen]</li>
     <li>fallen_mas->павший</li>
     <li>fallen_fem->павшая</li>
     <li>fallen_plural->павшие</li>
-    <li>fallen_mas->зараженный</li>
-    <li>fallen_fem->зараженная</li>
-    <li>fallen_plural->зараженные</li>
+    <li>fallen_mas->заражённый</li>
+    <li>fallen_fem->заражённая</li>
+    <li>fallen_plural->заражённые</li>
   </NamerLandmark_InfestedSettlement.rulePack.rulesStrings>
   
   <!-- EN:

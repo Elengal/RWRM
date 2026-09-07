@@ -56,6 +56,10 @@
     <li>Color_fem->Words/Nouns/Colors_Female_Core</li>
     <li>Color_neutral->Words/Nouns/Colors_Neutral_Core</li>
     <li>Color_plural->Words/Nouns/Colors_Plural_Core</li>
+    <!-- 07.09.2026: цвета по родам были только в наборе пиратов, подняты в общий -->
+    <li>ColorBadass_masc->Words/Nouns/Colors_Badass_Core</li>
+    <li>ColorBadass_fem->Words/Nouns/Colors_Badass_Female_Core</li>
+    <li>ColorBadass_plural->Words/Nouns/Colors_Badass_Plural_Core</li>
     <li>Vegetable_masc->Words/Nouns/Vegetables_Masc_Core</li>
     <li>Vegetable_fem_acc->Words/Nouns/Vegetables_Accusative_Female_Core</li>
     <li>Vegetables_acc->Words/Nouns/Vegetables_Collective_Accusative_Plural_Core</li>

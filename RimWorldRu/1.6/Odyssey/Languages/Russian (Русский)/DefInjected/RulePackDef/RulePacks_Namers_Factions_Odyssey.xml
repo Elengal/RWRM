@@ -47,19 +47,19 @@
     <li>r_name->[Enemy_plural] c [spaceNoun_gen]</li>
     <li>r_name->[groupname] с [spaceNoun_gen]</li>
     <li>r_name->[spaceAdj_plural] [groupname_plural]</li>
-    <li>r_name->[spaceAdj_mas] [groupname_mas]</li>
+    <li>r_name->[spaceAdj_mas] [groupname]</li>
     <li>r_name->[spaceAdj_fem] [groupname_fem]</li>
     <li>r_name->[ColorBadass_plural] [spaceNoun_plural]</li>
-    <li>r_name->[ColorBadass_mas] [spaceNoun_mas]</li>
+    <li>r_name->[ColorBadass_masc] [spaceNoun_mas]</li>
     <li>r_name->[ColorBadass_fem] [spaceNoun_fem]</li>
     <li>r_name->[AdjectiveBadass_plural] [spaceNoun_plural]</li>
-    <li>r_name->[AdjectiveBadass_mas] [spaceNoun_mas]</li>
+    <li>r_name->[AdjectiveBadass] [spaceNoun_mas]</li>
     <li>r_name->[AdjectiveBadass_fem] [spaceNoun_fem]</li>
     <li>r_name->[ColorBadass_plural] [spaceNoun_plural]</li>
-    <li>r_name->[ColorBadass_mas] [spaceNoun_mas]</li>
+    <li>r_name->[ColorBadass_masc] [spaceNoun_mas]</li>
     <li>r_name->[ColorBadass_fem] [spaceNoun_fem]</li>
     <li>r_name->[AdjectiveBadass_plural] [spaceCollectiveNoun_plural]</li>
-    <li>r_name->[AdjectiveBadass_mas] [spaceCollectiveNoun_mas]</li>
+    <li>r_name->[AdjectiveBadass] [spaceCollectiveNoun_mas]</li>
     <li>r_name->[AdjectiveBadass_fem] [spaceCollectiveNoun_fem]</li>
     <li>r_name->[spaceNoun] [ConceptBadass]</li>
     <li>r_name(p=2)->[spaceNoun] [NamePerson_gen]</li>
@@ -108,6 +108,9 @@
   <li>spaceCollectiveNoun->[spaceCollectiveNoun_mas]</li>
 <li>spaceNoun->[spaceNoun_mas]</li>
 <li>groupname->[spaceNoun_mas] [ConceptBadass]</li>
+    <!-- 07.09.2026: свои формы по родам, раньше ссылки висели в пустоте -->
+    <li>groupname_fem->[spaceNoun_fem] [ConceptBadass]</li>
+    <li>groupname_plural->[spaceNoun_plural] [ConceptBadass]</li>
 </NamerFactionSalvagers.rulePack.rulesStrings>
   
   <!-- EN:

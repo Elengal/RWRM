@@ -9,6 +9,6 @@
   <!-- EN: gravship substructure -->
   <Substructure.label>надстройка гравокорабля</Substructure.label>
   <!-- EN: A lightweight truss structure with flooring on top that forms the deck of a gravship. Only things on top of this substructure can be lifted by the grav engine's levitation field. This floor must be constructed within range of a grav engine. -->
-  <Substructure.description>Легкая ферменная конструкция с настилом сверху, формирующая палубу гравикорабля. Только предметы, находящиеся на этой надстройке, могут быть подняты левитационным полем гравидвигателя. Этот настил должен находиться в пределах досягаемости гравидвигателя.</Substructure.description>
+  <Substructure.description>Лёгкая ферменная конструкция с настилом сверху, формирующая палубу гравикорабля. Только предметы, находящиеся на этой надстройке, могут быть подняты левитационным полем гравидвигателя. Этот настил должен находиться в пределах досягаемости гравидвигателя.</Substructure.description>
   
 </LanguageData>

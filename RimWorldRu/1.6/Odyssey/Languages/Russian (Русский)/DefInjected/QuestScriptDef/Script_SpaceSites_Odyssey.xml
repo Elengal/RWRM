@@ -5,7 +5,7 @@
     <li>questDescription->[discoveryMethod] the location of an abandoned orbital platform. You don't detect any signs of life.\n\nYou can break in to obtain the loot inside, but the platform probably has defense systems.\n\nYou can travel to orbital locations using gravships, shuttles, or transport pods.</li>
   -->
   <OpportunitySite_AbandonedPlatform.questDescriptionRules.rulesStrings>
-    <li>questDescription->[discoveryMethod] местоположение заброшенной орбитальной платформы. Вы не обнаруживаете никаких признаков жизни.\n\nВы можете взломать ее, чтобы получить находящиеся там трофеи, но вероятно, на платформе есть системы защиты.\n\nВы можете добраться до орбитальных объектов с помощью гравикораблей, челноков или транспортных капсул.</li>
+    <li>questDescription->[discoveryMethod] местоположение заброшенной орбитальной платформы. Вы не обнаруживаете никаких признаков жизни.\n\nВы можете взломать её, чтобы получить находящиеся там трофеи, но вероятно, на платформе есть системы защиты.\n\nВы можете добраться до орбитальных объектов с помощью гравикораблей, челноков или транспортных капсул.</li>
   </OpportunitySite_AbandonedPlatform.questDescriptionRules.rulesStrings>
   <!-- EN:
     <li>questName(p=3)->[ancientPlatAdj] [platform]</li>
@@ -134,7 +134,7 @@
     <li>questDescription->[discoveryMethod] the location of an asteroid orbiting the planet. It contains significant amounts of [resource], and potentially other resources as well.\n\nOrbital miners steer asteroids into orbit so that they can be mined and the ore sold to orbital traders. You do not detect any signs of life from this asteroid.\n\nYou can reach the asteroid with transport pods, shuttles, or a gravship. Equip your colonists with sufficient orbital apparel before departing.</li>
   -->
   <OpportunitySite_Asteroid.questDescriptionRules.rulesStrings>
-    <li>questDescription->[discoveryMethod] местоположение астероида на орбите планеты. В нем в больших количествах содержится [resource] и, возможно, другие ресурсы.\n\nОрбитальные шахтеры направляют ценные астероиды на орбиту планеты, чтобы их было легче добывать и продавать орбитальным торговцам. Признаков жизни на астероиде не обнаружено.\n\nДобраться до астероида можно на транспортных капсулах, челноках или гравикорабле. Перед вылетом оснастите поселенцев подходящей орбитальной одеждой.</li>
+    <li>questDescription->[discoveryMethod] местоположение астероида на орбите планеты. В нём в больших количествах содержится [resource] и, возможно, другие ресурсы.\n\nОрбитальные шахтеры направляют ценные астероиды на орбиту планеты, чтобы их было легче добывать и продавать орбитальным торговцам. Признаков жизни на астероиде не обнаружено.\n\nДобраться до астероида можно на транспортных капсулах, челноках или гравикорабле. Перед вылетом оснастите поселенцев подходящей орбитальной одеждой.</li>
   </OpportunitySite_Asteroid.questDescriptionRules.rulesStrings>
   <!-- EN:
     <li>questName->[resource] Asteroid</li>

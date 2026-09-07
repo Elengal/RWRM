@@ -20,7 +20,7 @@
   <GotoPatrolDest.reportString>патрулирует</GotoPatrolDest.reportString>
   
   <!-- EN: going to ship. -->
-  <GotoShip.reportString>идет к кораблю</GotoShip.reportString>
+  <GotoShip.reportString>идёт к кораблю</GotoShip.reportString>
   
   <!-- EN: inspecting TargetA. -->
   <InspectGravEngine.reportString>осматривает TargetA</InspectGravEngine.reportString>

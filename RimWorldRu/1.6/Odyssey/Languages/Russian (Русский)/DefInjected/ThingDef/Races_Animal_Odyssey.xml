@@ -103,7 +103,7 @@
   <!-- EN: colossus toad -->
   <ColossusToad.label>гигантская жаба</ColossusToad.label>
   <!-- EN: A massive frog bioengineered for industrial farms. While safe to eat, its thick skin secretes an unpleasant slime. -->
-  <ColossusToad.description>Огромная лягушка, выведенная для промышленных ферм. Ее мясо безопасно для употребления, но толстая кожа выделяет неприятную слизь.</ColossusToad.description>
+  <ColossusToad.description>Огромная лягушка, выведенная для промышленных ферм. Её мясо безопасно для употребления, но толстая кожа выделяет неприятную слизь.</ColossusToad.description>
   <!-- EN: head -->
   <ColossusToad.tools.head.label>голова</ColossusToad.tools.head.label>
   
@@ -139,7 +139,7 @@
   <!-- EN: mastodon -->
   <Mastodon.label>мастодонт</Mastodon.label>
   <!-- EN: A massive elephant-like mammal. While briefly extinct, the mastodon now roams countless worlds due its resilience to bitter cold. Its thick hide makes excellent cold-weather clothing. However, hunting the animal is a dangerous proposition even for skilled hunters. -->
-  <Mastodon.description>Огромное млекопитающее, напоминающее слона. Когда-то мастодонты считались вымершими, но теперь из-за своей стойкости к суровому холоду они поселились на множестве миров. Их толстая шкура отлично подходит для пошива теплой одежды. Однако ловить их даже опытным охотникам крайне опасно.</Mastodon.description>
+  <Mastodon.description>Огромное млекопитающее, напоминающее слона. Когда-то мастодонты считались вымершими, но теперь из-за своей стойкости к суровому холоду они поселились на множестве миров. Их толстая шкура отлично подходит для пошива тёплой одежды. Однако ловить их даже опытным охотникам крайне опасно.</Mastodon.description>
   <!-- EN: tusk -->
   <Mastodon.tools.tusk.label>бивень</Mastodon.tools.tusk.label>
   <!-- EN: left foot -->

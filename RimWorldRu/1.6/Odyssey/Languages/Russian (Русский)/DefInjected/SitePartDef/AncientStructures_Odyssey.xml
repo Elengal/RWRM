@@ -20,7 +20,7 @@
   <OpportunitySite_AncientGarrison.approachOrderString>Осмотреть: {0}</OpportunitySite_AncientGarrison.approachOrderString>
   
   <!-- EN: infested settlement -->
-  <OpportunitySite_AncientInfestedSettlement.label>зараженное поселение</OpportunitySite_AncientInfestedSettlement.label>
+  <OpportunitySite_AncientInfestedSettlement.label>заражённое поселение</OpportunitySite_AncientInfestedSettlement.label>
   <!-- EN: A once-prosperous settlement that's succumb to an insect infestation. It may still contain valuable resources. -->
   <OpportunitySite_AncientInfestedSettlement.description>Некогда процветавшее поселение, которое было захвачено насекомыми. Здесь всё ещё могут быть ценные ресурсы.</OpportunitySite_AncientInfestedSettlement.description>
   <!-- EN: Investigate {0} -->

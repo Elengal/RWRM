@@ -2,7 +2,7 @@
 <LanguageData>
   
   <!-- EN: Catfish escape -->
-  <CatfishEscape.letterLabel>сом ушел</CatfishEscape.letterLabel>
+  <CatfishEscape.letterLabel>сом ушёл</CatfishEscape.letterLabel>
   <!-- EN: While attempting to wrangle a catfish, {PAWN_nameDef} stumbled and lost the slippery fish in the murky waters. -->
   <CatfishEscape.letterText>Попытка поймать сома закончилась тем, что {PAWN_nameDef} оступился и упустил скользкую рыбу в мутной воде.</CatfishEscape.letterText>
   
@@ -17,7 +17,7 @@
   <DogfishBite.letterText>Пока {PAWN_nameDef} вытаскивал катрана, его укусили.\n\nРыбе удалось сбежать.</DogfishBite.letterText>
   
   <!-- EN: Dogfish escape -->
-  <DogfishEscape.letterLabel>катран ушел</DogfishEscape.letterLabel>
+  <DogfishEscape.letterLabel>катран ушёл</DogfishEscape.letterLabel>
   <!-- EN: While reeling in a dogfish, {PAWN_nameDef} nearly bitten by the thrashing creature.\n\nThe fish escaped in the confusion. -->
   <DogfishEscape.letterText>Пока {PAWN_nameDef} вытаскивал катрана, буйная рыба едва не укусила его.\n\nВ суматохе рыба сбежала.</DogfishEscape.letterText>
   
@@ -52,7 +52,7 @@
   <PiranhaBite.letterText>Пока {PAWN_nameDef} рыбачил, он подошел слишком близко к воде и был укушен пираньей!\n\nРыба сбежала.</PiranhaBite.letterText>
   
   <!-- EN: Tuna escape -->
-  <TunaEscape.letterLabel>тунец ушел</TunaEscape.letterLabel>
+  <TunaEscape.letterLabel>тунец ушёл</TunaEscape.letterLabel>
   <!-- EN: While attempting to reel in a tuna, {PAWN_nameDef}'s line snapped, causing {PAWN_objective} to lose the catch. -->
   <TunaEscape.letterText>Пока {PAWN_nameDef} пытался вытащить тунца, леска порвалась, и {PAWN_objective} потерял улов.</TunaEscape.letterText>
   

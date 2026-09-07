@@ -34,7 +34,7 @@
   <!-- EN: frostfish -->
   <Fish_Frostfish.label>ледяная рыба</Fish_Frostfish.label>
   <!-- EN: Large bioengineered fish created for long-distance shipping. They taste great even after being frozen solid for years. Their large size means they provide more nutrition than most fish. -->
-  <Fish_Frostfish.description>Крупная биоинженерная рыба, созданная для перевозки на большие расстояния. Сохраняет превосходный вкус даже после многолетней заморозки. Благодаря большим размерам дает больше питательных веществ, чем большинство других рыб.</Fish_Frostfish.description>
+  <Fish_Frostfish.description>Крупная биоинженерная рыба, созданная для перевозки на большие расстояния. Сохраняет превосходный вкус даже после многолетней заморозки. Благодаря большим размерам даёт больше питательных веществ, чем большинство других рыб.</Fish_Frostfish.description>
   
   <!-- EN: guppy -->
   <Fish_Guppy.label>гуппи</Fish_Guppy.label>
@@ -69,6 +69,6 @@
   <!-- EN: tuna -->
   <Fish_Tuna.label>тунец</Fish_Tuna.label>
   <!-- EN: Large migratory fish that inhabit warm seas. Their large size means they provide more nutrition than most fish. -->
-  <Fish_Tuna.description>Крупная мигрирующая рыба, обитающая в теплых морях. Благодаря своим размерам содержит больше питательных веществ, чем большинство других рыб.</Fish_Tuna.description>
+  <Fish_Tuna.description>Крупная мигрирующая рыба, обитающая в тёплых морях. Благодаря своим размерам содержит больше питательных веществ, чем большинство других рыб.</Fish_Tuna.description>
   
 </LanguageData>

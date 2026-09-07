@@ -214,7 +214,7 @@
     <li>cubeExtraSentence->[aPawn] идёт к кубу, чтобы присоединиться к происходящему</li>
     <li>cubeExtraSentence->[aPawn] горестно наблюдает за происходящим</li>
     <li>cubeExtraSentence->[pawnsPlural] пытаются украсть куб</li>
-    <li>cubeExtraSentence->Куб будто бы подёргивает легкая рябь</li>
+    <li>cubeExtraSentence->Куб будто бы подёргивает лёгкая рябь</li>
     <li>cubeEmotion->это никак не затрагивает</li>
     <li>cubeEmotion->этому рад</li>
     <li>cubeEmotion->расстроен</li>

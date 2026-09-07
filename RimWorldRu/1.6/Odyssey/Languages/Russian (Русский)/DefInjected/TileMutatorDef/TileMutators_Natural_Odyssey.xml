@@ -74,7 +74,7 @@
   <!-- EN: fjord -->
   <Fjord.label>губа</Fjord.label>
   <!-- EN: A long, narrow sea inlet surrounded by steep terrain. -->
-  <Fjord.description>Длинный узкий морской залив, окруженный крутой местностью.</Fjord.description>
+  <Fjord.description>Длинный узкий морской залив, окружённый крутой местностью.</Fjord.description>
   
   <!-- EN: headwater -->
   <Headwater.label>исток</Headwater.label>
@@ -84,7 +84,7 @@
   <!-- EN: hollow -->
   <Hollow.label>впадина</Hollow.label>
   <!-- EN: A small open area surrounded by cliffs. -->
-  <Hollow.description>Небольшое открытое пространство, окруженное утесами.</Hollow.description>
+  <Hollow.description>Небольшое открытое пространство, окружённое утесами.</Hollow.description>
   
   <!-- EN: hot springs -->
   <HotSprings.label>горячие источники</HotSprings.label>
@@ -134,7 +134,7 @@
   <!-- EN: lava lake -->
   <LavaCrater.label>лавовое озеро</LavaCrater.label>
   <!-- EN: A lake of deep lava terrain surrounded by volcanic rock. -->
-  <LavaCrater.description>Озеро из глубокой лавы, окруженное вулканическими породами.</LavaCrater.description>
+  <LavaCrater.description>Озеро из глубокой лавы, окружённое вулканическими породами.</LavaCrater.description>
   
   <!-- EN: lava flow -->
   <LavaFlow.label>поток лавы</LavaFlow.label>
@@ -144,7 +144,7 @@
   <!-- EN: lava lake -->
   <LavaLake.label>лавовое озеро</LavaLake.label>
   <!-- EN: A lake of deep lava terrain surrounded by volcanic rock. -->
-  <LavaLake.description>Озеро из глубокой лавы, окруженное вулканическими породами.</LavaLake.description>
+  <LavaLake.description>Озеро из глубокой лавы, окружённое вулканическими породами.</LavaLake.description>
   
   <!-- EN: marshy -->
   <Marshy.label>болотистая</Marshy.label>
@@ -169,7 +169,7 @@
   <!-- EN: peninsula -->
   <Peninsula.label>полуостров</Peninsula.label>
   <!-- EN: An outcropping of land surrounded by ocean. -->
-  <Peninsula.description>Выступ суши, окруженный океаном.</Peninsula.description>
+  <Peninsula.description>Выступ суши, окружённый океаном.</Peninsula.description>
   
   <!-- EN: plateau -->
   <Plateau.label>плато</Plateau.label>
@@ -204,7 +204,7 @@
   <!-- EN: terraforming scar -->
   <TerraformingScar.label>шрам терраформирования</TerraformingScar.label>
   <!-- EN: A misaligned blast from an ancient terraforming device has warped the earth into serpentine spirals. The area has since recovered, though the twisted and deformed hills remain. -->
-  <TerraformingScar.description>Сбой в древнем устройстве терраформирования исказил землю, превратив ее в извилистые спирали. Со временем территория восстановилась, но изогнутые и деформированные холмы остались.</TerraformingScar.description>
+  <TerraformingScar.description>Сбой в древнем устройстве терраформирования исказил землю, превратив её в извилистые спирали. Со временем территория восстановилась, но изогнутые и деформированные холмы остались.</TerraformingScar.description>
   
   <!-- EN: toxic lake -->
   <ToxicLake.label>токсичное озеро</ToxicLake.label>

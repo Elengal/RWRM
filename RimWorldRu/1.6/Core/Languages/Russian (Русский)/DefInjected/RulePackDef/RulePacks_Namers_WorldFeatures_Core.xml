@@ -816,7 +816,7 @@
     <li>prefix_proper_fem->[Color_fem]</li>
     <li>prefix_proper_fem->[AdjectiveAny_female]</li>
     <li>prefix_proper_neu->[Color_neu]</li>
-    <li>prefix_proper_neu->[AdjectiveAny_neu]</li>
+    <li>prefix_proper_neu->[AdjectiveAny_neutral]</li>
     <li>prefix_proper_plural->[Color_plural]</li>
     <li>prefix_proper_plural->[AdjectiveAny_plural]</li>
 

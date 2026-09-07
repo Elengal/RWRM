@@ -278,7 +278,7 @@
   <!-- EN: This weapon is much lighter than normal, lowering its aiming time. -->
   <Lightweight.description>Это оружие намного легче обычного, благодаря чему быстрее прицеливается.</Lightweight.description>
   <!-- EN: light -->
-  <Lightweight.traitAdjectives.0>легкий</Lightweight.traitAdjectives.0>
+  <Lightweight.traitAdjectives.0>лёгкий</Lightweight.traitAdjectives.0>
   <!-- EN: quickdraw -->
   <Lightweight.traitAdjectives.1>скорострельный</Lightweight.traitAdjectives.1>
   
@@ -287,7 +287,7 @@
   <!-- EN: This bow is adept at firing lightweight arrows. They fly farther but deal less damage. -->
   <LightweightArrows.description>Этот лук создан для стрельбы облегченными стрелами: они летят дальше, но наносят меньше урона.</LightweightArrows.description>
   <!-- EN: light -->
-  <LightweightArrows.traitAdjectives.0>легкий</LightweightArrows.traitAdjectives.0>
+  <LightweightArrows.traitAdjectives.0>лёгкий</LightweightArrows.traitAdjectives.0>
   <!-- EN: longreach -->
   <LightweightArrows.traitAdjectives.1>дальнобойный</LightweightArrows.traitAdjectives.1>
   
