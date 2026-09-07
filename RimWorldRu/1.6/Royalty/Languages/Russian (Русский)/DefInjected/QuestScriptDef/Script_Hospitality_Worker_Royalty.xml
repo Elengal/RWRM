@@ -34,9 +34,7 @@
   <!-- EN: Unauthorized, violating surgery has been performed on [letterSubject]. [remainingWillNowLeave][failLetterEndingCommon] -->
   <Hospitality_Util_Worker.LetterTextUnauthorizedSurgery.slateRef>Несогласованное, надругательское хирургическое вмешательство было проведено на [letterSubject]. [remainingWillNowLeave][failLetterEndingCommon]</Hospitality_Util_Worker.LetterTextUnauthorizedSurgery.slateRef>
   <!-- EN: Guest lost: {SUBJECT_definite} -->
-  <Hospitality_Util_Worker.LetterLabelGuestLost.slateRef>Гость пропал: {SUBJECT_definite}</Hospitality_Util_Worker.LetterLabelGuestLost.slateRef>
   <!-- EN: [letterSubject], who you were charged to protect, is gone. [remainingWillNowLeave][failLetterEndingCommon] -->
-  <Hospitality_Util_Worker.LetterTextGuestLost.slateRef>[letterSubject], гость, которого вы должны были защищать, пропал без вести. [remainingWillNowLeave][failLetterEndingCommon]</Hospitality_Util_Worker.LetterTextGuestLost.slateRef>
   <Hospitality_Util_Worker.root.nodes.lodgersRanWild.node.nodes.Letter.label.slateRef>Гость пропал: {SUBJECT_definite}</Hospitality_Util_Worker.root.nodes.lodgersRanWild.node.nodes.Letter.label.slateRef>
   <Hospitality_Util_Worker.root.nodes.lodgersRanWild.node.nodes.Letter.text.slateRef>[letterSubject], гость, которого вы должны были защищать, одичал. [remainingWillNowLeave][failLetterEndingCommon]</Hospitality_Util_Worker.root.nodes.lodgersRanWild.node.nodes.Letter.text.slateRef>
   <Hospitality_Util_Worker.root.nodes.AnySignal.node.node.nodes.Letter.label.slateRef>Гость пропал: {SUBJECT_definite}</Hospitality_Util_Worker.root.nodes.AnySignal.node.node.nodes.Letter.label.slateRef>
@@ -50,13 +48,19 @@
   <Hospitality_Util_Worker.root.nodes.pickupShipThingSentUnsatisfied.node.nodes.Letter.label.slateRef>Задание провалено: «[resolvedQuestName]»</Hospitality_Util_Worker.root.nodes.pickupShipThingSentUnsatisfied.node.nodes.Letter.label.slateRef>
   <Hospitality_Util_Worker.root.nodes.pickupShipThingSentUnsatisfied.node.nodes.Letter.text.slateRef>Челнок, отправленный забрать [lodgersLabelSingOrPlural_acc], отбыл. [lodgersLabelSingOrPlural] [lodgers_will_leave] поселение пешком. [failLetterEndingCommon]</Hospitality_Util_Worker.root.nodes.pickupShipThingSentUnsatisfied.node.nodes.Letter.text.slateRef>
   <!-- EN: Shuttle destroyed -->
-  <Hospitality_Util_Worker.LetterLabelShuttleDestroyed.slateRef>Челнок уничтожен</Hospitality_Util_Worker.LetterLabelShuttleDestroyed.slateRef>
   <!-- EN: The shuttle sent to collect [lodgersLabelSingOrPluralDef] has been destroyed. [lodgersLabelSingOrPluralDef] will now leave on foot. [failLetterEndingCommon] -->
-  <Hospitality_Util_Worker.LetterTextShuttleDestroyed.slateRef>Челнок, отправленный забрать [lodgersLabelSingOrPlural_acc], был уничтожен. [lodgersLabelSingOrPlural] [lodgers_will_leave] поселение пешком. [failLetterEndingCommon]</Hospitality_Util_Worker.LetterTextShuttleDestroyed.slateRef>
   
   <!-- EN: Shuttle destroyed -->
   <Util_ArriveByDropPodsOrShuttle.LetterLabelShuttleDestroyed.slateRef>Челнок уничтожен</Util_ArriveByDropPodsOrShuttle.LetterLabelShuttleDestroyed.slateRef>
   <!-- EN: The shuttle sent to drop off [pawnsLabelDef] has been destroyed. You have failed the quest '[resolvedQuestName]'.\n\nYour relations with [asker_faction_name] have changed by [goodwillChangeOnShuttleDestroyed]. -->
   <Util_ArriveByDropPodsOrShuttle.LetterTextShuttleDestroyed.slateRef>Челнок, отправленный, чтобы доставить к вам [pawnsLabelDef], уничтожен. Вы провалили задание «[resolvedQuestName]».\n\nОтношения с фракцией [asker_faction_name] ухудшились на [goodwillChangeOnShuttleDestroyed].</Util_ArriveByDropPodsOrShuttle.LetterTextShuttleDestroyed.slateRef>
   
+  <Hospitality_Util_Worker.LetterLabelGuestLost.slateRef>Гость пропал: {SUBJECT_definite}</Hospitality_Util_Worker.LetterLabelGuestLost.slateRef>
+  <Hospitality_Util_Worker.LetterTextGuestLost.slateRef>[letterSubject], гость, которого вы должны были защищать, пропал без вести. [remainingWillNowLeave][failLetterEndingCommon]</Hospitality_Util_Worker.LetterTextGuestLost.slateRef>
+  <Hospitality_Util_Worker.LetterLabelShuttleDestroyed.slateRef>Челнок брошен</Hospitality_Util_Worker.LetterLabelShuttleDestroyed.slateRef>
+  <Hospitality_Util_Worker.LetterTextShuttleDestroyed.slateRef>Челнок, отправленный забрать [lodgersLabelSingOrPlural_acc], был брошен. [lodgersLabelSingOrPlural] [lodgers_will_leave] поселение пешком.</Hospitality_Util_Worker.LetterTextShuttleDestroyed.slateRef>
+  <Hospitality_Util_Worker.root.nodes.lodgersLeftMap.node.nodes.Letter.label.slateRef>Гость пропал: {SUBJECT_definite}</Hospitality_Util_Worker.root.nodes.lodgersLeftMap.node.nodes.Letter.label.slateRef>
+  <Hospitality_Util_Worker.root.nodes.lodgersLeftMap.node.nodes.Letter.text.slateRef>[letterSubject], гость, которого вы должны были защищать, пропал без вести. [remainingWillNowLeave][failLetterEndingCommon]</Hospitality_Util_Worker.root.nodes.lodgersLeftMap.node.nodes.Letter.text.slateRef>
+  <Hospitality_Util_Worker.root.nodes.pickupShipThingDestroyed.node.nodes.Letter.label.slateRef>Челнок уничтожен</Hospitality_Util_Worker.root.nodes.pickupShipThingDestroyed.node.nodes.Letter.label.slateRef>
+  <Hospitality_Util_Worker.root.nodes.pickupShipThingDestroyed.node.nodes.Letter.text.slateRef>Челнок, отправленный забрать [lodgersLabelSingOrPlural_acc], был уничтожен. [lodgersLabelSingOrPlural] [lodgers_will_leave] поселение пешком. [failLetterEndingCommon]</Hospitality_Util_Worker.root.nodes.pickupShipThingDestroyed.node.nodes.Letter.text.slateRef>
 </LanguageData>

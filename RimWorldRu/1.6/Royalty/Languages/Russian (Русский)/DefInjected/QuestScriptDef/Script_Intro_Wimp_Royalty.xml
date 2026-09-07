@@ -58,9 +58,7 @@
   <!-- EN: Unauthorized, violating surgery has been performed on {SUBJECT_definite}, who you were charged to protect. Because of this violation, [asker_pronoun] will now attempt to leave. [failLetterEndingCommon] -->
   <Intro_Wimp.LetterTextUnauthorizedSurgery.slateRef>Несогласованное, надругательское хирургическое вмешательство было проведено на {SUBJECT_definite}, госте, которого вы должны были защищать. По причине этого надругательства [asker_pronoun] попытается покинуть ваше поселение. [failLetterEndingCommon]</Intro_Wimp.LetterTextUnauthorizedSurgery.slateRef>
   <!-- EN: Captured: {SUBJECT_definite} -->
-  <Intro_Wimp.LetterLabelCaptured.slateRef>Арест: {SUBJECT_definite}</Intro_Wimp.LetterLabelCaptured.slateRef>
   <!-- EN: {SUBJECT_definite}, who you were charged to host, has been arrested. [failLetterEndingCommon] -->
-  <Intro_Wimp.LetterTextCaptured.slateRef>{SUBJECT_definite}, гость, которого вы должны были защищать, арестован. [failLetterEndingCommon]</Intro_Wimp.LetterTextCaptured.slateRef>
   <!-- EN: Guest lost: {SUBJECT_definite} -->
   <Intro_Wimp.LetterLabelGuestLost.slateRef>Гость пропал: {SUBJECT_definite}</Intro_Wimp.LetterLabelGuestLost.slateRef>
   <!-- EN: {SUBJECT_definite}, who you were charged to protect, has left the designated settlement. [failLetterEndingCommon] -->
@@ -77,4 +75,8 @@
   <Intro_Wimp.root.nodes.pickupShipThingSentUnsatisfied.node.nodes.Letter.label.slateRef>Задание провалено: «[resolvedQuestName]»</Intro_Wimp.root.nodes.pickupShipThingSentUnsatisfied.node.nodes.Letter.label.slateRef>
   <Intro_Wimp.root.nodes.pickupShipThingSentUnsatisfied.node.nodes.Letter.text.slateRef>Челнок, отправленный забрать [asker_nameDef], отбыл без пассажира. [asker_nameDef] покинет поселение пешком. [failLetterEndingCommon]</Intro_Wimp.root.nodes.pickupShipThingSentUnsatisfied.node.nodes.Letter.text.slateRef>
   
+  <Intro_Wimp.LetterLabelCaptured.slateRef>Гость пропал: {SUBJECT_definite}</Intro_Wimp.LetterLabelCaptured.slateRef>
+  <Intro_Wimp.LetterTextCaptured.slateRef>{SUBJECT_definite}, гость, которого вы должны были защищать, покинул назначенное поселение. [failLetterEndingCommon]</Intro_Wimp.LetterTextCaptured.slateRef>
+  <Intro_Wimp.root.nodes.askerArrested.node.nodes.Letter.label.slateRef>Арест: {SUBJECT_definite}</Intro_Wimp.root.nodes.askerArrested.node.nodes.Letter.label.slateRef>
+  <Intro_Wimp.root.nodes.askerArrested.node.nodes.Letter.text.slateRef>{SUBJECT_definite}, гость, которого вы должны были защищать, арестован. [failLetterEndingCommon]</Intro_Wimp.root.nodes.askerArrested.node.nodes.Letter.text.slateRef>
 </LanguageData>

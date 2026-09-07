@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <LanguageData>
   
-  <!-- reportStringOverride — путь не найден в Core (Index out of bounds) -->
+  <!-- reportStringOverride ('Patrolling.') сюда не кладётся: узел сидит внутри ветки,
+       помеченной MayRequire="Ludeon.RimWorld.Biotech", и без Biotech его не существует.
+       Перевод лежит в 1.6/Biotech/.../ThinkTreeDef/Mechanoid_Biotech.xml -->
   
 </LanguageData>

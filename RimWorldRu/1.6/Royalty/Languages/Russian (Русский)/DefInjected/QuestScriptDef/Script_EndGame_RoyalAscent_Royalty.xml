@@ -104,4 +104,6 @@
   <!-- EN: The shuttle sent to collect the [asker_faction_leaderTitle] has been destroyed. [failLetterEndingCommon] -->
   <EndGame_RoyalAscent.LetterTextShuttleDestroyed.slateRef>Челнок, отправленный забрать [asker_nameDef], был уничтожен. [failLetterEndingCommon]</EndGame_RoyalAscent.LetterTextShuttleDestroyed.slateRef>
   
+  <EndGame_RoyalAscent.root.nodes.askerLeftMap.node.nodes.Letter.label.slateRef>Гость пропал: {SUBJECT_definite}</EndGame_RoyalAscent.root.nodes.askerLeftMap.node.nodes.Letter.label.slateRef>
+  <EndGame_RoyalAscent.root.nodes.askerLeftMap.node.nodes.Letter.text.slateRef>{SUBJECT_definite}, гость, которого вы должны были защищать, покинул назначенное поселение. [failLetterEndingCommon]</EndGame_RoyalAscent.root.nodes.askerLeftMap.node.nodes.Letter.text.slateRef>
 </LanguageData>
