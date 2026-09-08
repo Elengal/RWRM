@@ -4,35 +4,60 @@
     <TargetFramework>net472</TargetFramework>
     <AssemblyName>RuMod</AssemblyName>
     <LangVersion>latest</LangVersion>
-    <OutputPath>d:\Rimworld MOD\RimWorldRu\1.6\Assemblies</OutputPath>
     <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+
+    <!--
+      Собираем против Steam-версии игры, а не против локальной копии для тестов.
+      Steam сейчас 1.6.4871 rev590, тестовая копия rev591: собранное под младший
+      ревизион работает на старшем, обратное не гарантировано. И мод уезжает
+      именно к стимовским игрокам — ссылаться надо на их сборку.
+    -->
+    <RimWorldManaged>C:\Program Files (x86)\Steam\steamapps\common\RimWorld\RimWorldWin64_Data\Managed</RimWorldManaged>
+
+    <!-- Результат кладём в мод внутри репозитория: RuMod.dll под контролем гита. -->
+    <ModAssemblies>$(MSBuildProjectDirectory)\..\RimWorldRu\1.6\Assemblies\</ModAssemblies>
+    <OutputPath>$(ModAssemblies)</OutputPath>
+
+    <!-- Игровая копия для проверки. Если её нет, сборка всё равно пройдёт. -->
+    <TestInstall>D:\Rimworld MOD\Rimworld Odyssey v1.6.4871a\Mods\RimWorldRu\1.6\Assemblies\</TestInstall>
   </PropertyGroup>
 
   <ItemGroup>
     <Reference Include="0Harmony">
-      <HintPath>d:\Rimworld MOD\RimWorldRu\1.6\Assemblies\0Harmony.dll</HintPath>
+      <HintPath>$(ModAssemblies)0Harmony.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>$(ModAssemblies)Newtonsoft.Json.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Assembly-CSharp">
-      <HintPath>C:\Program Files (x86)\Steam\steamapps\common\RimWorld\RimWorldWin64_Data\Managed\Assembly-CSharp.dll</HintPath>
+      <HintPath>$(RimWorldManaged)\Assembly-CSharp.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="UnityEngine.CoreModule">
-       <HintPath>C:\Program Files (x86)\Steam\steamapps\common\RimWorld\RimWorldWin64_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
-       <Private>False</Private>
+      <HintPath>$(RimWorldManaged)\UnityEngine.CoreModule.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="UnityEngine.TextRenderingModule">
-       <HintPath>C:\Program Files (x86)\Steam\steamapps\common\RimWorld\RimWorldWin64_Data\Managed\UnityEngine.TextRenderingModule.dll</HintPath>
-       <Private>False</Private>
+      <HintPath>$(RimWorldManaged)\UnityEngine.TextRenderingModule.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="UnityEngine.IMGUIModule">
-       <HintPath>C:\Program Files (x86)\Steam\steamapps\common\RimWorld\RimWorldWin64_Data\Managed\UnityEngine.IMGUIModule.dll</HintPath>
-       <Private>False</Private>
-    </Reference>
-    <Reference Include="Newtonsoft.Json">
-       <HintPath>D:\Rimworld MOD\RimWorldRu\1.6\Assemblies\Newtonsoft.Json.dll</HintPath>
-       <Private>False</Private>
+      <HintPath>$(RimWorldManaged)\UnityEngine.IMGUIModule.dll</HintPath>
+      <Private>False</Private>
     </Reference>
   </ItemGroup>
+
+  <!--
+    После сборки кладём копию в игру для проверки, чтобы репозиторий и то,
+    что запускается, не разъезжались. Игра запущена и держит файл — просто
+    предупредим, сборку из-за этого не роняем.
+  -->
+  <Target Name="CopyToTestInstall" AfterTargets="Build" Condition="Exists('$(TestInstall)')">
+    <Copy SourceFiles="$(OutputPath)RuMod.dll;$(OutputPath)RuMod.pdb"
+          DestinationFolder="$(TestInstall)"
+          ContinueOnError="WarnAndContinue" />
+  </Target>
 
 </Project>

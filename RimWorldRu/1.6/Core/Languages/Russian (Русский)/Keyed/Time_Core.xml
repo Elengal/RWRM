@@ -76,13 +76,13 @@
   <!-- EN: {0} days -->
   <PeriodDays>{0_numCase ? день : дня : дней}</PeriodDays>
   <!-- EN: 1 hour -->
-  <Period1Hour>1 ч</Period1Hour>
+  <Period1Hour>1 час</Period1Hour>
   <!-- EN: {0} hours -->
-  <PeriodHours>{0} ч</PeriodHours>
+  <PeriodHours>{0_numCase ? час : часа : часов}</PeriodHours>
   <!-- EN: 1 second -->
-  <Period1Second>1 с</Period1Second>
+  <Period1Second>1 секунда</Period1Second>
   <!-- EN: {0} seconds -->
-  <PeriodSeconds>{0} с</PeriodSeconds>
+  <PeriodSeconds>{0_numCase ? секунда : секунды : секунд}</PeriodSeconds>
 
   <!-- Misc -->
   <!-- EN: Started -->

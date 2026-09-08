@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using RimWorld;
@@ -167,16 +167,16 @@ namespace RuMod.Utils
             Log.Warning($"[RuMod] Переезд настроек в {newPath} провалился. Чемоданы рассыпались: {ex.Message}");
         }
 
-        // ==== Лог источников имён ====
+        // ==== Имена пешек ====
 
-        public static void NameSourceLoggerDesktopFailed(Exception ex)
+        public static void NameRerouteFailed(Exception ex)
         {
-            Log.Warning($"[RuMod] NameSourceLogger: рабочий стол спрятали, беру блокнот из Config: {ex.Message}");
+            Log.Warning($"[RuMod] Полез в банк имён и запнулся на пороге — отдаю пешку ванили: {ex.Message}");
         }
 
-        public static void NameSourceLoggerWriteFailed(Exception ex)
+        public static void NameShuffleMethodMissing()
         {
-            Log.Warning($"[RuMod] NameSourceLogger споткнулся: {ex.Message}");
+            Log.Warning("[RuMod] Не нашёл PawnBioAndNameGenerator.GeneratePawnName_Shuffled — видимо, RimWorld переставил мебель. Пешки со спонсорскими биографиями останутся с английскими именами.");
         }
 
         // ==== RimHUD ====

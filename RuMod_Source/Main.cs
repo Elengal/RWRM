@@ -1,4 +1,4 @@
-using HarmonyLib;
+﻿using HarmonyLib;
 using LudeonTK;
 using System;
 using System.Reflection;
@@ -23,7 +23,9 @@ namespace RuMod
         private static SettingsTab _currentSettingsTab = SettingsTab.General;
         private static TransparencyTarget _currentTransparencyTarget = TransparencyTarget.TranslationPanel;
         private static Vector2 _settingsScrollPosition = Vector2.zero;
-        private static float _settingsScrollHeight = 1000f; // с запасом на первый кадр, дальше считается сама
+        // Высота содержимого у каждой вкладки своя: общее поле ужималось под самую
+        // короткую вкладку и роняло остальные (см. пояснение в DoSettingsWindowContents).
+        private static readonly float[] _settingsTabHeights = { 1000f, 1000f, 1000f };
 
         public RuModClass(ModContentPack content) : base(content)
         {
@@ -34,7 +36,6 @@ namespace RuMod
             try { harmony.PatchAll(Assembly.GetExecutingAssembly()); }
             catch (Exception ex) { RuModLog.PatchAllFailed(ex); }
             var s = GetSettings<RuModSettings>();
-            NameSourceLogger.IsEnabled = s.LogNameSources;
             Patches.WorldFactionsUIUtility_Patch.IsEnabled = s.NoFactionLimitEnabled;
             Patches.Dialog_Debug_Tooltips_Patch.IsEnabled = s.DevTooltipsEnabled;
 
@@ -133,7 +134,8 @@ namespace RuMod
         {
             base.WriteSettings();
             var s = GetSettings<RuModSettings>();
-            NameSourceLogger.IsEnabled = s.LogNameSources;
+            // Списки имён собираются один раз и кэшируются — после смены настроек пересобрать.
+            Patches.NameReroute.ResetCache();
             Patches.WorldFactionsUIUtility_Patch.IsEnabled = s.NoFactionLimitEnabled;
             Patches.Dialog_Debug_Tooltips_Patch.IsEnabled = s.DevTooltipsEnabled;
             MainMenuDrawer_Init_Patch.ApplyRimWorldRuBackground();
@@ -149,11 +151,20 @@ namespace RuMod
 
             // --- Прокручиваемое тело: только выбранный таб ---
             Rect bodyOuter = new Rect(inRect.x, inRect.y + 38f, inRect.width, inRect.height - 38f);
-            Rect viewRect = new Rect(0f, 0f, bodyOuter.width - 16f, _settingsScrollHeight);
+            // Listing_Standard при нехватке высоты не обрезает содержимое, а уносит его
+            // в новую колонку вправо (Listing.GetRect -> NewColumnIfNeeded), и CurHeight
+            // после переноса считает только последнюю колонку. Если отдать разметке
+            // заниженную высоту, вкладка схлопывается навсегда: строки уезжают за край,
+            // CurHeight остаётся маленьким и вырасти обратно уже не может.
+            // Поэтому разметке даём заведомо избыточную высоту — переносов не будет,
+            // а лишнее обрежет сама прокрутка.
+            int tab = (int)_currentSettingsTab;
+            float canvasHeight = Mathf.Max(_settingsTabHeights[tab], bodyOuter.height);
+            Rect viewRect = new Rect(0f, 0f, bodyOuter.width - 16f, canvasHeight);
             Widgets.BeginScrollView(bodyOuter, ref _settingsScrollPosition, viewRect);
 
             var listing = new Listing_Standard();
-            listing.Begin(viewRect);
+            listing.Begin(new Rect(0f, 0f, viewRect.width, 100000f));
 
             switch (_currentSettingsTab)
             {
@@ -168,7 +179,7 @@ namespace RuMod
                     break;
             }
 
-            _settingsScrollHeight = listing.CurHeight;
+            _settingsTabHeights[tab] = listing.CurHeight + 12f;
             listing.End();
             Widgets.EndScrollView();
         }
@@ -233,8 +244,19 @@ namespace RuMod
             }
             listing.Gap(8f);
 
-            listing.CheckboxLabeled("Патчи NameBank (русские имена)", ref settings.NameBankPatchesEnabled,
-                "Включает или отключает все подмены имён: загрузка из файлов мода, выбор только русских имён, фамилии по полу, родственники, замена английских кличек. Одна галочка — всё под контролем. Отключите при конфликтах с другими модами.");
+            listing.CheckboxLabeled("Русские имена пешек", ref settings.RussianPawnNames,
+                "Имена, фамилии и клички берутся из словников мода, а не из английского банка игры. Фамилии склоняются по полу и наследуются внутри семьи. "
+                + "Выключение возвращает игру к её собственным именам полностью и сразу — банк игры мод не переписывает. "
+                + "Уже созданные пешки в любом случае сохраняют свои имена: переименование живой колонии порвало бы связи и сохранения.");
+
+            if (settings.RussianPawnNames)
+            {
+                listing.CheckboxLabeled("    Оставить имена спонсоров Ludeon", ref settings.KeepLudeonBackerNames,
+                    "Ludeon вшила в игру имена людей, поддержавших разработку: 25% пешек и все лидеры фракций получают их вместе с готовой биографией, "
+                    + "плюс половина остальных — только имя. По умолчанию мод заменяет их русскими, иначе больше половины колонии осталась бы английской. "
+                    + "Включите, чтобы вернуть имена спонсоров как в оригинале. Биографии спонсоров переведены и работают при любом положении галочки, "
+                    + "а имена из вашего списка «Предпочитаемые имена» мод не трогает никогда.");
+            }
 
             listing.CheckboxLabeled("Снять лимит фракций при создании мира", ref settings.NoFactionLimitEnabled,
                 "Убирает ограничение игры на максимум 12 видимых/добавляемых фракций в окне новой игры. Влияет только на экран выбора фракций, не зависит от DevMode.");
@@ -333,13 +355,6 @@ namespace RuMod
         {
             listing.CheckboxLabeled("Показывать всплывающие подсказки в Dev-меню", ref settings.DevTooltipsEnabled,
                 "При наведении курсора на пункт Dev-меню показывает полный текст команды во всплывающем окне. По умолчанию включено.");
-
-            listing.CheckboxLabeled("Логировать источники имён (имя, фамилия, кличка)", ref settings.LogNameSources,
-                "При создании/спавне пешки записывает в файл, откуда взято каждое имя (слот, пол, файл-источник, банк). Файл на рабочем столе: RuMod_NameSources.txt");
-            if (settings.LogNameSources)
-            {
-                listing.Label($"Путь к файлу: {NameSourceLogger.GetFilePath()}");
-            }
 
             listing.Gap(8f);
             listing.GapLine();

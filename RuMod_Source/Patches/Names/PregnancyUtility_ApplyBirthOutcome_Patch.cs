@@ -1,4 +1,4 @@
-using HarmonyLib;
+﻿using HarmonyLib;
 using RimWorld;
 using Verse;
 
@@ -14,7 +14,7 @@ namespace RuMod.Patches
     {
         public static void Postfix(Thing __result)
         {
-            if (RuMod.RuModClass.Instance?.GetSettings<RuMod.RuModSettings>()?.NameBankPatchesEnabled != true)
+            if (RuMod.RuModClass.Instance?.GetSettings<RuMod.RuModSettings>()?.RussianPawnNames != true)
                 return;
             if (__result is Pawn baby)
                 NameReplacerHelper.TryApplyFamilySurname(baby);

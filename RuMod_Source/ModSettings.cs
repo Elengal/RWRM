@@ -1,4 +1,4 @@
-using System.IO;
+﻿using System.IO;
 using Verse;
 
 namespace RuMod
@@ -11,9 +11,10 @@ namespace RuMod
     public class RuModSettings : ModSettings
     {
         public bool LoggingEnabled = false;
-        public bool NameBankPatchesEnabled = true;
-        /// <summary>Писать в файл, откуда взято имя/фамилия/кличка при создании пешки.</summary>
-        public bool LogNameSources = false;
+        /// <summary>Весь слой имён: словники мода, фамилии по полу, наследование в семье.</summary>
+        public bool RussianPawnNames = true;
+        /// <summary>Оставлять английские имена спонсоров Ludeon вместо русской замены.</summary>
+        public bool KeepLudeonBackerNames = false;
         /// <summary>Убрать лимит на количество видимых/добавляемых фракций в окне создания мира. По умолчанию включено.</summary>
         public bool NoFactionLimitEnabled = true;
         /// <summary>Показывать всплывающие подсказки в Dev-меню при наведении курсора.</summary>
@@ -41,8 +42,8 @@ namespace RuMod
         public void ResetToDefaults()
         {
             LoggingEnabled = false;
-            NameBankPatchesEnabled = true;
-            LogNameSources = false;
+            RussianPawnNames = true;
+            KeepLudeonBackerNames = false;
             NoFactionLimitEnabled = true;
             DevTooltipsEnabled = true;
             DevModeTranslationLogging = false;
@@ -59,8 +60,8 @@ namespace RuMod
         public override void ExposeData()
         {
             Scribe_Values.Look(ref LoggingEnabled, "LoggingEnabled", false);
-            Scribe_Values.Look(ref NameBankPatchesEnabled, "NameBankPatchesEnabled", true);
-            Scribe_Values.Look(ref LogNameSources, "LogNameSources", false);
+            Scribe_Values.Look(ref RussianPawnNames, "RussianPawnNames", true);
+            Scribe_Values.Look(ref KeepLudeonBackerNames, "KeepLudeonBackerNames", false);
             Scribe_Values.Look(ref NoFactionLimitEnabled, "NoFactionLimitEnabled", true);
             Scribe_Values.Look(ref DevTooltipsEnabled, "DevTooltipsEnabled", true);
             Scribe_Values.Look(ref DevModeTranslationLogging, "DevModeTranslationLogging", false);
