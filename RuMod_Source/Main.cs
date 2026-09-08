@@ -1,4 +1,4 @@
-﻿using HarmonyLib;
+using HarmonyLib;
 using LudeonTK;
 using System;
 using System.Reflection;

@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using RimWorld;
@@ -177,6 +177,12 @@ namespace RuMod.Utils
         public static void NameShuffleMethodMissing()
         {
             Log.Warning("[RuMod] Не нашёл PawnBioAndNameGenerator.GeneratePawnName_Shuffled — видимо, RimWorld переставил мебель. Пешки со спонсорскими биографиями останутся с английскими именами.");
+        }
+
+        public static void SurnamePairsMismatch(string file, int males, int females)
+        {
+            Log.Warning($"[RuMod] Списки фамилий разъехались: {file} — мужских {males}, женских {females}. "
+                + "Пары считаются по номеру строки, так что таблицу склонения по ним не строю, работаю по правилам.");
         }
 
         // ==== RimHUD ====

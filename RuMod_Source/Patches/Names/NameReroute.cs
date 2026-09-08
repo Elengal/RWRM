@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Reflection;
 using HarmonyLib;
@@ -88,11 +88,12 @@ namespace RuMod.Patches
         {
             cache.Clear();
             cachedLang = null;
+            NameReplacerHelper.ResetPairs();
         }
 
         // ==== словники ====
 
-        private static List<string> FromLang(LoadedLanguage lang, string key)
+        internal static List<string> FromLang(LoadedLanguage lang, string key)
         {
             for (int i = 0; i < suffixes.Length; i++)
             {

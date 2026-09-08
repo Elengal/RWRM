@@ -1,4 +1,4 @@
-﻿using System.IO;
+using System.IO;
 using Verse;
 
 namespace RuMod
@@ -10,7 +10,6 @@ namespace RuMod
     /// </summary>
     public class RuModSettings : ModSettings
     {
-        public bool LoggingEnabled = false;
         /// <summary>Весь слой имён: словники мода, фамилии по полу, наследование в семье.</summary>
         public bool RussianPawnNames = true;
         /// <summary>Оставлять английские имена спонсоров Ludeon вместо русской замены.</summary>
@@ -41,7 +40,6 @@ namespace RuMod
         /// <summary>Сбрасывает все настройки мода к значениям по умолчанию. Не забудь вызвать WriteSettings() после.</summary>
         public void ResetToDefaults()
         {
-            LoggingEnabled = false;
             RussianPawnNames = true;
             KeepLudeonBackerNames = false;
             NoFactionLimitEnabled = true;
@@ -59,7 +57,6 @@ namespace RuMod
 
         public override void ExposeData()
         {
-            Scribe_Values.Look(ref LoggingEnabled, "LoggingEnabled", false);
             Scribe_Values.Look(ref RussianPawnNames, "RussianPawnNames", true);
             Scribe_Values.Look(ref KeepLudeonBackerNames, "KeepLudeonBackerNames", false);
             Scribe_Values.Look(ref NoFactionLimitEnabled, "NoFactionLimitEnabled", true);

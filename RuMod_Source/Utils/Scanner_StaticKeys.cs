@@ -19,8 +19,8 @@ namespace RuMod
             DevModeTranslator.Load();
 
             // 2. Сканируем атрибуты только если включен сбор ключей
-            bool isLoggingEnabled = RuModClass.Instance?.GetSettings<RuModSettings>()?.DevModeTranslationLogging ?? false;
-            if (isLoggingEnabled)
+            bool devModeLogging = RuModClass.Instance?.GetSettings<RuModSettings>()?.DevModeTranslationLogging ?? false;
+            if (devModeLogging)
             {
                 ScanAttributes();
                 

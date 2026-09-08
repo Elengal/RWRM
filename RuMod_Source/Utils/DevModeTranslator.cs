@@ -318,8 +318,8 @@ namespace RuMod.Utils
             }
 
             // 3. Если перевода нет, нет чисел, и включен логгер - добавляем в указанную категорию
-            bool isLoggingEnabled = RuModClass.Instance?.GetSettings<RuModSettings>()?.DevModeTranslationLogging ?? false;
-            if (isLoggingEnabled)
+            bool devModeLogging = RuModClass.Instance?.GetSettings<RuModSettings>()?.DevModeTranslationLogging ?? false;
+            if (devModeLogging)
             {
                 RegisterOriginal(trimmed, category);
             }
@@ -335,8 +335,8 @@ namespace RuMod.Utils
         {
             if (!IsValidForTranslation(original)) return;
 
-            bool isLoggingEnabled = RuModClass.Instance?.GetSettings<RuModSettings>()?.DevModeTranslationLogging ?? false;
-            if (!isLoggingEnabled) return;
+            bool devModeLogging = RuModClass.Instance?.GetSettings<RuModSettings>()?.DevModeTranslationLogging ?? false;
+            if (!devModeLogging) return;
             if (!_loaded) Load();
 
             if (string.IsNullOrEmpty(category)) category = "Uncategorized";
