@@ -10,8 +10,6 @@ namespace RuMod.Utils
 {
     public static class DevModeTranslator
     {
-        // Теперь словарь хранит структуру: Категория -> (Оригинал -> Перевод)
-        private static Dictionary<string, Dictionary<string, string>> _translations = new Dictionary<string, Dictionary<string, string>>();
         
         // Плоский список всех переведенных значений, чтобы случайно не добавить их как ключи
         private static HashSet<string> _translatedValues = new HashSet<string>();
@@ -19,11 +17,14 @@ namespace RuMod.Utils
         // Быстрый поиск перевода по оригиналу (чтобы не бегать по всем категориям в рантайме)
         private static Dictionary<string, string> _quickLookup = new Dictionary<string, string>();
 
+        // Приставки: ключи, к которым игра приклеивает значение —
+        // «DEV: Spawn » + название вещи, «DEV: Nutrition: » + число.
+        // Целиком такую строку в словаре не найти, поэтому ищем по началу.
+        // Отбираем по последнему знаку: пробел, скобка или двоеточие.
+        private static List<string> _prefixes = new List<string>();
+
         // Путь для чтения готовых словарей (из мода)
         private static string _dictionaryDir;
-        // Путь для записи новых ключей «пылесосом» (на рабочий стол / в Config)
-        private static string _outputDir;
-        private static bool _dirty = false;
         private static bool _loaded = false;
 
         /// <summary>
@@ -57,55 +58,12 @@ namespace RuMod.Utils
             }
         }
 
-        /// <summary>
-        /// Папка, куда пылесос сохраняет новые ключи (для редактирования).
-        /// </summary>
-        public static string OutputDir
-        {
-            get
-            {
-                if (_outputDir != null) return _outputDir;
-
-                try
-                {
-                    // Основной вариант: рабочий стол пользователя
-                    string desktop = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
-                    _outputDir = Path.Combine(desktop, "RimWorld_DevMode_Translations");
-
-                    if (!Directory.Exists(_outputDir))
-                    {
-                        Directory.CreateDirectory(_outputDir);
-                    }
-                }
-                catch (Exception ex)
-                {
-                    RuModLog.DevModeDesktopDirCreateFailed(_outputDir ?? "<Desktop>", ex);
-                    // Фолбэк: Config\RimWorldRu\DevMode_Translations
-                    string baseConfig = GenFilePaths.ConfigFolderPath;
-                    _outputDir = Path.Combine(baseConfig, "RimWorldRu", "DevMode_Translations");
-                    try
-                    {
-                        if (!Directory.Exists(_outputDir))
-                        {
-                            Directory.CreateDirectory(_outputDir);
-                        }
-                    }
-                    catch (Exception ex2)
-                    {
-                        RuModLog.DevModeFallbackDirCreateFailed(_outputDir, ex2);
-                    }
-                }
-
-                return _outputDir;
-            }
-        }
 
         public static void Load()
         {
             if (_loaded) return;
             _loaded = true;
 
-            _translations.Clear();
             _translatedValues.Clear();
             _quickLookup.Clear();
 
@@ -116,14 +74,11 @@ namespace RuMod.Utils
                 // Читаем все .json файлы из папки DevMode
                 foreach (string file in Directory.GetFiles(DictionaryDir, "*.json"))
                 {
-                    string category = Path.GetFileNameWithoutExtension(file);
                     string json = File.ReadAllText(file);
                     
                     var fileDict = JsonConvert.DeserializeObject<Dictionary<string, string>>(json);
                     if (fileDict != null)
                     {
-                        _translations[category] = fileDict;
-                        
                         foreach (var kvp in fileDict)
                         {
                             if (!string.IsNullOrWhiteSpace(kvp.Value) && kvp.Value != kvp.Key)
@@ -140,36 +95,46 @@ namespace RuMod.Utils
             {
                 RuModLog.DevModeDictionariesLoadFailed(ex);
             }
+
+            _prefixes.Clear();
+            foreach (var key in _quickLookup.Keys)
+            {
+                if (key.Length < 5) continue;
+                char last = key[key.Length - 1];
+                if (last == ' ' || last == '(' || last == ':')
+                    _prefixes.Add(key);
+            }
+            // Длинные вперёд: «DEV: Fill with » должно побеждать «DEV: ».
+            _prefixes.Sort((a, b) => b.Length.CompareTo(a.Length));
         }
 
-        public static void Save()
+
+        /// <summary>
+        /// Для подписей, к которым игра приклеила значение: «DEV: Spawn Steel».
+        /// Сначала пробуем целиком, потом переводим только начало, хвост оставляем.
+        /// Нужен отдельный вход, потому что хвост может быть уже русским
+        /// («DEV: Killed Наташа»), а такую строку Translate отвергает целиком.
+        /// </summary>
+        public static string TranslateWithPrefix(string original, string category = "Uncategorized")
         {
-            if (!_dirty) return;
+            if (string.IsNullOrEmpty(original)) return original;
 
-            try
+            string whole = Translate(original, category);
+            if (!ReferenceEquals(whole, original) && whole != original) return whole;
+
+            if (!_loaded) Load();
+            for (int i = 0; i < _prefixes.Count; i++)
             {
-                foreach (var kvp in _translations)
+                string p = _prefixes[i];
+                if (original.Length > p.Length && original.StartsWith(p, StringComparison.Ordinal))
                 {
-                    string category = kvp.Key;
-                    var dict = kvp.Value;
-                    
-                    // Не сохраняем пустые категории
-                    if (dict == null || dict.Count == 0) continue;
-
-                    // Сортируем словарь по алфавиту для красоты и удобства
-                    var sortedDict = dict.OrderBy(x => x.Key).ToDictionary(x => x.Key, x => x.Value);
-
-                    string filePath = Path.Combine(OutputDir, $"{category}.json");
-                    string json = JsonConvert.SerializeObject(sortedDict, Formatting.Indented);
-                    File.WriteAllText(filePath, json);
+                    // Хвост — обычно имя дефа: «DEV: Spawn Steel». Прогоняем и его,
+                    // тогда подставится подпись из базы: «DEV: Создать Сталь».
+                    string tail = original.Substring(p.Length);
+                    return _quickLookup[p] + Translate(tail, category);
                 }
-                
-                _dirty = false;
             }
-            catch (Exception ex)
-            {
-                RuModLog.DevModeDictionariesSaveFailed(ex);
-            }
+            return original;
         }
 
         private static bool IsValidForTranslation(string text)
@@ -261,6 +226,12 @@ namespace RuMod.Utils
 
             // Извлекаем чистый текст без пробелов по краям и точек
             string trimmed = original.Trim().TrimEnd('.');
+
+            // Дев-меню метит инструменты префиксом «T: », а подменю — многоточием
+            // (DebugTabMenu_Actions.cs:51-76). Ищем по голой подписи: тогда один ключ
+            // покрывает и «Give Birth», и «T: Give Birth», и «Give Birth...».
+            // Метка вернётся на место сама — ниже стоит original.Replace(trimmed, ...).
+            if (trimmed.StartsWith("T: ")) trimmed = trimmed.Substring(3);
             
             // 1. Точное совпадение
             if (_quickLookup.TryGetValue(trimmed, out string translation))
@@ -276,6 +247,14 @@ namespace RuMod.Utils
             if (_translatedValues.Contains(trimmed) || _translatedValues.Contains(original))
             {
                 return original;
+            }
+
+            // 1б. В словаре нет — но это может быть имя дефа, у которого перевод
+            // уже лежит в label или title (DefInjected). Незачем переводить дважды.
+            string fromDef = DevModeDefLabels.TryGet(trimmed);
+            if (fromDef != null)
+            {
+                return original.Replace(trimmed, fromDef);
             }
 
             // 2. Шаблонный поиск (если в строке есть числа)
@@ -305,69 +284,11 @@ namespace RuMod.Utils
                         // В случае ошибки формата игнорируем и выводим оригинал
                     }
                 }
-                else
-                {
-                    // Если шаблона нет, добавляем его в словарь (создаем категорию Templates)
-                    bool isLoggingTemplate = RuModClass.Instance?.GetSettings<RuModSettings>()?.DevModeTranslationLogging ?? false;
-                    if (isLoggingTemplate)
-                    {
-                        RegisterOriginal(template, "Templates");
-                    }
-                    return original;
-                }
-            }
-
-            // 3. Если перевода нет, нет чисел, и включен логгер - добавляем в указанную категорию
-            bool devModeLogging = RuModClass.Instance?.GetSettings<RuModSettings>()?.DevModeTranslationLogging ?? false;
-            if (devModeLogging)
-            {
-                RegisterOriginal(trimmed, category);
+                return original;
             }
 
             return original;
         }
 
-        /// <summary>
-        /// Регистрирует строку в определенной категории.
-        /// Если строка уже существует в ЛЮБОЙ категории, она не будет добавлена снова.
-        /// </summary>
-        public static void RegisterOriginal(string original, string category = "Uncategorized")
-        {
-            if (!IsValidForTranslation(original)) return;
-
-            bool devModeLogging = RuModClass.Instance?.GetSettings<RuModSettings>()?.DevModeTranslationLogging ?? false;
-            if (!devModeLogging) return;
-            if (!_loaded) Load();
-
-            if (string.IsNullOrEmpty(category)) category = "Uncategorized";
-
-            // Очищаем имя категории для файла (чтобы не было запрещенных символов типа / \ : * ? " < > |)
-            category = string.Join("_", category.Split(Path.GetInvalidFileNameChars()));
-
-            // Проверяем, есть ли этот ключ вообще хоть где-нибудь
-            bool existsAnywhere = false;
-            foreach (var dict in _translations.Values)
-            {
-                if (dict.ContainsKey(original))
-                {
-                    existsAnywhere = true;
-                    break;
-                }
-            }
-
-            if (!existsAnywhere)
-            {
-                if (!_translations.ContainsKey(category))
-                {
-                    _translations[category] = new Dictionary<string, string>();
-                }
-                _translations[category][original] = "";
-                // Чтобы в текущей сессии повторные обращения к той же строке
-                // сразу находили её и не пытались регистрировать снова, кладём
-                // оригинал в быстрый словарь как "перевод по умолчанию".
-                _quickLookup[original] = original;
-                _dirty = true;
-            }
-        }
     }
 }

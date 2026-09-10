@@ -1,8 +1,0 @@
-{
-  "Breach": "Пролом",
-  "Goto": "Перейти",
-  "LogCellGridResult": "Лог результата сетки клеток",
-  "LogCellMapData": "Лог данных карты клетки",
-  "LogPathfinderState": "Лог состояния поиска пути",
-  "TogglePathDebugging": "Вкл/выкл отладку пути"
-}

@@ -46,6 +46,10 @@ namespace RuMod
             // 3. Патч RimHUD: склонение год/года/лет в возрасте
             Patches.RimHUD_GenderRaceAndAgeValue_Patch.Patch(harmony);
 
+            // 4а. Имядатели ксенотипов — только после загрузки дефов и языка:
+            //     раньше DefDatabase пуст, и раздавать нечего.
+            LongEventHandler.ExecuteWhenFinished(() => Patches.XenotypeNamers.Apply());
+
             // 4. Патч фамилии новорождённого — применяем после загрузки DefOf, иначе PregnancyUtility..cctor падает
             LongEventHandler.ExecuteWhenFinished(() =>
             {
@@ -355,16 +359,6 @@ namespace RuMod
         {
             listing.CheckboxLabeled("Показывать всплывающие подсказки в Dev-меню", ref settings.DevTooltipsEnabled,
                 "При наведении курсора на пункт Dev-меню показывает полный текст команды во всплывающем окне. По умолчанию включено.");
-
-            listing.Gap(8f);
-            listing.GapLine();
-            listing.Gap(4f);
-
-            string vacuumLabel = settings.DevModeTranslationLogging
-                ? "<color=#ff5555>Пылесос английских строк (DevMode)</color>"
-                : "<color=#55ff55>Пылесос английских строк (DevMode)</color>";
-            listing.CheckboxLabeled(vacuumLabel, ref settings.DevModeTranslationLogging,
-                "Собирает всё, что видишь в DevMode, и сохраняет английские строки в JSON. Лучше не трогать, если не занимаешься переводом мода.");
         }
 
         private static string GetMenuBackgroundLabel(string choice)

@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <!--
+    Имядатели для ксенотипов, которым Людеон их не дал: гемофаги, ангелы,
+    гусары, инжи и неандертальцы. Без них все они берут имена из общего банка
+    и ничем не отличаются от обычных людей.
+
+    Это НЕ перевод, а добавка. Поэтому подключаются они из RuMod.dll и только
+    когда включена галочка русских имён: сами по себе эти дефы ничего не делают,
+    пока код не пропишет их в XenotypeDef.nameMaker.
+
+    Списки слов лежат рядом, в Languages/Russian (Русский)/Strings/Names/ —
+    значит вне русского языка они не подхватятся, и это правильно.
+  -->
+
+  <!-- ГЕМОФАГИ. Живут веками, имя должно звучать старше окружающих:
+       румыно-балканское старьё. Фамилии в русском не склоняются. -->
+  <RulePackDef>
+    <defName>RuMod_NamerSanguophage_Male</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>r_name->[firstName] [lastName]</li>
+      </rulesStrings>
+      <rulesFiles>
+        <li>firstName->Names/Sanguophage_First_Male_Biotech</li>
+        <li>lastName->Names/Sanguophage_Last_Biotech</li>
+      </rulesFiles>
+    </rulePack>
+  </RulePackDef>
+
+  <RulePackDef>
+    <defName>RuMod_NamerSanguophage_Female</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>r_name->[firstName] [lastName]</li>
+      </rulesStrings>
+      <rulesFiles>
+        <li>firstName->Names/Sanguophage_First_Female_Biotech</li>
+        <li>lastName->Names/Sanguophage_Last_Biotech</li>
+      </rulesFiles>
+    </rulePack>
+  </RulePackDef>
+
+  <!-- АНГЕЛЫ. В описании прямо сказано: выведены «под моду классической
+       Новаромы». Значит греко-римское, а не небесное. Фамилии — когномены. -->
+  <RulePackDef>
+    <defName>RuMod_NamerHighmate_Male</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>r_name->[firstName] [lastName]</li>
+      </rulesStrings>
+      <rulesFiles>
+        <li>firstName->Names/Highmate_First_Male_Biotech</li>
+        <li>lastName->Names/Highmate_Last_Biotech</li>
+      </rulesFiles>
+    </rulePack>
+  </RulePackDef>
+
+  <RulePackDef>
+    <defName>RuMod_NamerHighmate_Female</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>r_name->[firstName] [lastName]</li>
+      </rulesStrings>
+      <rulesFiles>
+        <li>firstName->Names/Highmate_First_Female_Biotech</li>
+        <li>lastName->Names/Highmate_Last_Biotech</li>
+      </rulesFiles>
+    </rulePack>
+  </RulePackDef>
+
+  <!-- ГУСАРЫ. Выведенные солдаты, растят партиями. Имена редкие славянские
+       воинские, фамилии — по роду войск: так партию и метили. -->
+  <RulePackDef>
+    <defName>RuMod_NamerHussar_Male</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>r_name->[firstName] [lastName]</li>
+      </rulesStrings>
+      <rulesFiles>
+        <li>firstName->Names/Hussar_First_Male_Biotech</li>
+        <li>lastName->Names/Hussar_Last_Male_Biotech</li>
+      </rulesFiles>
+    </rulePack>
+  </RulePackDef>
+
+  <RulePackDef>
+    <defName>RuMod_NamerHussar_Female</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>r_name->[firstName] [lastName]</li>
+      </rulesStrings>
+      <rulesFiles>
+        <li>firstName->Names/Hussar_First_Female_Biotech</li>
+        <li>lastName->Names/Hussar_Last_Female_Biotech</li>
+      </rulesFiles>
+    </rulePack>
+  </RulePackDef>
+
+  <!-- ИНЖИ. Выведены для точной работы. Имена из технического словаря,
+       фамилии от единиц измерения — тот же приём, что Людеон применил
+       к кротолюдям, назвав их по минералам и химии. -->
+  <RulePackDef>
+    <defName>RuMod_NamerGenie_Male</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>r_name->[firstName] [lastName]</li>
+      </rulesStrings>
+      <rulesFiles>
+        <li>firstName->Names/Genie_First_Male_Biotech</li>
+        <li>lastName->Names/Genie_Last_Male_Biotech</li>
+      </rulesFiles>
+    </rulePack>
+  </RulePackDef>
+
+  <RulePackDef>
+    <defName>RuMod_NamerGenie_Female</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>r_name->[firstName] [lastName]</li>
+      </rulesStrings>
+      <rulesFiles>
+        <li>firstName->Names/Genie_First_Female_Biotech</li>
+        <li>lastName->Names/Genie_Last_Female_Biotech</li>
+      </rulesFiles>
+    </rulePack>
+  </RulePackDef>
+
+  <!-- НЕАНДЕРТАЛЬЦЫ. Короткие гортанные имена. Слоговый генератор не годится:
+       движок ставит заглавную только первому слову, и фамилия вышла бы
+       с маленькой буквы. Поэтому готовые списки. -->
+  <RulePackDef>
+    <defName>RuMod_NamerNeanderthal_Male</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>r_name->[firstName] [lastName]</li>
+      </rulesStrings>
+      <rulesFiles>
+        <li>firstName->Names/Neanderthal_First_Male_Biotech</li>
+        <li>lastName->Names/Neanderthal_Last_Biotech</li>
+      </rulesFiles>
+    </rulePack>
+  </RulePackDef>
+
+  <RulePackDef>
+    <defName>RuMod_NamerNeanderthal_Female</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>r_name->[firstName] [lastName]</li>
+      </rulesStrings>
+      <rulesFiles>
+        <li>firstName->Names/Neanderthal_First_Female_Biotech</li>
+        <li>lastName->Names/Neanderthal_Last_Biotech</li>
+      </rulesFiles>
+    </rulePack>
+  </RulePackDef>
+
+</Defs>

@@ -1,0 +1,12 @@
+{
+  "<i>To add commands here, open the debug actions menu and click the pin icons.</i>": "<i>Чтобы добавить сюда команды, откройте меню отладочных действий и нажмите на значки булавок.</i>",
+  "Celestial Debugger": "Отладчик небесных тел",
+  "Debug inspector": "Инспектор отладки",
+  "Debug log": "Журнал отладки",
+  "Infection Pathway Debugger": "Отладчик путей заражения",
+  "Music Debugger": "Отладчик музыки",
+  "No valid humanlike selected": "Не выбран подходящий гуманоид",
+  "No vectors": "Нет векторов",
+  "Trigger Transition": "Запустить переход",
+  "TweakValues": "Тонкие настройки"
+}

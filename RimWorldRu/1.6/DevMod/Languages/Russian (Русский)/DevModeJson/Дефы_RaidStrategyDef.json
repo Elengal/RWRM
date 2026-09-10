@@ -1,0 +1,10 @@
+{
+  "ImmediateAttack": "Тактика налёта: сразу в атаку",
+  "ImmediateAttackBreaching": "Тактика налёта: сразу в атаку, ломая стены",
+  "ImmediateAttackBreachingSmart": "Тактика налёта: сразу в атаку, ломая стены с умом",
+  "ImmediateAttackFriendly": "Тактика налёта: сразу в атаку (свои)",
+  "ImmediateAttackSappers": "Тактика налёта: сразу в атаку с подрывниками",
+  "ImmediateAttackSmart": "Тактика налёта: сразу в атаку, с умом",
+  "Siege": "Тактика налёта: осада",
+  "StageThenAttack": "Тактика налёта: собраться, затем атаковать"
+}

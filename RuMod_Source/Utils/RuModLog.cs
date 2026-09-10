@@ -104,10 +104,6 @@ namespace RuMod.Utils
             Log.Error($"[RuMod] Распаковывал DevMode‑словари из JSON и порвал упаковку: {ex}");
         }
 
-        public static void DevModeDictionariesSaveFailed(Exception ex)
-        {
-            Log.Error($"[RuMod] Пытался сохранить DevMode‑словари, но RimWorld швырнул перо: {ex}");
-        }
 
         // ==== WorldFactionsUIUtility ====
 
@@ -150,10 +146,6 @@ namespace RuMod.Utils
             Log.Message("[RuMod] DevMode‑мозг загружен, можно начинать мучить отладку по‑русски.");
         }
 
-        public static void DevModeScanAttributesError(Exception ex)
-        {
-            Log.Error($"[RuMod] Рыскал по атрибутам и наступил на грабли: {ex}");
-        }
 
         // ==== Настройки / перенос конфига ====
 
@@ -183,6 +175,51 @@ namespace RuMod.Utils
         {
             Log.Warning($"[RuMod] Списки фамилий разъехались: {file} — мужских {males}, женских {females}. "
                 + "Пары считаются по номеру строки, так что таблицу склонения по ним не строю, работаю по правилам.");
+        }
+
+        public static void DevModeDefLabelsBuilt(int count, int skipped)
+        {
+            Log.Message($"[RuMod] Собрал подписи из базы дефов: {count} штук — дев-меню возьмёт перевод оттуда.");
+        }
+
+        public static void DevModeDefLabelsAmbiguous(int count)
+        {
+            if (count > 0)
+                Log.Message($"[RuMod] Пропустил {count} имён: их носят разные типы дефов, чьё имя — не разобрать.");
+        }
+
+        public static void DevModeDefLabelsFailed(Exception ex)
+        {
+            Log.Warning($"[RuMod] Собирал подписи из базы дефов и споткнулся: {ex.Message}");
+        }
+
+        public static void NickRegisterFailed(Exception ex)
+        {
+            Log.Warning($"[RuMod] Выбирал кличку по нраву и споткнулся: {ex.Message}. Беру из общего списка.");
+        }
+
+        public static void IronicNickFailed(Exception ex)
+        {
+            Log.Warning($"[RuMod] Подбирал кличку по контрасту и споткнулся: {ex.Message}. Оставляю прежнюю.");
+        }
+
+        // ==== имядатели ксенотипов ====
+
+        public static void XenotypeNamersAttached(int count)
+        {
+            if (count > 0)
+                Log.Message($"[RuMod] Раздал имядателей ксенотипам, которым Людеон их не дал: {count} штук.");
+        }
+
+        public static void XenotypeNamersDetached(int count)
+        {
+            if (count > 0)
+                Log.Message($"[RuMod] Снял свои имядатели с {count} ксенотипов — вернулись ванильные имена.");
+        }
+
+        public static void XenotypeNamersFailed(Exception ex)
+        {
+            Log.Warning($"[RuMod] Раздавал имядателей ксенотипам и споткнулся: {ex.Message}");
         }
 
         // ==== RimHUD ====

@@ -123,22 +123,4 @@ namespace RuMod.Patches.Debug
             }
         }
     }
-
-    // ==========================================
-    // Сохранение словаря
-    // ==========================================
-    [HarmonyPatch(typeof(Root), "Update")]
-    public static class Patch_Root_Update
-    {
-        private static int _lastSaveTime = 0;
-
-        public static void Postfix()
-        {
-            if (Prefs.DevMode && Environment.TickCount - _lastSaveTime > 5000)
-            {
-                DevModeTranslator.Save();
-                _lastSaveTime = Environment.TickCount;
-            }
-        }
-    }
 }

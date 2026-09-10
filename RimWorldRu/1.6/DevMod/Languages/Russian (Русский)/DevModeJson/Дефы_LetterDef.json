@@ -1,0 +1,23 @@
+{
+  "AcceptCreepJoiner": "Письмо: принять жуткого новичка",
+  "AcceptJoiner": "Письмо: принять новичка",
+  "AcceptVisitors": "Письмо: принять гостей",
+  "BabyBirth": "Письмо: рождение младенца",
+  "BabyToChild": "Письмо: младенец стал ребёнком",
+  "BetrayVisitors": "Письмо: предать гостей",
+  "BundleLetter": "Письмо: несколько событий разом",
+  "ChildToAdult": "Письмо: ребёнок стал взрослым",
+  "ChoosePawn": "Письмо: выбрать пешку",
+  "Death": "Письмо: смерть",
+  "EntityDiscovered": "Письмо: обнаружена тварь",
+  "GameEnded": "Письмо: игра окончена",
+  "NegativeEvent": "Плохое событие",
+  "NeutralEvent": "Обычное событие",
+  "NewQuest": "Письмо: новое задание",
+  "NewQuest_ThreatBig": "Письмо: новое задание с большой угрозой",
+  "PositiveEvent": "Хорошее событие",
+  "RitualOutcomeNegative": "Письмо: ритуал прошёл плохо",
+  "RitualOutcomePositive": "Письмо: ритуал прошёл хорошо",
+  "ThreatBig": "Большая угроза",
+  "ThreatSmall": "Малая угроза"
+}

@@ -1,0 +1,1006 @@
+ПОЛНАЯ ВЫЕМКА ТЕКСТА ДЕВ-РЕЖИМА RIMWORLD 1.6
+Достано из исходников игры, 957 разных строк
+==============================================================================
+
+
+==============================================================================
+СТОЛБЕЦ ТАБЛИЦЫ — 443 строк
+==============================================================================
+
+10 damage hits                                           ← HitsToKill / ThingDef
+acc at 1                                                 ← ShootingAccuracy / int
+acc at 10                                                ← ShootingAccuracy / int
+acc at 20                                                ← ShootingAccuracy / int
+acc at 30                                                ← ShootingAccuracy / int
+acc at 50                                                ← ShootingAccuracy / int
+actual count on map                                      ← AnimalWildCountsOnMap / PawnKindDef; PlantCountsOnMap / ThingDef
+adds hediff                                              ← Tools / int
+adulthoods                                               ← BackstoryCountsPerTag / string
+affordances                                              ← Terrains / TerrainDef
+age                                                      ← DisplayRelationsInfo / Pawn
+age restriction                                          ← RaidsInfoSampled / Tuple<IncidentParms, List<Pawn>>
+alive                                                    ← BodyParts / BodyPartDef
+allowBeatfire                                            ← MentalBreaks / MentalBreakDef
+allowed count                                            ← ArchonexusAllowedItems / ThingDef
+always weapon                                            ← Tools / int
+amount fired                                             ← IncidentChancesSampled / IncidentDef
+animal                                                   ← AnimalCombatBalance / PawnKindDef; AnimalPointsToHuntOrSlaughter / PawnKindDef; AnimalTradeTags / PawnKindDef
+animalDensity                                            ← Biomes / BiomeDef
+AP                                                       ← Tools / int; Turrets / ThingDef; WeaponsRanged / ThingDef
+appearance rate in                                       ← ThingSetMakerSampled / ThingDef
+ARC                                                      ← Genes / GeneDef; Xenotypes / XenotypeDef
+armor pen                                                ← ListMeleeVerbs / Verb
+arrival mode                                             ← RaidsInfoSampled / Tuple<IncidentParms, List<Pawn>>
+artistic skill required                                  ← Buildings / BuildableDef
+available after                                          ← Bossgroups / BossgroupDef
+available in                                             ← Bossgroups / BossgroupDef
+averageArmor                                             ← AnimalCombatBalance / PawnKindDef; Entities / ThingDef
+avg $                                                    ← PawnKindsApparelUsage / PawnKindDef; PawnKindsWeaponUsage / PawnKindDef
+avg duration (days)                                      ← MentalBreaks / MentalBreakDef
+avoid                                                    ← ShuttleDefsToAvoid / ThingDef
+Awardable                                                ← RoyalTitles / RoyalTitleDef
+awardThought                                             ← RoyalTitles / RoyalTitleDef
+base                                                     ← MeditationFoci / ThingDef
+baseChance                                               ← JoyGivers / JoyGiverDef
+baseCost                                                 ← ResearchProjects / ResearchProjectDef
+baseHealthScale                                          ← AnimalCombatBalance / PawnKindDef; Entities / ThingDef
+beauty                                                   ← Beauties / BuildableDef; Floors / TerrainDef; Terrains / TerrainDef
+beauty factor                                            ← StuffBeauty / ThingDef
+beauty factor per market value                           ← StuffBeauty / ThingDef
+beauty offset                                            ← StuffBeauty / ThingDef
+beauty outdoors                                          ← Beauties / BuildableDef; Terrains / TerrainDef
+beauty per market value                                  ← Beauties / BuildableDef
+best global                                              ← BestThingRequestGroup / ThingDef
+best local                                               ← BestThingRequestGroup / ThingDef
+billGivers                                               ← UnfinishedThings / ThingDef
+bioferrite gen.                                          ← Entities / ThingDef
+biome                                                    ← WeatherCommonalities / BiomeDef
+biome-defined commonality                                ← PlantCountsOnMap / ThingDef
+biomes                                                   ← Landmarks / LandmarkDef
+blockNormalThoughts                                      ← MentalBreaks / MentalBreakDef
+blockRandomInteraction                                   ← MentalBreaks / MentalBreakDef
+body size                                                ← Entities / ThingDef; StunChances / ThingDef
+bodySize                                                 ← AnimalBehavior / PawnKindDef; AnimalsBasics / PawnKindDef; AnimalsEcosystem / PawnKindDef
+boss                                                     ← Bossgroups / BossgroupDef
+bringable                                                ← ArchonexusAllowedItems / ThingDef
+buildable                                                ← Terrains / TerrainDef
+burn recipe                                              ← BurningAndSmeltingThings / ThingDef
+burn- or smeltable                                       ← BurningAndSmeltingThings / ThingDef
+burnable                                                 ← BurningAndSmeltingThings / ThingDef; Stuffs / ThingDef
+can fire                                                 ← DebugTablesIncidentChances / IncidentDef
+canDoWhileInBed                                          ← JoyGivers / JoyGiverDef
+canGiveRoyalFavor                                        ← QuestDefs / QuestScriptDef
+capacities                                               ← Tools / int
+Careful shooter skill                                    ← ShootingAccuracy / int
+cares                                                    ← TranshumanistBodyParts / HediffDef
+cat.                                                     ← ItemAndBuildingAcquisition / ThingDef
+category                                                 ← ArchonexusAllowedItems / ThingDef; Beauties / BuildableDef; BurningAndSmeltingThings / ThingDef
+chance                                                   ← PawnKindsTechHediffUsage / PawnKindDef; RelicThings / ThingDef; TechprintsFromFactionsChances / ResearchProjectDef
+chance in intensity                                      ← MentalBreaks / MentalBreakDef
+cheap                                                    ← WallStuffs / ThingDef
+cheapest ingredients                                     ← Recipes / RecipeDef
+cheapest ingredients value                               ← Recipes / RecipeDef
+cheapest products value                                  ← Recipes / RecipeDef
+cheapest stuff                                           ← Recipes / RecipeDef
+childhoods                                               ← BackstoryCountsPerTag / string
+class                                                    ← GenSteps / GenStepDef; WorldGenSteps / WorldGenStepDef
+cleanliness                                              ← Floors / TerrainDef; Terrains / TerrainDef
+codex entry                                              ← Entities / ThingDef
+colonist threat factor                                   ← MissionAncientComplex / Tuple<float, int, float>
+colonists                                                ← MissionAncientComplex / Tuple<float, int, float>
+combat power                                             ← AnimalPointsToHuntOrSlaughter / PawnKindDef; Entities / ThingDef
+combatPower                                              ← AnimalCombatBalance / PawnKindDef
+combatPowerCalculated                                    ← AnimalCombatBalance / PawnKindDef; Entities / ThingDef
+commMult                                                 ← WeaponPairs / ThingStuffPair
+commonality                                              ← ApparelPairs / ThingStuffPair; Landmarks / LandmarkDef; WeaponPairs / ThingStuffPair
+comps                                                    ← RelicThings / ThingDef
+conceptual                                               ← BodyParts / BodyPartDef
+construction skill required                              ← Buildings / BuildableDef
+cooldown                                                 ← ListMeleeVerbs / Verb; PsychicRituals / PsychicRitualDef_InvocationCircle; Tools / int
+cost list                                                ← ItemAndBuildingAcquisition / ThingDef; ThingsPowerAndHeat / ThingDef
+cost to make                                             ← ItemAndBuildingAcquisition / ThingDef
+count                                                    ← DynamicDrawnThingsByCategoryNow / IGrouping<ThingCategory, Thing>; DynamicDrawnThingsNow / IGrouping<ThingDef, Thing>
+countsAsClothingForNudity                                ← ApparelCountsForNudity / ThingDef
+cover effectiveness                                      ← Buildings / BuildableDef
+coverage                                                 ← Bodies / BodyPartRecord
+coverageAbs                                              ← Bodies / BodyPartRecord
+coverageAbsWithChildren                                  ← Bodies / BodyPartRecord
+CPX                                                      ← Genes / GeneDef; Xenotypes / XenotypeDef
+damage                                                   ← ListMeleeVerbs / Verb; Turrets / ThingDef; WeaponsRanged / ThingDef
+days passed                                              ← MinThreatPoints / int
+days to deterioriate                                     ← ThingDamageData / ThingDef
+death chance                                             ← InfectionSimulatorWorker / DebugOutputsInfection.InfectionSimRow
+deathOnFailChance                                        ← Surgeries / RecipeDef
+default stuff                                            ← DefaultStuffs / ThingDef
+default target                                           ← DebugTablesIncidentChances / IncidentDef
+defaultSelectionWeight                                   ← PreceptDefs / PreceptDef
+defeated in combat                                       ← Bossgroups / BossgroupDef
+defName                                                  ← AncientJunk / ThingDef; AnimalsBasics / PawnKindDef; AnimalsEcosystem / PawnKindDef
+degree                                                   ← TraitsSampled / TraitDegreeData
+degree commonality                                       ← TraitsSampled / TraitDegreeData
+degree num                                               ← TraitsSampled / TraitDegreeData
+depth                                                    ← Bodies / BodyPartRecord
+derp                                                     ← ApparelPairs / ThingStuffPair; WeaponPairs / ThingStuffPair
+description                                              ← CubeDescriptions / ValueTuple<string, string>; VoidSculptureDescriptions / ValueTuple<string, string>
+desireSit                                                ← JoyGivers / JoyGiverDef
+deterioration rate                                       ← ThingDamageData / ThingDef
+devNote                                                  ← AnimalEconomy / ThingDef; RoamingVsEconomy / ThingDef
+diseaseMtbDays                                           ← Biomes / BiomeDef
+DLC                                                      ← DebugTablesIncidentChances / IncidentDef
+dmg/sec                                                  ← ListMeleeVerbs / Verb
+door                                                     ← ThingFillageAndPassability / ThingDef
+dps                                                      ← AnimalsBasics / PawnKindDef
+dpsAvg / $100                                            ← Turrets / ThingDef
+dpsAvg*100 / market value                                ← WeaponsRanged / ThingDef
+draw() users (comps)                                     ← DrawerTypes / ThingDef
+drawType                                                 ← DrawerTypes / ThingDef
+duplicates                                               ← PreceptDefs / PreceptDef
+duration                                                 ← PsychicRituals / PsychicRitualDef_InvocationCircle; RitualDuration / RitualBehaviorDef
+earliestDay                                              ← DebugTablesIncidentChances / IncidentDef
+ecosystem weight                                         ← AnimalsEcosystem / PawnKindDef
+ecosystem weight guess                                   ← AnimalsEcosystem / PawnKindDef
+edifice                                                  ← AncientJunk / ThingDef
+effects                                                  ← PreceptDefs / PreceptDef
+excludeTags                                              ← SitePartDefs / SitePartDef
+exclusionTags                                            ← PreceptDefs / PreceptDef
+expected count (rough)                                   ← PlantCountsOnMap / ThingDef
+expected count on map (inaccurate)                       ← AnimalWildCountsOnMap / PawnKindDef
+fabric                                                   ← Stuffs / ThingDef
+faction                                                  ← PawnKindsBasics / PawnKindDef; TraderKinds / TraderKindDef
+faction def                                              ← RaidsInfoSampled / Tuple<IncidentParms, List<Pawn>>
+faction name                                             ← RaidsInfoSampled / Tuple<IncidentParms, List<Pawn>>
+factions                                                 ← RoyalTitles / RoyalTitleDef
+farm animal edible                                       ← Plants / ThingDef
+favorCost                                                ← RoyalTitles / RoyalTitleDef
+FenceBlocked                                             ← AnimalBehavior / PawnKindDef
+fertility                                                ← Terrains / TerrainDef
+fillage                                                  ← ThingFillageAndPassability / ThingDef
+fillPercent                                              ← ThingFillPercents / ThingDef; ThingFillageAndPassability / ThingDef
+filth                                                    ← AnimalEconomy / ThingDef
+fire chance                                              ← IncidentChancesSampled / IncidentDef
+flammability                                             ← AnimalsBasics / PawnKindDef; Buildings / BuildableDef; BurningAndSmeltingThings / ThingDef
+floor                                                    ← WallStuffs / ThingDef
+floor (beautiful)                                        ← WallStuffs / ThingDef
+food poison chance                                       ← FoodPoisonChances / ThingDef
+forageability                                            ← Biomes / BiomeDef
+forageable plants                                        ← Biomes / BiomeDef
+forageFood                                               ← Biomes / BiomeDef
+gender                                                   ← DisplayRelationsInfo / Pawn
+generateCommonality                                      ← ApparelPairs / ThingStuffPair; MakeTablePairsByThing / ThingDef; WeaponPairs / ThingStuffPair
+Gifts                                                    ← QualityGenerationData / QualityCategory
+grow days                                                ← Plants / ThingDef
+growth per 30d                                           ← AnimalBreeding / ThingDef
+growth per 60d                                           ← AnimalBreeding / ThingDef
+headgear                                                 ← ApparelPairs / ThingStuffPair
+health scale                                             ← Entities / ThingDef; StunChances / ThingDef
+healthScale                                              ← AnimalsBasics / PawnKindDef; RacesButchery / ThingDef
+heat cost                                                ← DoTable_AbilityCosts / AbilityDef
+hediff                                                   ← DoDebugOptions / ImmunityRecord; IdeoThoughts / ThoughtDef; ListMeleeVerbs / Verb
+hediffDef                                                ← InstallableBodyParts / RecipeDef
+height                                                   ← Bodies / BodyPartRecord
+heldByFactionCategoryTags                                ← ResearchProjects / ResearchProjectDef
+herbivore                                                ← AnimalEconomy / ThingDef
+hiddenPrerequisites                                      ← ResearchProjects / ResearchProjectDef
+hitChanceFactors                                         ← BodyParts / BodyPartDef
+hours passed                                             ← MinThreatPoints / int
+hp                                                       ← ApparelArmor / ThingDef; ThingDamageData / ThingDef; Turrets / ThingDef
+hsl                                                      ← StructureColorDefs / ColorDef
+hunger                                                   ← AnimalsBasics / PawnKindDef
+hunger rate                                              ← AnimalsEcosystem / PawnKindDef; RacesButchery / ThingDef
+hungerRate                                               ← RacesFoodConsumption / ThingDef
+id                                                       ← AnalysisDetails / AnalysisDetails; Tools / int
+immunity                                                 ← DoDebugOptions / ImmunityRecord
+impact                                                   ← PreceptDefs / PreceptDef
+ingredients                                              ← Buildings / BuildableDef; DoTableInternalApparel / ThingDef; Drugs / ThingDef
+install skill                                            ← Prosthetics / RecipeDef
+install time                                             ← Prosthetics / RecipeDef
+install total cost                                       ← Prosthetics / RecipeDef
+insulationCold                                           ← ApparelPairs / ThingStuffPair
+intensity                                                ← MentalBreaks / MentalBreakDef
+interaction                                              ← GravshipBuildingChecklist / ThingDef
+IsMeleeWeapon                                            ← RelicThings / ThingDef
+isNaturalRock                                            ← NaturalRocks / ThingDef
+IsRangedWeapon                                           ← RelicThings / ThingDef
+isResourceRock                                           ← NaturalRocks / ThingDef
+IsWeapon                                                 ← RelicThings / ThingDef
+jobDef                                                   ← JoyGivers / JoyGiverDef
+joy                                                      ← Drugs / ThingDef
+joyDuration                                              ← JoyJobs / JobDef
+JoyGainFactors                                           ← JoyGivers / JoyGiverDef
+joyGainRate                                              ← JoyJobs / JobDef
+joyKind                                                  ← JoyGivers / JoyGiverDef; JoyJobs / JobDef
+joyMaxParticipants                                       ← JoyJobs / JobDef
+joySkill                                                 ← JoyJobs / JobDef
+joyXpPerTick                                             ← JoyJobs / JobDef
+kind label                                               ← DisplayRelationsInfo / Pawn
+kinds                                                    ← PawnGroupGenSampled / int
+knowledge category                                       ← Entities / ThingDef
+knowledge gain                                           ← Entities / ThingDef
+knowledgeCategory                                        ← ResearchProjects / ResearchProjectDef
+knowledgeCost                                            ← ResearchProjects / ResearchProjectDef
+label                                                    ← ApparelArmor / ThingDef; ApparelCountsForNudity / ThingDef; ApparelInsulation / ThingDef
+labelShortAdj                                            ← Genes / GeneDef
+layers                                                   ← DoTableInternalApparel / ThingDef
+leather                                                  ← Stuffs / ThingDef
+leatherAmount                                            ← RacesButchery / ThingDef
+level                                                    ← DoTable_AbilityCosts / AbilityDef
+lifespan                                                 ← AnimalsBasics / PawnKindDef; Entities / ThingDef
+Lifestage 0                                              ← RacesFoodConsumption / ThingDef
+Lifestage 1                                              ← RacesFoodConsumption / ThingDef
+Lifestage 2                                              ← RacesFoodConsumption / ThingDef
+Lifestage 3                                              ← RacesFoodConsumption / ThingDef
+linked body parts                                        ← Tools / int
+lostThought                                              ← RoyalTitles / RoyalTitleDef
+lovin mtb                                                ← DisplayRelationsInfo / Pawn
+Made from stuff                                          ← RelicStuffs / ThingDef
+maneuvers                                                ← Tools / int
+manhunt on dmg                                           ← AnimalPointsToHuntOrSlaughter / PawnKindDef
+manhunt on tame                                          ← AnimalPointsToHuntOrSlaughter / PawnKindDef
+market value                                             ← Beauties / BuildableDef; DoTablesInternalMelee / Def; MiningResourceGeneration / ThingDef
+marketValueFactorOffset                                  ← TraitsSampled / TraitDegreeData
+mass                                                     ← ApparelArmor / ThingDef; InstallableBodyParts / RecipeDef; ThingMasses / ThingDef
+mateMtb                                                  ← AnimalBehavior / PawnKindDef
+max $                                                    ← PawnKindsApparelUsage / PawnKindDef; PawnKindsWeaponUsage / PawnKindDef
+max duration (days)                                      ← MentalBreaks / MentalBreakDef
+max HP                                                   ← Buildings / BuildableDef
+max psyfocus recovery time days                          ← DoTable_AbilityCosts / AbilityDef
+max satisfied title                                      ← DoTable_IngestibleMaxSatisfiedTitle / ThingDef
+max stack                                                ← ArchonexusAllowedItems / ThingDef
+max value                                                ← ArchonexusAllowedItems / ThingDef
+maxFood                                                  ← RacesFoodConsumption / ThingDef
+meatAmount                                               ← RacesButchery / ThingDef
+mech                                                     ← HitsToKill / ThingDef
+medicine used                                            ← InfectionSimulatorWorker / DebugOutputsInfection.InfectionSimRow
+meds                                                     ← InfectionSimulatorWorker / DebugOutputsInfection.InfectionSimRow
+meleeDps                                                 ← AnimalCombatBalance / PawnKindDef; Entities / ThingDef
+MET                                                      ← Genes / GeneDef; Xenotypes / XenotypeDef
+metal                                                    ← Stuffs / ThingDef
+min $                                                    ← PawnKindsApparelUsage / PawnKindDef; PawnKindsWeaponUsage / PawnKindDef
+min duration (days)                                      ← MentalBreaks / MentalBreakDef
+min skill                                                ← InstallableBodyParts / RecipeDef; Recipes / RecipeDef
+min. containment                                         ← Entities / ThingDef
+min/max threatpoints                                     ← DebugTablesIncidentChances / IncidentDef
+minAnomalyThreatLevel                                    ← DebugTablesIncidentChances / IncidentDef
+mineableThing                                            ← NaturalRocks / ThingDef
+mineableYield                                            ← NaturalRocks / ThingDef
+mineableYieldWasteable                                   ← NaturalRocks / ThingDef
+minifiable                                               ← Plants / ThingDef
+minimumExpectationLock                                   ← RoyalTitles / RoyalTitleDef
+minPopulation                                            ← DebugTablesIncidentChances / IncidentDef
+minRefireDays                                            ← DebugTablesIncidentChances / IncidentDef
+mkt val                                                  ← AnimalPointsToHuntOrSlaughter / PawnKindDef; InstallableBodyParts / RecipeDef
+mktval                                                   ← AnimalsBasics / PawnKindDef; RacesButchery / ThingDef
+mktval guess                                             ← AnimalsBasics / PawnKindDef
+mobile                                                   ← ItemAndBuildingAcquisition / ThingDef
+mode                                                     ← DoTable_RaidArrivalModeSampled / PawnsArrivalModeDef
+movementDifficulty                                       ← Biomes / BiomeDef
+moveSpeed                                                ← AnimalCombatBalance / PawnKindDef; Entities / ThingDef
+mutators                                                 ← Landmarks / LandmarkDef
+my compat                                                ← DisplayRelationsInfo / Pawn
+name                                                     ← ApparelValidLifeStages / ThingDef; DisplayRelationsInfo / Pawn; DoTable_AbilityCosts / AbilityDef
+No trait skill                                           ← ShootingAccuracy / int
+noExpansion                                              ← PreceptDefs / PreceptDef
+none                                                     ← ApparelArmor / ThingDef; ApparelInsulation / ThingDef
+Nutrition                                                ← DoDebugOptions / BodyPartRecord
+nutrition                                                ← Crops / ThingDef; Plants / ThingDef; ThingNutritions / ThingDef
+nutrition per value                                      ← ThingNutritions / ThingDef
+orbital                                                  ← TraderKinds / TraderKindDef
+order                                                    ← GenSteps / GenStepDef; StructureColorDefs / ColorDef; WorldGenSteps / WorldGenStepDef
+pair count                                               ← MakeTablePairsByThing / ThingDef
+passability                                              ← ThingFillageAndPassability / ThingDef; ThingPathCosts / ThingDef
+path                                                     ← ArchonexusAllowedItems / ThingDef
+path cost                                                ← ThingPathCosts / ThingDef
+pawns                                                    ← PawnGroupGenSampled / int; RaidsInfoSampled / Tuple<IncidentParms, List<Pawn>>
+pctPawnsEverDo                                           ← JoyGivers / JoyGiverDef
+per dromedary                                            ← ThingMasses / ThingDef
+per human                                                ← ThingMasses / ThingDef
+per muffalo                                              ← ThingMasses / ThingDef
+per nutrition                                            ← ThingMasses / ThingDef
+petness                                                  ← AnimalBehavior / PawnKindDef; AnimalEconomy / ThingDef
+plant                                                    ← BiomePlantsExpectedCount / ThingDef; Crops / ThingDef; PlantCountsOnMap / ThingDef
+plantDensity                                             ← Biomes / BiomeDef
+points                                                   ← AnimalPointsToHuntOrSlaughter / PawnKindDef; AnimalsBasics / PawnKindDef; MissionAncientComplex / Tuple<float, int, float>
+points guess                                             ← AnimalsBasics / PawnKindDef
+points min                                               ← MinThreatPoints / int
+points min ceiling                                       ← MinThreatPoints / int
+points min floor                                         ← MinThreatPoints / int
+possible rewards                                         ← QuestDefs / QuestScriptDef
+potency                                                  ← Medicines / float
+potential issue                                          ← DrawerTypes / ThingDef
+power                                                    ← Tools / int
+predator                                                 ← AnimalBehavior / PawnKindDef; AnimalsEcosystem / PawnKindDef
+prereq                                                   ← Genes / GeneDef
+prerequisites                                            ← ResearchProjects / ResearchProjectDef
+prevalence among                                         ← TraitsSampled / TraitDegreeData
+price                                                    ← ApparelPairs / ThingStuffPair; Prosthetics / RecipeDef; WeaponPairs / ThingStuffPair
+price impact                                             ← HediffsPriceImpact / HediffDef
+price offset                                             ← HediffsPriceImpact / HediffDef
+producible                                               ← ItemAndBuildingAcquisition / ThingDef
+product                                                  ← Crops / ThingDef
+profit                                                   ← ItemAndBuildingAcquisition / ThingDef
+profit per work day                                      ← Recipes / RecipeDef
+profit raw                                               ← Recipes / RecipeDef
+profit with work                                         ← Recipes / RecipeDef
+psyfocus cost                                            ← DoTable_AbilityCosts / AbilityDef
+quality                                                  ← QualityGenerationData / QualityCategory
+range                                                    ← Turrets / ThingDef; WeaponsRanged / ThingDef
+rate                                                     ← TickRates / Thing
+recipeDef                                                ← InstallableBodyParts / RecipeDef
+recipes                                                  ← ItemAndBuildingAcquisition / ThingDef
+recoverFromSleep                                         ← MentalBreaks / MentalBreakDef
+recovery time (days)                                     ← InfectionSimulatorWorker / DebugOutputsInfection.InfectionSimRow
+recoveryThought                                          ← MentalBreaks / MentalBreakDef
+Relic                                                    ← RelicMarketValues / Tuple<ThingDef, ThingDef>
+relic                                                    ← RelicStuffs / ThingDef
+requestable                                              ← TraderKinds / TraderKindDef
+requireApparel                                           ← RoyalTitles / RoyalTitleDef
+required                                                 ← AnalysisDetails / AnalysisDetails
+required offering                                        ← PsychicRituals / PsychicRitualDef_InvocationCircle
+requiredCapacities                                       ← JoyGivers / JoyGiverDef
+requiredMinimumApparelQuality                            ← RoyalTitles / RoyalTitleDef
+requiredResearchBuilding                                 ← ResearchProjects / ResearchProjectDef
+research                                                 ← Terrains / TerrainDef
+reserved by bossgroup                                    ← Bossgroups / BossgroupDef
+reward                                                   ← Bossgroups / BossgroupDef
+reward tags                                              ← RewardsGenerationSampled / object
+rgb                                                      ← StructureColorDefs / ColorDef
+rotatable                                                ← AncientJunk / ThingDef; GravshipBuildingChecklist / ThingDef
+scatterers                                               ← AncientJunk / ThingDef
+sel %                                                    ← ListMeleeVerbs / Verb
+selection weight                                         ← Tools / int
+seniority                                                ← RoyalTitles / RoyalTitleDef
+shear interval                                           ← Wool / ThingDef
+show distinct                                            ← ArchonexusAllowedItems / ThingDef
+site                                                     ← GenSteps / GenStepDef
+size                                                     ← GravshipBuildingChecklist / ThingDef
+skill                                                    ← InfectionSimulatorWorker / DebugOutputsInfection.InfectionSimRow
+skillRequirements                                        ← Surgeries / RecipeDef
+skin covered                                             ← BodyParts / BodyPartDef
+slaughter value                                          ← AnimalEconomy / ThingDef
+small volume                                             ← ThingMasses / ThingDef
+smelt recipe                                             ← BurningAndSmeltingThings / ThingDef
+smeltable                                                ← BurningAndSmeltingThings / ThingDef; DoTablesInternalMelee / Def; Stuffs / ThingDef
+smoothed                                                 ← NaturalRocks / ThingDef
+social                                                   ← IdeoThoughts / ThoughtDef; Thoughts / ThoughtDef
+socketed                                                 ← BodyParts / BodyPartDef
+solid                                                    ← BodyParts / BodyPartDef
+sort prio                                                ← ArchonexusAllowedItems / ThingDef
+source                                                   ← DoDebugOptions / ImmunityRecord; ListMeleeVerbs / Verb; Tools / int
+Spacing                                                  ← DoDebugOptions / HediffGiver_Birthday
+speed                                                    ← AnimalsBasics / PawnKindDef; Entities / ThingDef
+stackLimit                                               ← MiningResourceGeneration / ThingDef
+stages                                                   ← IdeoThoughts / ThoughtDef; Thoughts / ThoughtDef
+stats                                                    ← PreceptDefs / PreceptDef
+stony                                                    ← Stuffs / ThingDef
+strategy                                                 ← RaidsInfoSampled / Tuple<IncidentParms, List<Pawn>>
+stuff                                                    ← ApparelArmor / ThingDef; ApparelPairs / ThingStuffPair; WeaponPairs / ThingStuffPair
+stuff categories                                         ← DefaultStuffs / ThingDef
+Stuff categories                                         ← RelicStuffs / ThingDef
+stuff cost                                               ← Floors / TerrainDef
+stuff costs                                              ← InstallableBodyParts / RecipeDef
+surgerySuccessChanceFactor                               ← Surgeries / RecipeDef
+surprise attack                                          ← Tools / int
+tag                                                      ← BackstoryCountsPerTag / string
+tags                                                     ← BodyParts / BodyPartDef; DoTableInternalApparel / ThingDef; SitePartDefs / SitePartDef
+tech level                                               ← Prosthetics / RecipeDef; TechLevels / ThingDef
+tech lvl                                                 ← InstallableBodyParts / RecipeDef
+techHediffsTags                                          ← Prosthetics / RecipeDef
+techLevel                                                ← ResearchProjects / ResearchProjectDef
+techprintCount                                           ← ResearchProjects / ResearchProjectDef
+tempMax                                                  ← AnimalsBasics / PawnKindDef; Entities / ThingDef
+tempMin                                                  ← AnimalsBasics / PawnKindDef; Entities / ThingDef
+terrain requirement                                      ← Buildings / BuildableDef
+their compat                                             ← DisplayRelationsInfo / Pawn
+thing                                                    ← ApparelPairs / ThingStuffPair; MakeTablePairsByThing / ThingDef; WeaponPairs / ThingStuffPair
+thingClass                                               ← DrawerTypes / ThingDef
+thingDef                                                 ← InstallableBodyParts / RecipeDef
+thingDefs                                                ← JoyGivers / JoyGiverDef
+thingSetMakerTags                                        ← Prosthetics / RecipeDef
+threat points                                            ← MissionAncientComplex / Tuple<float, int, float>
+times done                                               ← AnalysisDetails / AnalysisDetails
+title                                                    ← CubeDescriptions / ValueTuple<string, string>; VoidSculptureDescriptions / ValueTuple<string, string>
+titleRequiredAny                                         ← JoyKinds / JoyKindDef
+total commonality                                        ← MakeTablePairsByThing / ThingDef
+total commonality multiplier                             ← MakeTablePairsByThing / ThingDef
+tradeable                                                ← InstallableBodyParts / RecipeDef
+trainability                                             ← AnimalBehavior / PawnKindDef; AnimalEconomy / ThingDef; AnimalsBasics / PawnKindDef
+trait                                                    ← TraitsSampled / TraitDegreeData
+trait commonality                                        ← TraitsSampled / TraitDegreeData
+trait commonalityFemale                                  ← TraitsSampled / TraitDegreeData
+tree                                                     ← Plants / ThingDef
+tree density                                             ← Biomes / BiomeDef
+Trigger-happy skill                                      ← ShootingAccuracy / int
+type                                                     ← IdeoThoughts / ThoughtDef; TerrainAffordances / BuildableDef; Thoughts / ThoughtDef
+unroofedOnly                                             ← JoyGivers / JoyGiverDef
+uses stuff                                               ← ThingDamageData / ThingDef
+valid for gravship                                       ← GravshipBuildingChecklist / ThingDef
+valid life stage                                         ← ApparelValidLifeStages / ThingDef
+value limit                                              ← ArchonexusAllowedItems / ThingDef
+value yearly                                             ← Wool / ThingDef
+verb                                                     ← ListMeleeVerbs / Verb
+verbs                                                    ← ApparelArmor / ThingDef
+warmup                                                   ← Turrets / ThingDef; WeaponsRanged / ThingDef
+wealth                                                   ← MissionAncientComplex / Tuple<float, int, float>
+wealth threat factor                                     ← MissionAncientComplex / Tuple<float, int, float>
+weapon                                                   ← Mechanoids / PawnKindDef
+weaponTags                                               ← RelicThings / ThingDef
+weight                                                   ← ListMeleeVerbs / Verb; TechprintsFromFactionsChances / ResearchProjectDef
+weight histogram                                         ← QuestDefs / QuestScriptDef
+weight limit                                             ← ArchonexusAllowedItems / ThingDef
+weightClass                                              ← Mechanoids / PawnKindDef
+wildness                                                 ← AnimalBehavior / PawnKindDef; AnimalEconomy / ThingDef; AnimalPointsToHuntOrSlaughter / PawnKindDef
+wildPlantRegrowDays                                      ← Biomes / BiomeDef
+wildPlantsCareAboutLocalFertility                        ← Biomes / BiomeDef
+woody                                                    ← Stuffs / ThingDef
+woolAmount                                               ← Wool / ThingDef
+woolDef                                                  ← Wool / ThingDef
+woolValue                                                ← Wool / ThingDef
+work                                                     ← DoTableInternalApparel / ThingDef; Surgeries / RecipeDef; Terrains / TerrainDef
+work /w carry                                            ← Recipes / RecipeDef
+work seconds                                             ← Recipes / RecipeDef
+work to build                                            ← Buildings / BuildableDef; Floors / TerrainDef
+work to make                                             ← DoTablesInternalMelee / Def
+work to produce                                          ← Beauties / BuildableDef; ItemAndBuildingAcquisition / ThingDef
+work value                                               ← Recipes / RecipeDef
+workSkill                                                ← RecipeSkills / RecipeDef
+workSkillLearnFactor                                     ← RecipeSkills / RecipeDef
+workSpeedStat                                            ← RecipeSkills / RecipeDef
+workSpeedStat's skillNeedFactors                         ← RecipeSkills / RecipeDef
+x1 value                                                 ← ArchonexusAllowedItems / ThingDef
+x1 weight                                                ← ArchonexusAllowedItems / ThingDef
+yearly market value                                      ← RoamingVsEconomy / ThingDef
+yearly slaughter value                                   ← RoamingVsEconomy / ThingDef
+
+==============================================================================
+ПУНКТ МЕНЮ — 411 строк
+==============================================================================
+
+10 damage                                                ← General
+10 damage until dead                                     ← Pawns
+300 damage                                               ← General
+5000 damage                                              ← General
+Abandon Thing                                            ← Spawning
+Activate HediffGiver                                     ← Pawns
+Activate HediffGiver World Pawn                          ← Pawns
+Adaption Progress10 Days                                 ← General
+Add 5 days to obligation timer                           ← Ideoligion
+Add Development Point                                    ← Ideoligion
+Add Game Condition                                       ← Map
+Add gas...                                               ← General
+Add Gene                                                 ← Pawns
+Add Guest                                                ← Pawns
+Add Hediff                                               ← Pawns
+Add Infection Pathway                                    ← Pawns
+Add Learning Desire                                      ← Pawns
+Add Mutator To Current Map Tile                          ← Map
+Add Opinion Talks About                                  ← Pawns
+Add Precept                                              ← Ideoligion
+Add Prisoner                                             ← Pawns
+Add Sand                                                 ← Map
+Add Slave                                                ← Pawns
+Add Snow                                                 ← Map
+Add techprint to project                                 ← General
+Add Test Planet Layer                                    ← Other
+Add Trade Ship Of Kind                                   ← General
+Add Trait To Unique Weapon                               ← General
+Add/remove pawn relation                                 ← Pawns
+Apply damage                                             ← Pawns
+Apply techprint on project                               ← General
+Atlas Rebuild                                            ← General
+Attach Fire                                              ← General
+Award 10 honor                                           ← General
+Award 4 honor                                            ← General
+BaseGen                                                  ← Map
+Battle Royale All PawnKinds                              ← Autotests
+Battle Royale By Damagetype                              ← Autotests
+Battle Royale Humanlikes                                 ← Autotests
+Benchmark Performance                                    ← General
+Breach                                                   ← Pathing
+Break down...                                            ← General
+Carried Damage To Death                                  ← Pawns
+Celestial debugger                                       ← General
+Certainty - 20%                                          ← Ideoligion
+Change Camera Config                                     ← General
+Change camera config                                     ← General
+Change Map                                               ← Map
+Change style                                             ← Pawns
+Change Thing Style                                       ← General
+Change weather...                                        ← General
+Check Reachability                                       ← General
+Check Region Listers                                     ← Autotests
+CheckForJobOverride                                      ← Pawns
+Clear All Fog                                            ← Map
+Clear All Gas                                            ← General
+Clear All Sand                                           ← Map
+Clear All Snow                                           ← Map
+Clear area (rect)                                        ← General
+Clear Bound Unfinished Things                            ← Pawns
+Clear cached materials                                   ← Other
+Clear Development Points                                 ← Ideoligion
+Clear Landmark                                           ← General
+Clear Prisoner Interaction Schedule                      ← Pawns
+Clear suppression schedule                               ← Pawns
+Clear temp terrain (rect)                                ← Map
+Compare Line Of Sight                                    ← General
+Convert To Ideo                                          ← Pawns
+Create baby from parents                                 ← Pawns
+Create Colonist Duplicate                                ← Spawning
+Create Prefab                                            ← Generation
+Damage Held Pawn To Death                                ← Pawns
+Damage Legs                                              ← Pawns
+Damage To Death                                          ← Pawns
+Damage Until Down                                        ← Pawns
+Damage Until Incapable Of Manipulation                   ← Pawns
+Darklight At Position                                    ← General
+Destroy                                                  ← General
+Destroy All Corpses                                      ← General
+Destroy All Hats                                         ← General
+Destroy All Plants                                       ← General
+Destroy All Things                                       ← General
+Destroy Clutter                                          ← General
+Destroy factionless animals                              ← Pawns
+Destroy fire                                             ← General
+Destroy Map                                              ← Map
+Destroy non-colonists                                    ← Pawns
+Destroy player animals                                   ← Pawns
+Destroy Site                                             ← Spawning
+Disable Mechs                                            ← Mechanoid
+Discard                                                  ← General
+Discover All Entities                                    ← Anomaly
+Discover Hediffs                                         ← Pawns
+Display Interactions Info                                ← Pawns
+Display Relations Info                                   ← Pawns
+Do Next Gen Step                                         ← Map
+Do trade caravan arrival...                              ← Incidents
+Do Voice Call                                            ← Pawns
+Draw Attach Points                                       ← General
+Draw breach path...                                      ← Pawns
+Drop pod raid at location...                             ← Incidents
+Dump Pawn Atlases                                        ← General
+Dump Static Atlases                                      ← General
+Duplicate                                                ← Spawning
+Edit Animation...                                        ← General
+Edit effecter...                                         ← General
+Edit roof (rect)                                         ← General
+Emerge Metalhorrors                                      ← Anomaly
+Enable wound debug draw                                  ← General
+End game condition...                                    ← General
+End Revenant Hypnosis                                    ← Anomaly
+EndCurrentJob(InterruptForced)                           ← Pawns
+Enslave                                                  ← Pawns
+Equip primary (selected)...                              ← Pawns
+Execute raid with faction...                             ← Incidents
+Execute raid with points...                              ← Incidents
+Execute raid with specifics...                           ← Incidents
+Explosion...                                             ← General
+Face cell (selected)...                                  ← Pawns
+Fill All Gas                                             ← General
+Fill Map With Trees                                      ← Map
+Finish All Research                                      ← General
+Flash Blocked Landing Cells                              ← General
+Flash Closewalk Cell30                                   ← General
+Flash Direct Flee Dest                                   ← General
+Flash Shuttle Drop Cells Near                            ← General
+Flash Skygaze Cell                                       ← General
+Flash Spectators Cells                                   ← General
+Flash Trade Drop Spot                                    ← General
+Flash TryFindRandomPawnExitCell                          ← General
+Flash Walk Path                                          ← General
+Fog (rect)                                               ← General
+Force age reversal demand now                            ← Pawns
+Force Birthday                                           ← Pawns
+Force Enemy Assault                                      ← General
+Force Enemy Flee                                         ← General
+Force Interaction                                        ← Pawns
+Force Reform In Current Map                              ← Map
+Force Ship Countdown                                     ← General
+Force sleep                                              ← General
+Force Start Ship                                         ← General
+Force vomit                                              ← Pawns
+Garbage Collect World Pawn                               ← Other
+Generate 200 ritual names                                ← Ideoligion
+Generate CreepJoiner...                                  ← Anomaly
+Generate Landmark Screenshots                            ← Map
+Generate Map                                             ← Map
+Generate Map With Caves                                  ← Map
+Generate Pawns Of All Shapes                             ← Autotests
+Generate Pocket Map                                      ← Map
+Generate quest                                           ← Quests
+Generate quests (1x for each points)                     ← Quests
+Generate quests x#                                       ← Quests
+Give Ability                                             ← Pawns
+Give bad thought                                         ← Pawns
+Give Birth                                               ← Pawns
+Give good thought                                        ← Pawns
+Give Psylink                                             ← Pawns
+Give Trait                                               ← Pawns
+Glow At Position                                         ← General
+Goto                                                     ← Pathing
+Grant Immunities                                         ← Pawns
+Grow Pawn To Maturity                                    ← Pawns
+Grow plant 1 day                                         ← General
+Grow plant to maturity                                   ← General
+Grow pollution (x10 cell)                                ← Map
+Grow pollution (x100 cell)                               ← Map
+Grow pollution (x1000 cell)                              ← Map
+Heal random injury (10)                                  ← Pawns
+Hot Reload Defs                                          ← General
+HSV At Position                                          ← General
+Increment time                                           ← General
+Infection pathway debugger                               ← Pawns
+Inspiration                                              ← Pawns
+Kidnap colonist                                          ← Pawns
+Kill                                                     ← General
+Kill Faction Leader                                      ← General
+Kill Kidnapped Pawn                                      ← General
+Kill Random Lent Colonist                                ← General
+Kill World Pawn                                          ← General
+Layer pathfinder...                                      ← General
+Leak Map                                                 ← Map
+Lightning Strike                                         ← General
+Lightning Strike Delayed                                 ← General
+List Melee Verbs                                         ← Pawns
+Loaded Files For Mod                                     ← Mods
+Lock Rotation                                            ← Pawns
+Log Cell Grid Result                                     ← Pathing
+Log Cell Map Data                                        ← Pathing
+Log generated quest savedata                             ← Quests
+Log Job Details                                          ← Pawns
+Log lights affecting cell                                ← Lighting
+Log Map Pollution                                        ← Map
+Log Pathfinder State                                     ← Pathing
+Log Planet Layer Connections                             ← Other
+Make +1 day older                                        ← Pawns
+Make +1 year older                                       ← Pawns
+Make colony (ancient junk)                               ← Autotests
+Make colony (animals)                                    ← Autotests
+Make colony (full)                                       ← Autotests
+Make empty room (rect)                                   ← General
+Make Faction Leader                                      ← Pawns
+Make filth x100                                          ← Spawning
+Make guilty                                              ← Pawns
+Make injuries permanent                                  ← Pawns
+Make plant leafless                                      ← General
+Make rock (rect)                                         ← Map
+Map noise visualizer                                     ← General
+Max All Passions                                         ← Pawns
+Max All Skills                                           ← Pawns
+Max Development Points                                   ← Ideoligion
+Max ghoul upgrades                                       ← Anomaly
+Max Passion                                              ← Pawns
+Max Skill                                                ← Pawns
+Measure Draw Size                                        ← General
+Measure World Distance                                   ← General
+Melee Attack Target                                      ← Pawns
+Mental break                                             ← Pawns
+Mental state...                                          ← Pawns
+Music debugger                                           ← Sound
+Name settlement...                                       ← General
+Next Lesson                                              ← General
+Nuzzle Pawn                                              ← General
+Pass To World                                            ← Pawns
+Pawn Kind Ability Check                                  ← General
+Pawn Kind Apparel Check                                  ← General
+Pick Copy                                                ← General
+Play Animation...                                        ← Pawns
+Play song...                                             ← Sound
+Play sound...                                            ← Sound
+Pollute (rect)                                           ← Map
+Pollution +1%                                            ← General
+Pollution +25%                                           ← General
+Pollution -25%                                           ← General
+Print Leaked Map                                         ← Map
+Progress life stage                                      ← Pawns
+Psychic ritual siege...                                  ← Incidents
+Push heat...                                             ← General
+QuestPart test                                           ← Quests
+Queue Training Decay                                     ← Pawns
+Raise corpse as shambler                                 ← Anomaly
+Random Spot Near Thing Avoiding Hostiles                 ← General
+RandomSpotJustOutsideColony                              ← General
+Recalculate threat points                                ← Incidents
+Recruit                                                  ← Pawns
+Reduce royal title                                       ← General
+Refog Map                                                ← Map
+Regen All Map Mesh Sections                              ← Map
+Regen glow grid cells (rect)                             ← Lighting
+Regen Section                                            ← Map
+Regenerate Current Map                                   ← Map
+Regenerate Current Map Stepped                           ← Map
+Regenerate Map Features                                  ← General
+Regenerate Map With Landmark                             ← Map
+Remove 4 honor                                           ← General
+Remove all traits                                        ← Pawns
+Remove Game Condition                                    ← Map
+Remove Gene                                              ← Pawns
+Remove Mutator From Current Map Tile                     ← Map
+Remove Precept                                           ← Ideoligion
+Remove ritual obligation                                 ← Ideoligion
+Remove Sand                                              ← Map
+Remove Snow                                              ← Map
+Remove Test Planet Layer                                 ← Other
+Remove Trait From Unique Weapon                          ← General
+Remove world pawn...                                     ← Spawning
+Replace All Trade Ships                                  ← General
+Request style change                                     ← Pawns
+Reset age reversal demand                                ← Pawns
+Reset Bossgroup Cooldown                                 ← General
+Reset Bossgroup Killed Pawns                             ← General
+Reset pawn render cache                                  ← Pawns
+Resistance -1                                            ← Pawns
+Resistance -10                                           ← Pawns
+Restore Body Part                                        ← Pawns
+Resurrect                                                ← Pawns
+Retroactively Add Landmarks To World                     ← General
+Reveal Hidden Defs                                       ← General
+Revert mutant                                            ← Anomaly
+Rot 1 day                                                ← General
+Rotate                                                   ← General
+Rotate Prefab Spawn                                      ← Generation
+Run Map Generator                                        ← Map
+Save Translation Report                                  ← Translation
+Set Backstory                                            ← Pawns
+Set biome                                                ← General
+Set Body Type                                            ← Pawns
+Set Color                                                ← General
+Set enemy target for (selected)                          ← Pawns
+Set Faction                                              ← General
+Set Faction Rect                                         ← General
+Set Faction Relations                                    ← General
+Set Graphics Dirty                                       ← Pawns
+Set Head Type                                            ← Pawns
+Set Ideo                                                 ← Pawns
+Set ideo role...                                         ← Ideoligion
+Set landmark                                             ← General
+Set Monolith Level                                       ← Anomaly
+Set mutant...                                            ← Anomaly
+Set Passion                                              ← Pawns
+Set Quality                                              ← General
+Set royal title                                          ← General
+Set Skill                                                ← Pawns
+Set Source Precept                                       ← Ideoligion
+Set Stuff                                                ← General
+Set temp terrain (rect)                                  ← Map
+Set terrain (rect)                                       ← Map
+Set Xenotype                                             ← Pawns
+Simulate Sanguophage Meeting                             ← General
+SketchGen                                                ← Map
+Spawn Animal Group                                       ← Spawning
+Spawn apparel                                            ← Spawning
+Spawn Bossgroup                                          ← Spawning
+Spawn Child                                              ← Spawning
+Spawn cocoon infestation                                 ← Insect
+Spawn Complex                                            ← Map
+Spawn Faction Leader                                     ← Spawning
+Spawn fill area (rect)                                   ← Spawning
+Spawn Filth                                              ← Spawning
+Spawn Flare                                              ← Spawning
+Spawn Fleshmass Heart                                    ← Anomaly
+Spawn full thing stack                                   ← Spawning
+Spawn meal with specifics...                             ← Spawning
+Spawn Mech Cluster                                       ← Spawning
+Spawn Newborn                                            ← Spawning
+Spawn Pawn                                               ← Spawning
+Spawn Pawn With Lifestage                                ← Spawning
+Spawn Pit Burrow                                         ← Anomaly
+Spawn Pit Gate                                           ← Anomaly
+Spawn Player Prefab                                      ← Generation
+Spawn Prefab                                             ← Generation
+Spawn Prefab Blueprint                                   ← Generation
+Spawn Random Caravan                                     ← Spawning
+Spawn Random Faction Base                                ← Spawning
+Spawn Relic                                              ← Ideoligion
+Spawn Shuttle                                            ← Spawning
+Spawn Site                                               ← Spawning
+Spawn Site With Points                                   ← Spawning
+Spawn stack of 25                                        ← Spawning
+Spawn stack of 75                                        ← Spawning
+Spawn Statue Crafted By                                  ← Spawning
+Spawn thing                                              ← Spawning
+Spawn thing set                                          ← Spawning
+Spawn thing with style                                   ← Spawning
+Spawn thing with wipe mode                               ← Spawning
+Spawn unminified thing                                   ← Spawning
+Spawn Weapon                                             ← Spawning
+Spawn World Object                                       ← Spawning
+Spawn world pawn...                                      ← Spawning
+Start Gathering                                          ← Pawns
+Start Marriage Ceremony                                  ← Pawns
+Start Prison Break                                       ← Pawns
+Start slave rebellion (aggressive)                       ← Pawns
+Start slave rebellion (random)                           ← Pawns
+Stop mental state                                        ← Pawns
+Storywatcher tick 1 day                                  ← General
+Suppression +10%                                         ← Pawns
+Suppression -10%                                         ← Pawns
+Swim At                                                  ← General
+Tame Animal                                              ← Pawns
+Teleport                                                 ← General
+Tend Bleeding Hediffs                                    ← Pawns
+Test Deferred Spawner                                    ← Spawning
+Test Flood Unfog                                         ← General
+Test force downed x100                                   ← Autotests
+Test force kill x100                                     ← Autotests
+Test generate pawn x1000                                 ← Autotests
+Test music fadeout and silence                           ← Sound
+Test time-to-down                                        ← Autotests
+Toggle immunity                                          ← Pawns
+Toggle Job Logging                                       ← Pawns
+Toggle Max Move Speed                                    ← Pawns
+Toggle Movement                                          ← Pawns
+Toggle Path Debugging                                    ← Pathing
+Toggle Recruitable                                       ← Pawns
+Toggle Stance Logging                                    ← Pawns
+Train Animal                                             ← Pawns
+Transfer                                                 ← Map
+Trigger Date Ritual                                      ← Ideoligion
+Trigger effecter...                                      ← Spawning
+Trigger Maintained Effecter (12s)...                     ← Spawning
+Trigger Maintained Effecter (5s)...                      ← Spawning
+Trigger Maintained Effecter...                           ← Spawning
+Trigger transition...                                    ← Sound
+Try Develop Bound Relation                               ← Pawns
+Try Job Giver                                            ← Pawns
+Try Joy Giver                                            ← Pawns
+Try Learning Giver                                       ← Pawns
+Try make animal fish for food                            ← Pawns
+Try place direct full stack                              ← Spawning
+Try place direct stack of 25                             ← Spawning
+Try place direct thing                                   ← Spawning
+Try spawn stack of market value...                       ← Spawning
+Unfog (rect)                                             ← General
+Unload Unused Assets                                     ← General
+Unlock All Apparel                                       ← Pawns
+Unlock Rotation                                          ← Pawns
+Unpollute (rect)                                         ← Map
+Use Gen Step                                             ← Map
+Use Scatterer                                            ← Map
+View render tree                                         ← Pawns
+Visitor Gift                                             ← General
+Volcanic Debris                                          ← General
+Volcanic Debris Delayed                                  ← General
+Water Emerge Pawn                                        ← Spawning
+Wear apparel (selected)                                  ← Pawns
+Will +1                                                  ← Pawns
+Will -1                                                  ← Pawns
+World noise visualizer                                   ← General
+Wound debug export (non-humanlike)                       ← General
+Write Backstory Translation File                         ← Translation
+
+==============================================================================
+РАЗДЕЛ МЕНЮ — 18 строк
+==============================================================================
+
+Anomaly                                                  
+Autotests                                                
+General                                                  
+Generation                                               
+Ideoligion                                               
+Incidents                                                ← (без раздела)
+Insect                                                   
+Lighting                                                 
+Map                                                      
+Mechanoid                                                
+Mods                                                     
+Other                                                    
+Pathing                                                  
+Pawns                                                    ← (без раздела)
+Quests                                                   ← (без раздела)
+Sound                                                    
+Spawning                                                 
+Translation                                              
+
+==============================================================================
+ПУНКТ ВЫВОДА — 22 строк
+==============================================================================
+
+Bossgroups                                               ← (без раздела)
+Celestial Glow                                           ← (без раздела)
+Economy                                                  ← (без раздела)
+Factions                                                 ← (без раздела)
+Fall Color                                               ← (без раздела)
+Incidents                                                ← (без раздела)
+Map Pawns List                                           ← (без раздела)
+Pawns                                                    ← (без раздела)
+Pawns List All On Map                                    ← (без раздела)
+Performance                                              ← (без раздела)
+Plant Current Proportions                                ← (без раздела)
+Quests                                                   ← (без раздела)
+Royal Favor Availability                                 ← (без раздела)
+Sun Angle                                                ← (без раздела)
+System                                                   ← (без раздела)
+Temperature Data                                         ← (без раздела)
+Temperature Overlay Colors                               ← (без раздела)
+Text generation                                          ← (без раздела)
+UI                                                       ← (без раздела)
+Weather Chances                                          ← (без раздела)
+Wind Speeds                                              ← (без раздела)
+World pawns                                              ← (без раздела)
+
+==============================================================================
+УЗЕЛ МЕНЮ — 37 строк
+==============================================================================
+
+(log possibles)                                          ← MentalBreak
+(natural mood break)                                     ← MentalBreak
+*All                                                     ← GiveAbility
+*Current (times called:                                  ← SpawnBossgroup
+*Natural random                                          ← GenerateQuests
+*Random                                                  ← StartGathering
+*Remove all apparel                                      ← Options_Wear; WearApparel_ToSelected
+*Remove primary                                          ← EquipPrimary_ToSelected; Options_SetPrimary
+[random suitable]                                        ← SpawnAnimalGroup
+Actions                                                  ← InitActions
+Adulthood                                                ← SetBackstory
+Buffer                                                   ← SpawnPlayerPrefab; SpawnPrefab; SpawnPrefabBlueprint
+Childhood                                                ← SetBackstory
+Clear                                                    ← MakeRoof
+Clockwise                                                ← Rotate
+Counter clockwise                                        ← Rotate
+Crashing                                                 ← SpawnShuttle
+Direct spawn, autoplace                                  ← SpawnMechCluster
+Direct spawn, click place                                ← SpawnMechCluster
+Do incident w/ points                                    ← GetIncidentWithPointsDebugAction
+Endogene                                                 ← AddGene
+Heritable                                                ← AddGene
+In pods, autoplace                                       ← SpawnMechCluster
+In pods, click place                                     ← SpawnMechCluster
+Incoming                                                 ← SpawnShuttle
+Level                                                    ← GivePsylink
+No styleable things                                      ← TryPlaceNearThingWithStyle
+Open editor                                              ← ChangeCameraConfig
+Outputs                                                  ← InitActions
+Permanent                                                ← AddGameCondition
+Root                                                     ← TrySetupNodeGraph
+Settings                                                 ← InitActions
+Show more actions                                        ← InitActions
+Standard                                                 ← TryPlaceNearThingWithStyle
+Stationary                                               ← SpawnShuttle
+Wave                                                     ← SpawnBossgroup
+Xenogene                                                 ← AddGene
+
+==============================================================================
+ПУНКТ ПОДМЕНЮ — 21 строк
+==============================================================================
+
+(no body part)                                           ← Options_Damage_BodyParts; Options_Hediff_BodyParts
+*Clear all                                               ← Options_GiveToInventory
+*Remove all apparel                                      ← Options_Wear; WearApparel_ToSelected
+*Remove primary                                          ← EquipPrimary_ToSelected; Options_SetPrimary
+Add                                                      ← AddRemovePawnRelation
+All                                                      ← WoundDebug
+All sides                                                ← FlashSpectatorsCells
+Bad                                                      ← AddOpinionTalksAbout
+Best side only                                           ← FlashSpectatorsCells
+Faction                                                  ← NameSettlement
+Faction and faction base                                 ← NameSettlement
+Faction base                                             ← NameSettlement
+Good                                                     ← AddOpinionTalksAbout
+margin:                                                  ← DebugDrawBreachPath
+None                                                     ← SetIdeoRole
+Ranged impact hit                                        ← FlavorfulCombatTest
+Ranged impact hit incorrect                              ← FlavorfulCombatTest
+Ranged impact miss                                       ← FlavorfulCombatTest
+Remove                                                   ← AddRemovePawnRelation
+Tier                                                     ← GrowthMomentFlavor
+width:                                                   ← DebugDrawBreachPath
+
+==============================================================================
+НАДПИСЬ ОКНА — 7 строк
+==============================================================================
+
+<i>To add commands here, open the debug actions menu and click the pin icons.</i> ← DoWindowContents
+Celestial Debugger                                       ← DoWindowContents
+Infection Pathway Debugger                               ← DoWindowContents
+Music Debugger                                           ← DoWindowContents
+No valid humanlike selected                              ← DoWindowContents
+No vectors                                               ← DoWindowContents
+Trigger Transition                                       ← DoWindowContents
+
+==============================================================================
+ЗАГОЛОВОК ОКНА — 3 строк
+==============================================================================
+
+Debug inspector                                          ← EditWindow_DebugInspector
+Debug log                                                ← EditWindow_Log
+TweakValues                                              ← EditWindow_TweakValues

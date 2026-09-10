@@ -19,7 +19,6 @@ namespace RuMod
         /// <summary>Показывать всплывающие подсказки в Dev-меню при наведении курсора.</summary>
         public bool DevTooltipsEnabled = true;
         /// <summary>Включает сбор непереведенных ключей DevMode в JSON-словарь. Включить сбор ключей для перевода.</summary>
-        public bool DevModeTranslationLogging = false;
         /// <summary>Фон главного меню: "" = Выкл, "Default" = RimWorldRu → Случайно → Выкл, "Random" = Случайно, "UI/HeroArt/ИмяФайла" = конкретный фон.</summary>
         public string MenuBackgroundRimWorldRu = "Default";
         /// <summary>Разрешить перетаскивание окна переводчика на главном экране за верхнюю полоску. Позиция сохраняется между сессиями. По умолчанию выключено — окно в фиксированной позиции.</summary>
@@ -44,7 +43,6 @@ namespace RuMod
             KeepLudeonBackerNames = false;
             NoFactionLimitEnabled = true;
             DevTooltipsEnabled = true;
-            DevModeTranslationLogging = false;
             MenuBackgroundRimWorldRu = "Default";
             TranslationPanelDraggable = false;
             TranslationPanelDragOffsetX = 0f;
@@ -61,7 +59,6 @@ namespace RuMod
             Scribe_Values.Look(ref KeepLudeonBackerNames, "KeepLudeonBackerNames", false);
             Scribe_Values.Look(ref NoFactionLimitEnabled, "NoFactionLimitEnabled", true);
             Scribe_Values.Look(ref DevTooltipsEnabled, "DevTooltipsEnabled", true);
-            Scribe_Values.Look(ref DevModeTranslationLogging, "DevModeTranslationLogging", false);
             Scribe_Values.Look(ref MenuBackgroundRimWorldRu, "MenuBackgroundRimWorldRu", "Default");
             Scribe_Values.Look(ref TranslationPanelDraggable, "TranslationPanelDraggable", false);
             Scribe_Values.Look(ref TranslationPanelDragOffsetX, "TranslationPanelDragOffsetX", 0f);

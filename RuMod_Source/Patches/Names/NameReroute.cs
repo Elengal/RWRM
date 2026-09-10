@@ -89,6 +89,9 @@ namespace RuMod.Patches
             cache.Clear();
             cachedLang = null;
             NameReplacerHelper.ResetPairs();
+            IronicNick.ResetCache();
+            // Галочка могла измениться — привести имядателей ксенотипов в то же состояние.
+            XenotypeNamers.Apply();
         }
 
         // ==== словники ====
@@ -115,7 +118,8 @@ namespace RuMod.Patches
         /// Готовый список для выдачи: наши имена плюс кириллица из банка.
         /// null — своих словников нет, пусть работает ваниль.
         /// </summary>
-        public static List<string> ListFor(NameBank bank, PawnNameSlot slot, Gender gender)
+        public static List<string> ListFor(NameBank bank, PawnNameSlot slot, Gender gender,
+                                           string register = null)
         {
             var lang = LanguageDatabase.activeLanguage;
             if (lang == null || fNames == null) return null;
@@ -155,13 +159,21 @@ namespace RuMod.Patches
                 if (file == null) return null;
             }
 
+            // Кличка может браться из своего регистра: жёсткого, звериного, ласкового.
+            // Регистр — часть ключа, иначе первый же выбор осел бы в кэше за всех.
+            string wanted = file;
+            if (slot == PawnNameSlot.Nick && !string.IsNullOrEmpty(register))
+                wanted = file + "_" + register;
+
             // В ключе нужен и bankCell: кличка с полом Male и кличка без пола при мужском
             // имени дают одинаковый effective, но чужие клички берут из разных ячеек банка.
-            string key = slot + "|" + effective + "|" + bankCell + "|" + bank.GetHashCode();
+            string key = slot + "|" + effective + "|" + bankCell + "|" + wanted
+                       + "|" + bank.GetHashCode();
             List<string> ready;
             if (cache.TryGetValue(key, out ready)) return ready;
 
-            var ours = FromLang(lang, file);
+            // Нет файла регистра — не беда, берём общий список.
+            var ours = FromLang(lang, wanted) ?? FromLang(lang, file);
             if (ours == null) { cache[key] = null; return null; }
 
             var merged = new List<string>(ours);
@@ -270,7 +282,10 @@ namespace RuMod.Patches
                 if (slot == PawnNameSlot.First)
                     NameReroute.RememberFirstGender(gender);
 
-                var list = NameReroute.ListFor(__instance, slot, gender);
+                // Клички берём по нраву пешки, если он известен.
+                string register = (slot == PawnNameSlot.Nick) ? NickRegisters.Choose() : null;
+
+                var list = NameReroute.ListFor(__instance, slot, gender, register);
                 if (list == null || list.Count == 0) return true;
 
                 __result = NameReroute.Pick(list, checkIfAlreadyUsed);
