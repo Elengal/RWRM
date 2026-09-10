@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <LanguageData>
 
   <!-- Main menu -->
@@ -81,6 +81,8 @@
   <RuMod_TranslationHowToContribute>По любым вопросам обращайтесь на страничку мода в Steam.</RuMod_TranslationHowToContribute>
   <!-- RuMod: кнопка «Страница мода в Steam» в окне перевода -->
   <RuMod_ModSteamPage>Мод в Steam</RuMod_ModSteamPage>
+  <RuMod_ModGitHubPage>Мод на GitHub</RuMod_ModGitHubPage>
+  <RuMod_ModGitHubTooltip>Исходники перевода и мода. Там же свежие правки — раньше, чем они доедут до Steam.</RuMod_ModGitHubTooltip>
   <RuMod_ElengalSteamTooltip>Профиль в Steam</RuMod_ElengalSteamTooltip>
 
   <!-- Main menu dev build -->

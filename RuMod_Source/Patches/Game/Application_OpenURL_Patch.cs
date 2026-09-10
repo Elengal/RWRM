@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using HarmonyLib;
 using RimWorld;
@@ -17,6 +17,7 @@ namespace RuMod.Patches
     {
         private const string SteamWorkshopUrl = "https://steamcommunity.com/sharedfiles/filedetails/?id=3615283148";
         private const string ElengalSteamProfileUrl = "https://steamcommunity.com/id/Elengal/";
+        private const string GitHubUrl = "https://github.com/Elengal/RWRM";
         /// <summary>Прямоугольник панели переводов в главном меню (8, 100, 300, 400) — для прозрачности и пропуска стандартного фона.</summary>
         internal static readonly Rect TranslationPanelRect = new Rect(8f, 100f, 300f, 400f);
         /// <summary>Базовый сдвиг панели вправо (пикселей). Стандартная позиция = эта константа + сохранённый TranslationPanelDragOffsetX.</summary>
@@ -87,11 +88,13 @@ namespace RuMod.Patches
             float hThanks = Text.CalcHeight("RuMod_TranslationThanks".Translate(), contentWidth);
             float hContribute = Text.CalcHeight("RuMod_TranslationHowToContribute".Translate(), contentWidth);
             float step = BtnH + BtnGapSmall;
-            // Высота по содержимому: отступы + тексты + кнопки + зазор после «Мод в Steam» + 3 кнопки
+            // Высота по содержимому: отступы + тексты + кнопки + зазор после «Мод на GitHub» + 3 кнопки.
+            // Кнопок наверху теперь три: Elengal, «Мод в Steam», «Мод на GitHub».
             float totalHeight = Padding * 2f
                 + hThanks + TextGap
                 + BtnH + TextGap
                 + hContribute + TextGap
+                + BtnH + BtnGapSmall
                 + BtnH + TextGap + GapAfterModBtn
                 + step * 3f;
 
@@ -172,6 +175,13 @@ namespace RuMod.Patches
             Rect rectMod = new Rect(5f, y, contentWidth, BtnH);
             if (Widgets.ButtonText(rectMod, "RuMod_ModSteamPage".Translate()))
                 Application.OpenURL(SteamWorkshopUrl);
+            y += BtnH + BtnGapSmall;
+
+            // Кнопка «Мод на GitHub» — там исходники и свежие правки до выхода в Steam
+            Rect rectGit = new Rect(5f, y, contentWidth, BtnH);
+            TooltipHandler.TipRegion(rectGit, "RuMod_ModGitHubTooltip".Translate());
+            if (Widgets.ButtonText(rectGit, "RuMod_ModGitHubPage".Translate()))
+                Application.OpenURL(GitHubUrl);
             y += BtnH + TextGap + GapAfterModBtn;
 
             // Три кнопки: между ними 4 px
