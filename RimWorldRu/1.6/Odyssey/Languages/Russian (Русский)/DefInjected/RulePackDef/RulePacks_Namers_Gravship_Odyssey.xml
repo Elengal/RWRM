@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <LanguageData>
   
   <!-- EN:
@@ -134,9 +134,9 @@
     <li>narrative_name_gen->[AdjectiveNatural_neu_gen] [thing_badass_neu_gen]</li>
     <li>narrative_name->[AdjectiveLarge] [thing_badass_mas]</li>
     <li>narrative_name->[AdjectiveLarge_fem] [thing_badass_fem]</li>
-    <li>narrative_name->[Direction] [thing_badass_mas]</li>
-    <li>narrative_name->[Direction] [thing_badass_fem]</li>
-    <li>narrative_name->[Direction] [thing_badass_neu]</li>
+    <li>narrative_name->[Direction_masc] [thing_badass_mas]</li>
+    <li>narrative_name->[Direction_fem] [thing_badass_fem]</li>
+    <li>narrative_name->[Direction_neutral] [thing_badass_neu]</li>
     <li>narrative_name->[thing_badass_mas]</li>
     <li>narrative_name->[thing_badass_fem]</li>
     <li>narrative_name->[thing_badass_neu]</li>

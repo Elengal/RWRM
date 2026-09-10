@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <LanguageData>
   
   <!-- EN:
@@ -332,8 +332,10 @@
     <li>enemyNamePluralGen->диких механоидов</li>
     <li>enemyNamePluralGen->существ с ужасными пси-способностями</li>
     <li>enemyNameSingular->[AdjectiveBadass] [Enemy]</li>
-    <li>enemyNameSingular->[AdjectiveBadass] [AnimalBadass]</li>
-    <li>enemyNameSingular->[AnimalBadass]</li>
+    <li>enemyNameSingular->[AdjectiveBadass] [AnimalBadass_masc]</li>
+    <li>enemyNameSingular->[AdjectiveBadass_fem] [AnimalBadass_fem]</li>
+    <li>enemyNameSingular->[AnimalBadass_masc]</li>
+    <li>enemyNameSingular->[AnimalBadass_fem]</li>
     <li>enemyNameSingular->[Mechanoid]</li>
     <li>enemyNameSingular->[AdjectiveBadass] мусорщик</li>
     <li>enemyNameSingular->чужак</li>
