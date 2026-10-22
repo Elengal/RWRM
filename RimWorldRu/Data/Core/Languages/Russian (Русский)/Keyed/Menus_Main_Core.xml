@@ -344,6 +344,20 @@
   <Incompatible>Несовместимо</Incompatible>
   <!-- EN: Tag as translation -->
   <TagAsTranslation>Отметить как перевод</TagAsTranslation>
+  <!-- EN: Build asset pack -->
+  <UploadBuildAssetPack>Собрать пакет ресурсов</UploadBuildAssetPack>
+  <!-- EN: Packs textures and sounds into an asset pack in each load folder before uploading, to improve download and load times. Untick this to upload the mod folder as it is. -->
+  <UploadBuildAssetPackTip>Перед загрузкой упаковывает текстуры и звуки в пакет ресурсов в каждой папке загрузки — так мод быстрее скачивается и загружается. Снимите галочку, чтобы загрузить папку мода как есть.</UploadBuildAssetPackTip>
+  <!-- EN: Don't upload source textures -->
+  <UploadSkipSourceTextures>Не загружать исходные текстуры</UploadSkipSourceTextures>
+  <!-- EN: Skips uploading the original image and sound files that were included in asset packs. Leave this unticked if you need compatibility with RimWorld 1.6 or earlier. -->
+  <UploadSkipSourceTexturesTip>Не загружает исходные файлы изображений и звуков, вошедшие в пакеты ресурсов. Оставьте галочку снятой, если нужна совместимость с RimWorld 1.6 и более ранними версиями.</UploadSkipSourceTexturesTip>
+  <!-- EN: Baking asset packs -->
+  <BakingModAssetPacks>Сборка пакетов ресурсов</BakingModAssetPacks>
+  <!-- EN: Baking asset packs for {0} -->
+  <BakingModAssetPacksFor>Сборка пакетов ресурсов для {0}</BakingModAssetPacksFor>
+  <!-- EN: Baking the asset packs for {0} failed, the mod was not uploaded: -->
+  <ModAssetPackBakeFailed>Не удалось собрать пакеты ресурсов для {0}, мод не загружен:</ModAssetPackBakeFailed>
   <!-- EN: Too many (max {0}):  -->
   <TooMany>Слишком много (максимум {0}): </TooMany>
   <!-- EN: Can be updated on Workshop, since you are the author. -->

@@ -2,13 +2,24 @@
 <loadFolders>
   <v1.6>
     <li>1.6</li>
-    <li IfModActive="Ludeon.RimWorld">1.6/Core</li>
-    <li IfModActive="Ludeon.RimWorld.Royalty">1.6/Royalty</li>
-    <li IfModActive="Ludeon.RimWorld.Ideology">1.6/Ideology</li>
-    <li IfModActive="Ludeon.RimWorld.Biotech">1.6/Biotech</li>
-    <li IfModActive="Ludeon.RimWorld.Anomaly">1.6/Anomaly</li>
-    <li IfModActive="Ludeon.RimWorld.Odyssey">1.6/Odyssey</li>
-    <li>1.6/DevMod</li>
-    <li IfModActive="Jaxe.RimHUD">1.6/RimHUD</li>
+    <li IfModActive="Ludeon.RimWorld">Data/Core</li>
+    <li IfModActive="Ludeon.RimWorld.Royalty">Data/Royalty</li>
+    <li IfModActive="Ludeon.RimWorld.Ideology">Data/Ideology</li>
+    <li IfModActive="Ludeon.RimWorld.Biotech">Data/Biotech</li>
+    <li IfModActive="Ludeon.RimWorld.Anomaly">Data/Anomaly</li>
+    <li IfModActive="Ludeon.RimWorld.Odyssey">Data/Odyssey</li>
+    <li>Data/DevMod</li>
+    <li IfModActive="Jaxe.RimHUD">Data/RimHUD</li>
   </v1.6>
+  <v1.7>
+    <li>1.7</li>
+    <li IfModActive="Ludeon.RimWorld">Data/Core</li>
+    <li IfModActive="Ludeon.RimWorld.Royalty">Data/Royalty</li>
+    <li IfModActive="Ludeon.RimWorld.Ideology">Data/Ideology</li>
+    <li IfModActive="Ludeon.RimWorld.Biotech">Data/Biotech</li>
+    <li IfModActive="Ludeon.RimWorld.Anomaly">Data/Anomaly</li>
+    <li IfModActive="Ludeon.RimWorld.Odyssey">Data/Odyssey</li>
+    <li>Data/DevMod</li>
+    <li IfModActive="Jaxe.RimHUD">Data/RimHUD</li>
+  </v1.7>
 </loadFolders>
