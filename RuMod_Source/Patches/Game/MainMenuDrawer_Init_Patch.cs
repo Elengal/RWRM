@@ -10,7 +10,8 @@ using Verse;
 namespace RuMod.Patches
 {
     /// <summary>
-    /// По настройке RuMod подменяем фон главного меню на текстуры из 1.6/Textures/UI/HeroArt/.
+    /// По настройке RuMod подменяем фон главного меню на текстуры Textures/UI/HeroArt/
+    /// из любой папки загрузки мода (сейчас Data/Core/Textures/UI/HeroArt/, см. LoadFolders.xml).
     /// В настройках показывается имя файла; при загрузке если файл не найден — подставляется Случайно.
     /// </summary>
     [HarmonyPatch(typeof(MainMenuDrawer), nameof(MainMenuDrawer.Init))]

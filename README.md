@@ -6,16 +6,18 @@
 
 | DLC | Файлов перевода |
 |-----|-----------------|
-| Core | 722 |
+| Core | 735 |
 | Ideology | 297 |
-| Biotech | 225 |
+| Biotech | 242 |
 | Odyssey | 201 |
 | Anomaly | 181 |
 | Royalty | 154 |
-| DevMode | 36 |
+| DevMode | 59 |
 | RimHUD (совместимость) | 7 |
 
-**Итого: 1823 файла перевода.** Перевод нужных DLC подхватывается автоматически — достаточно, чтобы DLC был активирован в игре.
+**Итого: 1876 файлов перевода.** Перевод нужных DLC подхватывается автоматически — достаточно, чтобы DLC был активирован в игре.
+
+Мод работает на **RimWorld 1.6** и **RimWorld 1.7**. Перевод у обеих версий один и тот же, своя у каждой только сборка RuMod.
 
 ## Возможности RuMod
 
@@ -116,20 +118,23 @@ RuMod — это встроенный C#-мод (Harmony), который идё
 ```
 RimWorldRu/
   1.6/
-    Core/           — перевод базовой игры
+    Assemblies/     — RuMod.dll для 1.6 (.NET Framework 4.7.2) + Harmony 2.4.3
+  1.7/
+    Assemblies/     — RuMod.dll для 1.7 (.NET 10, движок Waylith) + Harmony 3.0.0
+  Data/             — общее для обеих версий игры
+    Core/           — перевод базовой игры; Textures/UI/HeroArt — фоны меню
     Royalty/        — перевод Royalty DLC
     Ideology/       — перевод Ideology DLC
     Biotech/        — перевод Biotech DLC, имядатели рас
     Anomaly/        — перевод Anomaly DLC
     Odyssey/        — перевод Odyssey DLC
-    DevMod/         — перевод DevMode
+    DevMod/         — перевод DevMode, словари в DevModeJson/
     RimHUD/         — совместимость с RimHUD
-    Assemblies/     — скомпилированный RuMod.dll
-    Textures/       — текстуры (фоны меню и пр.)
   About/            — метаданные мода (About.xml, иконка)
-  LoadFolders.xml   — автозагрузка по DLC
+  LoadFolders.xml   — что грузить для какой версии и каких DLC
 
-RuMod_Source/       — исходный код RuMod (C# / Harmony)
+RuMod_Source/       — исходный код RuMod (C# / Harmony), один на обе версии
+  RuMod.csproj      — собирает RuMod.dll для 1.6 и 1.7
   Main.cs           — точка входа мода
   ModSettings.cs    — все настройки
   Patches/
@@ -141,9 +146,48 @@ RuMod_Source/       — исходный код RuMod (C# / Harmony)
   Utils/            — утилиты (логгирование, переводчик)
 ```
 
+### Как игра выбирает, что грузить
+
+`LoadFolders.xml` описывает каждую версию отдельно (`<v1.6>` и `<v1.7>`), но различаются они только первой строкой — папкой со своей сборкой RuMod:
+
+```xml
+<v1.7>
+  <li>1.7</li>                                                <!-- RuMod и Harmony для 1.7 -->
+  <li IfModActive="Ludeon.RimWorld">Data/Core</li>            <!-- перевод — общий -->
+  <li IfModActive="Ludeon.RimWorld.Royalty">Data/Royalty</li> <!-- только если DLC включён -->
+  ...
+</v1.7>
+```
+
+RimWorld 1.6 берёт `1.6/` и `Data/…`, RimWorld 1.7 берёт `1.7/` и те же `Data/…`. Перевод не дублируется: правка в `Data/` сразу попадает в обе версии. Чужая сборка в игру не попадёт: 1.6 не видит папку `1.7/`, и наоборот.
+
+## Сборка RuMod
+
+Нужен [.NET SDK](https://dotnet.microsoft.com/download) 10 и установленная игра.
+
+```
+cd RuMod_Source
+dotnet build -c Release
+```
+
+`RuMod.csproj` сам смотрит, какая игра установлена, и собирает подходящие версии:
+
+| Версия | Платформа | Ссылки на игру | Результат |
+|---|---|---|---|
+| 1.6 | `net472` | `RimWorldWin64_Data\Managed\` (Assembly-CSharp, UnityEngine.*) | `RimWorldRu/1.6/Assemblies/RuMod.dll` |
+| 1.7 | `net10.0` | корень игры (Assembly-CSharp, UnityStubs) | `RimWorldRu/1.7/Assemblies/RuMod.dll` |
+
+- По умолчанию игра ищется в Steam: `C:\Program Files (x86)\Steam\steamapps\common\RimWorld`.
+- Steam держит одну ветку за раз (public — 1.6, unstable — 1.7). Поэтому собирается та версия, что сейчас стоит, а вторая — после переключения ветки.
+- Только одна версия: `dotnet build -c Release -f net472` (1.6) или `-f net10.0` (1.7).
+- Игра в другой папке: `-p:RimWorldDir="D:\Games\RimWorld"`.
+- Собираем только против официальной Steam-сборки: мод уезжает стимовским игрокам, и ссылаться надо на их версию игры.
+- Harmony и Newtonsoft.Json берутся из папки `Assemblies` своей версии, отдельно ставить мод Harmony не нужно.
+
 ## Совместимость
 
 - **RimWorld 1.6** — основная поддерживаемая версия
+- **RimWorld 1.7** (ветка unstable, движок Waylith) — поддерживается; на 1.7 мод везёт свой Harmony 3.0.0 под .NET 10
 - **RimHUD** — автоматическая поддержка склонения возраста
 - Другие моды — RuMod корректно обрабатывает конфликты и автоматически отключает проблемные патчи
 

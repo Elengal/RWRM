@@ -37,23 +37,28 @@ namespace RuMod.Utils
             {
                 if (_dictionaryDir != null) return _dictionaryDir;
 
-                string modRoot = RuModClass.Instance.Content.RootDir;
-                // Внутри мода храним готовые JSON в отдельной папке DevModeJson,
-                // чтобы не путать её с любой другой "DevMode" из перевода.
-                _dictionaryDir = Path.Combine(modRoot, "1.6", "DevMod", "Languages", "Russian (Русский)", "DevModeJson");
-
-                try
+                // Готовые JSON лежат в папке DevModeJson внутри языка DevMod-перевода.
+                // Где именно — решает LoadFolders.xml, поэтому ищем по папкам загрузки
+                // (Data/DevMod, 1.6/DevMod, …), а не по зашитому «1.6/…».
+                // Папку НЕ создаём: пустая папка в моде никому не нужна.
+                string rel = Path.Combine("Languages", "Russian (Русский)", "DevModeJson");
+                var content = RuModClass.Instance.Content;
+                var folders = content.foldersToLoadDescendingOrder;
+                if (folders != null)
                 {
-                    if (!Directory.Exists(_dictionaryDir))
+                    foreach (string folder in folders)
                     {
-                        Directory.CreateDirectory(_dictionaryDir);
+                        string dir = Path.Combine(folder, rel);
+                        if (Directory.Exists(dir))
+                        {
+                            _dictionaryDir = dir;
+                            return _dictionaryDir;
+                        }
                     }
                 }
-                catch (Exception ex)
-                {
-                    RuModLog.DevModeModDirCreateFailed(_dictionaryDir, ex);
-                }
 
+                // Запасной путь — старая раскладка мода (1.6/DevMod).
+                _dictionaryDir = Path.Combine(content.RootDir, "1.6", "DevMod", rel);
                 return _dictionaryDir;
             }
         }

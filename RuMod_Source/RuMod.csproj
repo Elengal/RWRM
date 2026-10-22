@@ -1,28 +1,67 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
+  <!--
+    Один исходник — две сборки RuMod:
+      RimWorld 1.6 (Unity, .NET Framework 4.7.2)  -> RimWorldRu/1.6/Assemblies/  (Harmony 2.4.3)
+      RimWorld 1.7 (Waylith, .NET 10)              -> RimWorldRu/1.7/Assemblies/  (Harmony 3.0.0)
+
+    Собираем против Steam-версии игры, а не против пиратских копий для тестов:
+    мод уезжает именно к стимовским игрокам — ссылаться надо на их сборку.
+    Steam держит одну ветку за раз (public = 1.6, unstable = 1.7), поэтому
+    собирается та версия, которая сейчас стоит. Вторую — переключив ветку.
+
+    Обычная сборка:          dotnet build -c Release
+    Только одна версия:      dotnet build -c Release -f net472      (1.6)
+                             dotnet build -c Release -f net10.0     (1.7)
+    Игра лежит не в Steam:   -p:RimWorld16Managed=путь\RimWorldWin64_Data\Managed
+                             -p:RimWorld17Dir=путь\к\папке\игры
+  -->
+
   <PropertyGroup>
-    <TargetFramework>net472</TargetFramework>
     <AssemblyName>RuMod</AssemblyName>
     <LangVersion>latest</LangVersion>
+    <Nullable>disable</Nullable>
+    <ImplicitUsings>disable</ImplicitUsings>
     <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <GenerateDependencyFile>false</GenerateDependencyFile>
 
-    <!--
-      Собираем против Steam-версии игры, а не против локальной копии для тестов.
-      Steam сейчас 1.6.4871 rev590, тестовая копия rev591: собранное под младший
-      ревизион работает на старшем, обратное не гарантировано. И мод уезжает
-      именно к стимовским игрокам — ссылаться надо на их сборку.
-    -->
-    <RimWorldManaged>C:\Program Files (x86)\Steam\steamapps\common\RimWorld\RimWorldWin64_Data\Managed</RimWorldManaged>
+    <RimWorldDir Condition="'$(RimWorldDir)' == ''">C:\Program Files (x86)\Steam\steamapps\common\RimWorld</RimWorldDir>
+    <!-- 1.6: игровые DLL в RimWorldWin64_Data\Managed -->
+    <RimWorld16Managed Condition="'$(RimWorld16Managed)' == ''">$(RimWorldDir)\RimWorldWin64_Data\Managed</RimWorld16Managed>
+    <!-- 1.7: игровые DLL прямо в корне игры (Assembly-CSharp, UnityStubs) -->
+    <RimWorld17Dir Condition="'$(RimWorld17Dir)' == ''">$(RimWorldDir)</RimWorld17Dir>
 
-    <!-- Результат кладём в мод внутри репозитория: RuMod.dll под контролем гита. -->
-    <ModAssemblies>$(MSBuildProjectDirectory)\..\RimWorldRu\1.6\Assemblies\</ModAssemblies>
-    <OutputPath>$(ModAssemblies)</OutputPath>
+    <!-- Собираем те версии, чья игра найдена -->
+    <_Has16 Condition="Exists('$(RimWorld16Managed)\Assembly-CSharp.dll')">true</_Has16>
+    <_Has17 Condition="Exists('$(RimWorld17Dir)\UnityStubs.dll')">true</_Has17>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(TargetFrameworks)' == ''">
+    <TargetFrameworks Condition="'$(_Has16)' == 'true' And '$(_Has17)' == 'true'">net472;net10.0</TargetFrameworks>
+    <TargetFrameworks Condition="'$(_Has16)' == 'true' And '$(_Has17)' != 'true'">net472</TargetFrameworks>
+    <TargetFrameworks Condition="'$(_Has16)' != 'true' And '$(_Has17)' == 'true'">net10.0</TargetFrameworks>
+  </PropertyGroup>
 
+  <!-- ===== RimWorld 1.6 ===== -->
+  <PropertyGroup Condition="'$(TargetFramework)' == 'net472'">
+    <GameVersion>1.6</GameVersion>
     <!-- Игровая копия для проверки. Если её нет, сборка всё равно пройдёт. -->
     <TestInstall>D:\Rimworld MOD\Rimworld Odyssey v1.6.4871a\Mods\RimWorldRu\1.6\Assemblies\</TestInstall>
   </PropertyGroup>
 
-  <ItemGroup>
+  <!-- ===== RimWorld 1.7 ===== -->
+  <PropertyGroup Condition="'$(TargetFramework)' == 'net10.0'">
+    <GameVersion>1.7</GameVersion>
+    <TestInstall>$(RimWorldDir)\Mods\RimWorldRu\1.7\Assemblies\</TestInstall>
+  </PropertyGroup>
+
+  <!-- Результат кладём в мод внутри репозитория: RuMod.dll под контролем гита. -->
+  <PropertyGroup Condition="'$(GameVersion)' != ''">
+    <ModAssemblies>$(MSBuildProjectDirectory)\..\RimWorldRu\$(GameVersion)\Assemblies\</ModAssemblies>
+    <OutputPath>$(ModAssemblies)</OutputPath>
+  </PropertyGroup>
+
+  <!-- Harmony и Newtonsoft — свои у каждой версии, из её же папки Assemblies -->
+  <ItemGroup Condition="'$(GameVersion)' != ''">
     <Reference Include="0Harmony">
       <HintPath>$(ModAssemblies)0Harmony.dll</HintPath>
       <Private>False</Private>
@@ -31,30 +70,50 @@
       <HintPath>$(ModAssemblies)Newtonsoft.Json.dll</HintPath>
       <Private>False</Private>
     </Reference>
+  </ItemGroup>
+
+  <ItemGroup Condition="'$(TargetFramework)' == 'net472'">
     <Reference Include="Assembly-CSharp">
-      <HintPath>$(RimWorldManaged)\Assembly-CSharp.dll</HintPath>
+      <HintPath>$(RimWorld16Managed)\Assembly-CSharp.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="UnityEngine.CoreModule">
-      <HintPath>$(RimWorldManaged)\UnityEngine.CoreModule.dll</HintPath>
+      <HintPath>$(RimWorld16Managed)\UnityEngine.CoreModule.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="UnityEngine.TextRenderingModule">
-      <HintPath>$(RimWorldManaged)\UnityEngine.TextRenderingModule.dll</HintPath>
+      <HintPath>$(RimWorld16Managed)\UnityEngine.TextRenderingModule.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="UnityEngine.IMGUIModule">
-      <HintPath>$(RimWorldManaged)\UnityEngine.IMGUIModule.dll</HintPath>
+      <HintPath>$(RimWorld16Managed)\UnityEngine.IMGUIModule.dll</HintPath>
       <Private>False</Private>
     </Reference>
   </ItemGroup>
+
+  <!-- В 1.7 Unity нет: UnityEngine.* — это заглушки движка Waylith в UnityStubs.dll -->
+  <ItemGroup Condition="'$(TargetFramework)' == 'net10.0'">
+    <Reference Include="Assembly-CSharp">
+      <HintPath>$(RimWorld17Dir)\Assembly-CSharp.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityStubs">
+      <HintPath>$(RimWorld17Dir)\UnityStubs.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+
+  <!-- Ни одной игры не нашли — говорим прямо, а не падаем на сотне ошибок компиляции -->
+  <Target Name="RuModNoGameFound" BeforeTargets="Restore;Build" Condition="'$(TargetFrameworks)' == '' And '$(TargetFramework)' == ''">
+    <Error Text="Не найдена ни RimWorld 1.6 ($(RimWorld16Managed)\Assembly-CSharp.dll), ни 1.7 ($(RimWorld17Dir)\UnityStubs.dll). Укажите путь: -p:RimWorldDir=..." />
+  </Target>
 
   <!--
     После сборки кладём копию в игру для проверки, чтобы репозиторий и то,
     что запускается, не разъезжались. Игра запущена и держит файл — просто
     предупредим, сборку из-за этого не роняем.
   -->
-  <Target Name="CopyToTestInstall" AfterTargets="Build" Condition="Exists('$(TestInstall)')">
+  <Target Name="CopyToTestInstall" AfterTargets="Build" Condition="'$(TargetFramework)' != '' And Exists('$(TestInstall)')">
     <Copy SourceFiles="$(OutputPath)RuMod.dll;$(OutputPath)RuMod.pdb"
           DestinationFolder="$(TestInstall)"
           ContinueOnError="WarnAndContinue" />
