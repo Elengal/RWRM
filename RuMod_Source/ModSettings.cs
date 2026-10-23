@@ -27,11 +27,15 @@ namespace RuMod
         public float TranslationPanelDragOffsetX;
         /// <summary>Смещение окна переводчика по Y (после перетаскивания), сохраняется.</summary>
         public float TranslationPanelDragOffsetY;
-        /// <summary>Непрозрачность фона панели переводчика в главном меню (0.1–0.5). По умолчанию 0.25.</summary>
+        /// <summary>Показывать панель переводчика в главном меню (и нашу, и ванильную для любого языка). По умолчанию да.</summary>
+        public bool ShowTranslationPanel = true;
+        /// <summary>Показывать панель DLC (иконки дополнений внизу слева) в главном меню. По умолчанию да.</summary>
+        public bool ShowDlcPanel = true;
+        /// <summary>Непрозрачность фона панели переводчика в главном меню (0 = нет подложки, 1 = как обычное окно). По умолчанию 0.25.</summary>
         public float TranslationPanelAlpha = 0.25f;
-        /// <summary>Непрозрачность фона панели DLC в главном меню (0.1–0.5). По умолчанию 0.25.</summary>
+        /// <summary>Непрозрачность фона панели DLC в главном меню (0–1). По умолчанию 0.25.</summary>
         public float DlcPanelAlpha = 0.25f;
-        /// <summary>Непрозрачность фона окна Debug log (0.1–0.5). По умолчанию 0.25.</summary>
+        /// <summary>Непрозрачность фона окна Debug log (0–1). По умолчанию 0.25.</summary>
         public float DebugLogAlpha = 0.25f;
         /// <summary>Включены ли визуальные правки окна Debug log (фон, ширина и т.п.).</summary>
         public bool DebugLogTweaksEnabled = true;
@@ -47,6 +51,8 @@ namespace RuMod
             TranslationPanelDraggable = false;
             TranslationPanelDragOffsetX = 0f;
             TranslationPanelDragOffsetY = 0f;
+            ShowTranslationPanel = true;
+            ShowDlcPanel = true;
             TranslationPanelAlpha = 0.25f;
             DlcPanelAlpha = 0.25f;
             DebugLogAlpha = 0.25f;
@@ -63,6 +69,8 @@ namespace RuMod
             Scribe_Values.Look(ref TranslationPanelDraggable, "TranslationPanelDraggable", false);
             Scribe_Values.Look(ref TranslationPanelDragOffsetX, "TranslationPanelDragOffsetX", 0f);
             Scribe_Values.Look(ref TranslationPanelDragOffsetY, "TranslationPanelDragOffsetY", 0f);
+            Scribe_Values.Look(ref ShowTranslationPanel, "ShowTranslationPanel", true);
+            Scribe_Values.Look(ref ShowDlcPanel, "ShowDlcPanel", true);
             Scribe_Values.Look(ref TranslationPanelAlpha, "TranslationPanelAlpha", 0.25f);
             Scribe_Values.Look(ref DlcPanelAlpha, "DlcPanelAlpha", 0.25f);
             Scribe_Values.Look(ref DebugLogAlpha, "DebugLogAlpha", 0.25f);

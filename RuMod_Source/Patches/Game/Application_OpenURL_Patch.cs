@@ -8,7 +8,7 @@ using Verse;
 namespace RuMod.Patches
 {
     /// <summary>
-    /// Левая панель «RimWorld переводчика»: фон 75% прозрачный; кредиты и надписи до/после ника всегда из перевода RimWorldRu (Elengal); кнопки Elengal и «Мод в Steam».
+    /// Левая панель «RimWorld переводчика»: фон с настраиваемой непрозрачностью (0–100%), панель можно скрыть целиком; кредиты и надписи до/после ника всегда из перевода RimWorldRu (Elengal); кнопки Elengal и «Мод в Steam».
     /// </summary>
     [HarmonyPatch(typeof(MainMenuDrawer))]
     [HarmonyPatch("DoTranslationInfoRect")]
@@ -53,6 +53,11 @@ namespace RuMod.Patches
             if (Math.Abs(outRect.x - TranslationPanelRect.x) > 1f || Math.Abs(outRect.y - TranslationPanelRect.y) > 1f ||
                 Math.Abs(outRect.width - TranslationPanelRect.width) > 1f || Math.Abs(outRect.height - TranslationPanelRect.height) > 1f)
                 return true;
+
+            // Галочка «Показывать панель переводчика» снята — не рисуем ни нашу, ни ванильную (для любого языка).
+            var settings = RuMod.RuModClass.Instance?.GetSettings<RuMod.RuModSettings>();
+            if (settings != null && !settings.ShowTranslationPanel)
+                return false;
 
             var active = LanguageDatabase.activeLanguage;
             if (active != null && (active.folderName == "Russian (Русский)" || active.folderName == "Russian"))
@@ -146,9 +151,12 @@ namespace RuMod.Patches
                 _isDragging = false;
 
             float alpha = settings?.TranslationPanelAlpha ?? DefaultTransparencyAlpha;
-            alpha = Mathf.Clamp(alpha, 0.1f, 0.5f);
-            var factor = new Color(1f, 1f, 1f, alpha);
-            Widgets.DrawWindowBackground(shifted, factor);
+            alpha = Mathf.Clamp01(alpha);
+            if (alpha > 0f)
+            {
+                var factor = new Color(1f, 1f, 1f, alpha);
+                Widgets.DrawWindowBackground(shifted, factor);
+            }
 
             Rect rect = shifted.ContractedBy(Padding);
             Widgets.BeginGroup(rect);

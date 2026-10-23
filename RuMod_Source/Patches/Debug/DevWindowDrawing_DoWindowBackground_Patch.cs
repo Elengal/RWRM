@@ -20,7 +20,7 @@ public static class DevWindowDrawing_DoWindowBackground_Patch
                 return true;
 
             float alpha = settings?.DebugLogAlpha ?? 0.25f;
-            alpha = Mathf.Clamp(alpha, 0.1f, 0.5f);
+            alpha = Mathf.Clamp01(alpha);
 
             var baseColor = DevGUI.WindowBGFillColor;
             var c = new Color(baseColor.r, baseColor.g, baseColor.b, alpha);

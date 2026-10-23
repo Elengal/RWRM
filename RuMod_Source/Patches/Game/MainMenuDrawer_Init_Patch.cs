@@ -13,15 +13,30 @@ namespace RuMod.Patches
     /// По настройке RuMod подменяем фон главного меню на текстуры Textures/UI/HeroArt/
     /// из любой папки загрузки мода (сейчас Data/Core/Textures/UI/HeroArt/, см. LoadFolders.xml).
     /// В настройках показывается имя файла; при загрузке если файл не найден — подставляется Случайно.
+    ///
+    /// Чужой фон не затираем: «Выкл» значит «не трогаем фон вообще» (если наш фон уже стоял —
+    /// возвращаем ту картинку, что была до нас). Если включён Vanilla Backgrounds Expanded,
+    /// режим «По умолчанию» уступает ему; явно выбранный фон RimWorldRu — ставим (постфикс последним).
+    /// Фон применяется только при входе в главное меню и при выборе в настройках, а не при каждом
+    /// сохранении настроек (раньше перетаскивание панели сбрасывало фон VBE на фон игры).
     /// </summary>
     [HarmonyPatch(typeof(MainMenuDrawer), nameof(MainMenuDrawer.Init))]
+    [StaticConstructorOnStartup] // поля Texture2D: игра требует атрибут, иначе WARN при загрузке (статический конструктор пустой)
     public static class MainMenuDrawer_Init_Patch
     {
         private const string ChoiceRandom = "Random";
         private const string ChoiceDefault = "Default";
         private const string DefaultPathRimWorldRu = "UI/HeroArt/RimWorldRu";
+        private const string VbePackageId = "vanillaexpanded.backgrounds";
         private static List<Texture2D> _cachedTextures;
         private static List<string> _cachedContentPaths;
+        /// <summary>Фон, который мы поставили последним (чтобы отличать свой фон от чужого).</summary>
+        private static Texture2D _ourBackground;
+        /// <summary>Фон, который стоял до того, как мы поставили свой (игры или другого мода).</summary>
+        private static Texture2D _backgroundBeforeUs;
+
+        /// <summary>Включён ли Vanilla Backgrounds Expanded (с учётом постфикса _steam у локальных копий).</summary>
+        public static bool VbeActive => ModLister.GetActiveModWithIdentifier(VbePackageId, true) != null;
 
         private static void EnsureCache()
         {
@@ -87,6 +102,8 @@ namespace RuMod.Patches
         /// <summary>Подпись для режима «По умолчанию»: RimWorldRu, если есть; иначе Случайно; иначе Выкл.</summary>
         public static string GetDefaultChoiceDisplayName()
         {
+            if (VbeActive)
+                return "фон Vanilla Backgrounds Expanded";
             var list = GetRimWorldRuMenuTextures();
             var paths = _cachedContentPaths;
             int idx = paths != null ? paths.IndexOf(DefaultPathRimWorldRu) : -1;
@@ -98,6 +115,7 @@ namespace RuMod.Patches
         }
 
         [HarmonyPostfix]
+        [HarmonyPriority(Priority.Last)]
         public static void Postfix()
         {
             ApplyRimWorldRuBackground();
@@ -112,16 +130,16 @@ namespace RuMod.Patches
             if (bg == null)
                 return;
             string choice = RuModClass.Instance?.GetSettings<RuModSettings>()?.MenuBackgroundRimWorldRu ?? "";
-            if (string.IsNullOrEmpty(choice))
+            if (string.IsNullOrEmpty(choice) || (choice == ChoiceDefault && VbeActive))
             {
-                SetGameDefaultBackground(bg);
+                RestoreBackgroundBeforeUs(bg);
                 return;
             }
             var list = GetRimWorldRuMenuTextures();
             var paths = _cachedContentPaths;
             if (list == null || list.Count == 0)
             {
-                SetGameDefaultBackground(bg);
+                RestoreBackgroundBeforeUs(bg);
                 return;
             }
             Texture2D tex = null;
@@ -157,10 +175,34 @@ namespace RuMod.Patches
                         tex = list.RandomElement();
                 }
             }
-            if (tex != null)
-                bg.overrideBGImage = tex;
-            else
-                SetGameDefaultBackground(bg);
+            if (tex == null)
+            {
+                RestoreBackgroundBeforeUs(bg);
+                return;
+            }
+            // Запоминаем чужой фон только если сейчас стоит не наш (повторный выбор не должен
+            // «запомнить» наш же фон как исходный).
+            if (_ourBackground == null || bg.overrideBGImage != _ourBackground)
+                _backgroundBeforeUs = bg.overrideBGImage;
+            bg.overrideBGImage = tex;
+            _ourBackground = tex;
+        }
+
+        /// <summary>
+        /// Снимаем свой фон, только если он сейчас на экране: возвращаем то, что было до нас.
+        /// Чужой фон (игры, VBE и т.п.) не трогаем.
+        /// </summary>
+        private static void RestoreBackgroundBeforeUs(UI_BackgroundMain bg)
+        {
+            if (_ourBackground != null && bg.overrideBGImage == _ourBackground)
+            {
+                if (_backgroundBeforeUs != null)
+                    bg.overrideBGImage = _backgroundBeforeUs;
+                else
+                    SetGameDefaultBackground(bg);
+            }
+            _ourBackground = null;
+            _backgroundBeforeUs = null;
         }
 
         private static void SetGameDefaultBackground(UI_BackgroundMain bg)

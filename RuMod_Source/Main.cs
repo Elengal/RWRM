@@ -142,7 +142,9 @@ namespace RuMod
             Patches.NameReroute.ResetCache();
             Patches.WorldFactionsUIUtility_Patch.IsEnabled = s.NoFactionLimitEnabled;
             Patches.Dialog_Debug_Tooltips_Patch.IsEnabled = s.DevTooltipsEnabled;
-            MainMenuDrawer_Init_Patch.ApplyRimWorldRuBackground();
+            // Фон здесь НЕ применяем: WriteSettings зовётся и при перетаскивании панели, и при любой
+            // галочке — раньше это каждый раз сбрасывало фон другого мода (VBE) на фон игры.
+            // Фон меняется только при выборе в меню «Фон главного меню» и при сбросе настроек.
         }
 
         public override void DoSettingsWindowContents(Rect inRect)
@@ -226,6 +228,7 @@ namespace RuMod
                     {
                         settings.ResetToDefaults();
                         WriteSettings();
+                        MainMenuDrawer_Init_Patch.ApplyRimWorldRuBackground();
                     },
                     true));
             }
@@ -268,6 +271,12 @@ namespace RuMod
 
         private void DrawVisualTab(Listing_Standard listing, RuModSettings settings)
         {
+            listing.CheckboxLabeled("Показывать панель переводчика в главном меню", ref settings.ShowTranslationPanel,
+                "Снимите, чтобы убрать панель «RimWorld переводчика» с главного экрана полностью — и нашу, и стандартную (для любого языка). "
+                + "Вместе с ней пропадут кнопки «Мод в Steam», «Мод на GitHub», «Сохранить отчёт о переводе» и «Очистить файлы перевода». Вернуть — этой же галочкой.");
+            listing.CheckboxLabeled("Показывать панель DLC в главном меню", ref settings.ShowDlcPanel,
+                "Снимите, чтобы убрать с главного экрана иконки дополнений (внизу слева). На сами дополнения не влияет.");
+            listing.Gap(8f);
             listing.CheckboxLabeled("Перетаскиваемое окно переводчика на главном экране", ref settings.TranslationPanelDraggable,
                 "Включено: окно «RimWorld переводчика» можно перетаскивать за верхнюю полоску. Позиция сохраняется между запусками игры. Выключите, если окно должно оставаться на месте.");
             listing.Gap(8f);
@@ -304,7 +313,7 @@ namespace RuMod
 
             // Ползунок непрозрачности для выбранного окна.
             // Специально "непрозрачность", а не "прозрачность": значение растёт слева направо
-            // и напрямую совпадает с alpha (0.1 = почти прозрачно, 0.5 = плотнее), без путаницы сторон.
+            // и напрямую совпадает с alpha (0% = подложки нет, 100% = как обычное окно игры), без путаницы сторон.
             float currentAlpha = 0.25f;
             switch (_currentTransparencyTarget)
             {
@@ -319,10 +328,10 @@ namespace RuMod
                     break;
             }
 
-            currentAlpha = Mathf.Clamp(currentAlpha, 0.1f, 0.5f);
-            listing.Label($"Непрозрачность фона: {(int)(currentAlpha * 100f)}%");
+            currentAlpha = Mathf.Clamp01(currentAlpha);
+            listing.Label($"Непрозрачность фона: {Mathf.RoundToInt(currentAlpha * 100f)}%");
             Rect sliderRect = listing.GetRect(22f);
-            currentAlpha = Widgets.HorizontalSlider(sliderRect, currentAlpha, 0.1f, 0.5f, true, "", "прозрачнее", "плотнее");
+            currentAlpha = Widgets.HorizontalSlider(sliderRect, currentAlpha, 0f, 1f, true, "", "без фона", "как окно игры", 0.01f);
 
             switch (_currentTransparencyTarget)
             {
