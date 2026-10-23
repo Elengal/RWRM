@@ -423,7 +423,7 @@
   <!-- EN: {0} with {1} -->
   <ProximitySingleGoodwillChange>{0} с фракцией {1}</ProximitySingleGoodwillChange>
   <!-- EN: Too dangerous to re-enter for {0}. -->
-  <EnterCooldown>Это место посещать слишком опасно ещё {0_numCase ? день : дня : дней}.</EnterCooldown>
+  <EnterCooldown>Это место посещать слишком опасно ещё {0}.</EnterCooldown>
   <!-- EN: Caravan -->
   <Caravan>Караван</Caravan>
   <!-- EN: there may be danger there. -->

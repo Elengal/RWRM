@@ -205,7 +205,7 @@
     <li>statueSubjectDesc->бросает невидимое копьё</li>
     <li>statueSubjectDesc->рвет лист бумаги в знак неповиновения</li>
     <li>statueSubjectDesc->шагает по глубоким водам</li>
-    <li>statueSubjectDesc->держит держит в обеих руках [prop]</li>
+    <li>statueSubjectDesc->держит в обеих руках [prop]</li>
     <li>statueSubjectDesc->без зубов[maybeInsult]</li>
     <li>statueSubjectDesc->щурится на солнце[maybeInsult]</li>
     <li>statueSubjectDesc->нюхает букет цветов[maybeNoNose]</li>
