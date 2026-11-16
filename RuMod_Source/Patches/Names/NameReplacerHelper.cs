@@ -59,7 +59,8 @@ namespace RuMod.Patches
         // ==== Таблица пар: мужская и женская формы фамилии ====
         //
         // Словники мода лежат парами строка в строку: Last_Male_Core против
-        // Last_Female_Core, Imperial_Last_Male_Core против Imperial_Last_Female_Core.
+        // Last_Female_Core, Imperial_Last_Male_Core против Imperial_Last_Female_Core,
+        // а также Sanguophage и Highmate с тем же построчным соответствием.
         // Это готовый и точный ответ, который правила вывести не могут.
         //
         // Правила ниже написаны под русские фамилии на -ов/-ев/-ёв/-ин и на них
@@ -75,6 +76,8 @@ namespace RuMod.Patches
         {
             new[] { "Names/Last_Male",          "Names/Last_Female" },
             new[] { "Names/Imperial_Last_Male", "Names/Imperial_Last_Female" },
+            new[] { "Names/Sanguophage_Last_Male_Biotech", "Names/Sanguophage_Last_Female_Biotech" },
+            new[] { "Names/Highmate_Last_Male_Biotech",    "Names/Highmate_Last_Female_Biotech" },
         };
 
         private static Dictionary<string, string> maleToFemale;
