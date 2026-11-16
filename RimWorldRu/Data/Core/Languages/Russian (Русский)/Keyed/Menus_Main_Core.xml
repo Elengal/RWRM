@@ -358,6 +358,10 @@
   <BakingModAssetPacksFor>Сборка пакетов ресурсов для {0}</BakingModAssetPacksFor>
   <!-- EN: Baking the asset packs for {0} failed, the mod was not uploaded: -->
   <ModAssetPackBakeFailed>Не удалось собрать пакеты ресурсов для {0}, мод не загружен:</ModAssetPackBakeFailed>
+  <!-- EN: Preparing upload -->
+  <PreparingWorkshopUpload>Подготовка к загрузке</PreparingWorkshopUpload>
+  <!-- EN: Preparing {0} for upload failed, the mod was not uploaded: -->
+  <WorkshopUploadStagingFailed>Не удалось подготовить {0} к загрузке, мод не загружен:</WorkshopUploadStagingFailed>
   <!-- EN: Too many (max {0}):  -->
   <TooMany>Слишком много (максимум {0}): </TooMany>
   <!-- EN: Can be updated on Workshop, since you are the author. -->

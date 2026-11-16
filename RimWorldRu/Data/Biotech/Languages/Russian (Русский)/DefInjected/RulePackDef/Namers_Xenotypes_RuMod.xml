@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+  <!-- Зеркало Defs/RulePackDefs/Namers_Xenotypes_RuMod.xml.
+       Полный список rulesStrings — как в ванильном RulePacks_Namers_Xenohumans_Biotech.xml.
+       rulesFiles не переводим: исходные Defs уже ссылаются на русские словари. -->
+
+  <!-- EN: r_name->[firstName] [lastName] -->
+  <RuMod_NamerSanguophage_Male.rulePack.rulesStrings>
+    <li>r_name->[firstName] [lastName]</li>
+  </RuMod_NamerSanguophage_Male.rulePack.rulesStrings>
+
+  <!-- EN: r_name->[firstName] [lastName] -->
+  <RuMod_NamerSanguophage_Female.rulePack.rulesStrings>
+    <li>r_name->[firstName] [lastName]</li>
+  </RuMod_NamerSanguophage_Female.rulePack.rulesStrings>
+
+  <!-- EN: r_name->[firstName] [lastName] -->
+  <RuMod_NamerHighmate_Male.rulePack.rulesStrings>
+    <li>r_name->[firstName] [lastName]</li>
+  </RuMod_NamerHighmate_Male.rulePack.rulesStrings>
+
+  <!-- EN: r_name->[firstName] [lastName] -->
+  <RuMod_NamerHighmate_Female.rulePack.rulesStrings>
+    <li>r_name->[firstName] [lastName]</li>
+  </RuMod_NamerHighmate_Female.rulePack.rulesStrings>
+
+  <!-- EN: r_name->[firstName] [lastName] -->
+  <RuMod_NamerHussar_Male.rulePack.rulesStrings>
+    <li>r_name->[firstName] [lastName]</li>
+  </RuMod_NamerHussar_Male.rulePack.rulesStrings>
+
+  <!-- EN: r_name->[firstName] [lastName] -->
+  <RuMod_NamerHussar_Female.rulePack.rulesStrings>
+    <li>r_name->[firstName] [lastName]</li>
+  </RuMod_NamerHussar_Female.rulePack.rulesStrings>
+
+  <!-- EN: r_name->[firstName] [lastName] -->
+  <RuMod_NamerGenie_Male.rulePack.rulesStrings>
+    <li>r_name->[firstName] [lastName]</li>
+  </RuMod_NamerGenie_Male.rulePack.rulesStrings>
+
+  <!-- EN: r_name->[firstName] [lastName] -->
+  <RuMod_NamerGenie_Female.rulePack.rulesStrings>
+    <li>r_name->[firstName] [lastName]</li>
+  </RuMod_NamerGenie_Female.rulePack.rulesStrings>
+
+  <!-- EN: r_name->[firstName] [lastName] -->
+  <RuMod_NamerNeanderthal_Male.rulePack.rulesStrings>
+    <li>r_name->[firstName] [lastName]</li>
+  </RuMod_NamerNeanderthal_Male.rulePack.rulesStrings>
+
+  <!-- EN: r_name->[firstName] [lastName] -->
+  <RuMod_NamerNeanderthal_Female.rulePack.rulesStrings>
+    <li>r_name->[firstName] [lastName]</li>
+  </RuMod_NamerNeanderthal_Female.rulePack.rulesStrings>
+
+</LanguageData>
